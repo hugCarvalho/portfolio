@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, createContext } from "react";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -12,12 +12,17 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+export const LanguageContext = createContext();
 
 function App() {
+  const [isLanguageEnglish, setIsLanguageEnglish] = useState(true);
+
   return (
-    <div className="App">
-      <Router>
-        <div className="App">
+    <Router>
+      <div className="App">
+        <LanguageContext.Provider
+          value={{ isLanguageEnglish, setIsLanguageEnglish }}
+        >
           <Header />
 
           <Switch>
@@ -26,16 +31,14 @@ function App() {
             </Route>
             <Route path="/projects" component={Projects} />
             <Route exact path="/skills" component={Skills} />
-
             <Route exact path="/about" component={About} />
-
             <Route exact path="/contact" component={Contact} />
             <Route path="/" render={() => <div>Page not found!</div>} />
           </Switch>
           <Footer />
-        </div>
-      </Router>
-    </div>
+        </LanguageContext.Provider>
+      </div>
+    </Router>
   );
 }
 
