@@ -9,15 +9,13 @@ import { TiHome } from "react-icons/ti";
 
 function Header() {
   return (
-    <header>
+    <header className="container__header">
       <RenderSelectLanguage />
       <Link to="/projects">
-        <TiHome color="lightblue" className="icon--home" title="home" />
+        <TiHome color="lightblue" className="icon-home" title="home" />
       </Link>
-      <RenderMyInfoCard />
       <RenderNavButtons />
-
-      <Link to="/projects1">PAGE NOT FOUND</Link>
+      <RenderMyInfoCard />
     </header>
   );
 }

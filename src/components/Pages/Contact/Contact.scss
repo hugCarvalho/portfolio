@@ -1,0 +1,26 @@
+.container__contact {
+  background-color: moccasin;
+  background-color: lightblue;
+
+  .wrapper__contact-info {
+    display: flex;
+    //display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+
+    .contact-me {
+      //background-color: red;
+      display: flex;
+      align-items: center;
+      padding: 20px 10px 0 5%;
+    }
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .fas,
+  .fab {
+    font-size: 4rem;
+    padding-right: 10px;
+  }
+}

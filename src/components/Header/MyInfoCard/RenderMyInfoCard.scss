@@ -1,4 +1,9 @@
 .container__my-info-card {
-  background-color: darkgray;
+  background-color: #3f3f3f;
+  padding: 9px; //CHANGE
   display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid darken(#3f3f3f, 5%);
+  box-shadow: 0 0 3px 1px (rgba(0, 0, 0, 0.3));
 }
