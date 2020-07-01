@@ -16,7 +16,6 @@ export const LanguageContext = createContext();
 
 function App() {
   const [isLanguageEnglish, setIsLanguageEnglish] = useState(true);
-
   return (
     <Router>
       <div className="App">

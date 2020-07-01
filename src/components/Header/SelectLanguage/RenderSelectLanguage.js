@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./RenderLanguageOptions.scss";
+import "./RenderSelectLanguage.scss";
 import LanguageFlag from "./LanguageFlag";
 import FlagEN from "./assets/flagEngland.png";
 import FlagDE from "./assets/flagGermany.png";

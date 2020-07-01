@@ -1,0 +1,22 @@
+.container__links {
+  //background-color: skyblue;
+  font-size: 1.4rem;
+  height: 76px;
+
+  ul {
+    //background-color: violet;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+  }
+  a {
+    color: #e6e6e6;
+    outline: none;
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

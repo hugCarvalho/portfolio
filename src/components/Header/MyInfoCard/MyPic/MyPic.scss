@@ -1,0 +1,19 @@
+.container__my-pic {
+  //background-color: lightsalmon;
+  padding: 0 9px;
+  .my-pic {
+    //background-color: lightcoral;
+    height: 6.74rem;
+    box-sizing: content-box;
+    border: 2px solid rgb(244, 244, 250);
+    border: 2px solid #d8d8da;
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 2px 2px 4px rgb(31, 30, 30);
+      cursor: help;
+    }
+  }
+}
