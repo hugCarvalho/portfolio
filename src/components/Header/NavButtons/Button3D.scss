@@ -1,0 +1,102 @@
+//Adapted from 3dButton code from Alex Zaworski https://codepen.io/alexzaworski/pen/LEWRxm
+
+// $height: 65; //original
+$height: 55;
+$depth: 6; //original
+$depth: 4;
+$color: #7fbb98;
+$color: #3c6274;
+//$color: #4f7aac;
+
+$text-color: darken($color, 10%);
+$lighten-on-hover: 7%;
+$button-speed: 0.2;
+$timing-function: ease-out;
+$timing-function: ease-in;
+$timing-function: ease;
+
+.button3D {
+  //For button reset
+  // border: 0;
+  // outline: none;
+  width: auto;
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none;
+  transition: all ($button-speed + s) $timing-function;
+  position: relative;
+
+  //CONFIRM
+  min-width: 175px;
+  margin: 10px 7px 7px 7px; //because of resizing
+  font-size: 2.3rem;
+  font-weight: bold;
+  //font-family: Helvetica, Arial, Sans-Serif; //TODO: check
+  //END CONFIRM ************
+
+  color: $text-color;
+  text-shadow: 0 -2px 0 darken($color, 20%), 0 1px 1px lighten($color, 20%);
+
+  &:visited {
+    //TODO remove?
+    color: $text-color;
+  }
+  height: $height + px;
+  line-height: $height + px;
+  //padding: 0 (($height/2) + px);
+
+  background: linear-gradient(
+    to bottom,
+    saturate(lighten($color, 15%), 35%) 0%,
+    saturate(lighten($color, 12%), 15%) 26%,
+    $color 100%
+  );
+  border-radius: 5px;
+  border-top: 1px solid lighten($color, 22%);
+  border-bottom: 1px solid lighten($color, 20%);
+  top: 0;
+
+  &:hover {
+    background: linear-gradient(
+      to bottom,
+      lighten(saturate(lighten($color, 15%), 35%), $lighten-on-hover) 0%,
+      lighten(saturate(lighten($color, 12%), 15%), $lighten-on-hover) 26%,
+      lighten($color, $lighten-on-hover) 100%
+    );
+  }
+  &:active,
+  &.active {
+    top: $depth + px;
+    color: lighten($color, 45%);
+    text-shadow: 0 -2px 0 darken($color, 0%), 0 1px 1px lighten($color, 20%),
+      0 0 4px white;
+    &:before {
+      top: 0;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2);
+    }
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: ($height) + px;
+    top: ($depth) + px;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    z-index: -1;
+    // background: linear-gradient(
+    //   to top,
+    //   saturate(darken($color, 22%), 5%) 0%,
+    //   saturate(darken($color, 15%), 10%) $depth + px
+    // );
+    background-color: darken(
+      $color,
+      15%
+    ); //replace above line with this? Simpler and basically same result if I go for almost black color...
+    transition: all (($button-speed * 0.3) + s) $timing-function; //1.3
+    box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3),
+      0 5px ($depth * 0.4 + px) rgba(0, 0, 0, 0.5),
+      0 ($depth * 1.8 + px) 9px rgba(0, 0, 0, 0.2);
+  }
+}
