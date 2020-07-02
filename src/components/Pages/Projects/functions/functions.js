@@ -6,9 +6,12 @@ export const renderFeatures = (project, lang) =>
 
 //Renders list of project specific concepts
 export const renderProjectSpecifics = project => {
-  //console.log("RENDER SPECIFICS");
   return project.techInfo.specs.map((item, i, arr) =>
-    arr.length - 1 === i ? <i>{`${item} `}</i> : <i>{`${item} / `}</i>
+    arr.length - 1 === i ? (
+      <i key={i}>{`${item} `}</i>
+    ) : (
+      <i key={i}>{`${item} / `}</i>
+    )
   );
 };
 

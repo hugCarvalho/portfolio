@@ -40,19 +40,19 @@ function Card() {
     //console.log("ID:", id);
     setFrontSideActive(state => !state);
   };
-
+  // for the purposes of this website it's ok to use the index as a key for react
   return (
     <>
       {/* CARDS CONTAINER */}
       <div className="container__cards">
         {projectsData.map((project, i) => {
           const language = isLanguageEnglish ? "en" : "de";
+
           return (
-            <div className="wrapper__card-live-code">
+            <div key={i} className="wrapper__card-live-code">
               <div
                 className="container__card"
                 style={{ height: backCardHeight }}
-                key={i}
                 // onMouseLeave={() => setFrontSideActive(true)}
               >
                 <div
@@ -97,9 +97,9 @@ function Card() {
                     </div>
                   </div>
                 </div>
-                {/* END card front */}
+                {/* END card front****************  */}
 
-                {/* CARD BACK****************  */}
+                {/* CARD BACK */}
                 <div
                   className="card__side card__side--back"
                   style={
@@ -108,7 +108,6 @@ function Card() {
                       : null
                   }
                 >
-                  {}
                   <div className="container__text-section">
                     {/* TECH INFO */}
                     <h3>Technical Info:</h3>

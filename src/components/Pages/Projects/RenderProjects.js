@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard/Card";
 function RenderProjects() {
   return (
     <div className="container__projects">
-      <h1>Projects</h1>
+      {/* <h1>Projects</h1> */}
       <ProjectCard />
     </div>
   );
