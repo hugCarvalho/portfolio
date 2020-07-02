@@ -4,9 +4,7 @@ export const projectsData = [
     name: "Weather App",
     category: ["app"],
     img: "media/weather_night_small.png",
-    //img: "../components/Pages/Projects/media/todo_list_small.png",
 
-    img: "../../../../src/components/Pages/media/todo_list_small.png",
     description: {
       en:
         "Displays weather data from OpenWeather API: forecast up to 3 days divided into 3 hours intervals.",
@@ -48,9 +46,7 @@ export const projectsData = [
     id: 2,
     name: "Todo List App",
     category: ["app"],
-    //img: "weather_night_small.png",
-    //img: "../test.png",
-    img: "/test.png",
+    img: "media/todo_list_small.png",
 
     description: {
       en: "Keeps track of the things you have to do.",

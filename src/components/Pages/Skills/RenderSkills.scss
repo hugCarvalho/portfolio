@@ -1,0 +1,80 @@
+.container__skills {
+  background-color: #3c6274;
+  //background-color: #9ed800;
+  //display: flex;
+  //flex-direction: column;
+  //width: 50%;
+  //flex-wrap: wrap;
+  //justify-content: center;
+  //text-align: center;
+
+  .test {
+    //background-color: orange;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  // h3 {
+  //   //background: yellow;
+  //   //background-color: rgb(89, 139, 151);
+  //   background-color: gold;
+  //   color: white;
+  //   display: inline-block;
+  //   padding: 4px 25px;
+  //   margin: 30px auto 50px;
+  //   width: auto;
+  //   font-variant: small-caps;
+  //   font-size: 2.5rem;
+  //   font-weight: 400;
+  //   letter-spacing: 0.2rem;
+  //   border-radius: 3px;
+  //   box-shadow: 1px 1px 4px rgb(246, 245, 245);
+  //   box-shadow: 2px 2px 4px rgb(14, 13, 13);
+  //   //color: rgb(41, 39, 39);
+  // }
+
+  .container__skill-card {
+    //background-color: orange;
+    padding-top: 40px;
+    //padding-left: 100px;
+    margin: auto;
+  }
+  //NAIL + WIRE
+  // .wrapper__all {
+  //   background-color: tan;
+  //   margin-bottom: 10px;
+  //   width: 0;
+  //   //display: flex;
+  //   flex-direction: column;
+  //   flex-wrap: wrap;
+  //   padding: 30px;
+  //   position: relative; //erase?
+
+  .wire {
+    background-color: lime;
+    position: relative;
+    //z-index: 3;
+    height: 180px;
+    width: 100px;
+    min-height: 155px;
+    margin-left: 120px;
+    border-top: 1px solid black;
+
+    //AFECTS NAIL
+    border-radius: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -140px;
+    .nail {
+      width: 10px;
+      height: 10px;
+      background: pink;
+      background: gray;
+      margin-top: -5px;
+      border-radius: 100%;
+      box-shadow: 3px 3px 5px 1px rgb(14, 13, 13);
+    }
+  }
+  // }
+}

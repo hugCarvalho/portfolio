@@ -3,7 +3,7 @@ import "./App.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import RenderProjects from "./components/Pages/Projects/RenderProjects";
-import Skills from "./components/Pages/Skills/Skills";
+import RenderSkills from "./components/Pages/Skills/RenderSkills";
 import RenderAbout from "./components/Pages/About/RenderAbout";
 import Contact from "./components/Pages/Contact/Contact";
 import {
@@ -29,7 +29,7 @@ function App() {
               <Redirect to="/projects" />
             </Route>
             <Route path="/projects" component={RenderProjects} />
-            <Route exact path="/skills" component={Skills} />
+            <Route exact path="/skills" component={RenderSkills} />
             <Route exact path="/about" component={RenderAbout} />
             <Route exact path="/contact" component={Contact} />
             <Route path="/" render={() => <div>Page not found!</div>} />
