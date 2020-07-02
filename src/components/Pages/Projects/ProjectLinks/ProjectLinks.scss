@@ -1,0 +1,32 @@
+.container__project-links {
+  background-color: rgb(62, 66, 70);
+  width: 80%;
+  height: 4rem;
+  margin: auto;
+  margin-bottom: 90px; //important when smaller displays
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 8px;
+
+  a {
+    //background-color: maroon;
+    color: lightblue;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+
+    :hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  .text {
+    color: lightblue;
+    padding-right: 5px;
+    font-weight: normal;
+    font-family: "Arial";
+  }
+}

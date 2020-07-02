@@ -2,7 +2,7 @@ import React, { useState, createContext } from "react";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Projects from "./components/Pages/Projects/Projects";
+import RenderProjects from "./components/Pages/Projects/RenderProjects";
 import Skills from "./components/Pages/Skills/Skills";
 import RenderAbout from "./components/Pages/About/RenderAbout";
 import Contact from "./components/Pages/Contact/Contact";
@@ -28,7 +28,7 @@ function App() {
             <Route exact path="/">
               <Redirect to="/projects" />
             </Route>
-            <Route path="/projects" component={Projects} />
+            <Route path="/projects" component={RenderProjects} />
             <Route exact path="/skills" component={Skills} />
             <Route exact path="/about" component={RenderAbout} />
             <Route exact path="/contact" component={Contact} />
