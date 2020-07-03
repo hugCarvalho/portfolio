@@ -1,11 +1,8 @@
 import React from "react";
 import "./Header.scss";
-import { Link } from "react-router-dom";
 import RenderSelectLanguage from "./SelectLanguage/RenderSelectLanguage";
 import RenderMyInfoCard from "./MyInfoCard/RenderMyInfoCard";
 import RenderNavButtons from "./NavButtons/RenderNavButtons";
-
-import { TiHome } from "react-icons/ti";
 
 function Header() {
   return (

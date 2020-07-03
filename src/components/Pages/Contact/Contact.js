@@ -1,9 +1,9 @@
 import React from "react";
 import "./Contact.scss";
-import { LanguageContext } from "../../../App";
+// import { LanguageContext } from "../../../App";
 
 function Contact() {
-  const { isLanguageEnglish } = React.useContext(LanguageContext);
+  // const { isLanguageEnglish } = React.useContext(LanguageContext);
 
   return (
     <div className="container__contact">
