@@ -33,8 +33,14 @@ html {
 body {
   margin: 0;
   //CHECK BEFORE FINAL VERSION
-  font-family: "ubuntu", "monospace", "Verdana", "American Typewriter", serif,
-    sans-serif;
+  font-family: "monospace", "Verdana", "American Typewriter", serif, sans-serif;
+  font-family: "Arial", serif, sans-serif;
+  font-family: "Times New Roman", serif, sans-serif;
+  font-family: "Courier", serif, sans-serif;
+  font-family: "American Typewriter", "Courier New", "Arial Narrow",
+    "Garamond" "monospace" serif, sans-serif;
+
+  //font-family: serif, sans-serif;
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
   font-size: 1.2rem;

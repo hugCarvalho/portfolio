@@ -1,10 +1,10 @@
 import React from "react";
 import "./RenderSkills.scss";
 import OneSkill, { RelatedSkills } from "./SkillCards";
-import { LanguageContext } from "../../../App";
+// import { LanguageContext } from "../../../App";
 
 function Skills() {
-  const { isLanguageEnglish } = React.useContext(LanguageContext);
+  // const { isLanguageEnglish } = React.useContext(LanguageContext);
 
   return (
     <div className="container__skills">
