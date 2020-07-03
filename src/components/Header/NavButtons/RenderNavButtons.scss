@@ -1,12 +1,26 @@
 .container__navButtons {
   //background-color: rgb(7, 143, 221);
-  padding: 2rem 2rem;
-  border-radius: 12px;
-
+  padding: 10px 5px;
+  text-align: center;
   .button-text {
     font-variant: small-caps;
     text-transform: capitalize;
     text-transform: capitalize;
     letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .container__navButtons {
+    //background-color: rgb(221, 7, 132);
+    width: 400px;
+  }
+}
+
+@media (max-width: 622px) {
+  .container__navButtons {
+    //background-color: rgb(57, 221, 7);
+    margin-top: -20px;
+    width: 400px;
   }
 }

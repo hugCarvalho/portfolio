@@ -1,8 +1,10 @@
 .container__about {
+  background-color: rgba(200, 204, 202, 0.767);
+  padding: 40px 16%;
   //background-color: rgb(228, 231, 225);
   //background-color: lightblue;
-
-  width: 70%;
-  min-height: 300px;
+  //background-color: lighten(#3c6274, 20%);
+  min-height: calc(100vh - 270px);
   margin: auto;
+  //font-family: "Arial";
 }

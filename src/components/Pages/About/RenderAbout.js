@@ -8,7 +8,7 @@ function RenderAbout() {
 
   return (
     <div className="container__about">
-      {isLanguageEnglish ? <h1>About</h1> : <h1>Über mich</h1>}
+      {/* {isLanguageEnglish ? <h1>About</h1> : <h1>Über mich</h1>} */}
 
       {isLanguageEnglish ? <AboutEN /> : <AboutDE />}
     </div>

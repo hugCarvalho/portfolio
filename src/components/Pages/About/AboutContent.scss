@@ -11,9 +11,10 @@
 
   p {
     color: rgb(36, 36, 36);
-    color: rgb(255, 253, 253);
-    color: #3f3f3f;
-    //color: rgb(3, 62, 110);
+    color: black;
+    // color: rgb(255, 253, 253);
+    // color: #3f3f3f;
+    //color: darken(whitesmoke, 20%);
   }
 
   button {
@@ -30,7 +31,7 @@
 
     &:hover {
       opacity: 1;
-      cursor: pointer;
+      //cursor: pointer;
     }
   }
 

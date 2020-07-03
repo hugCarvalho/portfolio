@@ -11,9 +11,13 @@ function Header() {
   return (
     <header className="container__header">
       <RenderSelectLanguage />
-      <Link to="/projects">
+      <div className="hugos-portfolio">
+        <span className="engraved">Hugo's</span>
+        <span className="engraved2">Portfolio</span>
+      </div>
+      {/* <Link to="/projects">
         <TiHome color="lightblue" className="icon-home" title="home" />
-      </Link>
+      </Link> */}
       <RenderNavButtons />
       <RenderMyInfoCard />
     </header>

@@ -1,7 +1,13 @@
 .container__contact {
-  background-color: moccasin;
-  background-color: lightblue;
-
+  // background-color: rgb(76, 88, 88);
+  // background-color: rgb(18, 41, 41);
+  //background-color: lighten(#3c6274, %);
+  background-color: rgba(200, 204, 202, 0.767);
+  padding: 40px 16%;
+  min-height: calc(
+    100vh - 270px
+  ); //100vh - (header-height = 190 + footer-height = 70)
+  // color: darkgrey;
   .wrapper__contact-info {
     display: flex;
     //display: flex;
@@ -22,5 +28,16 @@
   .fab {
     font-size: 4rem;
     padding-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container__contact {
+    //background-color: red;
+    width: 100%;
+
+    .wrapper__contact-info {
+      font-size: 2rem;
+    }
   }
 }

@@ -63,3 +63,10 @@
 .center {
   justify-content: center;
 }
+
+@media (max-width: 320px) {
+  .container__skill-box {
+    margin: 10px 0;
+    width: 310px;
+  }
+}

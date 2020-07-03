@@ -6,7 +6,7 @@ function LanguagesSpoken() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
   return (
     <>
-      <div className="container__spoken-languages">
+      <div className="container__languages-spoken">
         <span>{isLanguageEnglish ? "Speaks:" : "Sprichst"}</span>
         <div
           title={isLanguageEnglish ? "english" : "Englisch"}

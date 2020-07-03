@@ -1,7 +1,6 @@
 .container__cards {
   //background-color: rgb(107, 107, 106);
   width: 100%;
-  // margin: auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -13,23 +12,17 @@
 //CARD
 .container__card {
   //background-color: blue;
-  //margin-bottom: 10px;
   width: 320px; //ok
   width: 420px; //change when mobile
   margin: 0px 20px;
   perspective: 150rem;
   position: relative;
-  border-radius: 20px;
   height: 100%;
   //margin: 0 20px; //activate for media queries
 
   //BOTH SIDES
   .card__side {
     background-color: #3d3b3b;
-    //background-color: #1d1c1ce1;
-    //background-color: #1b1f1de1;
-    //background-color: #160f10e1;
-    //color: wheat;
     color: rgb(219, 212, 212);
     width: 100%;
     //height: 100%;
@@ -42,12 +35,8 @@
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
 
     li {
-      //color: white;
-      //color: wheat;
       list-style-type: square;
       margin-left: 1.5rem;
-      //color: whitesmoke;
-      // color: black;
     }
 
     //BUTTON FLIP CARD
@@ -66,9 +55,7 @@
         border-radius: 3px;
       }
       :hover {
-        cursor: pointer;
-        color: #8feeb6;
-        color: lightgreen;
+        color: lightseagreen;
         //color: white; change backcolor to use same behaviour as buttons from menu
       }
     }
@@ -170,5 +157,35 @@
         margin-top: 20px;
       }
     }
+  }
+}
+
+@media (max-width: 430px) {
+  .container__card {
+    width: 390px;
+    margin-top: -20px;
+  }
+  .container__card .card__side--front .container__project-image img {
+    width: 98%;
+    display: flex;
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .container__card {
+    width: 360px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container__card {
+    width: 346px;
+  }
+}
+
+@media (max-width: 321px) {
+  .container__card {
+    width: 312px;
   }
 }
