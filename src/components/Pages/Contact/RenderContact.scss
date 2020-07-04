@@ -10,7 +10,6 @@
   // color: darkgrey;
   .wrapper__contact-info {
     display: flex;
-    //display: flex;
     flex-direction: column;
     font-size: 2.5rem;
 
@@ -31,11 +30,12 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 622px) {
+  //480px
   .container__contact {
     //background-color: red;
-    width: 100%;
-
+    min-height: calc(100vh - 245px);
+    padding: 40px 3%;
     .wrapper__contact-info {
       font-size: 2rem;
     }

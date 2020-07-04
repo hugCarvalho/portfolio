@@ -34,3 +34,9 @@
     // transition: transform 1s ease-in-out;
   }
 }
+
+@media (max-width: 622px) {
+  .container__projects {
+    min-height: calc(100vh - 245px);
+  }
+}

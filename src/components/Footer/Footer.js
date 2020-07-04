@@ -1,13 +1,13 @@
 import React from "react";
 import "./Footer.scss";
-import { Link } from "react-router-dom";
 import { LanguageContext } from "../../App";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
 
   return (
-    <footer>
+    <>
       <section className="credits">
         <span>Credits:</span>
         <ul>
@@ -49,7 +49,7 @@ function Footer() {
           <li>CV</li>
         </ul>
       </section>
-    </footer>
+    </>
   );
 }
 

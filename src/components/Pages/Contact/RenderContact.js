@@ -1,5 +1,5 @@
 import React from "react";
-import "./Contact.scss";
+import "./RenderContact.scss";
 // import { LanguageContext } from "../../../App";
 
 function Contact() {

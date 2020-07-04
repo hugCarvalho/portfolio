@@ -1,16 +1,9 @@
-//COLORS
-//Header
-$color: #3f3f3f;
-
-//header>myinfocard>links
-
 $color: #e6e6e6;
 
 .App {
-  min-height: 100vh; // will cover the 100% of viewport
+  min-height: 100vh;
   overflow: hidden;
   display: block;
   position: relative;
-  padding-bottom: 80px; // height of footer - maybe better
+  padding-bottom: 80px; // height of footer
 }
-//TODO: put padding-bottom in each individual container with a reference

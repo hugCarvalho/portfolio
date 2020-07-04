@@ -1,6 +1,6 @@
 import React from "react";
 import "./RenderAbout.scss";
-import AboutEN, { AboutDE } from "./AboutContent";
+import AboutEN, { AboutDE } from "./About";
 import { LanguageContext } from "../../../App";
 
 function RenderAbout() {

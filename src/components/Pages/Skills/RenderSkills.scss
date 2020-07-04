@@ -85,3 +85,9 @@
     padding: 1%;
   }
 }
+
+@media (max-width: 622px) {
+  .container__skills {
+    min-height: calc(100vh - 245px);
+  }
+}

@@ -23,7 +23,6 @@ html,
 body {
   height: 100%;
   position: relative;
-  background-color: #3c6274;
 }
 
 html {
@@ -32,16 +31,8 @@ html {
 
 body {
   margin: 0;
-  //CHECK BEFORE FINAL VERSION
-  font-family: "monospace", "Verdana", "American Typewriter", serif, sans-serif;
-  font-family: "Arial", serif, sans-serif;
-  font-family: "Times New Roman", serif, sans-serif;
-  font-family: "Courier", serif, sans-serif;
-  font-family: "American Typewriter", "Courier New", "Arial Narrow",
-    "Garamond" "monospace" serif, sans-serif;
-
-  //font-family: serif, sans-serif;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, "sans-serif";
   font-size: 1.2rem;
+  background-color: #3c6274;
+  $color: #e6e6e6;
 }

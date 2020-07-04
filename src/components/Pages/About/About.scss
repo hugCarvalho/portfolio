@@ -38,4 +38,22 @@
   .invisible {
     visibility: hidden;
   }
+  .show-smallest-screen {
+    display: none;
+    padding-bottom: 40px;
+    ul {
+      display: flex;
+
+      li {
+        padding-right: 20px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper__about .show-smallest-screen {
+    display: inline-block;
+  }
 }

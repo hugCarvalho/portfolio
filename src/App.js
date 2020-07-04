@@ -1,11 +1,11 @@
 import React, { useState, createContext } from "react";
 import "./App.scss";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import RenderHeader from "./components/Header/RenderHeader";
+import RenderFooter from "./components/Footer/RenderFooter";
 import RenderProjects from "./components/Pages/Projects/RenderProjects";
 import RenderSkills from "./components/Pages/Skills/RenderSkills";
 import RenderAbout from "./components/Pages/About/RenderAbout";
-import Contact from "./components/Pages/Contact/Contact";
+import RenderContact from "./components/Pages/Contact/RenderContact";
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,7 +22,7 @@ function App() {
         <LanguageContext.Provider
           value={{ isLanguageEnglish, setIsLanguageEnglish }}
         >
-          <Header />
+          <RenderHeader />
 
           <Switch>
             <Route exact path="/">
@@ -31,10 +31,10 @@ function App() {
             <Route path="/projects" component={RenderProjects} />
             <Route exact path="/skills" component={RenderSkills} />
             <Route exact path="/about" component={RenderAbout} />
-            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/contact" component={RenderContact} />
             <Route path="/" render={() => <div>Page not found!</div>} />
           </Switch>
-          <Footer />
+          <RenderFooter />
         </LanguageContext.Provider>
       </div>
     </Router>

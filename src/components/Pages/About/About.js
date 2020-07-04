@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import "./AboutContent.scss";
+import "./About.scss";
 import { LanguageContext } from "../../../App";
 
 function AboutEN() {
@@ -8,33 +8,25 @@ function AboutEN() {
 
   return (
     <div className="wrapper__about">
+      <section className=" show-smallest-screen">
+        <ul>
+          <li>
+            <a href="www.abola.pt">Resume</a>
+          </li>
+          <li>
+            <a href="www.abola.pt">Github</a>
+          </li>
+        </ul>
+      </section>
       <article>
         <h2>Basic Introduction</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis
-          nisi, consequat et lorem sit amet, sollicitudin laoreet mauris. Etiam
-          ut tellus scelerisque, tristique lorem a, cursus quam. Morbi sodales
-          nibh a risus interdum consequat. Fusce vel ultricies nisl. Curabitur
-          non quam laoreet, mattis augue ac, scelerisque eros. Duis aliquet
-          rutrum risus, eget bibendum enim aliquam at. Vestibulum commodo
-          pharetra nunc, in semper ante pretium quis. Nam at purus in eros
-          pellentesque lobortis. Sed cursus sapien ipsum, cursus fermentum risus
           lobortis vitae.
         </p>
         <p>
           Praesent lacinia cursus mauris, pulvinar placerat turpis pulvinar non.
           Fusce et mauris eu nulla efficitur volutpat. Donec accumsan, sapien
-          sit amet consectetur mollis, lorem mauris pretium magna, sit amet
-          porta lectus ex et augue. Nulla nec arcu vel urna lacinia accumsan.
-          Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas. Integer facilisis purus eleifend turpis
-          efficitur, quis pharetra tortor aliquam. Vestibulum venenatis, felis
-          at efficitur dignissim, quam ante luctus metus, auctor venenatis enim
-          mi sit amet ligula. Proin laoreet est ut porta tempor. Cras nec
-          fermentum justo. Phasellus hendrerit eleifend euismod. Morbi et turpis
-          ut eros mattis auctor. In hac habitasse platea dictumst. Donec a
-          porttitor lorem. Nunc tempor eu arcu sit amet sagittis. Morbi eu
-          tristique mauris.
         </p>
       </article>
 
