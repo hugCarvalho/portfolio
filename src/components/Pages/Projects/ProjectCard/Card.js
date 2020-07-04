@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Card.scss";
-import { projectsData } from "../projectsData";
+import { projectsData } from "../data/projectsData";
 import LinksTo from "../ProjectLinks/ProjectLinks";
 import {
   renderThirdParty,
@@ -18,11 +18,10 @@ function Card() {
   useEffect(() => {
     const calculateBackSideCardHeight = () => {
       const height = document.querySelector(".card__side--front");
-      //console.log("HEIGHT:", height.offsetHeight);
       setBackCardHeight(`${height.offsetHeight}px`);
     };
     calculateBackSideCardHeight();
-  }, []);
+  }, [isLanguageEnglish]);
 
   //Sets the height of all cards to the size of the biggest card
   //Affects the front side. The back side is automatic and depends on css
@@ -30,14 +29,12 @@ function Card() {
     const changeHeight = () => {
       const cardFront = document.querySelectorAll(".card__side--front");
       cardFront.forEach(item => (item.style.height = `${backCardHeight}`));
-      //console.log("cardheight", backCardHeight);
     };
     changeHeight();
   }, [backCardHeight]);
 
   const clickedFN = id => {
     setId(id);
-    //console.log("ID:", id);
     setFrontSideActive(state => !state);
   };
   // for the purposes of this website it's ok to use the index as a key for react
@@ -53,8 +50,9 @@ function Card() {
               <div
                 className="container__card"
                 style={{ height: backCardHeight }}
-                // onMouseLeave={() => setFrontSideActive(true)}
+                onMouseLeave={() => setFrontSideActive(true)}
               >
+                {/* CARD FRONT */}
                 <div
                   className="card__side card__side--front"
                   style={
@@ -63,6 +61,7 @@ function Card() {
                       : null
                   }
                 >
+                  {/* Project Name */}
                   <div className="project-name">{project.name}</div>
 
                   {/* IMG */}
@@ -92,7 +91,7 @@ function Card() {
                     {/* BUTTON FLIP CARD */}
                     <div className="btn__flip-card">
                       <button onClick={() => clickedFN(project.id)}>
-                        Tech Info >
+                        Tech Info {">"}
                       </button>
                     </div>
                   </div>
@@ -110,17 +109,18 @@ function Card() {
                 >
                   <div className="container__text-section">
                     {/* TECH INFO */}
-                    <h3>Technical Info:</h3>
+                    <h2>Technical Info:</h2>
                     <br />
                     <p>{`Built with ${project.techInfo.main}`}</p>
                     <p>{`Styled with ${project.techInfo.styled}`}</p>
+                    {project.techInfo.responsive && <p>Responsive</p>}
 
                     {/* SPECIFICS: */}
-                    <h4>React specifics:</h4>
+                    <h3>Project specifics:</h3>
                     {renderProjectSpecifics(project)}
 
                     {/* Third Party used in project */}
-                    <h4>Third party used:</h4>
+                    <h3>Third party used:</h3>
                     {renderThirdParty(project)}
                   </div>
 

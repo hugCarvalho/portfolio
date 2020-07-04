@@ -14,7 +14,7 @@ export const projectsData = [
     features: {
       en: [
         "search for a city to display the weather.",
-        "save a city for fast access (up to 3 cities) in local storage.",
+        "save up to 3 cities for fast access (up to 3 cities) in local storage.",
         "set up a city to load at startup.",
         "displays weather for present day and following 2 days (every 3 hours display).",
         "displays actual and real feel temperature in Celsius or Fahrenheit.",
@@ -23,20 +23,20 @@ export const projectsData = [
       ],
       de: [
         "Suche nach einer Stadt, um das Wetter anzuzeigen.",
-        "Speichern Sie eine Stadt für den schnellen Zugriff (bis zu 3 Städte) im lokalen Speicher.",
-        "Richten Sie eine Stadt ein, die beim Start geladen werden soll.",
+        "Bis zu 3 Städte speichern für den schnellen Zugriff (lokalen Speicher).",
         "Zeigt das Wetter für den aktuellen Tag und die folgenden 2 Tage an (alle 3 Stunden).",
         "Zeigt die tatsächliche und reale Gefühlstemperatur in Celsius oder Fahrenheit an.",
         "Zeigt die Windgeschwindigkeit an.",
-        "Zeigt die Windrichtung an (Kardinalpunkte + Pfeilzeiger).",
+        "Zeigt die Windrichtung.",
       ],
     },
     techInfo: {
-      main: "REACT (Hooks)",
-      styled: "SASS",
+      main: "REACT using Hooks",
+      styled: "SASS (scss)",
+      responsive: true,
       specsText: { en: "", de: "" },
-      specs: ["useReducer", "useEffects"],
-      thirdParty: ["Tippy.js", "Loader", "React-spinners"],
+      specs: ["useState", "useReducer", "useEffect", "Grid + Flexbox"],
+      thirdParty: ["Tippy.js", "React-loader", "React-spinners"],
       notes: { en: "", de: "" },
     },
     live: ["https://awesome-payne-8bf6bd.netlify.app/"],
@@ -70,10 +70,11 @@ export const projectsData = [
     },
     techInfo: {
       main: "REACT",
-      styled: "SASS",
+      styled: "SASS (scss)",
+      responsive: true,
       specsText: { en: "", de: "" },
-      specs: ["useReducer", "useEffects"],
-      thirdParty: ["Tippy.js", "Loader", "React-spinners"],
+      specs: ["forwardRef", "Prop-types", "Flexbox"],
+      thirdParty: ["React-modal", "UUID"],
       notes: { en: "", de: "" },
     },
     live: ["https://stoic-fermi-dcf04f.netlify.app/"],
@@ -90,7 +91,7 @@ export const projectsData = [
     },
     features: {
       en: [
-        "The project cards are generated dynamically as to sort of simulate a data fetch.",
+        "The project cards content (and cards dimensions) are dynamically generated as to simulate data fetching from an array of objects.",
         "Available in English and German.",
       ],
       de: [

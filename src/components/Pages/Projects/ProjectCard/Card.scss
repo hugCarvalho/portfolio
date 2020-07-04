@@ -1,29 +1,26 @@
 .container__cards {
   //background-color: rgb(107, 107, 106);
   width: 100%;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  //Text
-  font-size: 1.5rem;
-  line-height: 2.5rem;
 }
 
 //CARD
 .container__card {
   //background-color: blue;
-  width: 320px; //ok
-  width: 420px; //change when mobile
+  color: #e6e6e6;
+  width: 420px;
   margin: 0px 20px;
   perspective: 150rem;
   position: relative;
   height: 100%;
-  //margin: 0 20px; //activate for media queries
 
   //BOTH SIDES
   .card__side {
     background-color: #3d3b3b;
-    color: rgb(219, 212, 212);
     width: 100%;
     //height: 100%;
     position: absolute;
@@ -31,8 +28,8 @@
     left: 0;
     backface-visibility: hidden;
     border-radius: 20px;
-    transition: all 0.5s ease;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease;
 
     li {
       list-style-type: square;
@@ -41,41 +38,29 @@
 
     //BUTTON FLIP CARD
     .btn__flip-card {
-      //background-color: green;
       position: absolute;
       bottom: 14px;
       right: 18px;
 
       button {
+        color: #e6e6e6;
         background-color: transparent;
-        color: #cfcece;
         padding: 2px 5px;
-        //border: none; put on button reset on the begining?
         border: 1px solid gray;
         border-radius: 3px;
       }
       :hover {
-        color: lightseagreen;
-        //color: white; change backcolor to use same behaviour as buttons from menu
+        color: lightblue;
       }
     }
 
     //CARD FRONT
     &--front {
-      // background-color: #3d3b3b;
-      // background-color: #1d1c1ce1;
-      // background-color: #f6f6f6e1;
-      // background-color: #1b1f1de1;
-      // background-color: #4a4d4ee1;
-      // background-color: #160f10e1;
-      //background-color: #2d2f27e1;
-      //height: auto;
-
       .project-name {
-        text-align: center;
         color: lightblue;
         padding: 20px 3px 10px 3px;
         font-size: 2.4rem;
+        text-align: center;
       }
       .container__project-image {
         //background-color: gray;
@@ -89,72 +74,67 @@
           width: 100%; //412px
           height: 100%; //280px
           border-radius: 2px;
-          opacity: 0.9;
+          opacity: 1;
           &:hover {
-            opacity: 1;
+            opacity: 0.9;
           }
         }
       }
       .container__text-section {
         //background-color: #474d4e;
-        //color: whitesmoke;
-        //color: #cfcece;
         width: 89%;
         height: auto;
-        padding: 20px 0 98px 0;
         margin: auto;
+        padding: 20px 0 60px 0; //98
         font-style: italic;
 
         .description {
           //background-color: yellowgreen;
-          //color: #8feeb6;
-          //color: lightgreen;
+          color: #bde4fd;
           font-size: 1.6rem;
           padding-bottom: 14px;
-          font-weight: 400;
-          color: lightblue;
-          color: rgb(189, 228, 253);
         }
         .features {
           //background-color: crimson;
           font-style: normal;
-          font-weight: 300;
+          //font-weight: 300;
         }
       }
     }
 
     //CARD BACK
     &--back {
+      display: flex;
       background-color: #3d3b3b;
-
       height: 100%;
       transform: rotateY(-180deg);
 
       .container__text-section {
-        //background-color: #474d4e;
+        //  background-color: #474d4e;
         width: 89%;
         height: auto;
-        padding: 20px 0 98px 0;
+        padding: 0px 0 98px 0;
         margin: auto;
+        font-size: 1.7rem;
 
-        h3,
+        h2,
         p {
           text-align: center;
         }
 
-        h3,
-        h4 {
-          color: pink;
+        h2,
+        h3 {
           color: skyblue;
-          color: lightblue;
+          margin-top: 40px;
+          //color: lightblue;
         }
 
-        h3 {
+        h2 {
           margin-bottom: -20px;
         }
-      }
-      h4 {
-        margin-top: 20px;
+        h3:first-of-type {
+          margin-top: 60px;
+        }
       }
     }
   }
@@ -167,6 +147,7 @@
   }
   .container__card .card__side--front .container__project-image img {
     width: 98%;
+    height: 98%;
     display: flex;
     margin: auto;
   }
