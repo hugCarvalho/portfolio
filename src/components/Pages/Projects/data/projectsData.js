@@ -84,7 +84,7 @@ export const projectsData = [
     id: 3,
     name: "Portfolio Website",
     category: ["website"],
-    img: "",
+    img: "todo_list_small.png",
     description: {
       en: "Well, this website... :-)  ",
       de: "Nun, diese Website ...",
