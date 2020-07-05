@@ -7,7 +7,7 @@ import RenderSkills from "./components/Pages/Skills/RenderSkills";
 import RenderAbout from "./components/Pages/About/RenderAbout";
 import RenderContact from "./components/Pages/Contact/RenderContact";
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   HashRouter,
   Switch,
   Route,
