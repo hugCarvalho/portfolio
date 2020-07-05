@@ -8,6 +8,7 @@ import RenderAbout from "./components/Pages/About/RenderAbout";
 import RenderContact from "./components/Pages/Contact/RenderContact";
 import {
   BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
   Redirect,
@@ -17,7 +18,7 @@ export const LanguageContext = createContext();
 function App() {
   const [isLanguageEnglish, setIsLanguageEnglish] = useState(true);
   return (
-    <Router>
+    <HashRouter basename="/">
       <div className="App">
         <LanguageContext.Provider
           value={{ isLanguageEnglish, setIsLanguageEnglish }}
@@ -37,7 +38,7 @@ function App() {
           <RenderFooter />
         </LanguageContext.Provider>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
