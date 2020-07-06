@@ -15,6 +15,9 @@ import {
 } from "react-router-dom";
 export const LanguageContext = createContext();
 
+//TODO: confirm where pages start (padding/margin)
+//TODO: change li in 3rd party
+
 function App() {
   const [isLanguageEnglish, setIsLanguageEnglish] = useState(true);
   return (

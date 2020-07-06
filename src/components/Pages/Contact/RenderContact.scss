@@ -1,13 +1,11 @@
 .container__contact {
-  // background-color: rgb(76, 88, 88);
-  // background-color: rgb(18, 41, 41);
   //background-color: lighten(#3c6274, %);
-  background-color: rgba(200, 204, 202, 0.767);
-  padding: 40px 16%;
+  background-color: hsla(150, 4%, 79%, 0.767);
+  padding: 70px 16%;
   min-height: calc(
     100vh - 270px
   ); //100vh - (header-height = 190 + footer-height = 70)
-  // color: darkgrey;
+
   .wrapper__contact-info {
     display: flex;
     flex-direction: column;
@@ -20,9 +18,11 @@
       padding: 20px 10px 0 5%;
     }
   }
+
   a:hover {
     text-decoration: underline;
   }
+
   .fas,
   .fab {
     font-size: 4rem;
@@ -31,7 +31,6 @@
 }
 
 @media (max-width: 622px) {
-  //480px
   .container__contact {
     //background-color: red;
     min-height: calc(100vh - 245px);

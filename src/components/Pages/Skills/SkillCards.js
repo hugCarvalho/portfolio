@@ -27,5 +27,4 @@ export function RelatedSkills(props) {
   );
 }
 
-//<a target="_blank" href="https://icons8.com/icons/set/sass">Sass icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 export default OneSkill;

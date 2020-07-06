@@ -1,55 +1,22 @@
 .container__skills {
   background-color: #3c6274;
-  padding: 30px 12%;
-  padding-bottom: 40px;
-  //height: 100vh;
-  //background-color: #9ed800;
+  padding: 70px 12% 40px;
   min-height: calc(100vh - 270px); //footer + padding
+  display: flex;
+  align-items: center;
 
-  //flex-wrap: wrap;
-  //justify-content: center;
-  //text-align: center;
-
-  .test {
+  .wrapper__all {
     //background-color: orange;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
   }
-  // h3 {
-  //   //background: yellow;
-  //   //background-color: rgb(89, 139, 151);
-  //   background-color: gold;
-  //   color: white;
-  //   display: inline-block;
-  //   padding: 4px 25px;
-  //   margin: 30px auto 50px;
-  //   width: auto;
-  //   font-variant: small-caps;
-  //   font-size: 2.5rem;
-  //   font-weight: 400;
-  //   letter-spacing: 0.2rem;
-  //   border-radius: 3px;
-  //   box-shadow: 1px 1px 4px rgb(246, 245, 245);
-  //   box-shadow: 2px 2px 4px rgb(14, 13, 13);
-  //   //color: rgb(41, 39, 39);
-  // }
 
   .container__skill-card {
     //background-color: orange;
-    padding-top: 40px;
-    margin: auto; //TODO: TEST IT, RESIZE IT, WITH OR WITHOUT?!
+    padding-bottom: 70px;
+    margin: auto;
   }
-  //NAIL + WIRE
-  // .wrapper__all {
-  //   background-color: tan;
-  //   margin-bottom: 10px;
-  //   width: 0;
-  //   //display: flex;
-  //   flex-direction: column;
-  //   flex-wrap: wrap;
-  //   padding: 30px;
-  //   position: relative; //erase?
 
   .wire {
     background-color: lime;
@@ -70,19 +37,18 @@
     .nail {
       width: 10px;
       height: 10px;
-      background: pink;
       background: gray;
       margin-top: -5px;
       border-radius: 100%;
       box-shadow: 3px 3px 5px 1px rgb(14, 13, 13);
     }
   }
-  // }
 }
 
 @media (max-width: 960px) {
   .container__skills {
-    padding: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
 }
 

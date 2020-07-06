@@ -36,9 +36,11 @@ function Footer() {
       {/* Contact Column */}
       <section className="contact--links">
         <ul>
-          <Link to="/contact">
-            <li>{isLanguageEnglish ? "Contact" : "Kontakt"}</li>
-          </Link>
+          <li>
+            <Link to="/contact">
+              {isLanguageEnglish ? "Contact" : "Kontakt"}
+            </Link>
+          </li>
           <a
             target="_blank"
             rel="noopener noreferrer"

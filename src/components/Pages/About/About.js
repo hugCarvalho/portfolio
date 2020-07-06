@@ -131,5 +131,4 @@ export function AboutDE() {
     </>
   );
 }
-
 export default AboutEN;
