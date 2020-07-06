@@ -3,10 +3,26 @@ footer {
   color: lightblue;
   width: 100%;
   padding: 10px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 20px;
   position: absolute;
   bottom: 0;
   display: flex;
   justify-content: space-around;
+}
+
+@media (max-width: 992px) {
+  footer {
+    //box-sizing: content-box;
+    //background-color: darken(#3f3f3f, 10%);
+    font-size: 1.6rem;
+    color: whitesmoke;
+    .contact-links ul {
+      width: auto;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
 }

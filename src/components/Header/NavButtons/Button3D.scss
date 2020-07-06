@@ -101,7 +101,7 @@ $timing-function: ease;
   }
 }
 
-@media (max-width: 622px) {
+@media (max-width: 628px) {
   $height: 5; //increase ??
   .button3D {
     text-shadow: 0 -2px 0 darken($color, 50%), 0 1px 1px lighten($color, 20%);

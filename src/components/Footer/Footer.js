@@ -34,20 +34,22 @@ function Footer() {
       </section>
 
       {/* Contact Column */}
-      <section className="contact--links">
+      <section className="contact-links">
         <ul>
           <li>
             <Link to="/contact">
               {isLanguageEnglish ? "Contact" : "Kontakt"}
             </Link>
           </li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/hugCarvalho"
-          >
-            Github
-          </a>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/hugCarvalho"
+            >
+              Github
+            </a>
+          </li>
           <li>CV</li>
         </ul>
       </section>

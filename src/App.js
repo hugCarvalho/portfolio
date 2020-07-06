@@ -6,6 +6,7 @@ import RenderProjects from "./components/Pages/Projects/RenderProjects";
 import RenderSkills from "./components/Pages/Skills/RenderSkills";
 import RenderAbout from "./components/Pages/About/RenderAbout";
 import RenderContact from "./components/Pages/Contact/RenderContact";
+import NotFound from "./components/Pages/NotFound/NotFound";
 import {
   BrowserRouter as Router,
   // HashRouter,
@@ -16,7 +17,6 @@ import {
 export const LanguageContext = createContext();
 
 //TODO: confirm where pages start (padding/margin)
-//TODO: change li in 3rd party
 
 function App() {
   const [isLanguageEnglish, setIsLanguageEnglish] = useState(true);
@@ -32,11 +32,11 @@ function App() {
             <Route exact path="/">
               <Redirect to="/projects" />
             </Route>
-            <Route path="/projects" component={RenderProjects} />
+            <Route exact path="/projects" component={RenderProjects} />
             <Route exact path="/skills" component={RenderSkills} />
             <Route exact path="/about" component={RenderAbout} />
             <Route exact path="/contact" component={RenderContact} />
-            <Route path="/" render={() => <div>Page not found!</div>} />
+            <Route path="/" component={NotFound} />
           </Switch>
           <RenderFooter />
         </LanguageContext.Provider>

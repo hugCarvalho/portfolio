@@ -2,27 +2,23 @@
   //background-color: lightblue;
   display: flex;
   flex-direction: column;
-  //font-size: 2rem;
-  //font-weight: 300;
-  //text-shadow: rgb(98, 162, 179);
 
   .engraved {
-    // font-size: 100px;
-    // font-family: Futura;
-
     text-shadow: 0px 1px 1px #4d4d4d;
     color: #222;
-    font: 4rem "LeagueGothicRegular";
+    font-size: 4rem;
+    font-family: "serif", "times";
   }
   .engraved2 {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-size: 6rem;
     text-shadow: #4d4d4db9 3px 3px 3px;
     background-color: #474444;
-    // text-shadow: 2px 3px 1px #4d4d4d;
+    text-shadow: 2px 2px 2px #4d4d4d;
     color: #222;
-    font: 6rem "LeagueGothicRegular";
+    font-family: "serif", "times";
   }
 }
