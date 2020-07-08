@@ -1,32 +1,44 @@
 import React, { useState, useContext } from "react";
 import "./About.scss";
 import { LanguageContext } from "../../../App";
+import { books } from "./learningResourcesList";
+import { courses } from "./learningResourcesList";
 
 function AboutEN() {
   const { isLanguageEnglish } = useContext(LanguageContext);
-  const [isExtendedInfoVisible, setIsExtendedInfoVisible] = useState(false);
+  const [isExtendedInfoVisible, setIsExtendedInfoVisible] = useState(true);
 
   return (
     <div className="wrapper__about">
       <section className=" show-smallest-screen">
         <ul>
           <li>
-            <a href="www.abola.pt">Resume</a>
+            <a href="#">Resume - not active yet</a>
           </li>
           <li>
-            <a href="www.abola.pt">Github</a>
+            <a href="https://github.com/hugCarvalho">Github</a>
           </li>
         </ul>
       </section>
       <article>
         <h2>Basic Introduction</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis
-          lobortis vitae.
+          Hi, I'm Hugo, a self-taught Portuguese guy, with a master in
+          Sociology. I started to learn Programming with Javascript, parallel to
+          my work, about one and half year ago. It started as a curiosity but
+          didn't take long to turn into a passion. Recently, I decided to quit
+          my job to pursue this passion.
         </p>
         <p>
-          Praesent lacinia cursus mauris, pulvinar placerat turpis pulvinar non.
-          Fusce et mauris eu nulla efficitur volutpat. Donec accumsan, sapien
+          I am actively learning and enjoying it very much, but I would also
+          very much like to work on and with a team, to work towards a common
+          goal and achieve (something). Not only would it help to speed my
+          learning curve but it would also bring a sense of completion to this
+          whole process.
+        </p>
+        <p>
+          If you'd like to know more about me, just keep reading (after you
+          press the button to make sure you are not a robot...)
         </p>
       </article>
 
@@ -43,32 +55,91 @@ function AboutEN() {
         <article className="extended">
           <article>
             <h2>Extended Introduction</h2>
+            <ol>
+              <li>
+                1. <a href="#knowledge">Where do I get my knowledge from</a>?
+              </li>
+              <li>
+                2. <a href="#study">What did I study</a>?
+              </li>
+              <li>
+                3. <a href="#hobbies">What are my main hobbies</a>?
+              </li>
+              <br></br>
+              <li></li>
+            </ol>
+            <h4 id="knowledge">Where do I get my knowledge from?</h4>
+            <p>{""}</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis
-              nisi, consequat et lorem sit amet, sollicitudin laoreet mauris.
-              Etiam ut tellus scelerisque, tristique lorem a, cursus quam. Morbi
-              sodales nibh a risus interdum consequat. Fusce vel ultricies nisl.
-              Curabitur non quam laoreet, mattis augue ac, scelerisque eros.
-              Duis aliquet rutrum risus, eget bibendum enim aliquam at.
-              Vestibulum commodo pharetra nunc, in semper ante pretium quis. Nam
-              at purus in eros pellentesque lobortis. Sed cursus sapien ipsum,
-              cursus fermentum risus lobortis vitae.
+              Although I have read some books about Javascript, most of my
+              knowledge derives from online resources.
             </p>
             <p>
-              Praesent lacinia cursus mauris, pulvinar placerat turpis pulvinar
-              non. Fusce et mauris eu nulla efficitur volutpat. Donec accumsan,
-              sapien sit amet consectetur mollis, lorem mauris pretium magna,
-              sit amet porta lectus ex et augue. Nulla nec arcu vel urna lacinia
-              accumsan. Pellentesque habitant morbi tristique senectus et netus
-              et malesuada fames ac turpis egestas. Integer facilisis purus
-              eleifend turpis efficitur, quis pharetra tortor aliquam.
-              Vestibulum venenatis, felis at efficitur dignissim, quam ante
-              luctus metus, auctor venenatis enim mi sit amet ligula. Proin
-              laoreet est ut porta tempor. Cras nec fermentum justo. Phasellus
-              hendrerit eleifend euismod. Morbi et turpis ut eros mattis auctor.
-              In hac habitasse platea dictumst. Donec a porttitor lorem. Nunc
-              tempor eu arcu sit amet sagittis. Morbi eu tristique mauris.
+              For a more structured approach, I enrolled in numerous online
+              courses in udemi.com,{" "}
+              <i>making sure I got my knowledge from several sources</i>, which
+              also allowed me to assess the quality of what I was learning.
             </p>
+            <p>
+              More recently, I started to dive into the original documentation,
+              specially with the React environment, and to also focus on free
+              online tutorials for more specific subjects.
+            </p>
+            <p>
+              At the end, you can find a{" "}
+              <a href="#resources" style={{ color: "white" }}>
+                list of resources
+              </a>{" "}
+              mentioned in this section.
+            </p>
+            <br></br>
+            <br></br>
+            <h4 id="study">What did I study?</h4>
+            <p>
+              I studied Sociology. Technically doesn't contribute much to this
+              area, but the evaluation system was mostly based on projects,
+              there were no exams. These projects were mainly developed in a
+              team, usually 3-5 people, with the exception of the last year,
+              which consisted on a solo project. (More or end here?)
+            </p>
+            <br></br>
+            <br></br>
+            <h4 id="hobbies">What are my main hobbies?</h4>
+            <p>{""}</p>
+            <p>
+              Appart from programming, also I enjoy spending time with my
+              girlfriend (failing to mention her, could potentially damage the
+              relationship. And me...), playing boardgames, doing sport
+              activities like biking, playing in the park, or going to the
+              fitness studio.{" "}
+            </p>
+            <br></br>
+            <br></br>
+            <h5 id="resources">
+              List of books and courses read or taken: (Youtube tutorials are
+              not included here):
+            </h5>
+            Books:
+            <ul>
+              {books.map((item, i) => {
+                console.log(item);
+                return (
+                  <li key={i}>
+                    <i>{item.title}</i> - {item.author}
+                  </li>
+                );
+              })}
+            </ul>
+            Online courses:
+            {courses.map((item, i) => {
+              const { title, author, duration } = item;
+              return (
+                <li key={i}>
+                  <i>{title}</i>{" "}
+                  <span className="duration">({duration} hours)</span>, {author}
+                </li>
+              );
+            })}
           </article>
         </article>
       )}
@@ -107,10 +178,10 @@ export function AboutDE() {
         <article className="extended">
           <h2>Extended information</h2>
           {/* TODO: add nav to sections of text */}
-          <h5>where does my knowledge come from? (UDEMI/EDABIT/BOOKS)</h5>
-          <h5>what did I study?</h5>
-          <h5>what are my hobbies</h5>
-          <h5>Certificates</h5>
+          <h4>where does my knowledge come from? (UDEMI/EDABIT/BOOKS)</h4>
+          <h4>what did I study?</h4>
+          <h4>what are my hobbies</h4>
+          <h4>Certificates</h4>
           <p>
             Donec gravida vestibulum justo, at pretium dolor consectetur non.
             Morbi et tincidunt arcu. Vestibulum arcu lacus, pellentesque id

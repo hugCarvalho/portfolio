@@ -49,9 +49,9 @@ function Skills() {
             <span className="nail"></span>
           </div>
           <RelatedSkills
-            skillOne="Github"
+            skillOne="Git"
             classesOne="bg-git"
-            skillTwo="Git"
+            skillTwo="GitHub"
             classesTwo="bg-github special"
           />
         </div>

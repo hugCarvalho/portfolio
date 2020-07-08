@@ -12,15 +12,24 @@
 
 @media (max-width: 1240px) {
   .container__navButtons {
-    //background-color: rgb(221, 7, 132);
+    // background-color: rgb(221, 7, 132);
     width: 400px;
   }
 }
 
 @media (max-width: 628px) {
   .container__navButtons {
-    // background-color: rgb(57, 221, 7);
+    //  background-color: rgb(57, 221, 7);
     margin-top: -20px;
-    width: 400px;
+    left: 0px;
+    //padding: 0;
+  }
+}
+
+@media (max-width: 555px) {
+  .container__navButtons {
+    // background-color: rgb(7, 221, 185);
+    width: 200px;
+    padding: 0;
   }
 }
