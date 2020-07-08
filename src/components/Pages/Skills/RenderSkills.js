@@ -11,7 +11,7 @@ function Skills() {
           <div className="wire">
             <span className="nail"></span>
           </div>
-          <OneSkill classes="bg-javascript">Javascript</OneSkill>
+          <OneSkill classes="bg-javascript">JavaScript</OneSkill>
         </div>
 
         {/* New Skill */}

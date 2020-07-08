@@ -6,7 +6,7 @@ export function MainIntroEN() {
       <h2>Basic Introduction</h2>
       <p>
         Hi, I'm Hugo, a self-taught Portuguese guy, with a master in Sociology.
-        I started to learn Programming with Javascript, parallel to my work,
+        I started to learn Programming with JavaScript, parallel to my work,
         about one and half year ago. It started as a curiosity but didn't take
         long to turn into a passion. Recently, I decided to quit my job to
         pursue this passion.

@@ -13,18 +13,17 @@ export const projectsData = [
     },
     features: {
       en: [
-        "search for a city to display the weather.",
-        "save up to 3 cities for fast access (up to 3 cities) in local storage.",
-        "set up a city to load at startup.",
-        "displays weather for present day and following 2 days (every 3 hours display).",
-        "displays actual and real feel temperature in Celsius or Fahrenheit.",
-        "displays wind speed in kilometers or miles.",
-        "displays wind direction (cardinal points + arrow pointer).",
+        "Search for a city to display the weather.",
+        "Save up to 3 cities for fast access in local storage.",
+        "Set up a city to load at startup.",
+        "3 days Weather forecast, every 3 hours options. ",
+        "Displays actual and real feel temperature in Celsius or Fahrenheit.",
+        "Displays wind speed in kilometers or miles.",
+        "Displays wind direction (cardinal points + arrow pointer).",
       ],
       de: [
         "Suche nach einer Stadt, um das Wetter anzuzeigen.",
         "Bis zu 3 Städte speichern für den schnellen Zugriff (lokalen Speicher).",
-        "Zeigt das Wetter für den aktuellen Tag und die folgenden 2 Tage an (alle 3 Stunden).",
         "Zeigt die tatsächliche und reale Gefühlstemperatur in Celsius oder Fahrenheit an.",
         "Zeigt die Windgeschwindigkeit an.",
         "Zeigt die Windrichtung.",
@@ -58,7 +57,7 @@ export const projectsData = [
         "Search for a to-do.",
         "Check/Uncheck all to-dos.",
         "Show / Hide completed to-dos.",
-        "Saved in local Storage.",
+        "To-dos saved to local Storage.",
       ],
       de: [
         "Hinzufügen / Bearbeiten / Löschen einer oder aller Aufgaben.",
@@ -84,14 +83,14 @@ export const projectsData = [
     id: 3,
     name: "Portfolio Website",
     category: ["website"],
-    img: "todo_list_small.png",
+    img: "media/portfolio_3.png",
     description: {
-      en: "Well, this website... :-)  ",
-      de: "Nun, diese Website ...",
+      en: "Well, this website... :-)",
+      de: "Nun, diese Website...",
     },
     features: {
       en: [
-        "The project cards content (and cards dimensions) are dynamically generated as to simulate data fetching from an array of objects.",
+        "Some data, like the content of the project cards, is dynamically generated, as to simulate possible real life cases, i.e, getting the data of an array of objects.",
         "Available in English and German.",
       ],
       de: [
@@ -103,11 +102,11 @@ export const projectsData = [
       main: "REACT (Hooks)",
       styled: "SASS",
       specsText: { en: "", de: "" },
-      specs: ["useReducer", "useEffects"],
-      thirdParty: ["Tippy.js", "Loader", "React-spinners"],
+      specs: ["useState", "useEffect"],
+      thirdParty: ["", "", ""],
       notes: { en: "", de: "" },
     },
-    live: ["https://awesome-payne-8bf6bd.netlify.app/"],
+    live: ["https://wizardly-shockley-4cc828.netlify.app/"],
     code: ["https://github.com/hugCarvalho/weather_api"],
   },
 ];

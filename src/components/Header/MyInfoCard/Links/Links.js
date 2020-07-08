@@ -1,7 +1,7 @@
 import React from "react";
 import "./Links.scss";
 import { Link } from "react-router-dom";
-import { CV } from "../../../../shared/cv.pdf";
+import CV from "../../../../shared/cv.pdf";
 
 function Links() {
   console.log("APP");
@@ -15,7 +15,7 @@ function Links() {
           </li>
 
           <li>
-            <a target="_blank" rel="noopener noreferrer" href={CV}>
+            <a href={CV} target="_blank" rel="noopener noreferrer">
               CV{" "}
             </a>
           </li>

@@ -26,9 +26,8 @@ function ExtendedInfoEN() {
         </p>
         <p>
           For a more structured approach, I enrolled in numerous online courses
-          in udemi.com,{" "}
-          <i>making sure I got my knowledge from several sources</i>, which also
-          allowed me to assess the quality of what I was learning.
+          in udemi, <i>making sure I got my knowledge from several sources</i>,
+          which also allowed me to assess the quality of what I was learning.
         </p>
         <p>
           More recently, I started to dive into the original documentation,
@@ -54,10 +53,10 @@ function ExtendedInfoEN() {
         <h4 id="hobbies">What are my main hobbies?</h4>
         <p>{""}</p>
         <p>
-          Appart from programming, also I enjoy spending time with my girlfriend
-          (failing to mention her, could potentially damage the relationship.
-          And me...), playing boardgames, doing sport activities like biking,
-          playing in the park, or going to the fitness studio.{" "}
+          Appart from programming, I enjoy playing boardgames, doing sport
+          activities like biking, playing in the park, or going to the fitness
+          studio. I also enjoy spending time with my girlfriend (failing to
+          mention her, could potentially damage the relationship. And me...){" "}
         </p>
         <br></br>
         <br></br>

@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.scss";
 import { LanguageContext } from "../../App";
 import { Link } from "react-router-dom";
+import CV from "../../shared/cv.pdf";
 
 function Footer() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
@@ -41,6 +42,7 @@ function Footer() {
               {isLanguageEnglish ? "Contact" : "Kontakt"}
             </Link>
           </li>
+
           <li>
             <a
               target="_blank"
@@ -50,7 +52,12 @@ function Footer() {
               Github
             </a>
           </li>
-          <li>CV</li>
+
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href={CV}>
+              CV
+            </a>
+          </li>
         </ul>
       </section>
     </>

@@ -16,7 +16,7 @@ function Contact() {
 
         <div className="contact-me">
           <i className="fas fa-phone-square-alt"></i>
-          <span>Telephone</span>
+          <span>+49 (0)176 782 93 187</span>
         </div>
       </section>
     </div>

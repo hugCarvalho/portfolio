@@ -6,8 +6,11 @@ function NotFound() {
   return (
     <div className="not-found">
       <h2>
-        <p>Page not found!!! </p>
-        <p>Please click the button to return to the home page </p>
+        <p>An error has ocurred! </p>
+        <p>
+          Please click the button below to return to the home page or use the
+          above navigation buttons to return to the website
+        </p>
 
         <Link to="/projects">
           <button>Back to Home Page</button>

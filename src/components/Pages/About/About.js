@@ -1,21 +1,22 @@
 import React, { useState, useContext } from "react";
 import "./About.scss";
 import { LanguageContext } from "../../../App";
-import { books } from "./learningResourcesList";
-import { courses } from "./learningResourcesList";
+import { books } from "./assets/learningResourcesList";
+import { coursesCompleted } from "./assets/learningResourcesList";
+import { coursesOngoing } from "./assets/learningResourcesList";
 import MainIntroEN from "./assets/mainIntro";
 import ExtendedInfoEN from "./assets/extendedInfo";
 
 function AboutEN() {
   const { isLanguageEnglish } = useContext(LanguageContext);
-  const [isExtendedInfoVisible, setIsExtendedInfoVisible] = useState(true);
+  const [isExtendedInfoVisible, setIsExtendedInfoVisible] = useState(false);
 
   return (
     <div className="wrapper__about">
       <section className=" show-smallest-screen">
         <ul>
           <li>
-            <a href="#">Resume - not active yet</a>
+            <a href="https://github.com/hugCarvalho">Resume - not active yet</a>
           </li>
           <li>
             <a href="https://github.com/hugCarvalho">Github</a>
@@ -50,9 +51,24 @@ function AboutEN() {
                 );
               })}
             </ul>
-            <p>Online courses:</p>
+
+            <p>Finished Online courses:</p>
             <ul>
-              {courses.map((item, i) => {
+              {coursesCompleted.map((item, i) => {
+                const { title, author, duration } = item;
+                return (
+                  <li key={i}>
+                    <i>{title}</i>{" "}
+                    <span className="duration">({duration} hours)</span>,{" "}
+                    {author}
+                  </li>
+                );
+              })}
+            </ul>
+
+            <p>Ongoing Online courses:</p>
+            <ul>
+              {coursesOngoing.map((item, i) => {
                 const { title, author, duration } = item;
                 return (
                   <li key={i}>
