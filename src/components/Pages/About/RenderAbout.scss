@@ -5,6 +5,20 @@
   min-height: calc(100vh - 270px);
   font-family: serif, "monospace";
   line-height: 2.8rem;
+  //Visual change on smaller mobile view
+  // .show-smallest-screen {
+  //   display: none;
+  //   padding-bottom: 40px;
+  //   ul {
+  //     display: flex;
+
+  //     li {
+  //       padding-right: 20px;
+  //       text-decoration: underline;
+  //       list-style-type: none;
+  //     }
+  //   }
+  // }
 }
 
 @media (max-width: 622px) {
@@ -13,8 +27,9 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .container__about {
-    padding: 30px 3%;
+    //background-color: green;
+    padding: 30px 5%;
   }
 }

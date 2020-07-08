@@ -3,18 +3,6 @@
   display: flex;
   flex-direction: column;
   font-size: 2.2rem;
-
-  span {
-    font-size: 1.6rem;
-  }
-  li {
-    list-style-type: square;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
   h2 {
     color: rgb(0, 70, 128);
     color: rgb(3, 62, 110);
@@ -29,7 +17,19 @@
     color: rgb(36, 36, 36);
     margin-top: 13px;
   }
+  a {
+    text-decoration: underline;
+  }
 
+  ul {
+    padding-left: 40px;
+
+    li {
+      list-style-type: square;
+    }
+  }
+
+  //button
   button {
     background-color: rgb(34, 33, 33);
     color: white;
@@ -44,10 +44,16 @@
       opacity: 1;
     }
   }
-
   .invisible {
     visibility: hidden;
   }
+  ////////////////
+
+  .duration {
+    font-size: 1.6rem;
+  }
+
+  //Visual change on smaller mobile view
   .show-smallest-screen {
     display: none;
     padding-bottom: 40px;

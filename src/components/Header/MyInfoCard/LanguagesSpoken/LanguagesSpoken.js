@@ -7,7 +7,7 @@ function LanguagesSpoken() {
   return (
     <>
       <div className="container__languages-spoken">
-        <span>{isLanguageEnglish ? "Speaks:" : "Sprichst"}</span>
+        <span>{isLanguageEnglish ? "Speaks:" : "Sprichst:"}</span>
         <div
           title={isLanguageEnglish ? "english" : "Englisch"}
           className="fflag fflag-GB ff-sm ff-wave"

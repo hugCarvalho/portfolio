@@ -1,6 +1,7 @@
 import React from "react";
 import "./Links.scss";
 import { Link } from "react-router-dom";
+import { CV } from "../../../../shared/cv.pdf";
 
 function Links() {
   console.log("APP");
@@ -10,18 +11,18 @@ function Links() {
       <div className="container__links">
         <ul>
           <li>
-            <Link to="/contact">Use 3 </Link>
+            <Link to="/contact">Contact</Link>
           </li>
 
           <li>
-            <a target="blank" rel="noopener noreferrer" href="/">
-              Resume
+            <a target="_blank" rel="noopener noreferrer" href={CV}>
+              CV{" "}
             </a>
           </li>
 
           <li>
             <a
-              target="blank"
+              target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/hugCarvalho"
             >

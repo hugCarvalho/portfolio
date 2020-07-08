@@ -8,8 +8,16 @@ function RenderAbout() {
 
   return (
     <div className="container__about">
-      {/* {isLanguageEnglish ? <h1>About</h1> : <h1>Über mich</h1>} */}
-
+      {/* <section className=" show-smallest-screen">
+        <ul>
+          <li>
+            <a href="https://github.com/hugCarvalho">CV - not active yet</a>
+          </li>
+          <li>
+            <a href="https://github.com/hugCarvalho">Github</a>
+          </li>
+        </ul>
+      </section> */}
       {isLanguageEnglish ? <AboutEN /> : <AboutDE />}
     </div>
   );

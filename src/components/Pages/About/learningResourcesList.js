@@ -1,17 +1,17 @@
 export const books = [
   {
-    title: "JavaScript: The Good Parts",
+    title: "JavaScript, The Good Parts",
     author: "Douglas Crockford ",
   },
   {
-    title: "JavaScript: The Good Parts",
+    title: "????",
     author: "Douglas Crockford ",
   },
 ];
 
 export const courses = [
   {
-    title: "JavaScript: Understanding the Weird Parts",
+    title: "JavaScript, Understanding the Weird Parts",
     author: "Anthony Alicea",
     duration: "11,5",
   },
@@ -26,7 +26,12 @@ export const courses = [
     duration: "21,5",
   },
   {
-    title: "JavaScript: The Advanced Concepts",
+    title: "JavaScript 2020 build 55+ Real Projects",
+    author: "Laurence Svekis",
+    duration: "50",
+  },
+  {
+    title: "JavaScript, The Advanced Concepts",
     author: "Andrei Neagoie",
     duration: "25",
   },
@@ -39,11 +44,6 @@ export const courses = [
     title: "Advanced CSS and SASS",
     author: "Jonas Schmedtmann",
     duration: "28",
-  },
-  {
-    title: "JavaScript 2020 build 55+ Real Projects",
-    author: "Laurence Svekis",
-    duration: "50",
   },
   {
     title: "CSS: The complete Guide 2020",
