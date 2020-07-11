@@ -27,9 +27,8 @@ export function ExtendedInfoEN() {
           <li>
             4. <a href="#hobbies">{hobbies}</a>
           </li>
-          <br></br>
-          <li></li>
         </ol>
+        <br></br>
         <h4 id="knowledge">{knowledge}</h4>
         <p>{""}</p>
         <p>
@@ -124,9 +123,8 @@ export function ExtendedInfoDE() {
           <li>
             4. <a href="#hobbies">{hobbies}</a>
           </li>
-          <br></br>
-          <li></li>
         </ol>
+        <br></br>
         <h4 id="knowledge">{knowledge}</h4>
         <p>{""}</p>
         <p>

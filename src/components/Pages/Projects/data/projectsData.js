@@ -113,7 +113,7 @@ export const projectsData = [
       thirdParty: [],
       notes: { en: "", de: "" },
     },
-    live: ["https://wizardly-shockley-4cc828.netlify.app/"],
-    code: ["https://github.com/hugCarvalho/weather_api"],
+    live: ["/"],
+    code: ["https://github.com/hugCarvalho/portfolio_website"],
   },
 ];

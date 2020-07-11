@@ -16,27 +16,33 @@ function Footer() {
             {isLanguageEnglish
               ? `Flags in "Speaks" section by `
               : `Flags im Abschnitt "Speaks" bei `}
-            <a href="www.freakflagsprite.com" className="underline">
-              Freak Flags
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="www.freakflagsprite.com"
+            >
+              www.freakflagsprite.com
             </a>
           </li>
           <li>
             {isLanguageEnglish
-              ? `Logos in "Skills" section by `
-              : `Flags im Abschnitt "Speaks" bei `}
+              ? `Logos in "Skills" page by `
+              : `Flags im Seite "Fähigkeiten" bei `}
             <a
-              href="https://icons8.com/icon/20822/ios-logo"
-              className="underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://icons8.com"
+              title="icons8"
             >
-              Icons8
+              https://icons8.com
             </a>
           </li>
           <li>
-            Favicon made by{" "}
+            Favicon {isLanguageEnglish ? "made by" : "bei"}{" "}
             <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
               Freepik
             </a>{" "}
-            from{" "}
+            {isLanguageEnglish ? "from" : "von"}{" "}
             <a href="https://www.flaticon.com/" title="Flaticon">
               {" "}
               www.flaticon.com

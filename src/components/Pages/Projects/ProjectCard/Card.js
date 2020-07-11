@@ -50,7 +50,7 @@ function Card() {
               <div
                 className="container__card"
                 style={{ height: backCardHeight }}
-                //onMouseLeave={() => setFrontSideActive(true)}
+                onMouseLeave={() => setFrontSideActive(true)}
               >
                 {/* CARD FRONT */}
                 <div
@@ -121,7 +121,7 @@ function Card() {
 
                     {/* Third Party used in project */}
                     <h3>Third party used:</h3>
-                    {renderThirdParty(project)}
+                    <ul>{renderThirdParty(project)}</ul>
                   </div>
 
                   {/* BUTTON FLIP CARD */}
