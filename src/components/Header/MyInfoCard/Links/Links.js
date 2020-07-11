@@ -2,16 +2,19 @@ import React from "react";
 import "./Links.scss";
 import { Link } from "react-router-dom";
 import CV from "../../../../shared/cv.pdf";
+import { LanguageContext } from "../../../../App";
 
 function Links() {
-  console.log("APP");
+  const { isLanguageEnglish } = React.useContext(LanguageContext);
 
   return (
     <>
       <div className="container__links">
         <ul>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">
+              {isLanguageEnglish ? "Contact" : "Kontakt"}
+            </Link>
           </li>
 
           <li>
@@ -26,7 +29,7 @@ function Links() {
               rel="noopener noreferrer"
               href="https://github.com/hugCarvalho"
             >
-              Github
+              GitHub
             </a>
           </li>
         </ul>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./RenderAbout.scss";
 import AboutEN, { AboutDE } from "./About";
+import CV from "../../../shared/cv.pdf";
 
 import { LanguageContext } from "../../../App";
 
@@ -13,10 +14,18 @@ function RenderAbout() {
       <section className=" show-smallest-screen">
         <ul>
           <li>
-            <a href="https://github.com/hugCarvalho">CV</a>
+            <a target="_blank" rel="noopener noreferrer" href={CV}>
+              CV
+            </a>
           </li>
           <li>
-            <a href="https://github.com/hugCarvalho">Github</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/hugCarvalho"
+            >
+              GiHhub
+            </a>
           </li>
         </ul>
       </section>

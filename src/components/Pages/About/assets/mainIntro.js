@@ -23,5 +23,32 @@ export function MainIntroEN() {
     </article>
   );
 }
+export function MainIntroDE() {
+  return (
+    <article>
+      <h2>Grundlegende Einführung</h2>
+      <p>
+        Hallo, ich bin Hugo, ein autodidaktischer Webentwickler mit einem Master
+        in Soziologie. ich begann parallel zu meinem Job das Programmieren mit
+        JavaScript zu lernen vor anderthalb Jahren. Es begann als Kuriosität,
+        dauerte aber nicht lange in eine Leidenschaft verwandeln. Vor kurzem
+        habe ich beschlossen, meinen Job zu kündigen, um dies zu verfolgen
+        Leidenschaft.
+      </p>
+      <p>
+        Ich bin bestrebt, neue Fähigkeiten zu erlernen und lerne aktiv (lerne
+        Redux jetzt) und genieße es sehr. Wenn meine Fähigkeiten und mein
+        Selbstvertrauen wachsen, dann auch macht meinen Wunsch, an und mit einem
+        Team zu arbeiten, um auf ein gemeinsames Ziel hinzuarbeiten und etwas
+        erreichen, das sich positiv auf das Leben der Menschen auswirkt. Nicht
+        Es würde nur helfen, meine Lernkurve zu beschleunigen, aber es würde
+        auch bringen ein Gefühl der Vollendung dieses Lernprozesses.
+      </p>
+      <p>
+        Wenn Sie mehr über mich erfahren möchten, lesen Sie einfach weiter ...
+      </p>
+    </article>
+  );
+}
 
 export default MainIntroEN;

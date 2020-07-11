@@ -49,7 +49,7 @@ function Footer() {
               rel="noopener noreferrer"
               href="https://github.com/hugCarvalho"
             >
-              Github
+              GitHub
             </a>
           </li>
 

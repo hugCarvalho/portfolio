@@ -22,10 +22,10 @@ function App() {
   const [isLanguageEnglish, setIsLanguageEnglish] = useState(true);
   return (
     <Router basename="/">
-      <div className="App">
-        <LanguageContext.Provider
-          value={{ isLanguageEnglish, setIsLanguageEnglish }}
-        >
+      <LanguageContext.Provider
+        value={{ isLanguageEnglish, setIsLanguageEnglish }}
+      >
+        <div className="App">
           <RenderHeader />
 
           <Switch>
@@ -39,8 +39,8 @@ function App() {
             <Route path="/" component={NotFound} />
           </Switch>
           <RenderFooter />
-        </LanguageContext.Provider>
-      </div>
+        </div>
+      </LanguageContext.Provider>
     </Router>
   );
 }
