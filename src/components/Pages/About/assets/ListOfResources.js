@@ -18,7 +18,6 @@ function ListOfResources() {
         <p>{isLanguageEnglish ? "Books" : "Bücher"}</p>
         <ul>
           {books.map((item, i) => {
-            console.log(item);
             return (
               <li key={i}>
                 <i>{item.title}</i>, {item.author}
