@@ -6,6 +6,7 @@
   h2 {
     color: rgb(0, 70, 128);
     color: rgb(3, 62, 110);
+    padding-top: 60px;
     padding-bottom: 20px;
   }
   h4,
@@ -52,25 +53,5 @@
 
   .duration {
     font-size: 1.6rem;
-  }
-
-  //Visual change on smaller mobile view
-  .show-smallest-screen {
-    display: none;
-    padding-bottom: 40px;
-    ul {
-      display: flex;
-
-      li {
-        padding-right: 20px;
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  .wrapper__about .show-smallest-screen {
-    display: inline-block;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./RenderAbout.scss";
 import AboutEN, { AboutDE } from "./About";
+
 import { LanguageContext } from "../../../App";
 
 function RenderAbout() {
@@ -8,16 +9,19 @@ function RenderAbout() {
 
   return (
     <div className="container__about">
-      {/* <section className=" show-smallest-screen">
+      {/* Only displayed on smaller mobile viewport */}
+      <section className=" show-smallest-screen">
         <ul>
           <li>
-            <a href="https://github.com/hugCarvalho">CV - not active yet</a>
+            <a href="https://github.com/hugCarvalho">CV</a>
           </li>
           <li>
             <a href="https://github.com/hugCarvalho">Github</a>
           </li>
         </ul>
-      </section> */}
+      </section>
+      {/*  */}
+
       {isLanguageEnglish ? <AboutEN /> : <AboutDE />}
     </div>
   );
