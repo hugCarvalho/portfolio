@@ -50,7 +50,7 @@ function Card() {
               <div
                 className="container__card"
                 style={{ height: backCardHeight }}
-                onMouseLeave={() => setFrontSideActive(true)}
+                //onMouseLeave={() => setFrontSideActive(true)}
               >
                 {/* CARD FRONT */}
                 <div
