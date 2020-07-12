@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.94d81762.chunk.css",
+    "main.js": "/portfolio/static/js/main.564da290.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.564da290.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.a844750a.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.a844750a.js.map",
+    "static/js/2.2532ae0f.chunk.js": "/portfolio/static/js/2.2532ae0f.chunk.js",
+    "static/js/2.2532ae0f.chunk.js.map": "/portfolio/static/js/2.2532ae0f.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.1e9c8b430cbe9eba65d0031e543e9041.js": "/portfolio/precache-manifest.1e9c8b430cbe9eba65d0031e543e9041.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.94d81762.chunk.css.map": "/portfolio/static/css/main.94d81762.chunk.css.map",
+    "static/js/2.2532ae0f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2532ae0f.chunk.js.LICENSE.txt",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.f1aca55b.pdf",
+    "static/media/flagEngland.png": "/portfolio/static/media/flagEngland.1c4499a7.png",
+    "static/media/flagGermany.png": "/portfolio/static/media/flagGermany.ccde240b.png",
+    "static/media/moi.jpg": "/portfolio/static/media/moi.73d8e155.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a844750a.js",
+    "static/js/2.2532ae0f.chunk.js",
+    "static/css/main.94d81762.chunk.css",
+    "static/js/main.564da290.chunk.js"
+  ]
+}
