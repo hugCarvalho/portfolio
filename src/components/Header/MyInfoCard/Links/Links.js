@@ -13,7 +13,7 @@ function Links() {
         <ul>
           <li>
             <Link to="/contact">
-              {isLanguageEnglish ? "CONTACT" : "Kontakt"}
+              {isLanguageEnglish ? "Contact" : "Kontakt"}
             </Link>
           </li>
 

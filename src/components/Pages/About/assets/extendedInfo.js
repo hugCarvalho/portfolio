@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 const edabitScore = 5600;
 const edabitLevel = 14;
@@ -16,16 +17,28 @@ export function ExtendedInfoEN() {
         <h2>Extended Introduction</h2>
         <ol>
           <li>
-            1. <a href="#knowledge">{knowledge}</a>
+            1.{" "}
+            <HashLink smooth to="#knowledge">
+              {knowledge}
+            </HashLink>
           </li>
           <li>
-            2. <a href="#challenges">{challenges}</a>
+            2.{" "}
+            <HashLink smooth to="#challenges">
+              {challenges}
+            </HashLink>
           </li>
           <li>
-            3. <a href="#study">{study}</a>
+            3.{" "}
+            <HashLink smooth to="#study">
+              {study}
+            </HashLink>
           </li>
           <li>
-            4. <a href="#hobbies">{hobbies}</a>
+            4.{" "}
+            <HashLink smooth to="#hobbies">
+              {hobbies}
+            </HashLink>
           </li>
         </ol>
         <br></br>
@@ -47,8 +60,11 @@ export function ExtendedInfoEN() {
           online tutorials for more specific subjects.
         </p>
         <p>
-          At the end, you can find a <a href="#resources">list of resources</a>{" "}
-          mentioned in this section.
+          At the end, you can find a{" "}
+          <HashLink smooth to="#resources">
+            list of the mentioned resources
+          </HashLink>
+          .
         </p>
         <br></br>
         <br></br>

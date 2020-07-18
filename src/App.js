@@ -8,20 +8,19 @@ import RenderAbout from "./components/Pages/About/RenderAbout";
 import RenderContact from "./components/Pages/Contact/RenderContact";
 import NotFound from "./components/Pages/NotFound/NotFound";
 import {
-  BrowserRouter as Router,
-  // HashRouter,
+  // BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
 export const LanguageContext = createContext();
 
-//TODO: confirm where pages start (padding/margin)
-
 function App() {
   const [isLanguageEnglish, setIsLanguageEnglish] = useState(true);
   return (
-    <Router basename="/portfolio">
+    // <Router basename="/portfolio">
+    <HashRouter>
       <LanguageContext.Provider
         value={{ isLanguageEnglish, setIsLanguageEnglish }}
       >
@@ -41,7 +40,8 @@ function App() {
           <RenderFooter />
         </div>
       </LanguageContext.Provider>
-    </Router>
+    </HashRouter>
+    // </Router>
   );
 }
 
