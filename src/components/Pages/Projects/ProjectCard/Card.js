@@ -84,7 +84,9 @@ function Card() {
 
                     {/* FEATURES FRONT*/}
                     <section className="features">
-                      <h4>Features:</h4>
+                      <h4>
+                        {isLanguageEnglish ? "Features:" : "Eigenschaften"}
+                      </h4>
                       <ul>{renderFeatures(project, language)}</ul>
                     </section>
 
@@ -109,18 +111,24 @@ function Card() {
                 >
                   <div className="container__text-section">
                     {/* TECH INFO */}
-                    <h2>Technical Info:</h2>
+                    <h2>
+                      {isLanguageEnglish
+                        ? "Technical Info:"
+                        : "Technische Info"}
+                    </h2>
                     <br />
-                    <p>{`Built with ${project.techInfo.main}`}</p>
-                    <p>{`Styled with ${project.techInfo.styled}`}</p>
+                    <p>{`${project.techInfo.main}`}</p>
+                    <p>{`${project.techInfo.styled}`}</p>
                     {project.techInfo.responsive && <p>Responsive</p>}
 
                     {/* SPECIFICS: */}
-                    <h3>Project specifics:</h3>
+                    <h3>
+                      {isLanguageEnglish ? "React specifics:" : "React Details"}
+                    </h3>
                     {renderProjectSpecifics(project)}
 
                     {/* Third Party used in project */}
-                    <h3>Third party used:</h3>
+                    <h3>Third party:</h3>
                     <ul>{renderThirdParty(project)}</ul>
                   </div>
 

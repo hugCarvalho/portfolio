@@ -9,7 +9,7 @@ function ListOfResources() {
   const listEN =
     "List of books and courses read or taken: (Youtube tutorials are not included here)";
   const listDE =
-    "Liste der gelesenen oder belegten Bücher und Kurse: (Youtube-Tutorials nicht hier enthalten):";
+    "Liste der gelesenen Bücher und belegten Kurse: (Youtube-Tutorials nicht hier enthalten):";
 
   return (
     <div>

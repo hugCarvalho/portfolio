@@ -2,7 +2,8 @@ import React from "react";
 import "./Footer.scss";
 import { LanguageContext } from "../../App";
 import { Link } from "react-router-dom";
-import CV from "../../shared/cv.pdf";
+import englishCV from "../../shared/CV_english.pdf";
+import germanCV from "../../shared/CV_deutsch.pdf";
 
 function Footer() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
@@ -71,9 +72,16 @@ function Footer() {
           </li>
 
           <li>
-            <a target="_blank" rel="noopener noreferrer" href={CV}>
-              CV
-            </a>
+            {isLanguageEnglish && (
+              <a target="_blank" rel="noopener noreferrer" href={englishCV}>
+                {"CV"}
+              </a>
+            )}
+            {!isLanguageEnglish && (
+              <a target="_blank" rel="noopener noreferrer" href={germanCV}>
+                {"CV"}
+              </a>
+            )}
           </li>
         </ul>
       </section>

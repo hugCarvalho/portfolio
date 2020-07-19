@@ -22,7 +22,7 @@ export const projectsData = [
         "Displays wind direction (cardinal points + arrow pointer).",
       ],
       de: [
-        "Suche nach einer Stadt, um das Wetter anzuzeigen.",
+        "Gewünschte Stadt in das Suchfeld eingeben, um für diese das Wetter anzuzeigen.",
         "Bis zu 3 Städte speichern für den schnellen Zugriff (lokalen Speicher).",
         "Zeigt die tatsächliche und reale Gefühlstemperatur in Celsius oder Fahrenheit an.",
         "Zeigt die Windgeschwindigkeit an.",
@@ -30,7 +30,7 @@ export const projectsData = [
       ],
     },
     techInfo: {
-      main: "REACT using Hooks",
+      main: "REACT (Hooks)",
       styled: "SASS (scss)",
       responsive: true,
       specsText: { en: "", de: "" },
@@ -91,8 +91,8 @@ export const projectsData = [
     category: ["website"],
     img: "media/portfolio_4.png",
     description: {
-      en: "Well, this website... :-)",
-      de: "Nun, diese Website... :-)",
+      en: "Well, this website...",
+      de: "Die Website auf der Sie sich befinden...",
     },
     features: {
       en: [
@@ -105,7 +105,7 @@ export const projectsData = [
       ],
     },
     techInfo: {
-      main: "REACT using Hooks",
+      main: "REACT (Hooks)",
       styled: "SASS (scss)",
       responsive: true,
       specsText: { en: "", de: "" },

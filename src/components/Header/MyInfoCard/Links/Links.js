@@ -1,7 +1,8 @@
 import React from "react";
 import "./Links.scss";
 import { Link } from "react-router-dom";
-import CV from "../../../../shared/cv.pdf";
+import englishCV from "../../../../shared/CV_english.pdf";
+import germanCV from "../../../../shared/CV_deutsch.pdf";
 import { LanguageContext } from "../../../../App";
 
 function Links() {
@@ -18,9 +19,16 @@ function Links() {
           </li>
 
           <li>
-            <a href={CV} target="_blank" rel="noopener noreferrer">
-              CV{" "}
-            </a>
+            {isLanguageEnglish && (
+              <a target="_blank" rel="noopener noreferrer" href={englishCV}>
+                {"CV"}
+              </a>
+            )}
+            {!isLanguageEnglish && (
+              <a target="_blank" rel="noopener noreferrer" href={germanCV}>
+                {"CV"}
+              </a>
+            )}
           </li>
 
           <li>

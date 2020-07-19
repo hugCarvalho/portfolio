@@ -1,13 +1,13 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 
-const edabitScore = 5600;
+const edabitScore = 5860;
 const edabitLevel = 14;
 const checkioLevel = 8;
 
 export function ExtendedInfoEN() {
   //TOPICS
-  const knowledge = "Where does my knowledge from?";
+  const knowledge = "Where does my knowledge come from?";
   const challenges = "How do I improve my problem solving skills?";
   const study = "What did I study?";
   const hobbies = "What are my main hobbies?";
@@ -103,10 +103,10 @@ export function ExtendedInfoEN() {
         <h4 id="hobbies">{hobbies}</h4>
         <p>{""}</p>
         <p>
-          Apart from programming, I enjoy playing boardgames, doing sport
-          activities like biking, playing in the park, or going to the fitness
-          studio. I also enjoy spending time with my girlfriend (failing to
-          mention her, could potentially damage the relationship. And me...).
+          Apart from programming, I enjoy playing boardgames, doing sport like
+          biking, going to the fitness studio or sport activities in the park. I
+          also enjoy spending time with my girlfriend - failing to mention her,
+          could potentially damage the relationship. And me... ;-)
         </p>
         <br></br>
         <br></br>
@@ -118,14 +118,14 @@ export function ExtendedInfoEN() {
 //GERMAN
 export function ExtendedInfoDE() {
   //TOPICS
-  const knowledge = "Woher kommt mein Wissen?";
+  const knowledge = "Wie habe ich mir mein Wissen angeeignet?";
   const challenges = "Wie verbessere ich meine Fähigkeiten zur Problemlösung?";
   const study = "Was habe ich studiert?";
-  const hobbies = "Was sind meine Haupthobbys?";
+  const hobbies = "Was sind meine Interessen?";
   return (
     <div>
       <article>
-        <h2>Erweiterte Einführung</h2>
+        <h2>Weitere Informationen</h2>
         <ol>
           <li>
             1. <a href="#knowledge">{knowledge}</a>
@@ -144,60 +144,63 @@ export function ExtendedInfoDE() {
         <h4 id="knowledge">{knowledge}</h4>
         <p>{""}</p>
         <p>
-          Obwohl ich einige Bücher über JavaScript gelesen habe, stammt der
-          größte Teil meines Wissens aus Online-Ressourcen.
+          Ich habe einige Bücher über JavaScript gelesen aber den Großteil
+          meines Wissens habe ich mir aus Online-Ressourcen angeeignet. So
+          konnte ich die Theorie direkt mit der Praxis verbinden.
         </p>
         <p>
-          Für einen strukturierteren Ansatz habe ich mich in zahlreichen
-          Online-Kursen in udemy eingeschrieben, um sicherzustellen, dass ich
-          mein Wissen aus verschiedenen Quellen bezogen habe, sodass ich auch
-          die Qualität meines Lernens beurteilen konnte.
+          Für einen strukturierteren Ansatz habe ich mich bei verschiedenen
+          Online-Kursen von Udemy.com eingeschrieben, um sicherzustellen, dass
+          ich mein Wissen von verschiedenen Experten beziehe.
         </p>
         <p>
-          In jüngerer Zeit habe ich begonnen, mich mit der offiziellen
-          Dokumentation zu befassen, insbesondere mit der React-Umgebung, und
-          mich auch auf kostenlose Online-Tutorials für spezifischere Themen zu
-          konzentrieren.
+          Seit kurzem habe ich begonnen, mich mit der offiziellen React
+          Dokumentation zu befassen und zusätzlich konzentriere ich mich auf
+          spezifische Themen mit Hilfe von YouTube Tutorials.
         </p>
         <p>
-          Am Ende finden Sie eine{" "}
+          Am Ende der Seite finden Sie eine{" "}
           <a href="#resources"> Liste der Ressourcen </a> {""}
-          in diesem Abschnitt erwähnt.
+          in diesem Abschnitt erwähnt wurden.
         </p>
         <br></br>
         <br></br>
         {/* CHALENGES */}
         <h4 id="challenges">{challenges}</h4>
         <p>
-          Entwickeln Sie ganze Projekte, wie Sie sie als Referenz haben Website
-          und Verwendung von Programmierspielplätzen wie <i> Codesandbox.io </i>{" "}
-          {""}
-          Neue Konzepte in der Mikropraxis zu üben, ist eine großartige
-          Möglichkeit, neue Fähigkeiten zu entwickeln.
+          Das vollständige Programmieren von Projekten, die Sie zum Beispiel auf
+          dieser Website finden können, war ein sehr gutes Training und so
+          konnte ich die Theorie in die Praxis umsetzten. Herausforderungen
+          waren dabei eine gute Übung für mich, die richtige Lösung zu finden.
         </p>
         <p>
-          Ich löse auch gerne regelmäßig Codierungsprobleme, hauptsächlich in{" "}
-          {""}
-          <i> Edabit </i> (derzeit auf Stufe {edabitLevel}, mit {""}
-          {edabitScore + ""} Punkte) und sporadisch in <i> CheckiO </i> {""}
-          (derzeit auf Stufe {checkioLevel}), um mein Problem direkt zu
-          verbessern und Codierungslösungsfähigkeiten. Dies ist auch hilfreich
-          bei der Entdeckung neuer Ansätze für ein gegebenes Problem und Code
-          zum Besseren zu vergleichen performante Lösung.
+          Neue Konzepte in der „Mikropraxis“ zu üben, ist ebenfalls eine gute
+          Möglichkeit, neue Fähigkeiten zu entwickeln. Plattformen wie zum
+          Beispiel <i>Codesandbox.io</i> sind eine gute Übungsmöglichkeit.
+        </p>
+        <p>
+          Zusätzlich löse ich gerne regelmäßig Challenges, um meine Fähigkeiten
+          zu testen und zu verbessern. Hauptsächlich nutze ich <i> Edabit </i>{" "}
+          (derzeit auf Stufe {edabitLevel}, mit {""}
+          {edabitScore + ""} Punkte) und vereinzelt auch <i> CheckiO </i>{" "}
+          (derzeit auf Stufe {checkioLevel}). Das ist auch eine gute Möglichkeit
+          um neue Ansätze für ein gegebenes Problem zu entdecken und um Codes zu
+          verbessern.
         </p>
         <br></br>
         <br></br>
         {/* STUDY */}
         <h4 id="study">{study}</h4>
         <p>
-          Ich habe Soziologie studiert. Technisch gesehen trägt nicht viel zu
-          diesem Bereich bei, Das Bewertungssystem basierte jedoch auf
-          Projekten, es gab keine Prüfungen. Diese Projekte wurden hauptsächlich
-          in einem Team entwickelt, normalerweise 3-5 Personen, mit Ausnahme des
-          letzten Jahres, das aus einem Solo bestand Projekt. Dies führte zu 4
-          Jahren starker Teamarbeit Erfahrungen mit verschiedenen Menschen, die
-          dazu beigetragen haben, den Grundstein zu legen auf harmonische Weise
-          zusammenzuarbeiten.
+          Ich habe Soziologie studiert. Thematisch und technisch gesehen, trägt
+          es nicht all zu viel zum Bereich Webentwicklung bei, allerdings war
+          der Ablauf des Studiums sehr projektorientiert angelegt, so dass ich
+          in der Zeit schon Erfahrungen im Bereich Projektarbeit sammeln konnte.
+          Diese Projekte wurden hauptsächlich in einem Team bearbeitet,
+          normalerweise 3-5 Personen, mit Ausnahme des letzten Jahres, welches
+          aus einem Soloprojekt bestand. Dies führte zu 4 Jahren starker
+          Teamarbeit, in denen ich viele Erfahrungen in der Zusammenarbeit mit
+          verschiedenen Menschen sammeln konnte.
         </p>
         <br></br>
         <br></br>
@@ -205,11 +208,9 @@ export function ExtendedInfoDE() {
         <h4 id="hobbies">{hobbies}</h4>
         <p>{""}</p>
         <p>
-          Abgesehen vom Programmieren spiele ich gerne Brettspiele und mache
-          Sport Aktivitäten wie Radfahren, Spielen im Park oder Fitness Studio.
-          Ich verbringe auch gerne Zeit mit meiner Freundin (Wenn ich sie nicht
-          erwähne, kann dies möglicherweise die Beziehung beschädigen. Und
-          mich...).
+          Abgesehen vom Programmieren spiele ich gerne Brettstrategiespiele und
+          bin sportlich aktiv (Radfahren, Fitness Studio oder sportliche
+          Aktivitäten im Park).
         </p>
         <br></br>
         <br></br>
