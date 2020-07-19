@@ -123,7 +123,9 @@ function Card() {
 
                     {/* SPECIFICS: */}
                     <h3>
-                      {isLanguageEnglish ? "React specifics:" : "React Details"}
+                      {isLanguageEnglish
+                        ? "Project specifics:"
+                        : "Projekt Details"}
                     </h3>
                     {renderProjectSpecifics(project)}
 
