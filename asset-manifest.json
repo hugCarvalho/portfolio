@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.94d81762.chunk.css",
-    "main.js": "/portfolio/static/js/main.381254f7.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.381254f7.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.92eb42b9.chunk.css",
+    "main.js": "/portfolio/static/js/main.bb0a4d54.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bb0a4d54.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.61160a9f.chunk.js": "/portfolio/static/js/2.61160a9f.chunk.js",
-    "static/js/2.61160a9f.chunk.js.map": "/portfolio/static/js/2.61160a9f.chunk.js.map",
+    "static/js/2.28dc4dbb.chunk.js": "/portfolio/static/js/2.28dc4dbb.chunk.js",
+    "static/js/2.28dc4dbb.chunk.js.map": "/portfolio/static/js/2.28dc4dbb.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.b60455cabbd5c72cbd9009eddc56a0f6.js": "/portfolio/precache-manifest.b60455cabbd5c72cbd9009eddc56a0f6.js",
+    "precache-manifest.84b4dcbf47d4d6d529c462db9afe94a5.js": "/portfolio/precache-manifest.84b4dcbf47d4d6d529c462db9afe94a5.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.94d81762.chunk.css.map": "/portfolio/static/css/main.94d81762.chunk.css.map",
-    "static/js/2.61160a9f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.61160a9f.chunk.js.LICENSE.txt",
+    "static/css/main.92eb42b9.chunk.css.map": "/portfolio/static/css/main.92eb42b9.chunk.css.map",
+    "static/js/2.28dc4dbb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.28dc4dbb.chunk.js.LICENSE.txt",
     "static/media/CV_deutsch.pdf": "/portfolio/static/media/CV_deutsch.171f38f9.pdf",
     "static/media/CV_english.pdf": "/portfolio/static/media/CV_english.a59e035e.pdf",
     "static/media/cv.pdf": "/portfolio/static/media/cv.f1aca55b.pdf",
     "static/media/flagEngland.png": "/portfolio/static/media/flagEngland.1c4499a7.png",
     "static/media/flagGermany.png": "/portfolio/static/media/flagGermany.ccde240b.png",
-    "static/media/moi.jpg": "/portfolio/static/media/moi.73d8e155.jpg"
+    "static/media/moi.jpg": "/portfolio/static/media/moi.295d2fc3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.61160a9f.chunk.js",
-    "static/css/main.94d81762.chunk.css",
-    "static/js/main.381254f7.chunk.js"
+    "static/js/2.28dc4dbb.chunk.js",
+    "static/css/main.92eb42b9.chunk.css",
+    "static/js/main.bb0a4d54.chunk.js"
   ]
 }
