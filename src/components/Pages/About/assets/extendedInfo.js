@@ -56,7 +56,7 @@ export function ExtendedInfoEN() {
         </p>
         <p>
           More recently, I started to dive into the official documentation,
-          especially with the React environment, and to also focus on free
+          especially with the React environment, and to also focus on Youtube
           online tutorials for more specific subjects.
         </p>
         <p>
@@ -93,9 +93,9 @@ export function ExtendedInfoEN() {
           but the evaluation system was based on projects, there were no exams.
           These projects were mainly developed in a team, usually 3-5 people,
           with the exception of the last year, which consisted on a solo
-          project. This resulted in 4 years of heavily based teamwork
-          experiences with different people which helped to lay the foundations
-          of working collaborative in a harmonious way.
+          project. This resulted in 4 years of multiple teamwork experiences
+          with different people, which helped to lay the foundations of working
+          collaborative in a harmonious way.
         </p>
         <br></br>
         <br></br>
@@ -128,16 +128,28 @@ export function ExtendedInfoDE() {
         <h2>Weitere Informationen</h2>
         <ol>
           <li>
-            1. <a href="#knowledge">{knowledge}</a>
+            1.{" "}
+            <HashLink smooth to="#knowledge">
+              {knowledge}
+            </HashLink>
           </li>
           <li>
-            2. <a href="#challenges">{challenges}</a>
+            2.{" "}
+            <HashLink smooth to="#challenges">
+              {challenges}
+            </HashLink>
           </li>
           <li>
-            3. <a href="#study">{study}</a>
+            3.{" "}
+            <HashLink smooth to="#study">
+              {study}
+            </HashLink>
           </li>
           <li>
-            4. <a href="#hobbies">{hobbies}</a>
+            4.{" "}
+            <HashLink smooth to="#hobbies">
+              {hobbies}
+            </HashLink>
           </li>
         </ol>
         <br></br>
@@ -160,7 +172,11 @@ export function ExtendedInfoDE() {
         </p>
         <p>
           Am Ende der Seite finden Sie eine{" "}
-          <a href="#resources"> Liste der Ressourcen </a> {""}
+          <HashLink smooth to="#resources">
+            {" "}
+            Liste der Ressourcen{" "}
+          </HashLink>{" "}
+          {""}
           in diesem Abschnitt erwähnt wurden.
         </p>
         <br></br>

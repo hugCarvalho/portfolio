@@ -13,11 +13,14 @@ export function MainIntroEN() {
       </p>
       <p>
         I am eager to learn new skills and I am actively learning (studying
-        Redux now) and enjoying it greatly. As my skills and confidence grow, so
-        does my desire to work on and with a team, to work towards a common goal
-        and achieve something that will impact positively peoples lives. Not
-        only would it help in speeding my learning curve but it would also bring
-        a sense of completion to this learning process.
+        Redux now) and enjoying it greatly.
+      </p>
+      <p>
+        As my skills and confidence grow, so does my desire to work in a team,
+        and to work towards a common goal with the objective of achieving
+        something that will impact positively people's lives. Not only would
+        this help in speeding my learning curve, but it would also bring a sense
+        of realization to my learning process.
       </p>
       <p>If you'd like to know more about me, just keep reading...</p>
     </article>
@@ -38,15 +41,17 @@ export function MainIntroDE() {
       </p>
       <p>
         Ich bin bestrebt, mir neue Fähigkeiten anzueignen, lerne aktiv (zurzeit
-        Redux) und bin mit Begeisterung dabei. Neben meinen Fähigkeiten und
-        meinem Selbstvertrauen, wächst auch der Wunsch wieder in einem Team zu
-        arbeiten um gemeinsame Ziele zu verfolgen, welche einen positiven
-        Einfluss auf die Kunden und das Unternehmen haben. Die Zusammenarbeit im
-        Team würde sich ebenfalls fördernd auf meine Lernkurve auswirken und
-        mich sehr motivieren.
+        Redux) und bin mit Begeisterung dabei.
       </p>
       <p>
-        Wenn Sie mehr über mich erfahren möchten, lesen Sie einfach weiter ...
+        Neben meinen Fähigkeiten und meinem Selbstvertrauen, wächst auch der
+        Wunsch wieder in einem Team zu arbeiten um gemeinsame Ziele zu
+        verfolgen, welche einen positiven Einfluss auf die Kunden und das
+        Unternehmen haben. Die Zusammenarbeit im Team würde sich ebenfalls
+        fördernd auf meine Lernkurve auswirken und mich sehr motivieren.
+      </p>
+      <p>
+        Wenn Sie mehr über mich erfahren möchten, lesen Sie einfach weiter...
       </p>
     </article>
   );
