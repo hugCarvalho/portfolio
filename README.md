@@ -1,6 +1,6 @@
 ## Portfolio
 
-Displays my projects so far as information about myself. 
+Displays my projects so far and information about myself. 
 
 ### Project specs
 
