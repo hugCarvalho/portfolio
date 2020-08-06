@@ -19,8 +19,8 @@ export function MainIntroEN() {
         As my skills and confidence grow, so does my desire to work in a team,
         and to work towards a common goal with the objective of achieving
         something that will impact positively people's lives. Not only would
-        this help in speeding my learning curve, but it would also bring a sense
-        of realization to my learning process.
+        this help in speeding my learning curve as well, but it would also bring
+        a sense of realization to my learning process.
       </p>
       <p>If you'd like to know more about me, just keep reading...</p>
     </article>
