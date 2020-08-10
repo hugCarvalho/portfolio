@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   font-size: 2.2rem;
+
   h2 {
-    color: rgb(0, 70, 128);
     color: rgb(3, 62, 110);
     padding-top: 60px;
     padding-bottom: 20px;
@@ -12,13 +12,13 @@
   h4,
   h5 {
     color: rgb(0, 70, 128);
-    //color: rgb(3, 62, 110);
   }
 
   p {
     color: rgb(36, 36, 36);
     margin-top: 13px;
   }
+
   a {
     text-decoration: underline;
   }
@@ -31,26 +31,7 @@
     }
   }
 
-  //button
-  button {
-    background-color: rgb(34, 33, 33);
-    color: white;
-    padding: 4px;
-    margin: 20px 0;
-    border-radius: 3px;
-    opacity: 0.9;
-    min-width: 103px;
-    width: 105px;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-  .invisible {
-    visibility: hidden;
-  }
-  ////////////////
-
+  //time duration of courses
   .duration {
     font-size: 1.6rem;
   }

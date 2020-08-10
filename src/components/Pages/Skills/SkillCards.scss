@@ -1,24 +1,23 @@
 .container__skill-box {
+  position: relative;
   background-color: rgb(31, 31, 31);
   color: darken(#ffffff, 10%);
   width: 310px;
   height: 80px;
   margin: 1rem;
+  padding: 0 1rem;
   display: flex;
-
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
   flex-shrink: 0;
   border-radius: 0.5rem;
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
-  position: relative;
   z-index: 20;
 
   //TEXT
   span {
-    font-size: 2.3rem;
     padding: 0 0.7rem;
+    font-size: 2.3rem;
     letter-spacing: 0.1rem;
   }
   //RELATEDSKILLS ONLY
