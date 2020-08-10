@@ -104,17 +104,17 @@ $timing-function: ease;
 }
 
 @media (max-width: 628px) {
-  $height: 5; //increase ??
+  $height: 20; //TODO: was 5. CHANGED
   .button3D {
-    text-shadow: 0 -2px 0 darken($color, 50%), 0 1px 1px lighten($color, 20%);
-    min-width: 140px;
-    margin: 18px 7px 7px 7px; //ok
-    margin: 18px 7px 7px 7px; //ok
-    font-size: 2rem; //ok
+    text-shadow: 0 0;
+    min-width: 120px;
+    //margin: 18px 7px 7px 7px; //ok //TODO: aczivate or change
+    font-size: 1.3rem; //ok //TODO: was 1.8rem
     //color: $text-color;
     //text-shadow: 0 -2px 0 darken($color, 20%), 0 1px 1px lighten($color, 20%);
     height: $height + px; //ok
     line-height: $height + px; //ok
+    // line-height: 22px;
     //padding: 0 (($height/2) + px);
 
     //increase lighten color?
@@ -124,9 +124,9 @@ $timing-function: ease;
       saturate(lighten($color, 25%), 15%) 26%,
       $color 100%
     );
-    border-top: 1px solid lighten($color, 22%);
-    border-bottom: 1px solid lighten($color, 20%);
-    transition: all ($button-speed + s) $timing-function;
+    // border-top: 1px solid lighten($color, 22%);
+    // border-bottom: 1px solid lighten($color, 20%);
+    //transition: all ($button-speed + s) $timing-function;
 
     &:hover {
       background: linear-gradient(
