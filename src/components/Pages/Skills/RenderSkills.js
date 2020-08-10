@@ -24,6 +24,14 @@ function Skills() {
 
         {/* New Skill */}
         <div className="container__skill-card">
+          <div className="wire">
+            <span className="nail"></span>
+          </div>
+          <OneSkill classes="bg-redux">Redux</OneSkill>
+        </div>
+
+        {/* New Skill */}
+        <div className="container__skill-card">
           <div className="box wire">
             <span className="nail"></span>
           </div>

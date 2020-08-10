@@ -12,8 +12,8 @@ export function MainIntroEN() {
         passion.
       </p>
       <p>
-        I am eager to learn new skills and I am actively learning (studying
-        Redux now) and enjoying it greatly.
+        I am eager to learn new skills and I am actively learning (currently
+        studying <s>Redux</s> Testing) and enjoying it greatly.
       </p>
       <p>
         As my skills and confidence grow, so does my desire to work in a team,
@@ -40,8 +40,8 @@ export function MainIntroDE() {
         Wissen anzueignen.
       </p>
       <p>
-        Ich bin bestrebt, mir neue Fähigkeiten anzueignen, lerne aktiv (zurzeit
-        Redux) und bin mit Begeisterung dabei.
+        Ich bin bestrebt, mir neue Fähigkeiten anzueignen, lerne aktiv (zurzeit{" "}
+        <s>Redux</s> Testing) und bin mit Begeisterung dabei.
       </p>
       <p>
         Neben meinen Fähigkeiten und meinem Selbstvertrauen, wächst auch der

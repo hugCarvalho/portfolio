@@ -1,7 +1,8 @@
 import React from "react";
 import "./RenderAbout.scss";
 import AboutEN, { AboutDE } from "./About";
-import CV from "../../../shared/cv.pdf";
+import CV_EN from "../../../shared/CV_english.pdf";
+import CV_DE from "../../../shared/CV_deutsch.pdf";
 
 import { LanguageContext } from "../../../App";
 
@@ -14,7 +15,10 @@ function RenderAbout() {
       <section className=" show-smallest-screen">
         <ul>
           <li>
-            <a target="_blank" rel="noopener noreferrer" href={CV}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={isLanguageEnglish ? CV_EN : CV_DE}>
               CV
             </a>
           </li>
@@ -22,8 +26,7 @@ function RenderAbout() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/hugCarvalho"
-            >
+              href="https://github.com/hugCarvalho">
               GiHhub
             </a>
           </li>

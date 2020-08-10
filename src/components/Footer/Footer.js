@@ -20,8 +20,7 @@ function Footer() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="www.freakflagsprite.com"
-            >
+              href="https://freakflagsprite.com">
               www.freakflagsprite.com
             </a>
           </li>
@@ -33,18 +32,25 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://icons8.com"
-              title="icons8"
-            >
+              title="icons8">
               https://icons8.com
             </a>
           </li>
           <li>
             Favicon {isLanguageEnglish ? "made by" : "bei"}{" "}
-            <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.flaticon.com/authors/freepik"
+              title="Freepik">
               Freepik
             </a>{" "}
             {isLanguageEnglish ? "from" : "von"}{" "}
-            <a href="https://www.flaticon.com/" title="Flaticon">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.flaticon.com/"
+              title="Flaticon">
               {" "}
               www.flaticon.com
             </a>
@@ -65,8 +71,7 @@ function Footer() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/hugCarvalho"
-            >
+              href="https://github.com/hugCarvalho">
               GitHub
             </a>
           </li>
