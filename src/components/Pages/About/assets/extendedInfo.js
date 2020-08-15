@@ -1,7 +1,7 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 
-const edabitScore = 5860;
+const edabitScore = 6420;
 const edabitLevel = 14;
 const checkioLevel = 8;
 
@@ -79,10 +79,10 @@ export function ExtendedInfoEN() {
           I also enjoy solving coding challenges on a regular basis, mainly in{" "}
           <i>Edabit</i> (currently at level {edabitLevel}, with{" "}
           {edabitScore + ""} points), and sporadically in <i>CheckiO</i>{" "}
-          (currently at level {checkioLevel}) to directly improve my problem and
-          coding solving skills. This is also helpful in discovering new
-          approaches for a given problem and to compare code for a better
-          performant solution.
+          (currently at level {checkioLevel}) to improve my problem solving
+          skills. This is also helpful in discovering new approaches from more
+          experienced users and to compare code for a better performant
+          solution.
         </p>
         <br></br>
         <br></br>

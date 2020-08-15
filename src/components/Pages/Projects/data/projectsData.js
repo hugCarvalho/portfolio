@@ -88,6 +88,45 @@ export const projectsData = [
   },
   {
     id: 3,
+    name: "Phantasy Online Shop",
+    category: ["website", "online-shop"],
+    img: "media/online_shop_redux.png",
+    description: {
+      en:
+        "This is an ONGOING project, built using React (hooks) and Redux that simulates an online shop. It focus primarily on behaviour. For more details check the homepage of the project.",
+      de:
+        "Dies ist ein FORTLAUFENDES Projekt, das mit React und Redux erstellt wurde und einen Online-Shop simuliert. Es konzentriert sich hauptsächlich auf das Verhalten. Weitere Informationen finden Sie auf der Homepage des Projekts.",
+    },
+    features: {
+      en: [
+        "Data fetch from Breaking Bad API",
+        "Add to cart / remove from cart",
+        "Limited inventory",
+        "Cart total computation",
+        // "Login / Register",
+      ],
+      de: [
+        "Datenabruf von Breaking Bad API",
+        "In den Warenkorb legen / aus dem Warenkorb nehmen",
+        "Begrenztes Inventar",
+        "Warenkorb-Gesamtberechnung",
+        // "Anmeldung / Registrieren",
+      ],
+    },
+    techInfo: {
+      main: "REACT (Hooks)",
+      styled: "SASS (scss)",
+      responsive: false,
+      specsText: { en: "", de: "" },
+      specs: [],
+      thirdParty: ["Redux", "React Router"],
+      notes: { en: "", de: "" },
+    },
+    live: ["https://stoic-almeida-257f01.netlify.app/"],
+    code: ["https://github.com/hugCarvalho/phantasy-shop_redux"],
+  },
+  {
+    id: 4,
     name: "Portfolio Website",
     category: ["website"],
     img: "media/portfolio_4.png",
