@@ -1,9 +1,10 @@
-.container__my-info-card {
+.RenderMyInfoCard {
   background-color: #3f3f3f;
-  padding: 9px; //CHANGE
+  padding: 9px;
+  border: 1px solid darken(#3f3f3f, 5%);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 0px (rgba(0, 0, 0, 0.6));
+
   display: flex;
   align-items: center;
-  border-radius: 5px;
-  border: 1px solid darken(#3f3f3f, 5%);
-  box-shadow: 3px 3px 5px 0px (rgba(0, 0, 0, 0.6));
 }

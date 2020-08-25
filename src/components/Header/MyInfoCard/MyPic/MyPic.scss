@@ -1,11 +1,10 @@
-.container__my-pic {
+.MyPic {
   //background-color: lightsalmon;
   padding: 0 9px;
-  .my-pic {
+
+  img {
     //background-color: lightcoral;
     height: 6.74rem;
-    box-sizing: content-box;
-    border: 2px solid rgb(244, 244, 250);
     border: 2px solid #d8d8da;
     border-radius: 50%;
     transition: all 0.3s ease-out;

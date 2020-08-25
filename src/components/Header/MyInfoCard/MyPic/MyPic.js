@@ -7,11 +7,11 @@ import moi from "./media/moi.jpg";
 
 function MyPic() {
   return (
-    <div className="container__my-pic">
+    <figure className="MyPic">
       <Link to="/about">
-        <img className="my-pic" src={moi} alt="me" title="about me" />
+        <img src={moi} alt="me" title="about me" />
       </Link>
-    </div>
+    </figure>
   );
 }
 

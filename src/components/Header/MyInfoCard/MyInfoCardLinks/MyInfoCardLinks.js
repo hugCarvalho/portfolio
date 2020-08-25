@@ -1,16 +1,16 @@
 import React from "react";
-import "./Links.scss";
+import "./MyInfoCardLinks.scss";
 import { Link } from "react-router-dom";
 import englishCV from "../../../../shared/CV_english.pdf";
 import germanCV from "../../../../shared/CV_deutsch.pdf";
 import { LanguageContext } from "../../../../App";
 
-function Links() {
+function MyInfoCardLinks() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
 
   return (
     <>
-      <div className="container__links">
+      <div className="MyInfoCardLinks">
         <ul>
           <li>
             <Link to="/contact">
@@ -35,8 +35,7 @@ function Links() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/hugCarvalho"
-            >
+              href="https://github.com/hugCarvalho">
               GitHub
             </a>
           </li>
@@ -46,4 +45,4 @@ function Links() {
   );
 }
 
-export default Links;
+export default MyInfoCardLinks;

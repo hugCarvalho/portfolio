@@ -1,16 +1,16 @@
 import React from "react";
 import "./RenderMyInfoCard.scss";
-import Links from "./Links/Links";
+import MyInfoCardLinks from "./MyInfoCardLinks/MyInfoCardLinks";
 import MyPic from "./MyPic/MyPic";
 import LanguagesSpoken from "./LanguagesSpoken/LanguagesSpoken";
 
 function RenderMyInfoCard() {
   return (
-    <div className="container__my-info-card">
-      <Links />
+    <section className="RenderMyInfoCard">
+      <MyInfoCardLinks />
       <MyPic />
       <LanguagesSpoken />
-    </div>
+    </section>
   );
 }
 

@@ -6,7 +6,7 @@ export function MainIntroEN() {
       <h2>Basic Introduction</h2>
       <p>
         Hi, I'm Hugo, a self-taught web developer, with a master in Sociology. I
-        started to learn Programming with JavaScript, parallel to my job, about
+        started to learn Programming with JavaScript, alongside my job, about
         one and half year ago. It started as a curiosity but didn't take long to
         turn into a passion. Recently, I decided to quit my job to pursue this
         passion.
@@ -18,9 +18,8 @@ export function MainIntroEN() {
       <p>
         As my skills and confidence grow, so does my desire to work in a team,
         and to work towards a common goal with the objective of achieving
-        something that will impact positively people's lives. Not only would
-        this help in speeding my learning curve as well, but it would also bring
-        a sense of realization to my learning process.
+        something that will impact positively people's lives. This would also
+        bring a sense of realization to my learning process.
       </p>
       <p>If you'd like to know more about me, just keep reading...</p>
     </article>

@@ -1,10 +1,10 @@
-.container__links {
+.MyInfoCardLinks {
   //background-color: skyblue;
   height: 76px;
-  display: flex;
   font-size: 1.4rem;
-  align-items: flex-start;
 
+  display: flex;
+  align-items: flex-start;
   ul {
     //background-color: violet;
     height: 100%;
@@ -23,7 +23,7 @@
 }
 
 @media (max-width: 375px) {
-  .container__links {
+  .MyInfoCardLinks {
     display: none;
   }
 }
