@@ -22,8 +22,7 @@ function App() {
     // <Router basename="/portfolio">
     <HashRouter>
       <LanguageContext.Provider
-        value={{ isLanguageEnglish, setIsLanguageEnglish }}
-      >
+        value={{ isLanguageEnglish, setIsLanguageEnglish }}>
         <div className="App">
           <RenderHeader />
 

@@ -1,23 +1,47 @@
-footer {
+.RenderFooter {
   background-color: #3f3f3f;
   color: #e6e6e6;
-  width: 100%;
-  padding: 10px;
-  font-size: 1.5rem;
-  line-height: 20px;
   position: absolute;
   bottom: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.6rem;
+  line-height: 20px;
+
   display: flex;
   justify-content: space-around;
+
+  .credits {
+    font-size: 1.2rem;
+    padding-right: 8px;
+  }
+
+  cite {
+    text-decoration: underline;
+  }
+
+  .contact-links li,
+  a {
+    &:hover {
+      color: lightblue;
+    }
+  }
+
+  .contact-links ul {
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 992px) {
-  footer {
-    //background-color: darken(#3f3f3f, 10%);
-    font-size: 1.6rem;
+  .RenderFooter {
     .contact-links ul {
       width: auto;
       height: 80px;
+
       display: flex;
       flex-direction: column;
       justify-content: space-around;
