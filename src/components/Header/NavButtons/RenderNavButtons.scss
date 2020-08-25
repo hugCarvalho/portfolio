@@ -1,4 +1,4 @@
-.container__navButtons {
+.RenderNavButtons {
   //background-color: rgb(7, 143, 221);
   padding: 10px 5px;
   text-align: center;
@@ -11,24 +11,22 @@
 }
 
 @media (max-width: 1240px) {
-  .container__navButtons {
+  .RenderNavButtons {
     // background-color: rgb(221, 7, 132);
     width: 400px;
   }
 }
 
 @media (max-width: 628px) {
-  .container__navButtons {
+  .RenderNavButtons {
     //background-color: rgb(57, 221, 7);
     margin-top: -20px;
     left: 0px;
-    //padding: 0;
   }
 }
 
-//Mobile
 @media (max-width: 555px) {
-  .container__navButtons {
+  .RenderNavButtons {
     //background-color: rgb(7, 221, 185);
     text-align: start;
     margin-top: -10px;

@@ -1,10 +1,10 @@
+import "./RenderNavButtons.scss";
 import React, { useContext, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./RenderNavButtons.scss";
 import Button3D from "./Button3D";
 import { LanguageContext } from "../../../App";
 
-function State() {
+function RenderNavButtons() {
   const [isActive, setIsActive] = React.useState("projects");
   const { isLanguageEnglish } = useContext(LanguageContext);
   const location = useLocation();
@@ -15,14 +15,13 @@ function State() {
   }, [location]);
 
   return (
-    <div className="container__navButtons">
+    <nav className="RenderNavButtons">
       {/* PROJECTS */}
       <Link to="/projects">
         <Button3D
           classes={
             isActive === "projects" || isActive === "projekte" ? "active" : ""
-          }
-        >
+          }>
           <span className="button-text">
             {isLanguageEnglish ? "projects" : "projekte"}
           </span>
@@ -34,8 +33,7 @@ function State() {
         <Button3D
           classes={
             isActive === "skills" || isActive === "fähigkeiten" ? "active" : ""
-          }
-        >
+          }>
           <span className="button-text">
             {isLanguageEnglish ? "skills" : "fähigkeiten"}
           </span>
@@ -47,8 +45,7 @@ function State() {
         <Button3D
           classes={
             isActive === "about" || isActive === "über mich" ? "active" : ""
-          }
-        >
+          }>
           <span className="button-text">
             {isLanguageEnglish ? "about" : "über mich"}
           </span>
@@ -60,15 +57,14 @@ function State() {
         <Button3D
           classes={
             isActive === "contact" || isActive === "kontakt" ? "active" : ""
-          }
-        >
+          }>
           <span className="button-text">
             {isLanguageEnglish ? "contact" : "kontakt"}
           </span>
         </Button3D>
       </Link>
-    </div>
+    </nav>
   );
 }
 
-export default State;
+export default RenderNavButtons;

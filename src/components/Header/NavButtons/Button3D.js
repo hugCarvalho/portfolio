@@ -5,10 +5,9 @@ function Button3D(props) {
   return (
     <>
       <button
+        type={props.type}
         className={"button3D " + props.classes}
-        onClick={props.onClick}
-        href="#0"
-      >
+        onClick={props.onClick}>
         {props.children}
       </button>
     </>
