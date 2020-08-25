@@ -1,22 +1,27 @@
-.hugos-portfolio {
+.RenderPortfolioTitle {
   display: flex;
   flex-direction: column;
 
-  .engraved {
+  :first-child {
     color: #222;
+    font-family: "times", "serif";
+    font-size: 4.2rem;
     text-shadow: 0px 1px 1px #4d4d4d;
-    font-size: 4rem;
-    font-family: "serif", "times";
   }
-  .engraved2 {
+  :last-child {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-color: #474444;
     color: #222;
-    background-clip: text;
     font-family: "times", "serif";
     font-size: 6rem;
-    // text-shadow: #4d4d4db9 3px 3px 3px;
+    background-clip: text;
     text-shadow: 2px 2px 2px #4d4d4d;
+  }
+}
+
+@media (max-width: 920px) {
+  .RenderPortfolioTitle {
+    display: none;
   }
 }

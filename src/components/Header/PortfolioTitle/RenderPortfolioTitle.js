@@ -5,9 +5,9 @@ import "./RenderPortfolioTitle.scss";
 function RenderPortfolioTitle() {
   return (
     <Link to="/projects">
-      <div className="hugos-portfolio">
-        <span className="engraved">Hugo's</span>
-        <span className="engraved2">Portfolio</span>
+      <div className="RenderPortfolioTitle">
+        <span>Hugo's</span>
+        <span>Portfolio</span>
       </div>
     </Link>
   );

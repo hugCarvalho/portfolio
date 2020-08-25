@@ -31,14 +31,6 @@ $main-gray: #3f3f3f;
   }
 }
 
-@media (max-width: 920px) {
-  .Header {
-    .hugos-portfolio {
-      display: none;
-    }
-  }
-}
-
 @media (max-width: 622px) {
   .Header {
     height: 150px;
