@@ -10,22 +10,20 @@ function RenderSelectLanguage() {
   const { isLanguageEnglish, setIsLanguageEnglish } = useContext(LanguageContext);
 
   return (
-    <>
-      <div className="container__website-language">
-        <LanguageFlag
-          onClick={() => setIsLanguageEnglish(true)}
-          src={FlagEN}
-          alt="english"
-          isSelected={isLanguageEnglish ? "selected" : ""}
-        />
-        <LanguageFlag
-          onClick={() => setIsLanguageEnglish(false)}
-          src={FlagDE}
-          alt="deutsch"
-          isSelected={!isLanguageEnglish ? "selected" : ""}
-        />
-      </div>
-    </>
+    <section className="RenderSelectLanguage">
+      <LanguageFlag
+        onClick={() => setIsLanguageEnglish(true)}
+        src={FlagEN}
+        alt="english"
+        isSelected={isLanguageEnglish ? "selected" : ""}
+      />
+      <LanguageFlag
+        onClick={() => setIsLanguageEnglish(false)}
+        src={FlagDE}
+        alt="deutsch"
+        isSelected={!isLanguageEnglish ? "selected" : ""}
+      />
+    </section>
   );
 }
 

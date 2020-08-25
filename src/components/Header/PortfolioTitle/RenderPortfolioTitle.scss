@@ -25,3 +25,15 @@
     display: none;
   }
 }
+
+@media (max-width: 1024px) {
+  .RenderPortfolioTitle {
+    //background-color: lime;
+    :first-child {
+      font-size: 3.4rem;
+    }
+    :last-child {
+      font-size: 4.8rem;
+    }
+  }
+}

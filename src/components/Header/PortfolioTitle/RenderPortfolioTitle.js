@@ -5,10 +5,10 @@ import "./RenderPortfolioTitle.scss";
 function RenderPortfolioTitle() {
   return (
     <Link to="/projects">
-      <div className="RenderPortfolioTitle">
+      <section className="RenderPortfolioTitle">
         <span>Hugo's</span>
         <span>Portfolio</span>
-      </div>
+      </section>
     </Link>
   );
 }
