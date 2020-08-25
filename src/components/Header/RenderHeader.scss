@@ -1,21 +1,21 @@
 $main-gray: #3f3f3f;
 
-.container__header {
+.Header {
   background-color: $main-gray;
   width: 100%;
   height: 190px;
   min-height: 165px;
   position: relative;
   z-index: 0;
+  border-bottom: 2px solid darken($main-gray, 5%);
 
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 2px solid darken($main-gray, 5%);
 }
 
 @media (max-width: 1024px) {
-  .container__header {
+  .Header {
     //background-color: rgb(205, 50, 109);
     padding: 0 6px;
 
@@ -32,7 +32,7 @@ $main-gray: #3f3f3f;
 }
 
 @media (max-width: 920px) {
-  .container__header {
+  .Header {
     .hugos-portfolio {
       display: none;
     }
@@ -40,7 +40,7 @@ $main-gray: #3f3f3f;
 }
 
 @media (max-width: 622px) {
-  .container__header {
+  .Header {
     height: 150px;
     padding: 0 20px;
   }
