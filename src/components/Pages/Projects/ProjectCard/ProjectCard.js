@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./Card.scss";
+import "./ProjectCard.scss";
 import { projectsData } from "../data/projectsData";
-import LinksTo from "../ProjectLinks/ProjectLinks";
+import ProjectLinks from "../ProjectLinks/ProjectLinks";
 import {
   renderThirdParty,
   renderFeatures,
@@ -9,7 +9,7 @@ import {
 } from "../functions/functions";
 import { LanguageContext } from "../../../../App";
 
-function Card() {
+function ProjectCard() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
   const [backCardHeight, setBackCardHeight] = useState("auto");
   const [frontSideActive, setFrontSideActive] = useState(true);
@@ -28,30 +28,28 @@ function Card() {
   useEffect(() => {
     const changeHeight = () => {
       const cardFront = document.querySelectorAll(".card__side--front");
-      cardFront.forEach(item => (item.style.height = `${backCardHeight}`));
+      cardFront.forEach((item) => (item.style.height = `${backCardHeight}`));
     };
     changeHeight();
   }, [backCardHeight]);
 
-  const clickedFN = id => {
+  const clickedFN = (id) => {
     setId(id);
-    setFrontSideActive(state => !state);
+    setFrontSideActive((state) => !state);
   };
-  // for the purposes of this website it's ok to use the index as a key for react
   return (
     <>
       {/* CARDS CONTAINER */}
-      <div className="container__cards">
+      <main className="ProjectCard">
         {projectsData.map((project, i) => {
+          // for the purposes of this website it's ok to use the index as a key for react
           const language = isLanguageEnglish ? "en" : "de";
-
           return (
-            <div key={i} className="wrapper__card-live-code">
+            <section key={i}>
               <div
                 className="container__card"
                 style={{ height: backCardHeight }}
-                onMouseLeave={() => setFrontSideActive(true)}
-              >
+                onMouseLeave={() => setFrontSideActive(true)}>
                 {/* CARD FRONT */}
                 <div
                   className="card__side card__side--front"
@@ -59,23 +57,21 @@ function Card() {
                     !frontSideActive && project.id === id
                       ? { transform: "rotateY(180deg)" }
                       : null
-                  }
-                >
+                  }>
                   {/* Project Name */}
-                  <div className="project-name">{project.name}</div>
+                  <p className="project-name">{project.name}</p>
 
                   {/* IMG */}
-                  <div className="container__project-image">
+                  <figure className="project-screenshot">
                     <a
                       href={project.live}
                       rel="noopener noreferrer"
-                      target="_blank"
-                    >
+                      target="_blank">
                       <img src={project.img} alt="app screenshot" />
                     </a>
-                  </div>
+                  </figure>
 
-                  {/* TEXT  FRONT*/}
+                  {/* DESCRIPTION TEXT FRONT*/}
                   <div className="container__text-section">
                     <section className="description">
                       {" "}
@@ -107,21 +103,22 @@ function Card() {
                     !frontSideActive && project.id === id
                       ? { transform: "rotate(0)" }
                       : null
-                  }
-                >
-                  <div className="container__text-section">
+                  }>
+                  <section className="container__text-section">
                     {/* TECH INFO */}
                     <h2>
                       {isLanguageEnglish
                         ? "Technical Info:"
                         : "Technische Info"}
                     </h2>
-                    <br />
                     <p>{`${project.techInfo.main}`}</p>
                     <p>{`${project.techInfo.styled}`}</p>
                     {project.techInfo.responsive && <p>Responsive</p>}
+                    {project.techInfo.specsText.en && (
+                      <p>{project.techInfo.specsText.en}</p>
+                    )}
 
-                    {/* SPECIFICS: */}
+                    {/* SPECIFICS */}
                     <h3>
                       {isLanguageEnglish
                         ? "Project specifics:"
@@ -132,7 +129,7 @@ function Card() {
                     {/* Third Party used in project */}
                     <h3>Third party:</h3>
                     <ul>{renderThirdParty(project)}</ul>
-                  </div>
+                  </section>
 
                   {/* BUTTON FLIP CARD */}
                   <div className="btn__flip-card">
@@ -144,13 +141,13 @@ function Card() {
               </div>
 
               {/* LINKS */}
-              <LinksTo project={project} />
-            </div>
+              <ProjectLinks project={project} />
+            </section>
           );
         })}
-      </div>
+      </main>
     </>
   );
 }
 
-export default Card;
+export default ProjectCard;

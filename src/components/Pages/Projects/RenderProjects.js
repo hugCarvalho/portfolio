@@ -1,10 +1,10 @@
 import React from "react";
 import "./RenderProjects.scss";
-import ProjectCard from "./ProjectCard/Card";
+import ProjectCard from "./ProjectCard/ProjectCard";
 
 function RenderProjects() {
   return (
-    <div className="container__projects">
+    <div className="RenderProjects">
       <ProjectCard />
     </div>
   );

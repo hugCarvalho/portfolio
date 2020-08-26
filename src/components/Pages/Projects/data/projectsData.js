@@ -148,7 +148,7 @@ export const projectsData = [
       main: "REACT (Hooks)",
       styled: "SASS (scss)",
       responsive: true,
-      specsText: { en: "", de: "" },
+      specsText: { en: "Semantic HTML", de: "" },
       specs: ["useState", "useEffect", "useContext", "Flexbox"],
       thirdParty: ["React Router", "React Router Hash Link"],
       notes: { en: "", de: "" },
