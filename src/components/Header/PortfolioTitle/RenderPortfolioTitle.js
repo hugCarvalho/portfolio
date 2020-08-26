@@ -6,8 +6,10 @@ function RenderPortfolioTitle() {
   return (
     <Link to="/projects">
       <section className="RenderPortfolioTitle">
-        <span>Hugo's</span>
-        <span>Portfolio</span>
+        <h1>
+          <span>Hugo's</span>
+          <span>Portfolio</span>
+        </h1>
       </section>
     </Link>
   );

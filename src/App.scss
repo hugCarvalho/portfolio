@@ -1,13 +1,6 @@
-$color: #e6e6e6;
-
 .App {
   position: relative;
   min-height: 100vh;
-  display: block;
-  overflow: hidden;
   padding-bottom: 80px; // height of footer
-}
-
-h1 {
-  text-align: center;
+  overflow: hidden;
 }
