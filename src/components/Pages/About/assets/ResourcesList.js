@@ -1,10 +1,10 @@
 import React from "react";
-import { books } from "./learningResourcesObjects";
-import { coursesCompleted } from "./learningResourcesObjects";
-import { coursesOngoing } from "./learningResourcesObjects";
+import { books } from "./ResourcesListObjects";
+import { coursesCompleted } from "./ResourcesListObjects";
+import { coursesOngoing } from "./ResourcesListObjects";
 import { LanguageContext } from "../../../../App";
 
-function ListOfResources() {
+function ResourcesList() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
   const listEN =
     "List of books and courses read or taken: (Youtube tutorials are not included here)";
@@ -20,7 +20,7 @@ function ListOfResources() {
           {books.map((item, i) => {
             return (
               <li key={i}>
-                <i>{item.title}</i>, {item.author}
+                <cite>{item.title}</cite>, {item.author}
               </li>
             );
           })}
@@ -33,11 +33,14 @@ function ListOfResources() {
         </p>
         <ul>
           {coursesCompleted.map((item, i) => {
-            const { title, author, duration } = item;
+            const { title, author, duration: courseDurationInHours } = item;
             return (
               <li key={i}>
                 <i>{title}</i>{" "}
-                <span className="duration">({duration} hours)</span>, {author}
+                <span className="course-duration">
+                  ({courseDurationInHours} hours)
+                </span>
+                , {author}
               </li>
             );
           })}
@@ -50,11 +53,14 @@ function ListOfResources() {
         </p>
         <ul>
           {coursesOngoing.map((item, i) => {
-            const { title, author, duration } = item;
+            const { title, author, duration: courseDurationInHours } = item;
             return (
               <li key={i}>
-                <i>{title}</i>{" "}
-                <span className="duration">({duration} hours)</span>, {author}
+                <cite>{title}</cite>{" "}
+                <span className="course-duration">
+                  ({courseDurationInHours} hours)
+                </span>
+                , {author}
               </li>
             );
           })}
@@ -64,4 +70,4 @@ function ListOfResources() {
   );
 }
 
-export default ListOfResources;
+export default ResourcesList;

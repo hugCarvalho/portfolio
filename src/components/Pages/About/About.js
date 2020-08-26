@@ -1,17 +1,20 @@
 import React from "react";
 import "./About.scss";
-import { MainIntroEN, MainIntroDE } from "./assets/mainIntro";
-
-import { ExtendedInfoEN, ExtendedInfoDE } from "./assets/extendedInfo";
-import ListOfResources from "./assets/ListOfResources";
+import { IntroMainEN, IntroMainDE } from "./assets/IntroMain";
+import { IntroExtendedEN, IntroExtendedDE } from "./assets/IntroExtended";
+import ResourcesList from "./assets/ResourcesList";
 
 function AboutEN() {
   return (
     <div className="wrapper__about">
-      <MainIntroEN />
-      <section className="extended">
-        <ExtendedInfoEN />
-        <ListOfResources />
+      <section>
+        <IntroMainEN />
+      </section>
+      <section>
+        <IntroExtendedEN />
+      </section>
+      <section>
+        <ResourcesList />
       </section>
     </div>
   );
@@ -20,10 +23,14 @@ function AboutEN() {
 export function AboutDE() {
   return (
     <div className="wrapper__about">
-      <MainIntroDE />
-      <section className="extended">
-        <ExtendedInfoDE />
-        <ListOfResources />
+      <section>
+        <IntroMainDE />
+      </section>
+      <section>
+        <IntroExtendedDE />
+      </section>
+      <section>
+        <ResourcesList />
       </section>
     </div>
   );

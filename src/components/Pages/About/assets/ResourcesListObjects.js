@@ -41,6 +41,11 @@ export const coursesCompleted = [
     author: "Jonas Schmedtmann",
     duration: "28",
   },
+  {
+    title: "React- The Complete Guide (incl Hooks, ReactRouter, Redux)",
+    author: "Maximilian Schwarzmüller ",
+    duration: "40,5",
+  },
 ];
 
 export const coursesOngoing = [
@@ -54,11 +59,7 @@ export const coursesOngoing = [
     author: "Maximilian Schwarzmüller ",
     duration: "20",
   },
-  {
-    title: "React- The Complete Guide (incl Hooks, ReactRouter, Redux)",
-    author: "Maximilian Schwarzmüller ",
-    duration: "40,5",
-  },
+
   {
     title: "React, NodeJS, Express & MongoDB - The MERN fullstack",
     author: "Maximilian Schwarzmüller ",

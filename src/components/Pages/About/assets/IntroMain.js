@@ -1,6 +1,6 @@
 import React from "react";
 
-export function MainIntroEN() {
+export function IntroMainEN() {
   return (
     <article>
       <h2>Basic Introduction</h2>
@@ -25,7 +25,7 @@ export function MainIntroEN() {
     </article>
   );
 }
-export function MainIntroDE() {
+export function IntroMainDE() {
   return (
     <article>
       <h2>Allgemeine Vorstellung</h2>
@@ -56,4 +56,4 @@ export function MainIntroDE() {
   );
 }
 
-export default MainIntroEN;
+export default IntroMainEN;

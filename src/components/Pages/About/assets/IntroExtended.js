@@ -1,11 +1,11 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 
-const edabitScore = 6420;
-const edabitLevel = 14;
+const edabitScore = 6980;
+const edabitLevel = 15;
 const checkioLevel = 8;
 
-export function ExtendedInfoEN() {
+export function IntroExtendedEN() {
   //TOPICS
   const knowledge = "Where does my knowledge come from?";
   const challenges = "How do I improve my problem solving skills?";
@@ -41,18 +41,17 @@ export function ExtendedInfoEN() {
             </HashLink>
           </li>
         </ol>
-        <br></br>
+
         <h4 id="knowledge">{knowledge}</h4>
-        <p>{""}</p>
         <p>
           Although I have read some books about JavaScript, most of my knowledge
           derives from online resources.
         </p>
         <p>
           For a more structured approach, I enrolled in numerous online courses
-          on Udemy.com,{" "}
-          <i>making sure I got my knowledge from several sources</i>, which also
-          allowed me to assess the quality of what I was learning.
+          on <cite>Udemy.com</cite>,{" "}
+          <em>making sure I got my knowledge from diversified sources</em>,
+          which also allowed me to assess the quality of what I was learning.
         </p>
         <p>
           More recently, I started to dive into the official documentation,
@@ -66,26 +65,25 @@ export function ExtendedInfoEN() {
           </HashLink>
           .
         </p>
-        <br></br>
-        <br></br>
+
         {/* CHALENGES */}
         <h4 id="challenges">{challenges}</h4>
         <p>
           Developing whole projects like those you have as reference on this
-          website, and using programming playgrounds like <i>codesandbox.io</i>{" "}
-          to micro-practice new concepts, are a great way to develop new skills.
+          website, and using programming playgrounds like{" "}
+          <cite>codesandbox.io</cite> to micro-practice new concepts, are a
+          great way to develop new skills.
         </p>
         <p>
           I also enjoy solving coding challenges on a regular basis, mainly in{" "}
-          <i>Edabit</i> (currently at level {edabitLevel}, with{" "}
-          {edabitScore + ""} points), and sporadically in <i>CheckiO</i>{" "}
+          <cite>Edabit</cite> (currently at level {edabitLevel}, with{" "}
+          {edabitScore + ""} points), and sporadically in <cite>CheckiO</cite>{" "}
           (currently at level {checkioLevel}) to improve my problem solving
           skills. This is also helpful in discovering new approaches from more
           experienced users and to compare code for a better performant
           solution.
         </p>
-        <br></br>
-        <br></br>
+
         {/* STUDY */}
         <h4 id="study">{study}</h4>
         <p>
@@ -97,26 +95,22 @@ export function ExtendedInfoEN() {
           with different people, which helped to lay the foundations of working
           collaborative in a harmonious way.
         </p>
-        <br></br>
-        <br></br>
+
         {/* HOBBIES */}
         <h4 id="hobbies">{hobbies}</h4>
-        <p>{""}</p>
         <p>
           Apart from programming, I enjoy playing boardgames, doing sport like
           biking, going to the fitness studio or sport activities in the park. I
           also enjoy spending time with my girlfriend - failing to mention her,
           could potentially damage the relationship. And me... ;-)
         </p>
-        <br></br>
-        <br></br>
       </article>
     </div>
   );
 }
 
 //GERMAN
-export function ExtendedInfoDE() {
+export function IntroExtendedDE() {
   //TOPICS
   const knowledge = "Wie habe ich mir mein Wissen angeeignet?";
   const challenges = "Wie verbessere ich meine Fähigkeiten zur Problemlösung?";
@@ -152,9 +146,7 @@ export function ExtendedInfoDE() {
             </HashLink>
           </li>
         </ol>
-        <br></br>
         <h4 id="knowledge">{knowledge}</h4>
-        <p>{""}</p>
         <p>
           Ich habe einige Bücher über JavaScript gelesen aber den Großteil
           meines Wissens habe ich mir aus Online-Ressourcen angeeignet. So
@@ -179,8 +171,7 @@ export function ExtendedInfoDE() {
           {""}
           in diesem Abschnitt erwähnt wurden.
         </p>
-        <br></br>
-        <br></br>
+
         {/* CHALENGES */}
         <h4 id="challenges">{challenges}</h4>
         <p>
@@ -192,19 +183,18 @@ export function ExtendedInfoDE() {
         <p>
           Neue Konzepte in der „Mikropraxis“ zu üben, ist ebenfalls eine gute
           Möglichkeit, neue Fähigkeiten zu entwickeln. Plattformen wie zum
-          Beispiel <i>Codesandbox.io</i> sind eine gute Übungsmöglichkeit.
+          Beispiel <cite>Codesandbox.io</cite> sind eine gute Übungsmöglichkeit.
         </p>
         <p>
           Zusätzlich löse ich gerne regelmäßig Challenges, um meine Fähigkeiten
-          zu testen und zu verbessern. Hauptsächlich nutze ich <i> Edabit </i>{" "}
-          (derzeit auf Stufe {edabitLevel}, mit {""}
-          {edabitScore + ""} Punkte) und vereinzelt auch <i> CheckiO </i>{" "}
+          zu testen und zu verbessern. Hauptsächlich nutze ich{" "}
+          <cite> Edabit </cite> (derzeit auf Stufe {edabitLevel}, mit {""}
+          {edabitScore + ""} Punkte) und vereinzelt auch <cite> CheckiO </cite>{" "}
           (derzeit auf Stufe {checkioLevel}). Das ist auch eine gute Möglichkeit
           um neue Ansätze für ein gegebenes Problem zu entdecken und um Codes zu
           verbessern.
         </p>
-        <br></br>
-        <br></br>
+
         {/* STUDY */}
         <h4 id="study">{study}</h4>
         <p>
@@ -218,18 +208,14 @@ export function ExtendedInfoDE() {
           Teamarbeit, in denen ich viele Erfahrungen in der Zusammenarbeit mit
           verschiedenen Menschen sammeln konnte.
         </p>
-        <br></br>
-        <br></br>
+
         {/* HOBBIES */}
         <h4 id="hobbies">{hobbies}</h4>
-        <p>{""}</p>
         <p>
           Abgesehen vom Programmieren spiele ich gerne Brettstrategiespiele und
           bin sportlich aktiv (Radfahren, Fitness Studio oder sportliche
           Aktivitäten im Park).
         </p>
-        <br></br>
-        <br></br>
       </article>
     </div>
   );

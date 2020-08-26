@@ -10,9 +10,9 @@ function RenderAbout() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
 
   return (
-    <div className="container__about">
+    <main className="RenderAbout">
       {/* Only displayed on smaller mobile viewport */}
-      <section className=" show-smallest-screen">
+      <section className=" show-on-smallest-screen-only">
         <ul>
           <li>
             <a
@@ -27,7 +27,7 @@ function RenderAbout() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/hugCarvalho">
-              GiHhub
+              GitHub
             </a>
           </li>
         </ul>
@@ -35,7 +35,7 @@ function RenderAbout() {
       {/*  */}
 
       {isLanguageEnglish ? <AboutEN /> : <AboutDE />}
-    </div>
+    </main>
   );
 }
 
