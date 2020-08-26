@@ -1,17 +1,17 @@
 import React from "react";
 import "./RenderSkills.scss";
-import OneSkill, { RelatedSkills } from "./SkillCards";
+import SingleSkill, { RelatedSkills } from "./SkillCards";
 
 function Skills() {
   return (
-    <div className="container__skills">
-      <section className="wrapper__all">
+    <div className="Skills">
+      <main>
         {/* New Skill */}
         <div className="container__skill-card">
           <div className="wire">
             <span className="nail"></span>
           </div>
-          <OneSkill classes="bg-javascript">JavaScript</OneSkill>
+          <SingleSkill classes="bg-javascript">JavaScript</SingleSkill>
         </div>
 
         {/* New Skill */}
@@ -19,7 +19,7 @@ function Skills() {
           <div className="wire">
             <span className="nail"></span>
           </div>
-          <OneSkill classes="bg-react">React</OneSkill>
+          <SingleSkill classes="bg-react">React</SingleSkill>
         </div>
 
         {/* New Skill */}
@@ -27,7 +27,7 @@ function Skills() {
           <div className="wire">
             <span className="nail"></span>
           </div>
-          <OneSkill classes="bg-redux">Redux</OneSkill>
+          <SingleSkill classes="bg-redux">Redux</SingleSkill>
         </div>
 
         {/* New Skill */}
@@ -35,7 +35,7 @@ function Skills() {
           <div className="box wire">
             <span className="nail"></span>
           </div>
-          <OneSkill classes="bg-html-5">HTML</OneSkill>
+          <SingleSkill classes="bg-html-5">Semantic HTML</SingleSkill>
         </div>
 
         {/* New Skill */}
@@ -63,7 +63,7 @@ function Skills() {
             classesTwo="bg-github special"
           />
         </div>
-      </section>
+      </main>
     </div>
   );
 }

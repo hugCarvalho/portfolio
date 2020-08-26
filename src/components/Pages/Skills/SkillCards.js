@@ -1,9 +1,9 @@
 import React from "react";
 import "./SkillCards.scss";
 
-function OneSkill(props) {
+function SingleSkill(props) {
   return (
-    <div className="container__skill-box center">
+    <div className="skill-box center">
       <div className={`logo ${props.classes}`} />
       <span>{props.children}</span>
     </div>
@@ -13,7 +13,7 @@ function OneSkill(props) {
 export function RelatedSkills(props) {
   return (
     <>
-      <div className="container__skill-box">
+      <div className="skill-box">
         <div className="wrapper__logo-text">
           <div className={`logo ${props.classesOne}`} />
           <span>{props.skillOne}</span>
@@ -27,4 +27,4 @@ export function RelatedSkills(props) {
   );
 }
 
-export default OneSkill;
+export default SingleSkill;
