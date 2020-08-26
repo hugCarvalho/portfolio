@@ -1,42 +1,37 @@
-.container__contact {
-  //background-color: lighten(#3c6274, %);
+.Contact {
   background-color: hsla(150, 4%, 79%, 0.767);
-  padding: 70px 16%;
   min-height: calc(
     100vh - 270px
   ); //100vh - (header-height = 190 + footer-height = 70)
+  padding: 70px 16%;
+  font-size: 2.5rem;
 
-  .wrapper__contact-info {
+  display: flex;
+  flex-direction: column;
+
+  .contact-me {
+    padding: 20px 10px 0 5%;
+
     display: flex;
-    flex-direction: column;
-    font-size: 2.5rem;
-
-    .contact-me {
-      //background-color: red;
-      display: flex;
-      align-items: center;
-      padding: 20px 10px 0 5%;
-    }
+    align-items: center;
   }
 
   a:hover {
     text-decoration: underline;
   }
 
+  //Icons
   .fas,
   .fab {
-    font-size: 4rem;
     padding-right: 10px;
+    font-size: 4rem;
   }
 }
 
 @media (max-width: 622px) {
-  .container__contact {
-    //background-color: red;
+  .Contact {
     min-height: calc(100vh - 245px);
     padding: 40px 3%;
-    .wrapper__contact-info {
-      font-size: 2rem;
-    }
+    font-size: 2rem;
   }
 }

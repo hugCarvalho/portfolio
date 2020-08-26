@@ -3,23 +3,19 @@ import "./RenderContact.scss";
 
 function Contact() {
   return (
-    <div className="container__contact">
-      <section className="wrapper__contact-info">
-        <div className="contact-me">
-          <a href="mailto:hugo.berlinlife@gmail.com">
-            <i className="fas fa-envelope-square"></i>
-          </a>
-          <a href="mailto:hugo.berlinlife@gmail.com">
-            hugo.berlinlife@gmail.com
-          </a>
-        </div>
+    <main className="Contact">
+      <address className="contact-me">
+        <a href="mailto:hugo.berlinlife@gmail.com">
+          <i className="fas fa-envelope-square"></i>
+        </a>
+        <a href="mailto:hugo.berlinlife@gmail.com">hugo.berlinlife@gmail.com</a>
+      </address>
 
-        <div className="contact-me">
-          <i className="fas fa-phone-square-alt"></i>
-          <span>+49 (0)176 782 93 187</span>
-        </div>
-      </section>
-    </div>
+      <address className="contact-me">
+        <i className="fas fa-phone-square-alt"></i>
+        <a href="tel:+4917678293187">+49 (0)176 782 93 187</a>
+      </address>
+    </main>
   );
 }
 
