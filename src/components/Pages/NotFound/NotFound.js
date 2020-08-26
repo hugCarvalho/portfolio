@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function NotFound() {
   return (
-    <div className="not-found">
+    <main className="NotFound">
       <h2>
         <p>An error has ocurred! </p>
         <p>
@@ -16,7 +16,7 @@ function NotFound() {
           <button>Back to Home Page</button>
         </Link>
       </h2>
-    </div>
+    </main>
   );
 }
 

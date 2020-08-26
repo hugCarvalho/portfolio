@@ -36,6 +36,7 @@ function App() {
             <Route exact path="/contact" component={RenderContact} />
             <Route path="/" component={NotFound} />
           </Switch>
+
           <RenderFooter />
         </div>
       </LanguageContext.Provider>

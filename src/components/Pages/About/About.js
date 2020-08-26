@@ -7,9 +7,9 @@ import ResourcesList from "./assets/ResourcesList";
 function AboutEN() {
   return (
     <div className="wrapper__about">
-      <section>
+      <main>
         <IntroMainEN />
-      </section>
+      </main>
       <section>
         <IntroExtendedEN />
       </section>
@@ -23,15 +23,15 @@ function AboutEN() {
 export function AboutDE() {
   return (
     <div className="wrapper__about">
-      <section>
+      <main>
         <IntroMainDE />
-      </section>
+      </main>
       <section>
         <IntroExtendedDE />
       </section>
-      <section>
+      <aside>
         <ResourcesList />
-      </section>
+      </aside>
     </div>
   );
 }
