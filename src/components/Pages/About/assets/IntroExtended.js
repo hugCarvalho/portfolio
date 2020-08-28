@@ -114,7 +114,7 @@ export function IntroExtendedDE() {
   const study = "Was habe ich studiert?";
   const hobbies = "Was sind meine Interessen?";
   return (
-    <article>
+    <article lang="de">
       <h2>Weitere Informationen</h2>
       <ol>
         <li>

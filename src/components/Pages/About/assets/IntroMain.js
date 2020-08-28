@@ -27,7 +27,7 @@ export function IntroMainEN() {
 }
 export function IntroMainDE() {
   return (
-    <article>
+    <article lang="de">
       <h2>Allgemeine Vorstellung</h2>
       <p>
         Hallo, ich bin Hugo, ein autodidaktischer und wissbegierig Webentwickler
