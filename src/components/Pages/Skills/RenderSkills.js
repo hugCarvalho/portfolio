@@ -1,8 +1,15 @@
 import React from "react";
 import "./RenderSkills.scss";
 import SingleSkill, { RelatedSkills } from "./SkillCards";
+import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
 
 function Skills() {
+  const pageIsActive = React.useContext(IsActiveContext);
+
+  React.useEffect(() => {
+    document.title = "Hugo's Portofolio - Skills";
+  }, [pageIsActive]);
+
   return (
     <div className="Skills">
       <main>

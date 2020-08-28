@@ -5,9 +5,15 @@ import CV_EN from "../../../shared/CV_english.pdf";
 import CV_DE from "../../../shared/CV_deutsch.pdf";
 
 import { LanguageContext } from "../../../App";
+import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
 
 function RenderAbout() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
+  const pageIsActive = React.useContext(IsActiveContext);
+
+  React.useEffect(() => {
+    document.title = "Hugo's Portofolio - About";
+  }, [pageIsActive]);
 
   return (
     <div className="RenderAbout">

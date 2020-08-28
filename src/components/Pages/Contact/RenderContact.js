@@ -1,7 +1,14 @@
 import React from "react";
 import "./RenderContact.scss";
+import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
 
 function Contact() {
+  const pageIsActive = React.useContext(IsActiveContext);
+
+  React.useEffect(() => {
+    console.log("CONTACT");
+    document.title = "Hugo's Portofolio - Contact";
+  }, [pageIsActive]);
   return (
     <main className="Contact">
       <address className="contact-me">

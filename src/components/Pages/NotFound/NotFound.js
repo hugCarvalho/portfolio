@@ -1,8 +1,13 @@
 import React from "react";
 import "./NotFound.scss";
 import { Link } from "react-router-dom";
+import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
 
 function NotFound() {
+  const pageIsActive = React.useContext(IsActiveContext);
+  React.useEffect(() => {
+    document.title = "Hugo's Portofolio - Error";
+  }, [pageIsActive]);
   return (
     <main className="NotFound">
       <h2>
