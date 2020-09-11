@@ -5,9 +5,11 @@ import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
 
 function RenderProjects() {
   const pageIsActive = React.useContext(IsActiveContext);
+
   React.useEffect(() => {
     document.title = "Hugo's Portofolio - Projects";
   }, [pageIsActive]);
+
   return (
     <div className="RenderProjects">
       <ProjectCard />

@@ -70,6 +70,14 @@ function Skills() {
             classesTwo="bg-github special"
           />
         </div>
+
+        {/* New Skill */}
+        <div className="container__skill-card">
+          <div className="box wire">
+            <span className="nail"></span>
+          </div>
+          <SingleSkill classes="bg-jest">Jest</SingleSkill>
+        </div>
       </main>
     </div>
   );

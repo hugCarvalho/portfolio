@@ -6,9 +6,9 @@ function Contact() {
   const pageIsActive = React.useContext(IsActiveContext);
 
   React.useEffect(() => {
-    console.log("CONTACT");
     document.title = "Hugo's Portofolio - Contact";
   }, [pageIsActive]);
+
   return (
     <main className="Contact">
       <address className="contact-me">
