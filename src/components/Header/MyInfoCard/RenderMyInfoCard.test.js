@@ -50,7 +50,7 @@ describe("Header elements are present", () => {
 
   test("MyInfoCard is present ", () => {
     renderWithProvider(RenderMyInfoCard);
-    screen.getByTitle(/my info card/i);
+    screen.getByTestId("My Info Card");
   });
 
   test("Nav buttons are present", () => {
