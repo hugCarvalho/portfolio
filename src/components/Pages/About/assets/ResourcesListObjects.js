@@ -65,4 +65,9 @@ export const coursesOngoing = [
     author: "Maximilian Schwarzmüller ",
     duration: "19",
   },
+  {
+    title: "Epic React",
+    author: "Kent C. Dodds",
+    duration: "21",
+  },
 ];

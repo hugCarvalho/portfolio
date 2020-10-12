@@ -7,7 +7,7 @@ function Skills() {
   const pageIsActive = React.useContext(IsActiveContext);
 
   React.useEffect(() => {
-    document.title = "Hugo's Portofolio - Skills";
+    document.title = "Skills";
   }, [pageIsActive]);
 
   return (

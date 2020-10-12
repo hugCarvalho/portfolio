@@ -6,7 +6,7 @@ function Contact() {
   const pageIsActive = React.useContext(IsActiveContext);
 
   React.useEffect(() => {
-    document.title = "Hugo's Portofolio - Contact";
+    document.title = "Contact";
   }, [pageIsActive]);
 
   return (

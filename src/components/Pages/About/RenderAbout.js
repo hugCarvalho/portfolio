@@ -12,7 +12,7 @@ function RenderAbout() {
   const pageIsActive = React.useContext(IsActiveContext);
 
   React.useEffect(() => {
-    document.title = "Hugo's Portofolio - About";
+    document.title = "About";
   }, [pageIsActive]);
 
   return (
@@ -24,7 +24,8 @@ function RenderAbout() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href={isLanguageEnglish ? CV_EN : CV_DE}>
+              href={isLanguageEnglish ? CV_EN : CV_DE}
+            >
               CV
             </a>
           </li>
@@ -32,7 +33,8 @@ function RenderAbout() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/hugCarvalho">
+              href="https://github.com/hugCarvalho"
+            >
               GitHub
             </a>
           </li>

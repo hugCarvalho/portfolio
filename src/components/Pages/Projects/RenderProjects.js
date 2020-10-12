@@ -7,7 +7,7 @@ function RenderProjects() {
   const pageIsActive = React.useContext(IsActiveContext);
 
   React.useEffect(() => {
-    document.title = "Hugo's Portofolio - Projects";
+    document.title = "Hugo's Projects";
   }, [pageIsActive]);
 
   return (

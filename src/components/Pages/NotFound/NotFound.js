@@ -6,15 +6,15 @@ import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
 function NotFound() {
   const pageIsActive = React.useContext(IsActiveContext);
   React.useEffect(() => {
-    document.title = "Hugo's Portofolio - Error";
+    document.title = "Error";
   }, [pageIsActive]);
   return (
     <main className="NotFound">
       <h2>
         <p>An error has ocurred! </p>
         <p>
-          Please click the button below to return to the home page or use the
-          above navigation buttons to return to the website
+          Please click the button below to return to the home page or use the above
+          navigation buttons to return to the website
         </p>
 
         <Link to="/projects">
