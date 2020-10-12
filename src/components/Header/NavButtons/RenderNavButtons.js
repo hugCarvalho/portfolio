@@ -22,9 +22,8 @@ function RenderNavButtons() {
         {/* PROJECTS */}
         <Link to="/projects">
           <Button3D
-            classes={
-              isActive === "projects" || isActive === "projekte" ? "active" : ""
-            }>
+            classes={isActive === "projects" || isActive === "projekte" ? "active" : ""}
+          >
             <span className="button-text">
               {isLanguageEnglish ? "projects" : "projekte"}
             </span>
@@ -34,11 +33,8 @@ function RenderNavButtons() {
         {/* SKILLS */}
         <Link to="/skills">
           <Button3D
-            classes={
-              isActive === "skills" || isActive === "fähigkeiten"
-                ? "active"
-                : ""
-            }>
+            classes={isActive === "skills" || isActive === "fähigkeiten" ? "active" : ""}
+          >
             <span className="button-text">
               {isLanguageEnglish ? "skills" : "fähigkeiten"}
             </span>
@@ -48,9 +44,8 @@ function RenderNavButtons() {
         {/* ABOUT */}
         <Link to="/about">
           <Button3D
-            classes={
-              isActive === "about" || isActive === "über mich" ? "active" : ""
-            }>
+            classes={isActive === "about" || isActive === "über mich" ? "active" : ""}
+          >
             <span className="button-text">
               {isLanguageEnglish ? "about" : "über mich"}
             </span>
@@ -60,9 +55,8 @@ function RenderNavButtons() {
         {/* Contact */}
         <Link to="/contact">
           <Button3D
-            classes={
-              isActive === "contact" || isActive === "kontakt" ? "active" : ""
-            }>
+            classes={isActive === "contact" || isActive === "kontakt" ? "active" : ""}
+          >
             <span className="button-text">
               {isLanguageEnglish ? "contact" : "kontakt"}
             </span>
