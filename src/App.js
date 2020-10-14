@@ -17,14 +17,13 @@ import {
 
 export const LanguageContext = createContext();
 
-function App() {
-  const [isLanguageEnglish, setIsLanguageEnglish] = useState(true);
+function App({ isEnglish = true }) {
+  const [isLanguageEnglish, setIsLanguageEnglish] = useState(isEnglish);
 
   return (
     // <Router basename="/portfolio">
     <HashRouter>
-      <LanguageContext.Provider
-        value={{ isLanguageEnglish, setIsLanguageEnglish }}>
+      <LanguageContext.Provider value={{ isLanguageEnglish, setIsLanguageEnglish }}>
         <div className="App">
           <RenderHeader />
 

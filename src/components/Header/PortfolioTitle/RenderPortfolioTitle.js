@@ -5,7 +5,7 @@ import "./RenderPortfolioTitle.scss";
 function RenderPortfolioTitle() {
   return (
     <Link to="/projects">
-      <section className="RenderPortfolioTitle">
+      <section className="RenderPortfolioTitle" role="banner">
         <h1>
           <span>Hugo's</span>
           <span>Portfolio</span>
