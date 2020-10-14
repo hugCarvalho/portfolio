@@ -1,10 +1,10 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import RenderNavButtons from "./RenderNavButtons";
-import App from "../../../App";
 import { createMemoryHistory } from "history";
 import { Router } from "react-router-dom";
 import userEvent from "@testing-library/user-event";
+import RenderNavButtons from "./RenderNavButtons";
+import App from "../../../App";
 
 describe("Navigation Buttons tests", () => {
   test("Buttons render correctly in german as well", () => {
@@ -49,30 +49,30 @@ describe("Navigation Buttons tests", () => {
     expect(about).not.toHaveClass("active");
     expect(contact).toHaveClass("active");
   });
-});
 
-test("button links link correctly to the correspondent pages ", () => {
-  const history = createMemoryHistory();
-  render(
-    <Router history={history}>
-      <App />
-    </Router>
-  );
+  test("button links link correctly to the correspondent pages ", () => {
+    const history = createMemoryHistory();
+    render(
+      <Router history={history}>
+        <App />
+      </Router>
+    );
 
-  const projects = screen.getByRole("button", { name: /projects/i });
-  const skills = screen.getByRole("button", { name: /skills/i });
-  const about = screen.getByRole("button", { name: /about/i });
-  const contact = screen.getByRole("button", { name: /contact/i });
+    const projects = screen.getByRole("button", { name: /projects/i });
+    const skills = screen.getByRole("button", { name: /skills/i });
+    const about = screen.getByRole("button", { name: /about/i });
+    const contact = screen.getByRole("button", { name: /contact/i });
 
-  userEvent.click(skills);
-  expect(screen.getByText(/semantic html/i)).toBeInTheDocument();
+    userEvent.click(skills);
+    expect(screen.getByText(/semantic html/i)).toBeInTheDocument();
 
-  userEvent.click(about);
-  expect(screen.getByText(/basic introduction/i)).toBeInTheDocument();
+    userEvent.click(about);
+    expect(screen.getByText(/basic introduction/i)).toBeInTheDocument();
 
-  userEvent.click(contact);
-  expect(screen.getByText(/176 782 93 187/i)).toBeInTheDocument();
+    userEvent.click(contact);
+    expect(screen.getByText(/176 782 93 187/i)).toBeInTheDocument();
 
-  userEvent.click(projects);
-  expect(screen.getByText(/displays weather data from /i)).toBeInTheDocument();
+    userEvent.click(projects);
+    expect(screen.getByText(/displays weather data from /i)).toBeInTheDocument();
+  });
 });
