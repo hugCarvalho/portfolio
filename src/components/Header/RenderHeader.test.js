@@ -1,7 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import Header from "./RenderHeader";
-import LanguagesSpoken from "./MyInfoCard/LanguagesSpoken/LanguagesSpoken";
 import App from "../../App";
 import RenderMyInfoCard from "./MyInfoCard/RenderMyInfoCard";
 import RenderNavButtons from "./NavButtons/RenderNavButtons";
@@ -32,7 +31,7 @@ describe("Header components should be present", () => {
   test("Nav buttons are present (4 buttons)", () => {
     renderWithProviders(<RenderNavButtons />);
     screen.getByRole("navigation");
-    screen.getByRole("button", { name: /skills/i });
+    screen.getByRole("button", { name: /projects/i });
     screen.getByRole("button", { name: /skills/i });
     screen.getByRole("button", { name: /about/i });
     screen.getByRole("button", { name: /contact/i });
