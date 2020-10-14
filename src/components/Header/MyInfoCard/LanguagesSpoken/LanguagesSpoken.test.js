@@ -9,10 +9,11 @@ test("should render in english ", () => {
   render(<LanguagesSpoken />, { wrapper: Wrapper });
 
   screen.getByText(/speaks:/i);
-  screen.getByRole("figure", { name: /english/i });
-  screen.getByRole("figure", { name: /german/i });
-  screen.getByRole("figure", { name: /portuguese/i });
-  screen.getByRole("figure", { name: /spanish/i });
+  // screen.getByRole("figure", { name: /english/i });
+  expect(screen.getByRole("figure", { name: /german/i })).toHaveClass("fflag-DE");
+  expect(screen.getByRole("figure", { name: /portuguese/i })).toHaveClass("fflag-PT");
+  expect(screen.getByRole("figure", { name: /spanish/i })).toHaveClass("fflag-ES");
+  expect(screen.getByRole("figure", { name: /english/i })).toHaveClass("fflag-GB");
 });
 
 test("should render in german ", () => {
@@ -20,8 +21,8 @@ test("should render in german ", () => {
   render(<LanguagesSpoken />, { wrapper: Wrapper });
 
   screen.getByText(/spricht:/i);
-  screen.getByRole("figure", { name: /englisch/i });
-  screen.getByRole("figure", { name: /deutsch/i });
-  screen.getByRole("figure", { name: /portugiesisch/i });
-  screen.getByRole("figure", { name: /spanisch/i });
+  expect(screen.getByRole("figure", { name: /englisch/i })).toHaveClass("fflag-GB");
+  expect(screen.getByRole("figure", { name: /deutsch/i })).toHaveClass("fflag-DE");
+  expect(screen.getByRole("figure", { name: /portugiesisch/i })).toHaveClass("fflag-PT");
+  expect(screen.getByRole("figure", { name: /spanisch/i })).toHaveClass("fflag-ES");
 });
