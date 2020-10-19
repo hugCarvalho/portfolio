@@ -1,6 +1,5 @@
 import React from "react";
 import "./MyInfoCardLinks.scss";
-import { Link } from "react-router-dom";
 import englishCV from "../../../../shared/CV_english.pdf";
 import germanCV from "../../../../shared/CV_deutsch.pdf";
 import { LanguageContext } from "../../../../App";
