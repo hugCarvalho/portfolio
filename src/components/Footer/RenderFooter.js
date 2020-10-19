@@ -22,7 +22,8 @@ function RenderFooter() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://freakflagsprite.com">
+                href="https://freakflagsprite.com"
+              >
                 freakflagsprite
               </a>
             </cite>
@@ -36,7 +37,8 @@ function RenderFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://icons8.com"
-                title="icons8">
+                title="icons8"
+              >
                 Icons8
               </a>
             </cite>
@@ -48,7 +50,8 @@ function RenderFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.flaticon.com/authors/freepik"
-                title="Freepik">
+                title="Freepik"
+              >
                 Freepik
               </a>{" "}
             </cite>
@@ -58,7 +61,8 @@ function RenderFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.flaticon.com/"
-                title="Flaticon">
+                title="Flaticon"
+              >
                 {" "}
                 Flaticon
               </a>
@@ -67,20 +71,15 @@ function RenderFooter() {
         </ul>
       </section>
 
-      {/* Links section */}
+      {/* My Links Section */}
       <section className="contact-links">
         <ul>
-          <li>
-            <Link to="/contact">
-              {isLanguageEnglish ? "Contact" : "Kontakt"}
-            </Link>
-          </li>
-
           <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/hugCarvalho">
+              href="https://github.com/hugCarvalho"
+            >
               GitHub
             </a>
           </li>
@@ -96,6 +95,15 @@ function RenderFooter() {
                 {"CV"}
               </a>
             )}
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
+            >
+              Edabit
+            </a>
           </li>
         </ul>
       </section>

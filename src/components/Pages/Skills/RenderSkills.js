@@ -78,6 +78,16 @@ function Skills() {
           </div>
           <SingleSkill classes="bg-jest">Jest</SingleSkill>
         </div>
+
+        {/* New Skill */}
+        <div className="container__skill-card">
+          <div className="box wire">
+            <span className="nail"></span>
+          </div>
+          <SingleSkill classes="bg-testing_library">
+            <small>React Testing Library</small>
+          </SingleSkill>
+        </div>
       </main>
     </div>
   );
