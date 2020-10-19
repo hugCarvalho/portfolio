@@ -2,8 +2,8 @@ import React from "react";
 import { HashLink } from "react-router-hash-link";
 
 const edabitLevel = 16;
-const edabitScore = 7970;
-const edabitReputation = 3151;
+const edabitScore = 7975;
+const edabitReputation = 3552;
 const checkioLevel = 8;
 
 export function IntroExtendedEN() {
@@ -12,6 +12,7 @@ export function IntroExtendedEN() {
   const challenges = "How do I improve my problem solving skills?";
   const study = "What did I study?";
   const hobbies = "What are my main hobbies?";
+
   return (
     <article>
       <h2>Extended Introduction</h2>
@@ -54,10 +55,10 @@ export function IntroExtendedEN() {
         allowed me to assess the quality of what I was learning.
       </p>
       <p>
-        More recently, I started to dive into the official documentation, especially with
-        the React environment, and to also focus on Youtube online tutorials for more
-        specific subjects.
+        Presently, I'm enrolled in Kent C. Dodds 21 hours workshop,{" "}
+        <cite>Epic React</cite>.
       </p>
+
       <p>
         At the end, you can find a{" "}
         <HashLink smooth to="#resources">
@@ -71,16 +72,33 @@ export function IntroExtendedEN() {
       <p>
         In addition to developing whole projects like those you have as reference on this
         website, I also enjoy solving coding challenges on a regular basis, mainly in{" "}
-        <cite>Edabit</cite> (currently at level {edabitLevel}, with {edabitScore + ""}{" "}
-        points and {edabitReputation} reputation points), and sporadically in{" "}
-        <cite>CheckiO</cite> (currently at level {checkioLevel}) to improve my problem
-        solving skills. This is also helpful in discovering new approaches from more
-        experienced users and to compare code for a better performant solution.
+        <a
+          title="My Edabit userpage"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
+        >
+          <cite>Edabit</cite> (currently at level {edabitLevel}, with {edabitScore + ""}{" "}
+          points and {edabitReputation} reputation points)
+        </a>
+        , and sporadically in <cite>CheckiO</cite> (currently at level {checkioLevel}) to
+        improve my problem solving skills. This is also helpful in discovering new
+        approaches from more experienced users and to compare code for a better performant
+        solution.
       </p>
       <p>
-        Recently, I started creating challenges in <cite>Edabit</cite>. This is helpful to
-        develop my testing skills in unit testing and I get to contribute to the community
-        as well.
+        Recently,{" "}
+        <a
+          title="My Edabit userpage"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
+        >
+          {" "}
+          I started creating challenges in <cite>Edabit</cite>{" "}
+        </a>
+        . This is helpful to develop my testing skills in unit testing and I get to
+        contribute to the community as well.
       </p>
 
       {/* STUDY */}
@@ -89,7 +107,7 @@ export function IntroExtendedEN() {
         I studied Sociology. Technically doesn't contribute much to this area, but the
         evaluation system was based on projects, there were no exams. These projects were
         mainly developed in a team, usually 3-5 people, with the exception of the last
-        year, which consisted on a solo project. This resulted in 4 years of multiple
+        year, which consisted on a solo project. This resulted in four years of multiple
         teamwork experiences with different people, which helped to lay the foundations of
         working collaborative in a harmonious way.
       </p>
@@ -154,9 +172,8 @@ export function IntroExtendedDE() {
         verschiedenen Experten beziehe.
       </p>
       <p>
-        Seit kurzem habe ich begonnen, mich mit der offiziellen React Dokumentation zu
-        befassen und zusätzlich konzentriere ich mich auf spezifische Themen mit Hilfe von
-        YouTube Tutorials.
+        Zurzeit bin ich in Kent C. Dodds 21-Stunden-Workshop <cite>Epic React</cite>{" "}
+        eingeschrieben.
       </p>
       <p>
         Am Ende der Seite finden Sie eine{" "}
@@ -174,29 +191,44 @@ export function IntroExtendedDE() {
       <p>
         Neben der Entwicklung ganzer Projekte, wie Sie sie auf dieser Website als Referenz
         haben, macht es mir auch Spaß, regelmäßig Codierungsprobleme zu lösen.
-        Hauptsächlich nutze ich <cite> Edabit </cite> (derzeit auf Stufe {edabitLevel},
-        mit {""}
-        {edabitScore + ""} Punkte und {edabitReputation} Reputation Punkte) und vereinzelt
-        auch <cite> CheckiO </cite> (derzeit auf Stufe {checkioLevel}). Das ist auch eine
-        gute Möglichkeit um neue Ansätze für ein gegebenes Problem zu entdecken und um
-        Codes zu verbessern.
+        Hauptsächlich nutze ich{" "}
+        <a
+          title="My Edabit userpage"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
+        >
+          <cite> Edabit </cite> (derzeit auf Stufe {edabitLevel}, mit {""}
+          {edabitScore + ""} Punkte und {edabitReputation} Reputation Punkte)
+        </a>{" "}
+        und vereinzelt auch <cite> CheckiO </cite> (derzeit auf Stufe {checkioLevel}). Das
+        ist auch eine gute Möglichkeit um neue Ansätze für ein gegebenes Problem zu
+        entdecken und um Codes zu verbessern.
       </p>
       <p>
-        Kürzlich habe ich damit begonnen, in Edabit Coding Challenges zu schaffen. Dies
-        ist hilfreich für die Entwicklung meiner Testfähigkeiten auf dem Gebiet der
+        Kürzlich habe ich damit begonnen, in{" "}
+        <a
+          title="My Edabit userpage"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
+        >
+          Edabit Coding Challenges zu schaffen{" "}
+        </a>
+        . Dies ist hilfreich für die Entwicklung meiner Testfähigkeiten auf dem Gebiet der
         Einheitentests, und ich kann auch zur Gemeinschaft beitragen.
       </p>
 
       {/* STUDY */}
       <h4 id="study">{study}</h4>
       <p>
-        Ich habe Soziologie studiert. Thematisch und technisch gesehen, trägt es nicht all
-        zu viel zum Bereich Webentwicklung bei, allerdings war der Ablauf des Studiums
-        sehr projektorientiert angelegt, so dass ich in der Zeit schon Erfahrungen im
-        Bereich Projektarbeit sammeln konnte. Diese Projekte wurden hauptsächlich in einem
-        Team bearbeitet, normalerweise 3-5 Personen, mit Ausnahme des letzten Jahres,
-        welches aus einem Soloprojekt bestand. Dies führte zu 4 Jahren starker Teamarbeit,
-        in denen ich viele Erfahrungen in der Zusammenarbeit mit verschiedenen Menschen
+        Ich habe Soziologie studiert. Technisch gesehen, trägt es nicht all zu viel zum
+        Bereich Webentwicklung bei, allerdings war der Ablauf des Studiums sehr
+        projektorientiert angelegt, so dass ich in der Zeit schon Erfahrungen im Bereich
+        Projektarbeit sammeln konnte. Diese Projekte wurden hauptsächlich in einem Team
+        bearbeitet, normalerweise 3-5 Personen, mit Ausnahme des letzten Jahres, welches
+        aus einem Soloprojekt bestand. Dies führte zu vier Jahren starker Teamarbeit, in
+        denen ich viele Erfahrungen in der Zusammenarbeit mit verschiedenen Menschen
         sammeln konnte.
       </p>
 

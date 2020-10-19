@@ -90,7 +90,7 @@ export const projectsData = [
     id: 3,
     name: "Phantasy Online Shop",
     category: ["website", "online-shop"],
-    img: "media/online_shop_redux2.png",
+    img: "media/online_shop_redux.png",
     description: {
       en:
         "This is an ONGOING project, built using React (hooks) and Redux that simulates an online shop. It focus primarily on behaviour. For more details check the homepage of the project.",

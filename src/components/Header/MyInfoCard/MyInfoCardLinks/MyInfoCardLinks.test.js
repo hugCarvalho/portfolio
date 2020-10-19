@@ -19,7 +19,7 @@ describe("MyInfoCardLinks", () => {
 
     // present in English
     const cardLinks = document.querySelector(".MyInfoCardLinks > ul");
-    expect(cardLinks).toHaveTextContent("Contact");
+    expect(cardLinks).toHaveTextContent("Edabit");
     expect(cardLinks).toHaveTextContent("CV");
     expect(cardLinks).toHaveTextContent("GitHub");
 
@@ -53,7 +53,7 @@ describe("MyInfoCardLinks", () => {
 
     // present in German
     const cardLinks = document.querySelector(".MyInfoCardLinks > ul");
-    expect(cardLinks).toHaveTextContent("Kontakt");
+    expect(cardLinks).toHaveTextContent("Edabit");
     expect(cardLinks).toHaveTextContent("CV");
     expect(cardLinks).toHaveTextContent("GitHub");
 

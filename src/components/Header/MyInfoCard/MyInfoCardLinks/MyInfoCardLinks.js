@@ -13,9 +13,14 @@ function MyInfoCardLinks() {
       <div className="MyInfoCardLinks">
         <ul>
           <li>
-            <Link to="/contact">{isLanguageEnglish ? "Contact" : "Kontakt"}</Link>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/hugCarvalho"
+            >
+              GitHub
+            </a>
           </li>
-
           <li>
             {isLanguageEnglish && (
               <a target="_blank" rel="noopener noreferrer" href={englishCV}>
@@ -33,9 +38,9 @@ function MyInfoCardLinks() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/hugCarvalho"
+              href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
             >
-              GitHub
+              Edabit
             </a>
           </li>
         </ul>
