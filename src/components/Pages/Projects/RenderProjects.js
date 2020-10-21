@@ -10,11 +10,7 @@ function RenderProjects() {
     document.title = "Hugo's Projects";
   }, [pageIsActive]);
 
-  return (
-    <div className="RenderProjects">
-      <ProjectCard />
-    </div>
-  );
+  return <div className="RenderProjects">{<ProjectCard />}</div>;
 }
 
 export default RenderProjects;

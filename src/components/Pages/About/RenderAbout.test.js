@@ -39,5 +39,4 @@ test("should match snapshot in english ", () => {
 test("should match snapshot in german ", () => {
   const { container } = customRender(<RenderAbout />, false);
   expect(container).toMatchSnapshot();
-  screen.debug();
 });

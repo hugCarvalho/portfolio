@@ -4,13 +4,9 @@ import "./LanguageFlag.scss";
 function LanguageFlag(props) {
   return (
     <>
-      <button onClick={() => props.onClick()} className="LanguageFlag">
+      <button onClick={props.onClick} className="LanguageFlag">
         <figure>
-          <img
-            className={`flags ${props.isSelected}`}
-            src={props.src}
-            alt={props.alt}
-          />
+          <img className={`flags ${props.isSelected}`} src={props.src} alt={props.alt} />
         </figure>
       </button>
     </>
