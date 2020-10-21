@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<div>
+  <main
+    class="Contact"
+  >
+    <address
+      class="contact-me"
+    >
+      <a
+        href="mailto:hugo.berlinlife@gmail.com"
+      >
+        <i
+          class="fas fa-envelope-square"
+        />
+      </a>
+      <a
+        href="mailto:hugo.berlinlife@gmail.com"
+      >
+        hugo.berlinlife@gmail.com
+      </a>
+    </address>
+    <address
+      class="contact-me"
+    >
+      <i
+        class="fas fa-phone-square-alt"
+      />
+      <a
+        href="tel:+4917678293187"
+      >
+        +49 (0)176 782 93 187
+      </a>
+    </address>
+  </main>
+</div>
+`;
