@@ -38,6 +38,15 @@ function RenderAbout() {
               GitHub
             </a>
           </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
+            >
+              Edabit
+            </a>
+          </li>
         </ul>
       </section>
       {/*  */}

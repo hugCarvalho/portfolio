@@ -6,13 +6,14 @@ live: https://hugcarvalho.github.io/portfolio (<code>ctrl + click </code> to ope
 
 ### Project specs
 
-Built with REACT using Hooks. Styled with SASS (scss). Unit and integration testing.
+Built with REACT using Hooks. Styled with SASS (scss). Unit and integration tests with Jest and React Testing Library.
 
 #### Hooks used:
 
 - useState
 - useEffect
 - useContext
+- useLocation
 
 #### Third party used:
 

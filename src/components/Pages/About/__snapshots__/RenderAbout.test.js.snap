@@ -27,6 +27,15 @@ exports[`should match snapshot in english  1`] = `
             GitHub
           </a>
         </li>
+        <li>
+          <a
+            href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Edabit
+          </a>
+        </li>
       </ul>
     </section>
     <div
@@ -442,6 +451,15 @@ exports[`should match snapshot in german  1`] = `
             target="_blank"
           >
             GitHub
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Edabit
           </a>
         </li>
       </ul>

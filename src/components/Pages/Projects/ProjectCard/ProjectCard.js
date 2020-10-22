@@ -110,6 +110,11 @@ function ProjectCard() {
                     <h2>{isLanguageEnglish ? "Technical Info:" : "Technische Info"}</h2>
                     <p>{`${project.techInfo.main}`}</p>
                     <p>{`${project.techInfo.styled}`}</p>
+                    <p>
+                      {project.techInfo.tested &&
+                        `Tested with ${project.techInfo.tested}`}
+                    </p>
+
                     {project.techInfo.responsive && <p>Responsive</p>}
                     {project.techInfo.specsText.en && (
                       <p>{project.techInfo.specsText.en}</p>

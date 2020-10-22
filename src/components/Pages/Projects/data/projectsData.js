@@ -32,6 +32,7 @@ export const projectsData = [
     techInfo: {
       main: "REACT (Hooks)",
       styled: "SASS (scss)",
+      tested: "",
       responsive: true,
       specsText: { en: "", de: "" },
       specs: [
@@ -78,6 +79,7 @@ export const projectsData = [
     techInfo: {
       main: "REACT",
       styled: "SASS (scss)",
+      tested: "",
       responsive: true,
       specsText: { en: "", de: "" },
       specs: ["forwardRef", "Prop-types", "Flexbox", "Local Storage"],
@@ -117,10 +119,11 @@ export const projectsData = [
     techInfo: {
       main: "REACT (Hooks) + REDUX",
       styled: "SASS (scss)",
+      tested: "Jest and React Testing Library",
       responsive: false,
       specsText: { en: "", de: "" },
       specs: ["useDispatch", "useSelector", "useEffect", "useState", "useReducer", "API"],
-      thirdParty: ["React-Router", "useForm"],
+      thirdParty: ["React-Router", "react-hook-form"],
       notes: { en: "", de: "" },
     },
     live: ["https://stoic-almeida-257f01.netlify.app/"],
@@ -148,9 +151,17 @@ export const projectsData = [
     techInfo: {
       main: "REACT (Hooks)",
       styled: "SASS (scss)",
+      tested: "Jest and React Testing Library",
       responsive: true,
       specsText: { en: "Semantic HTML" },
-      specs: ["useState", "useEffect", "useContext", "Flexbox", "Tests"],
+      specs: [
+        "useState",
+        "useEffect",
+        "useContext",
+        "useLocation",
+        "Flexbox",
+        "Unit and integration tests ",
+      ],
       thirdParty: ["React-router"],
       notes: { en: "", de: "" },
     },
