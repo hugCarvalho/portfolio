@@ -1,8 +1,10 @@
 .Contact {
   background-color: hsla(150, 4%, 79%, 0.767);
+  background-color: hsla(60, 58%, 81%, 0.767);
+
   min-height: calc(
-    100vh - 270px
-  ); //100vh - (header-height = 190 + footer-height = 70)
+    100vh - 235px
+  ); //100vh - (header-height = 155 + footer-height = 70 extra=10)
   padding: 70px 16%;
   font-size: 2.5rem;
 

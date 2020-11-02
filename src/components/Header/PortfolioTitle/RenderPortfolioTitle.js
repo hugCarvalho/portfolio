@@ -4,14 +4,14 @@ import "./RenderPortfolioTitle.scss";
 
 function RenderPortfolioTitle() {
   return (
-    <Link to="/projects">
-      <section className="RenderPortfolioTitle" role="banner">
-        <h1>
-          <span>Hugo's</span>
-          <span>Portfolio</span>
+    <section className="RenderPortfolioTitle" role="banner">
+      <Link to="/projects">
+        <h1 title="my projects">
+          <span id="hugo">Hugo's</span>
+          <span id="portfolio">Portfolio</span>
         </h1>
-      </section>
-    </Link>
+      </Link>
+    </section>
   );
 }
 

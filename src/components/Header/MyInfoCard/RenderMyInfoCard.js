@@ -6,7 +6,7 @@ import LanguagesSpoken from "./LanguagesSpoken/LanguagesSpoken";
 
 function RenderMyInfoCard() {
   return (
-    <section className="RenderMyInfoCard" data-testid="My Info Card">
+    <section className="RenderMyInfoCard" id="mycard" data-testid="My Info Card">
       <MyInfoCardLinks />
       <MyPic />
       <LanguagesSpoken />
