@@ -36,3 +36,12 @@
     }
   }
 }
+
+.to-top {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  background-color: green;
+  z-index: 500;
+  // display: showScroll ? "flex" : "none",
+}

@@ -14,6 +14,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import ScrollToTop from "./components/customisable/ScrollToTop";
 
 export const LanguageContext = createContext();
 
@@ -39,6 +40,11 @@ function App({ isEnglish = true }) {
           </Switch>
 
           <RenderFooter />
+          <ScrollToTop
+            options={{ behavior: "smooth" }}
+            background="rgba(195, 210, 215, 0.64)"
+            color="white"
+          />
         </div>
       </LanguageContext.Provider>
     </HashRouter>
