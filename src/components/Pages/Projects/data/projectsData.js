@@ -3,6 +3,7 @@ export const projectsData = [
     id: 1,
     name: "Weather App",
     category: ["app"],
+    techs: ["React", "API", "Hooks"],
     img: "media/weather_night_small.png",
 
     description: {
@@ -54,6 +55,7 @@ export const projectsData = [
     id: 2,
     name: "Todo List App",
     category: ["app"],
+    techs: ["React"],
     img: "media/todo_list_small.png",
 
     description: {
@@ -91,8 +93,10 @@ export const projectsData = [
   },
   {
     id: 3,
-    name: "Phantasy Online Shop",
+    name: "Fantasy Online Shop",
     category: ["website", "online-shop"],
+    techs: ["React", "API", "Hooks"],
+
     img: "media/online_shop_redux.png",
     description: {
       en:
@@ -133,6 +137,8 @@ export const projectsData = [
     id: 4,
     name: "Portfolio Website",
     category: ["website"],
+    techs: ["React", "Hooks", "Tests"],
+
     img: "media/portfolio_4.png",
     description: {
       en: "Well, this website...",

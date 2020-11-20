@@ -50,11 +50,12 @@ exports[`should match snapshot in english  1`] = `
             Hi, I'm Hugo, a self-taught web developer, with a master in Sociology. I started to learn Programming with JavaScript, alongside my job, about one and half year ago. It started as a curiosity but didn't take long to turn into a passion. Recently, I decided to quit my job to pursue this passion.
           </p>
           <p>
-            I am eager to learn new skills and I am actively learning (currently studying 
+            I am eager to learn new skills and I am actively learning (currently studying
+             
             <s>
-              Redux
+              Testing
             </s>
-             Testing) and enjoying it greatly.
+             NodeJ) and enjoying it greatly.
           </p>
           <p>
             As my skills and confidence grow, so does my desire to work in a team, and to work towards a common goal with the objective of achieving something that will impact positively people's lives. This would also bring a sense of realization to my learning process.
@@ -164,12 +165,12 @@ exports[`should match snapshot in english  1`] = `
                 Edabit
               </cite>
                (currently at level 
-              16
+              17
               , with 
-              7975
+              8675
                
               points and 
-              3552
+              5307
                reputation points)
             </a>
             , and sporadically in 
@@ -481,9 +482,9 @@ exports[`should match snapshot in german  1`] = `
             Ich bin bestrebt, mir neue Fähigkeiten anzueignen, lerne aktiv (zurzeit
              
             <s>
-              Redux
+              Testing
             </s>
-             Testing) und bin mit Begeisterung dabei.
+             NodeJS) und bin mit Begeisterung dabei.
           </p>
           <p>
             Neben meinen Fähigkeiten und meinem Selbstvertrauen, wächst auch der Wunsch wieder in einem Team zu arbeiten um gemeinsame Ziele zu verfolgen, welche einen positiven Einfluss auf die Kunden und das Unternehmen haben. Die Zusammenarbeit im Team würde sich ebenfalls fördernd auf meine Lernkurve auswirken und mich sehr motivieren.
@@ -589,12 +590,12 @@ exports[`should match snapshot in german  1`] = `
                  Edabit 
               </cite>
                (derzeit auf Stufe 
-              16
+              17
               , mit 
               
-              7975
+              8675
                Punkte und 
-              3552
+              5307
                Reputation Punkte)
             </a>
              
