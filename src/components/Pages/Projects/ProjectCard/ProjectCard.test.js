@@ -15,7 +15,7 @@ function customRender(ui, value = true) {
   return render(ui, { wrapper: Wrapper });
 }
 
-describe("Projects Card", () => {
+describe.skip("Projects Card", () => {
   test("should render in german as well ", () => {
     customRender(<ProjectCard />, false);
     screen.getAllByText(/Eigenschaften/i);
@@ -26,7 +26,7 @@ describe("Projects Card", () => {
     const mockFunction = jest.fn();
 
     const buttons = screen.getAllByRole("button", { name: /tech/i });
-    buttons.forEach((button) => {
+    buttons.forEach(button => {
       button.addEventListener("click", mockFunction);
       userEvent.click(button);
       expect(mockFunction).toHaveBeenCalled();
@@ -37,7 +37,7 @@ describe("Projects Card", () => {
     customRender(<ProjectCard />);
     const onLeaveMockFn = jest.fn();
     const cards = screen.getAllByLabelText(/project card/i);
-    cards.forEach((button) => {
+    cards.forEach(button => {
       button.addEventListener("mouseleave", onLeaveMockFn);
       fireEvent.mouseLeave(button);
       expect(onLeaveMockFn).toHaveBeenCalled();

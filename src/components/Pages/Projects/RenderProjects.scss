@@ -3,6 +3,13 @@
   //background-color: lighten(#2d627a, 1%);
   min-height: calc(100vh - 235px);
   padding: 80px 5% 0;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 1.4;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 622px) {
