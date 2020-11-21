@@ -1,8 +1,6 @@
 import React from "react";
 import "./RenderFooter.scss";
-
 import { LanguageContext } from "../../App";
-import { Link } from "react-router-dom";
 import englishCV from "../../shared/CV_english.pdf";
 import germanCV from "../../shared/CV_deutsch.pdf";
 
