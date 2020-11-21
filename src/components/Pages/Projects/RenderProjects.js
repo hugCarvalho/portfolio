@@ -11,6 +11,7 @@ function RenderProjects() {
   const [backCardHeight, setBackCardHeight] = useState("auto");
   const [frontSideActive, setFrontSideActive] = useState(true);
   const [id, setId] = useState(null);
+  const [filterBy, setFilterBy] = useState("all");
 
   useEffect(() => {
     const calculateBackSideCardHeight = () => {
@@ -28,7 +29,7 @@ function RenderProjects() {
       cardFront.forEach(item => (item.style.height = `${backCardHeight}`));
     };
     changeHeight();
-  }, [backCardHeight]);
+  }, [backCardHeight, filterBy, isLanguageEnglish]);
 
   const toggleTechInfoFeatures = id => {
     setId(id);
@@ -39,25 +40,70 @@ function RenderProjects() {
     document.title = "Hugo's Projects";
   }, [pageIsActive]);
 
+  const filterTechsBy = (db, option = "all") => {
+    if (option === "all") return db;
+    else {
+      return db.filter(item => item.techs.includes(option));
+    }
+  };
+
   return (
-    <main className="RenderProjects">
-      {projectsData.map((project, i) => {
-        const language = isLanguageEnglish ? "en" : "de";
-        return (
-          <section key={i}>
-            <ProjectCard
-              backCardHeight={backCardHeight}
-              setFrontSideActive={setFrontSideActive}
-              frontSideActive={frontSideActive}
-              project={project}
-              language={language}
-              toggleTechInfoFeatures={toggleTechInfoFeatures}
-              id={id}
-            />
-          </section>
-        );
-      })}
-    </main>
+    <>
+      <div className="filter-by">
+        <span className="filter-by__text">Filter by technology:</span>
+        <ul>
+          <li
+            className={filterBy === "all" ? "one " : "all"}
+            onClick={() => setFilterBy("all")}
+          >
+            all
+          </li>
+
+          <li
+            className={filterBy === "Hooks" ? "one " : "all"}
+            onClick={() => setFilterBy("Hooks")}
+          >
+            Hooks
+          </li>
+          <li
+            className={filterBy === "Redux" ? "one " : "all"}
+            onClick={() => setFilterBy("Redux")}
+          >
+            Redux
+          </li>
+          <li
+            className={filterBy === "Tests" ? "one " : "all"}
+            onClick={() => setFilterBy("Tests")}
+          >
+            Tests
+          </li>
+          <li
+            className={filterBy === "API" ? "one " : "all"}
+            onClick={() => setFilterBy("API")}
+          >
+            Tests
+          </li>
+        </ul>
+      </div>
+      <main className="RenderProjects">
+        {filterTechsBy(projectsData, filterBy).map((project, i) => {
+          const language = isLanguageEnglish ? "en" : "de";
+          return (
+            <section key={i}>
+              <ProjectCard
+                backCardHeight={backCardHeight}
+                setFrontSideActive={setFrontSideActive}
+                frontSideActive={frontSideActive}
+                project={project}
+                language={language}
+                toggleTechInfoFeatures={toggleTechInfoFeatures}
+                id={id}
+              />
+            </section>
+          );
+        })}
+      </main>
+    </>
   );
 }
 

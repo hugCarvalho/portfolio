@@ -95,7 +95,7 @@ export const projectsData = [
     id: 3,
     name: "Fantasy Online Shop",
     category: ["website", "online-shop"],
-    techs: ["React", "API", "Hooks"],
+    techs: ["React", "API", "Hooks", "Redux"],
 
     img: "media/online_shop_redux.png",
     description: {

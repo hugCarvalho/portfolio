@@ -11,6 +11,35 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+//FILTER BY
+.filter-by {
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+  }
+  li {
+    list-style: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .all {
+    box-shadow: 0px 0px 0px 1px black;
+    transform: rotate(30deg);
+
+    transition: all ease-in 2s;
+  }
+
+  .all:hover {
+  }
+  .one {
+    transform: rotate(360);
+
+    transition: all ease-in 1s;
+  }
+}
 
 @media (max-width: 622px) {
   .RenderProjects {
