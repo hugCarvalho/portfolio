@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
 import { projectsData } from "./data/projectsData";
 import { LanguageContext } from "../../../App";
+import FilterBy from "./FilterBy/FilterBy";
 
 function RenderProjects() {
   const pageIsActive = React.useContext(IsActiveContext);
@@ -49,42 +50,12 @@ function RenderProjects() {
 
   return (
     <>
-      <div className="filter-by">
-        <span className="filter-by__text">Filter by technology:</span>
-        <ul>
-          <li
-            className={filterBy === "all" ? "one " : "all"}
-            onClick={() => setFilterBy("all")}
-          >
-            all
-          </li>
+      <FilterBy
+        filterBy={filterBy}
+        setFilterBy={setFilterBy}
+        isLanguageEnglish={isLanguageEnglish}
+      />
 
-          <li
-            className={filterBy === "Hooks" ? "one " : "all"}
-            onClick={() => setFilterBy("Hooks")}
-          >
-            Hooks
-          </li>
-          <li
-            className={filterBy === "Redux" ? "one " : "all"}
-            onClick={() => setFilterBy("Redux")}
-          >
-            Redux
-          </li>
-          <li
-            className={filterBy === "Tests" ? "one " : "all"}
-            onClick={() => setFilterBy("Tests")}
-          >
-            Tests
-          </li>
-          <li
-            className={filterBy === "API" ? "one " : "all"}
-            onClick={() => setFilterBy("API")}
-          >
-            Tests
-          </li>
-        </ul>
-      </div>
       <main className="RenderProjects">
         {filterTechsBy(projectsData, filterBy).map((project, i) => {
           const language = isLanguageEnglish ? "en" : "de";
