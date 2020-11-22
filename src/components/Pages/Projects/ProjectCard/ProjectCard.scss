@@ -119,44 +119,22 @@
     }
   }
 }
-// @media (max-width: 430px) {
-//   .ProjectCard {
-//     .container__card {
-//       background-color: beige;
-//       width: 390px;
-//       margin-top: -20px;
-//     }
-//     .container__card .card__side--front .project-screenshot img {
-//       width: 98%;
-//       height: 98%;
-//       margin: auto;
 
-//       display: flex;
-//     }
-//   }
-// }
-
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .ProjectCard {
     font-size: 1.3rem;
-    .container__card {
-      width: 360px;
-    }
+    width: 360px;
   }
 }
 
 @media (max-width: 360px) {
   .ProjectCard {
-    .container__card {
-      width: 346px;
-    }
+    width: 346px;
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 320px) {
   .ProjectCard {
-    .container__card {
-      width: 320px;
-    }
+    width: 310px;
   }
 }

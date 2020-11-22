@@ -10,12 +10,33 @@
   .filter-by__text {
     color: whitesmoke;
     padding: 0 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
   }
 
   ul {
     //background-color: lightgreen;
     display: flex;
     justify-content: center;
+    // position: relative;
+    // :nth-child(1) {
+    //   z-index: 99;
+    // }
+    // :nth-child(2) {
+    //   z-index: 90;
+    // }
+    // :nth-child(3) {
+    //   z-index: 80;
+    // }
+    // :nth-child(4) {
+    //   z-index: 70;
+    // }
+    // :nth-child(5) {
+    //   z-index: 60;
+    // }
+    // :nth-child(6) {
+    //   z-index: 50;
+    // }
   }
   li {
     display: flex;
@@ -25,7 +46,7 @@
     color: white;
     width: 95px;
     padding: 3px;
-    margin-right: 5px;
+    margin-right: -7px;
     // margin-top: 1.6rem;
     // margin-bottom: 1.5rem;
     text-align: center;
@@ -35,23 +56,50 @@
     font-variant: small-caps;
     letter-spacing: 1.3px;
     cursor: pointer;
+    border: 1px solid #383232;
+  }
+  .active {
+    position: relative;
+    background-color: #e8ba07;
+    color: rgb(32, 32, 32);
+    border: none;
+    border: 1px solid #383232de;
+
+    transform-origin: 20% 40%;
+    transition: transform linear 1.6s;
+    transition: transform, background ease-in;
+    transition-duration: 0.9s, 0.4s, 5s;
+    z-index: 100;
+    transform: rotate(360deg);
   }
 
   .tech-tab {
     //box-shadow: 0px 0px 0px 1px black;
+    position: relative;
     transform: rotate(5deg);
     transform-origin: 20% 40%;
-    transition: transform, background ease-in;
-    transition-duration: 1s, 0.4s;
+    transition: transform, background, rotate ease-in;
+    transition-duration: 1.4s, 0.4s, 5s;
+    z-index: 0;
   }
+}
 
-  .active {
-    background-color: #e8ba07;
-    color: rgb(32, 32, 32);
-    transform: rotate(360);
-    transform-origin: 20% 40%;
-    transition: transform linear 1.6s;
-    transition: transform, background ease-in;
-    transition-duration: 0.4s, 0.4s;
+@media (max-width: 650px) {
+  .FilterBy {
+    font-size: 1.6rem;
+
+    .smallerScreens {
+      display: block;
+      padding-right: 10px;
+    }
+
+    .filter-by__text {
+      display: none;
+    }
+
+    li {
+      width: auto;
+      margin-right: 3px;
+    }
   }
 }
