@@ -12,7 +12,7 @@ export function IntroMainEN() {
       </p>
       <p>
         I am eager to learn new skills and I am actively learning (currently studying{" "}
-        <s>Testing</s> NodeJ) and enjoying it greatly.
+        <s>Testing</s> Node.js) and enjoying it greatly.
       </p>
       <p>
         As my skills and confidence grow, so does my desire to work in a team, and to work
@@ -38,7 +38,7 @@ export function IntroMainDE() {
       </p>
       <p>
         Ich bin bestrebt, mir neue Fähigkeiten anzueignen, lerne aktiv (zurzeit{" "}
-        <s>Testing</s> NodeJS) und bin mit Begeisterung dabei.
+        <s>Testing</s> Node.js) und bin mit Begeisterung dabei.
       </p>
       <p>
         Neben meinen Fähigkeiten und meinem Selbstvertrauen, wächst auch der Wunsch wieder

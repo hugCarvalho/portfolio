@@ -1,32 +1,10 @@
 import React from "react";
 import "./FilterBy.scss";
 
-export function Emoji(props) {
-  return (
-    <span
-      title={props.title}
-      className={props.className}
-      role="img"
-      aria-label={props.label ? props.label : ""}
-      aria-hidden={props.label ? "false" : "true"}
-    >
-      {props.symbol}
-    </span>
-  );
-}
-
 function FilterBy({ filterBy, setFilterBy, isLanguageEnglish }) {
   return (
     <div className="FilterBy">
       <span className="filter-by__text">Filter:</span>
-      {/* <h3>
-        <Emoji
-          className="emoji smallerScreens"
-          label="filter by"
-          symbol="🎯"
-          title="filter by"
-        />
-      </h3> */}
       <ul>
         <li
           className={filterBy === "all" ? "active " : "tech-tab"}

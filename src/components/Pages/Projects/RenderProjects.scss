@@ -1,8 +1,14 @@
 .RenderProjects {
-  background-color: lighten(#3c6274, 3%);
+  background-color: lighten(#383838, 2%);
   //background-color: lighten(#2d627a, 1%);
+  // background-image: url("../Skills/assets/12.png");
+  // background-image: url("../Skills/assets/16.png");
+  // background-image: url("../Skills/assets/15.png");
+  //background-image: url("../Skills/assets/18.png");
+  background-image: url("../Skills/assets/14.png");
+
   min-height: calc(100vh - 235px);
-  padding: 60px 5% 0;
+  padding: 41px 5% 0;
   width: 100%;
   font-size: 1.5rem;
   line-height: 1.4;
@@ -17,3 +23,6 @@
     min-height: calc(100vh - 245px);
   }
 }
+
+//filter #2e4049
+//filter #383838
