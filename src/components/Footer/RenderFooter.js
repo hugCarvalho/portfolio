@@ -10,7 +10,8 @@ function RenderFooter() {
     <footer className="RenderFooter">
       {/* Credits section */}
       <section className="credits">
-        <span>Credits:</span>
+        <h4>Credits:</h4>
+        <hr />
         <ul>
           <li>
             {isLanguageEnglish
@@ -71,6 +72,8 @@ function RenderFooter() {
 
       {/* My Links Section */}
       <section className="contact-links">
+        <h4>Links</h4>
+        <hr></hr>
         <ul>
           <li>
             <a
