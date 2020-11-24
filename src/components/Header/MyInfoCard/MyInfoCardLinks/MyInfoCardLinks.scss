@@ -15,9 +15,10 @@
   a {
     color: #e6e6e6;
     outline: none;
+    letter-spacing: 1px;
     &:focus,
     &:hover {
-      text-decoration: underline;
+      color: #e8ba07;
     }
   }
 }

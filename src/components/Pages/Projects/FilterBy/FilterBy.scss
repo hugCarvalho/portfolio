@@ -47,14 +47,14 @@
     color: white;
     width: 95px;
     padding: 3px;
-    text-align: center;
     margin-right: -7px;
+    text-align: center;
     font-weight: 300;
     font-variant: small-caps;
     letter-spacing: 1.3px;
+    border: 1px solid #383232;
     border-radius: 3px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.562);
-    border: 1px solid #383232;
     cursor: pointer;
 
     display: flex;
@@ -69,7 +69,7 @@
     border: none;
     border: 1px solid #383232de;
     transition: transform, background rotate ease-in;
-    transition-duration: 0.9s, 0.1s;
+    transition-duration: 0.8s, 0.1s;
   }
 
   .tech-tab {
@@ -77,7 +77,7 @@
     transform: rotate(5deg);
     transform-origin: 20% 40%;
     transition: transform, background, rotate ease-in;
-    transition-duration: 1.4s, 0.1s;
+    transition-duration: 1.3s, 0.1s;
   }
 }
 
