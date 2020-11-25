@@ -6,8 +6,10 @@ import LanguagesSpoken from "./LanguagesSpoken/LanguagesSpoken";
 
 function RenderMyInfoCard() {
   const [cardStart, setCardStart] = React.useState(false);
-  React.useEffect(() => {
+  document.addEventListener("DOMContentLoaded", () => {
     setCardStart(true);
+  });
+  React.useEffect(() => {
     //return () => setCardStart(false);
   }, []);
   return (

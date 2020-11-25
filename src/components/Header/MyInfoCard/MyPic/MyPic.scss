@@ -30,6 +30,8 @@ $curtain-border: #8f8f8f;
   .right {
     position: absolute;
     top: 0;
+    width: 50%;
+    height: 101%;
     background: #c3c1c1;
     background: linear-gradient(
       to left,
@@ -42,10 +44,8 @@ $curtain-border: #8f8f8f;
       $color1 85%,
       $color2 100%
     );
-    width: 50%;
-    height: 101%;
-    transition: transform 1.6s ease-out;
     z-index: 11;
+    transition: transform 1.5s ease-out;
   }
 
   .left {

@@ -9,7 +9,7 @@ function MyPic() {
   const [activate, setActivate] = React.useState(false);
 
   document.addEventListener("DOMContentLoaded", () =>
-    setTimeout(() => setActivate(true), 3400)
+    setTimeout(() => setActivate(true), 2600)
   );
 
   return (

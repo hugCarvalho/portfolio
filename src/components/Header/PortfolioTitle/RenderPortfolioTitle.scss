@@ -4,9 +4,12 @@
   flex-direction: column;
 
   h1 {
+    width: 15rem;
     display: flex;
     flex-direction: column;
+
     :first-child {
+      visibility: hidden;
       color: #222;
       font-weight: 500;
       font-family: "times", "serif";
@@ -14,6 +17,7 @@
       text-shadow: 0px 1px 1px #4d4d4d;
     }
     :last-child {
+      visibility: hidden;
       background-color: #474444;
       font-weight: 500;
       color: #222;
@@ -23,6 +27,43 @@
       background-clip: text;
       -webkit-background-clip: text;
       -moz-background-clip: text;
+    }
+
+    .animateHugo,
+    .animatePortfolio {
+      visibility: visible;
+      width: 15rem;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: letter 2.5s steps(60, end);
+    }
+
+    .shine {
+      animation-name: shine;
+      animation-duration: 2.1s;
+    }
+  }
+  @keyframes letter {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes shine {
+    0% {
+      color: #222;
+    }
+    25% {
+      color: gray;
+    }
+    50% {
+      color: rgb(250, 250, 250);
+    }
+    75% {
+      color: gray;
+    }
+    100% {
+      color: #222;
     }
   }
 }
