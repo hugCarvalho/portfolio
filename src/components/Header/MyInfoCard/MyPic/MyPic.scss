@@ -1,18 +1,101 @@
 .MyPic {
-  //background-color: lightsalmon;
-  padding: 0 9px;
-
+  // background-color: lightsalmon;
+  //padding: 0 9px;
+  position: relative;
+  width: 67.55px;
+  // width: 77.55px;
+  height: 67.7px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 4px rgb(31, 30, 30);
+    //cursor: help;
+  }
   img {
-    //background-color: lightcoral;
+    // background-color: lightcoral;
+    position: absolute;
+    opacity: 1;
+    top: 0;
     height: 6.74rem;
     border: 2px solid #d8d8da;
     border-radius: 50%;
     transition: all 0.3s ease-out;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(36, 35, 35);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    //border: 2px solid #d8d8da;
+    border-right: 1px solid black;
+    border-radius: 10px 0 0 10px;
+    //border-radius: 50%;
+    transform: translate(0%, 0%);
+    transition: transform 1.5s ease-out;
+    z-index: 10;
+    overflow: hidden;
 
     &:hover {
-      transform: scale(1.05);
-      box-shadow: 2px 2px 4px rgb(31, 30, 30);
-      cursor: help;
+      //transform: translate(-100%, 0%);
+    }
+    &.activate {
+      transform: translate(-100%, 0%);
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(36, 35, 35);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    //border: 2px solid #d8d8da;
+    //border-left: 1px solid black;
+    //border-radius: 10px 0 0 10px;
+    //border-radius: 50%;
+    transform: translate(0%, 0%);
+    transition: transform 1.5s ease-out;
+    z-index: 11;
+    border-left: 1px solid gray;
+
+    &.activate {
+      transform: translate(100%, 0%);
+    }
+
+    &:hover {
+      //transform: translate(100%, 0%);
+    }
+  }
+
+  .wrapper {
+    position: relative;
+    //background-color: orange;
+    width: 52%;
+    border: none;
+
+    z-index: 50;
+    .left-triangle {
+      position: absolute;
+      background-color: #5e5e5e;
+      width: 15px;
+      height: 15px;
+      top: 40%;
+      left: 77%;
+      transform: rotate(45deg);
+      z-index: 51;
+      border: 1px solid gray;
     }
   }
 }
+//left: 40
+//top 40
+//rotate 45
