@@ -12,7 +12,7 @@
   align-items: center;
 
   transform: translateY(-130%);
-  transition: transform 3s cubic-bezier(0, -0.55, 0.27, 1.75) 1s;
+  transition: transform 1.7s cubic-bezier(0, -0.55, 0.27, 1.75) 1s;
 
   &.start {
     transform: translateY(0%);

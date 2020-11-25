@@ -8,10 +8,10 @@ import moi from "./media/moi.jpg";
 function MyPic() {
   const [activate, setActivate] = React.useState(false);
 
-  React.useEffect(() => {
-    setTimeout(() => setActivate(true), 5300);
-    //return () => setActivate(false);
-  }, []);
+  document.addEventListener("DOMContentLoaded", () =>
+    setTimeout(() => setActivate(true), 3400)
+  );
+
   return (
     <figure className="MyPic">
       <Link to="/about">
@@ -19,10 +19,6 @@ function MyPic() {
       </Link>
       <span className={`left ${activate ? "activate" : ""}`}></span>
       <span className={`right ${activate ? "activate" : ""}`}></span>
-      {/* <span className={`left wrapper`}>
-        <span className="left-triangle"></span>
-      </span>
-      */}
     </figure>
   );
 }
