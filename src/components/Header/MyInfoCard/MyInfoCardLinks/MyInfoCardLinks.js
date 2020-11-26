@@ -1,11 +1,11 @@
 import React from "react";
 import "./MyInfoCardLinks.scss";
-import englishCV from "../../../../shared/CV_english.pdf";
-import germanCV from "../../../../shared/CV_deutsch.pdf";
+// import englishCV from "../../../../shared/CV_english.pdf";
+// import germanCV from "../../../../shared/CV_deutsch.pdf";
 import { LanguageContext } from "../../../../App";
 
 function MyInfoCardLinks() {
-  const { isLanguageEnglish } = React.useContext(LanguageContext);
+  // const { isLanguageEnglish } = React.useContext(LanguageContext);
 
   return (
     <>

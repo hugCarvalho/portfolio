@@ -6,8 +6,6 @@ $height: 52; //55
 $depth: 6; //original
 $depth: 4;
 $color: #3c6274;
-// $color: #696039;
-//$color: #3f7557d8;
 
 $text-color: darken($color, 10%);
 $lighten-on-hover: 7%;
@@ -136,10 +134,10 @@ $timing-function: ease;
 //     }
 //   }
 // }
-@media (max-width: 1140px) {
+@media (max-width: 1190px) {
   $height: 25;
   .button3D {
-    background-color: yellow;
+    //background-color: yellow;
     text-shadow: 0 0;
     min-width: 120px;
     font-size: 1.3rem;
@@ -179,7 +177,7 @@ $timing-function: ease;
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 670px) {
   $height: 20;
   .button3D {
     text-shadow: 0 0;

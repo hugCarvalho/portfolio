@@ -12,18 +12,15 @@ function RenderMyInfoCard() {
 
   return (
     <>
-      <div className="wrapper">
-        <article className="test"></article>
-        <section
-          className={`RenderMyInfoCard ${cardStart && "start"} `}
-          id="mycard"
-          data-testid="My Info Card"
-        >
-          <MyInfoCardLinks />
-          <MyPic />
-          <LanguagesSpoken />
-        </section>
-      </div>
+      <section
+        className={`RenderMyInfoCard ${cardStart && "start"} `}
+        id="mycard"
+        data-testid="My Info Card"
+      >
+        <MyInfoCardLinks />
+        <MyPic />
+        <LanguagesSpoken />
+      </section>
     </>
   );
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import "./RenderFooter.scss";
 import { LanguageContext } from "../../App";
-import englishCV from "../../shared/CV_english.pdf";
-import germanCV from "../../shared/CV_deutsch.pdf";
+// import englishCV from "../../shared/CV_english.pdf";
+// import germanCV from "../../shared/CV_deutsch.pdf";
 
 function RenderFooter() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);

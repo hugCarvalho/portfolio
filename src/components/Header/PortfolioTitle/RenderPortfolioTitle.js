@@ -8,16 +8,21 @@ function RenderPortfolioTitle() {
   const [animateFinal, setAnimateWhite] = React.useState(false);
 
   document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => setAnimateHugo(true), 5000);
-    setTimeout(() => setAnimatePortfolio(true), 6700);
-    setTimeout(() => setAnimateWhite(true), 9000);
+    setTimeout(() => setAnimateHugo(true), 4200);
+    setTimeout(() => setAnimatePortfolio(true), 5900);
+    setTimeout(() => setAnimateWhite(true), 8300);
   });
-  console.log(animateHugo, animatePortfolio);
+
   return (
     <section className="RenderPortfolioTitle" role="banner">
       <Link to="/projects">
         <h1 title="my projects">
-          <span id="hugo" className={animateHugo ? "animateHugo" : ""}>
+          <span
+            id="hugo"
+            className={`${animateHugo ? "animateHugo" : ""} ${
+              animateFinal ? "shine" : null
+            }`}
+          >
             Hugo's
           </span>
           <span

@@ -1,8 +1,8 @@
 import React from "react";
 import "./RenderAbout.scss";
 import AboutEN, { AboutDE } from "./About";
-import CV_EN from "../../../shared/CV_english.pdf";
-import CV_DE from "../../../shared/CV_deutsch.pdf";
+// import CV_EN from "../../../shared/CV_english.pdf";
+// import CV_DE from "../../../shared/CV_deutsch.pdf";
 
 import { LanguageContext } from "../../../App";
 import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";

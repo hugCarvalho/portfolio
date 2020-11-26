@@ -9,7 +9,7 @@ function MyPic() {
   const [activate, setActivate] = React.useState(false);
 
   document.addEventListener("DOMContentLoaded", () =>
-    setTimeout(() => setActivate(true), 2600)
+    setTimeout(() => setActivate(true), 2300)
   );
 
   return (
@@ -24,5 +24,3 @@ function MyPic() {
 }
 
 export default MyPic;
-
-//67.55, 67.4
