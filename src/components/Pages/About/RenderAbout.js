@@ -24,20 +24,28 @@ function RenderAbout() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href={isLanguageEnglish ? CV_EN : CV_DE}
+              href="https://github.com/hugCarvalho"
             >
-              CV
+              GitHub
             </a>
           </li>
           <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/hugCarvalho"
+              href="https://www.linkedin.com/in/hugo-carvalho-8355b31b7/"
             >
-              GitHub
+              LinkedIn
             </a>
+            {/* <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={isLanguageEnglish ? CV_EN : CV_DE}
+            >
+              CV
+            </a> */}
           </li>
+
           <li>
             <a
               target="_blank"

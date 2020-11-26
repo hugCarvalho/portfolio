@@ -21,7 +21,15 @@ function MyInfoCardLinks() {
             </a>
           </li>
           <li>
-            {isLanguageEnglish && (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
+            >
+              Edabit
+            </a>
+
+            {/* {isLanguageEnglish && (
               <a target="_blank" rel="noopener noreferrer" href={englishCV}>
                 {"CV"}
               </a>
@@ -30,16 +38,16 @@ function MyInfoCardLinks() {
               <a target="_blank" rel="noopener noreferrer" href={germanCV}>
                 {"CV"}
               </a>
-            )}
+            )} */}
           </li>
 
           <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
+              href="https://www.linkedin.com/in/hugo-carvalho-8355b31b7/"
             >
-              Edabit
+              LinkedIn
             </a>
           </li>
         </ul>

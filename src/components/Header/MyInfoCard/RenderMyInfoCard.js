@@ -9,19 +9,22 @@ function RenderMyInfoCard() {
   document.addEventListener("DOMContentLoaded", () => {
     setCardStart(true);
   });
-  React.useEffect(() => {
-    //return () => setCardStart(false);
-  }, []);
+
   return (
-    <section
-      className={`RenderMyInfoCard ${cardStart && "start"} `}
-      id="mycard"
-      data-testid="My Info Card"
-    >
-      <MyInfoCardLinks />
-      <MyPic />
-      <LanguagesSpoken />
-    </section>
+    <>
+      <div className="wrapper">
+        <article className="test"></article>
+        <section
+          className={`RenderMyInfoCard ${cardStart && "start"} `}
+          id="mycard"
+          data-testid="My Info Card"
+        >
+          <MyInfoCardLinks />
+          <MyPic />
+          <LanguagesSpoken />
+        </section>
+      </div>
+    </>
   );
 }
 
