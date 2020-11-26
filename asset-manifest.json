@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.456f56d0.chunk.css",
-    "main.js": "/portfolio/static/js/main.98ae4d9a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.98ae4d9a.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.dccf7b1d.chunk.css",
+    "main.js": "/portfolio/static/js/main.dda316f3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dda316f3.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.f5339299.chunk.js": "/portfolio/static/js/2.f5339299.chunk.js",
-    "static/js/2.f5339299.chunk.js.map": "/portfolio/static/js/2.f5339299.chunk.js.map",
+    "static/js/2.fd9948fe.chunk.js": "/portfolio/static/js/2.fd9948fe.chunk.js",
+    "static/js/2.fd9948fe.chunk.js.map": "/portfolio/static/js/2.fd9948fe.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.e2a9d4b79aa8c2351a52c636cdaf22c5.js": "/portfolio/precache-manifest.e2a9d4b79aa8c2351a52c636cdaf22c5.js",
+    "precache-manifest.334d2d73fe02e1d664124f52dba60343.js": "/portfolio/precache-manifest.334d2d73fe02e1d664124f52dba60343.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.456f56d0.chunk.css.map": "/portfolio/static/css/main.456f56d0.chunk.css.map",
-    "static/js/2.f5339299.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f5339299.chunk.js.LICENSE.txt",
+    "static/css/main.dccf7b1d.chunk.css.map": "/portfolio/static/css/main.dccf7b1d.chunk.css.map",
+    "static/js/2.fd9948fe.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fd9948fe.chunk.js.LICENSE.txt",
     "static/media/RenderContact.scss": "/portfolio/static/media/12.fe52ed05.png",
     "static/media/FilterBy.scss": "/portfolio/static/media/14.53c1ec5f.png",
     "static/media/RenderFooter.scss": "/portfolio/static/media/15.bc95bc68.png",
-    "static/media/CV_deutsch.pdf": "/portfolio/static/media/CV_deutsch.094f18b2.pdf",
-    "static/media/CV_english.pdf": "/portfolio/static/media/CV_english.9c221896.pdf",
     "static/media/flagEngland.png": "/portfolio/static/media/flagEngland.1c4499a7.png",
     "static/media/flagGermany.png": "/portfolio/static/media/flagGermany.ccde240b.png",
     "static/media/SkillCards.scss": "/portfolio/static/media/logo_sprites.70be3f8d.png",
@@ -24,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.f5339299.chunk.js",
-    "static/css/main.456f56d0.chunk.css",
-    "static/js/main.98ae4d9a.chunk.js"
+    "static/js/2.fd9948fe.chunk.js",
+    "static/css/main.dccf7b1d.chunk.css",
+    "static/js/main.dda316f3.chunk.js"
   ]
 }
