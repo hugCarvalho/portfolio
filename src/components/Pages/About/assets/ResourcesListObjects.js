@@ -46,6 +46,11 @@ export const coursesCompleted = [
     author: "Maximilian Schwarzmüller ",
     duration: "40,5",
   },
+  {
+    title: "React, NodeJS, Express & MongoDB - The MERN fullstack",
+    author: "Maximilian Schwarzmüller ",
+    duration: "19",
+  },
 ];
 
 export const coursesOngoing = [
@@ -60,11 +65,6 @@ export const coursesOngoing = [
     duration: "20",
   },
 
-  {
-    title: "React, NodeJS, Express & MongoDB - The MERN fullstack",
-    author: "Maximilian Schwarzmüller ",
-    duration: "19",
-  },
   {
     title: "Epic React",
     author: "Kent C. Dodds",

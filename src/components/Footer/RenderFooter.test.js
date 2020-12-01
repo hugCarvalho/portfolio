@@ -34,6 +34,7 @@ describe("Footer: renders elements correctly ", () => {
 
     const contactLinks = document.querySelectorAll(".contact-links > ul > li");
     expect(contactLinks).toHaveLength(3);
-    expect(contactLinks[2]).toHaveTextContent(/edabit/i);
+    //expect(contactLinks[2]).toHaveTextContent(/edabit/i);
+    expect(contactLinks[2]).toHaveTextContent(/linkedin/i);
   });
 });

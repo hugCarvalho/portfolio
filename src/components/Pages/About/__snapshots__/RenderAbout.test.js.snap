@@ -11,20 +11,20 @@ exports[`should match snapshot in english  1`] = `
       <ul>
         <li>
           <a
-            href="CV_english.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            CV
-          </a>
-        </li>
-        <li>
-          <a
             href="https://github.com/hugCarvalho"
             rel="noopener noreferrer"
             target="_blank"
           >
             GitHub
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/hugo-carvalho-8355b31b7/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            LinkedIn
           </a>
         </li>
         <li>
@@ -47,21 +47,20 @@ exports[`should match snapshot in english  1`] = `
             Basic Introduction
           </h2>
           <p>
-            Hi, I'm Hugo, a self-taught web developer, with a master in Sociology. I started to learn Programming with JavaScript, alongside my job, about one and half year ago. It started as a curiosity but didn't take long to turn into a passion. Recently, I decided to quit my job to pursue this passion.
+            Hi, I'm Hugo, a self-taught and highly motivated programmer, who is changing careers after having discovered his passion in programming.
           </p>
           <p>
-            I am eager to learn new skills and I am actively learning (currently studying
-             
+            He is a fast and methodical learner and brings the latest standards from the technologies learned. Currently he's focusing on 
             <s>
               Testing
             </s>
-             Node.js) and enjoying it greatly.
+             Node.js .
           </p>
           <p>
-            As my skills and confidence grow, so does my desire to work in a team, and to work towards a common goal with the objective of achieving something that will impact positively people's lives. This would also bring a sense of realization to my learning process.
+            Hugo is eager to contribute and help shaping high quality products that will impact positively people’s lives.
           </p>
           <p>
-            If you'd like to know more about me, just keep reading...
+            If you'd like to know more, just keep reading...
           </p>
         </article>
       </main>
@@ -167,10 +166,10 @@ exports[`should match snapshot in english  1`] = `
                (currently at level 
               17
               , with 
-              8675
+              9155
                
               points and 
-              5307
+              5700
                reputation points)
             </a>
             , and sporadically in 
@@ -438,20 +437,20 @@ exports[`should match snapshot in german  1`] = `
       <ul>
         <li>
           <a
-            href="CV_deutsch.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            CV
-          </a>
-        </li>
-        <li>
-          <a
             href="https://github.com/hugCarvalho"
             rel="noopener noreferrer"
             target="_blank"
           >
             GitHub
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/hugo-carvalho-8355b31b7/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            LinkedIn
           </a>
         </li>
         <li>
@@ -593,9 +592,9 @@ exports[`should match snapshot in german  1`] = `
               17
               , mit 
               
-              8675
+              9155
                Punkte und 
-              5307
+              5700
                Reputation Punkte)
             </a>
              

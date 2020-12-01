@@ -20,24 +20,23 @@ describe("MyInfoCardLinks", () => {
     // present in English
     const cardLinks = document.querySelector(".MyInfoCardLinks > ul");
     expect(cardLinks).toHaveTextContent("Edabit");
-    expect(cardLinks).toHaveTextContent("CV");
+    //expect(cardLinks).toHaveTextContent("CV");
+    expect(cardLinks).toHaveTextContent("LinkedIn");
     expect(cardLinks).toHaveTextContent("GitHub");
 
     //Same links on whole website link properly, not only the ones on this component
     const contactLink = screen.getAllByRole("link", { name: /contact/i });
-    contactLink.forEach((link) => {
+    contactLink.forEach(link => {
       fireEvent.click(link);
       expect(link.href).toContain("contact");
       expect(screen.getByRole("button", { name: /contact/i })).toHaveClass("active");
     });
 
     const githubLink = screen.getAllByRole("link", { name: /github/i });
-    githubLink.forEach((link) =>
-      expect(link.href).toBe("https://github.com/hugCarvalho")
-    );
+    githubLink.forEach(link => expect(link.href).toBe("https://github.com/hugCarvalho"));
 
-    const cvLink = screen.getAllByRole("link", { name: /cv/i });
-    cvLink.forEach((link) => expect(link.href).toContain("CV_english"));
+    // const cvLink = screen.getAllByRole("link", { name: /cv/i });
+    // cvLink.forEach(link => expect(link.href).toContain("CV_english"));
   });
 
   test("German: links are present and link to correspondent resources", () => {
@@ -54,23 +53,22 @@ describe("MyInfoCardLinks", () => {
     // present in German
     const cardLinks = document.querySelector(".MyInfoCardLinks > ul");
     expect(cardLinks).toHaveTextContent("Edabit");
-    expect(cardLinks).toHaveTextContent("CV");
+    // expect(cardLinks).toHaveTextContent("CV");
+    expect(cardLinks).toHaveTextContent("LinkedIn");
     expect(cardLinks).toHaveTextContent("GitHub");
 
     //Same links on whole website link properly, not only the ones on this component
     const contactLink = screen.getAllByRole("link", { name: /kontakt/i });
-    contactLink.forEach((link) => {
+    contactLink.forEach(link => {
       fireEvent.click(link);
       // expect(link.href).toContain("kontakt");
       expect(screen.getByRole("button", { name: /kontakt/i })).toHaveClass("active");
     });
 
     const githubLink = screen.getAllByRole("link", { name: /github/i });
-    githubLink.forEach((link) =>
-      expect(link.href).toBe("https://github.com/hugCarvalho")
-    );
+    githubLink.forEach(link => expect(link.href).toBe("https://github.com/hugCarvalho"));
 
-    const cvLink = screen.getAllByRole("link", { name: /cv/i });
-    cvLink.forEach((link) => expect(link.href).toContain("CV_deutsch"));
+    // const cvLink = screen.getAllByRole("link", { name: /cv/i });
+    // cvLink.forEach(link => expect(link.href).toContain("CV_deutsch"));
   });
 });

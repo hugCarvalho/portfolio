@@ -2,8 +2,8 @@ import React from "react";
 import { HashLink } from "react-router-hash-link";
 
 const edabitLevel = 17;
-const edabitScore = 8675;
-const edabitReputation = 5307;
+const edabitScore = 9155;
+const edabitReputation = 5700;
 const checkioLevel = 8;
 
 export function IntroExtendedEN() {
