@@ -8,26 +8,26 @@ export const projectsData = [
 
     description: {
       en:
-        "Displays weather data from OpenWeather API: forecast up to 3 days divided into 3 hours intervals.",
+        "Displays weather data from OpenWeather API: forecast up to 3 days divided into 3 hours intervals. Built with React.",
       de:
-        "Zeigt Wetterdaten von der OpenWeather-API an: Vorhersage von bis zu 3 Tagen in Intervallen von 3 Stunden.",
+        "Zeigt Wetterdaten von der OpenWeather-API an: Vorhersage von bis zu 3 Tagen in Intervallen von 3 Stunden. Mit React erstellt",
     },
     features: {
       en: [
-        "Search for a city to display the weather.",
-        "Save up to 3 cities for fast access in local storage.",
-        "Set up a city to load at startup.",
-        "3 days Weather forecast, every 3 hours options. ",
-        "Displays actual and real feel temperature in Celsius or Fahrenheit.",
-        "Displays wind speed in kilometers or miles.",
-        "Displays wind direction (cardinal points + arrow pointer).",
+        "Search for a city to display the weather",
+        "Save up to 3 cities for fast access in local storage",
+        "Set up a city to load at startup",
+        "3 days Weather forecast, every 3 hours options ",
+        "Displays actual and real feel temperature in Celsius or Fahrenheit",
+        "Displays wind speed in kilometers or miles",
+        "Displays wind direction (cardinal points + arrow pointer)",
       ],
       de: [
-        "Gewünschte Stadt in das Suchfeld eingeben, um für diese das Wetter anzuzeigen.",
-        "Bis zu 3 Städte speichern für den schnellen Zugriff (lokalen Speicher).",
-        "Zeigt die tatsächliche und reale Gefühlstemperatur in Celsius oder Fahrenheit an.",
-        "Zeigt die Windgeschwindigkeit an.",
-        "Zeigt die Windrichtung.",
+        "Gewünschte Stadt in das Suchfeld eingeben, um für diese das Wetter anzuzeigen",
+        "Bis zu 3 Städte speichern für den schnellen Zugriff (lokalen Speicher)",
+        "Zeigt die tatsächliche und reale Gefühlstemperatur in Celsius oder Fahrenheit an",
+        "Zeigt die Windgeschwindigkeit an",
+        "Zeigt die Windrichtung",
       ],
     },
     techInfo: {
@@ -59,23 +59,23 @@ export const projectsData = [
     img: "media/todo_list_small.png",
 
     description: {
-      en: "Keeps track of the things you have to do.",
-      de: "Verfolgt die Dinge, die Sie tun müssen.",
+      en: "Keeps track of the things you have to do. Built with React.",
+      de: "Verfolgt die Dinge, die Sie tun müssen. Mit React erstellt",
     },
     features: {
       en: [
-        "Add / Edit / Delete one or all to-dos.",
-        "Search for a to-do.",
-        "Check/Uncheck all to-dos.",
-        "Show / Hide completed to-dos.",
-        "To-dos saved to local Storage.",
+        "Add / Edit / Delete one or all to-dos",
+        "Search for a to-do",
+        "Check/Uncheck all to-dos",
+        "Show / Hide completed to-dos",
+        "To-dos saved to local Storage",
       ],
       de: [
-        "Hinzufügen / Bearbeiten / Löschen einer oder aller Aufgaben.",
-        "Suche nach einer Aufgabe.",
-        "Alle Aufgaben aktivieren / deaktivieren.",
-        "Aufgaben erledigen / ausblenden.",
-        "Im lokalen Speicher speichern.",
+        "Hinzufügen / Bearbeiten / Löschen einer oder aller Aufgaben",
+        "Suche nach einer Aufgabe",
+        "Alle Aufgaben aktivieren / deaktivieren",
+        "Aufgaben erledigen / ausblenden",
+        "Im lokalen Speicher speichern",
       ],
     },
     techInfo: {
@@ -100,9 +100,9 @@ export const projectsData = [
     img: "media/online_shop_redux.png",
     description: {
       en:
-        "This is an ONGOING project, built using React (hooks) and Redux that simulates an online shop. It focus primarily on behaviour. For more details check the homepage of the project.",
+        "Ongoing project, built using React and Redux that simulates an online shop. For more details check the homepage of the project.",
       de:
-        "Dies ist ein FORTLAUFENDES Projekt, das mit React und Redux erstellt wurde und einen Online-Shop simuliert. Es konzentriert sich hauptsächlich auf das Verhalten. Weitere Informationen finden Sie auf der Homepage des Projekts.",
+        "Fortlaufendes Projekt, das mit React und Redux erstellt wurde und einen Online-Shop simuliert. Weitere Informationen finden Sie auf der Homepage des Projekts.",
     },
     features: {
       en: [
@@ -141,17 +141,23 @@ export const projectsData = [
 
     img: "media/portfolio_4.png",
     description: {
-      en: "Well, this website...",
-      de: "Die Website auf der Sie sich befinden...",
+      en: "This website... Built with React.",
+      de: "Diese Website... mit React erstellt",
     },
     features: {
       en: [
-        "Some data, like the content of the project cards, is dynamically generated, as to simulate possible real life cases, i.e, getting data from an array of objects.",
-        "Available in English and German.",
+        "Some data, like the content of the project cards, is dynamically generated, as to simulate possible real life cases, i.e, getting data from an array of objects",
+        "Filter projects",
+        "CSS animations and transitions",
+        "To-top scroll icon",
+        "Available in English and German",
       ],
       de: [
-        "Die Projektkarten werden dynamisch generiert, um einen Datenabruf zu simulieren.",
-        "Verfügbar in Englisch und Deutsch.",
+        "Die Projektkarten werden dynamisch generiert, um einen Datenabruf zu simulieren",
+        "Filter Projekte",
+        "CSS animations und transitions",
+        "To-top scrollen icon",
+        "Verfügbar in Englisch und Deutsch",
       ],
     },
     techInfo: {

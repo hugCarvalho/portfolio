@@ -5,10 +5,10 @@ $main-gray: #3f3f3f;
   background-image: url("./assets/15.png");
   position: relative;
   padding: 0 6px;
-  top: 0;
-  left: 0;
+  // top: 0;
+  // left: 0;
   width: 100%;
-  min-height: 155px;
+  height: 155px;
   border-bottom: 2px solid darken($main-gray, 5%);
   z-index: 2;
 
@@ -17,8 +17,8 @@ $main-gray: #3f3f3f;
   justify-content: space-evenly;
 }
 
-@media (max-width: 630px) {
-  .Header {
-    height: 150px;
-  }
-}
+// @media (max-width: 630px) {
+//   .Header {
+//     height: 150px;
+//   }
+// }

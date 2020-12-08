@@ -6,7 +6,7 @@
   min-height: calc(100vh - 235px); //footer + padding
   display: flex;
   padding: 70px 12% 67px;
-  padding: 87px 16% 60px;
+  //padding: 87px 12% 60px;
 
   main {
     width: 100%;
@@ -46,15 +46,15 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 920px) {
   .Skills {
     padding-left: 1%;
     padding-right: 1%;
   }
 }
 
-@media (max-width: 622px) {
-  .Skills {
-    min-height: calc(100vh - 245px);
-  }
-}
+// @media (max-width: 622px) {
+//   .Skills {
+//     min-height: calc(100vh - 245px);
+//   }
+// }

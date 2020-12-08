@@ -352,6 +352,21 @@ exports[`should match snapshot in english  1`] = `
                 , 
                 Maximilian Schwarzmüller 
               </li>
+              <li>
+                <i>
+                  React, NodeJS, Express & MongoDB - The MERN fullstack
+                </i>
+                 
+                <span
+                  class="course-duration"
+                >
+                  (
+                  19
+                   hours)
+                </span>
+                , 
+                Maximilian Schwarzmüller 
+              </li>
             </ul>
             <p>
               Ongoing Online courses:
@@ -382,21 +397,6 @@ exports[`should match snapshot in english  1`] = `
                 >
                   (
                   20
-                   hours)
-                </span>
-                , 
-                Maximilian Schwarzmüller 
-              </li>
-              <li>
-                <cite>
-                  React, NodeJS, Express & MongoDB - The MERN fullstack
-                </cite>
-                 
-                <span
-                  class="course-duration"
-                >
-                  (
-                  19
                    hours)
                 </span>
                 , 
@@ -774,6 +774,21 @@ exports[`should match snapshot in german  1`] = `
                 , 
                 Maximilian Schwarzmüller 
               </li>
+              <li>
+                <i>
+                  React, NodeJS, Express & MongoDB - The MERN fullstack
+                </i>
+                 
+                <span
+                  class="course-duration"
+                >
+                  (
+                  19
+                   hours)
+                </span>
+                , 
+                Maximilian Schwarzmüller 
+              </li>
             </ul>
             <p>
               Laufende Online-Kurse:
@@ -804,21 +819,6 @@ exports[`should match snapshot in german  1`] = `
                 >
                   (
                   20
-                   hours)
-                </span>
-                , 
-                Maximilian Schwarzmüller 
-              </li>
-              <li>
-                <cite>
-                  React, NodeJS, Express & MongoDB - The MERN fullstack
-                </cite>
-                 
-                <span
-                  class="course-duration"
-                >
-                  (
-                  19
                    hours)
                 </span>
                 , 

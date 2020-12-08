@@ -1,7 +1,6 @@
 .RenderFooter {
   background-color: #3f3f3f;
   background-image: url("./assets/15.png");
-
   color: #e6e6e6;
   position: absolute;
   bottom: 0;
@@ -42,6 +41,7 @@
   //LINKS
   .contact-links {
     ul {
+      width: auto;
       height: 80px;
       display: flex;
       flex-direction: column;
@@ -63,15 +63,15 @@
   }
 }
 
-@media (max-width: 992px) {
-  .RenderFooter {
-    .contact-links ul {
-      width: auto;
-      height: 80px;
+// @media (max-width: 992px) {
+//   .RenderFooter {
+//     .contact-links ul {
+//       width: auto;
+//       height: 80px;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-  }
-}
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-around;
+//     }
+//   }
+// }
