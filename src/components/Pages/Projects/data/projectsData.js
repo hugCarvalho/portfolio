@@ -123,7 +123,7 @@ export const projectsData = [
     techInfo: {
       main: "REACT (Hooks) + REDUX",
       styled: "SASS (scss)",
-      tested: "JEST and React Testing Library",
+      tested: "", //JEST and React Testing Library
       responsive: false,
       specsText: { en: "", de: "" },
       specs: ["useDispatch", "useSelector", "useEffect", "useState", "useReducer", "API"],

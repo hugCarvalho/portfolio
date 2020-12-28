@@ -10,7 +10,7 @@ export function IntroMainEN() {
       </p>
       <p>
         Hugo is a fast and methodical learner and brings the latest standards from the
-        technologies learned. Currently he's focusing on <s>Testing</s> Node.js .
+        technologies learned. Currently he's focusing on <s>Testing</s> Node.js.
       </p>
       <p>
         He is also eager to be part of a team, to contribute and help shaping high quality

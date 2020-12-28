@@ -9,35 +9,38 @@ import FilterBy from "./FilterBy/FilterBy";
 function RenderProjects() {
   const pageIsActive = React.useContext(IsActiveContext);
   const { isLanguageEnglish } = React.useContext(LanguageContext);
-  const [backCardHeight, setBackCardHeight] = useState("auto");
+  const [cardHeight, setCardHeight] = useState("auto");
   const [frontSideActive, setFrontSideActive] = useState(true);
   const [id, setId] = useState(null);
   const [filterBy, setFilterBy] = useState("all");
 
+  //GETS the height of the biggest card
   useEffect(() => {
-    const calculateBackSideCardHeight = () => {
-      const height = document.querySelector(".card__side--front");
-      setBackCardHeight(`${height.offsetHeight}px`);
+    const calculateCardHeight = () => {
+      const allCards = document.querySelectorAll(".card__side--front");
+      const cardHeight = [];
+      allCards.forEach(card => cardHeight.push(card.offsetHeight));
+      const maxCardHeight = Math.max(...cardHeight);
+      setCardHeight(`${maxCardHeight}px`);
     };
-    calculateBackSideCardHeight();
+    calculateCardHeight();
   }, [isLanguageEnglish]);
 
-  //Sets the height of all cards to the size of the biggest card
-  //Affects the front side. The back side is automatic and depends on css
+  //SETS the height for all cards based on the height of the biggest card
   useEffect(() => {
     const changeHeight = () => {
       const cardFront = document.querySelectorAll(".card__side--front");
-      cardFront.forEach(item => (item.style.height = `${backCardHeight}`));
+      cardFront.forEach(item => (item.style.height = `${cardHeight}`));
     };
     changeHeight();
-  }, [backCardHeight, filterBy, isLanguageEnglish]);
+  }, [cardHeight, filterBy, isLanguageEnglish]);
 
   const toggleTechInfoFeatures = id => {
     setId(id);
     setFrontSideActive(state => !state);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.title = "Hugo's Projects";
   }, [pageIsActive]);
 
@@ -57,22 +60,24 @@ function RenderProjects() {
       />
 
       <main className="RenderProjects">
-        {filterTechsBy(projectsData, filterBy).map((project, i) => {
-          const language = isLanguageEnglish ? "en" : "de";
-          return (
-            <section key={i}>
-              <ProjectCard
-                backCardHeight={backCardHeight}
-                setFrontSideActive={setFrontSideActive}
-                frontSideActive={frontSideActive}
-                project={project}
-                language={language}
-                toggleTechInfoFeatures={toggleTechInfoFeatures}
-                id={id}
-              />
-            </section>
-          );
-        })}
+        {filterTechsBy(projectsData, filterBy)
+          .map((project, i) => {
+            const language = isLanguageEnglish ? "en" : "de";
+            return (
+              <section key={i}>
+                <ProjectCard
+                  backCardHeight={cardHeight}
+                  setFrontSideActive={setFrontSideActive}
+                  frontSideActive={frontSideActive}
+                  project={project}
+                  language={language}
+                  toggleTechInfoFeatures={toggleTechInfoFeatures}
+                  id={id}
+                />
+              </section>
+            );
+          })
+          .reverse()}
       </main>
     </>
   );
