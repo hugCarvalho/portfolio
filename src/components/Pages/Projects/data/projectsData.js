@@ -189,7 +189,7 @@ export const projectsData = [
     category: ["game"],
     techs: ["React", "Hooks"],
 
-    img: "media/word-scrambler-game",
+    img: "media/word-scrambler-game.png",
     description: {
       en:
         "Ongoing but functional project. New features are being added based on planned features or on user feedback. Check GitHub project page for full details",
