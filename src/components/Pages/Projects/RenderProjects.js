@@ -19,7 +19,7 @@ function RenderProjects() {
     const calculateCardHeight = () => {
       const allCards = document.querySelectorAll(".card__side--front");
       const cardHeight = [];
-      allCards.forEach(card => cardHeight.push(card.offsetHeight));
+      allCards.forEach(card => cardHeight.push(card.scrollHeight));
       const maxCardHeight = Math.max(...cardHeight);
       setCardHeight(`${maxCardHeight}px`);
     };
@@ -35,18 +35,19 @@ function RenderProjects() {
     changeHeight();
   }, [cardHeight, filterBy, isLanguageEnglish]);
 
+  useEffect(() => {
+    document.title = "Hugo's Projects";
+  }, [pageIsActive]);
+
   const toggleTechInfoFeatures = id => {
     setId(id);
     setFrontSideActive(state => !state);
   };
 
-  useEffect(() => {
-    document.title = "Hugo's Projects";
-  }, [pageIsActive]);
-
   const filterTechsBy = (db, option = "all") => {
-    if (option === "all") return db;
-    else {
+    if (option === "all") {
+      return db;
+    } else {
       return db.filter(item => item.techs.includes(option));
     }
   };

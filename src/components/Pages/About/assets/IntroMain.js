@@ -9,7 +9,7 @@ export function IntroMainEN() {
         careers after having discovered his passion in programming.
       </p>
       <p>
-        Hugo is a fast and methodical learner and brings the latest standards from the
+        Hugo is a fast and methodical learner that brings the latest standards from the
         technologies learned. Currently he's focusing on <s>Testing</s> Node.js.
       </p>
       <p>
