@@ -3,20 +3,16 @@ import React from "react";
 export function IntroMainEN() {
   return (
     <article>
-      <h2>Basic Introduction</h2>
-      <p>
+      <h2>Experience</h2>
+      {/* <p>
         Hi, I'm Hugo, a self-taught and highly motivated programmer, who is changing
         careers after having discovered his passion in programming.
-      </p>
+      </p> */}
       <p>
-        Hugo is a fast and methodical learner that brings the latest standards from the
-        technologies learned. Currently he's focusing on <s>Testing</s> Node.js.
+        In 2020, I decided to change careers and quit my job to pursue my newfound passion for programming. After one year of self-taught learning,
+        during which I developed several small projects, I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-7),
+        and had the chance of working on two applications with different tech stacks.
       </p>
-      <p>
-        He is also eager to be part of a team, to contribute and help shaping high quality
-        products that will impact positively people’s lives.
-      </p>
-      <p>If you'd like to know more, just keep reading...</p>
     </article>
   );
 }

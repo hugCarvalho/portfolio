@@ -19,12 +19,14 @@
 
 @media (max-width: 576px) {
   .RenderAbout {
+    // background-color: pink;
     padding: 30px 5%;
   }
 }
 
 @media (max-width: 375px) {
   .RenderAbout .show-on-smallest-screen-only {
+    // background-color: lime;
     display: inline-block;
     padding-bottom: 10px;
     font-size: 1.8rem;
