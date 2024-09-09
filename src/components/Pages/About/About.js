@@ -1,12 +1,14 @@
 import React from "react";
+import { ExperienceCard } from "../../ExperienceCard";
 import "./About.scss";
-import { IntroMainEN, IntroMainDE } from "./assets/IntroMain";
-import { IntroExtendedEN, IntroExtendedDE } from "./assets/IntroExtended";
+import { IntroExtendedDE, IntroExtendedEN } from "./assets/IntroExtended";
+import { IntroMainDE, IntroMainEN } from "./assets/IntroMain";
 import ResourcesList from "./assets/ResourcesList";
 
 function AboutEN() {
   return (
     <div className="wrapper__about">
+      <ExperienceCard/>
       <main>
         <IntroMainEN />
       </main>
