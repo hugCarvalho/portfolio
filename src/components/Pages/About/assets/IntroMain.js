@@ -1,5 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { styled } from "styled-components";
+import { ExternalLink } from "../../../ExternalLink";
 
+const LinkStyles = styled.span`
+  color: antiquewhite;
+  text-decoration: none;
+  :hover{
+    color: gray;
+  }
+
+`
 export function IntroMainEN() {
   return (
     <article>
@@ -10,8 +21,25 @@ export function IntroMainEN() {
       </p> */}
       <p>
         In 2020, I decided to change careers and quit my job to pursue my newfound passion for programming. After one year of self-taught learning,
-        during which I developed several small projects, I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-7),
-        and had the chance of working on two applications with different tech stacks.
+        during which I developed several {" "}
+          <LinkStyles>
+            <Link to="/projects" style={{textDecoration: "none"}}>
+              small projects
+            </Link>
+          </LinkStyles>, I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-7),
+        and had the chance of working on two applications {" "}
+        {"("}
+          {<LinkStyles><ExternalLink
+            link={"https://erben.erblotse.de"}
+            text={"Erben"}
+          /></LinkStyles>}, {" "}
+          {<LinkStyles><ExternalLink
+            link={"https://vererben.erblotse.de/"}
+            text={"Vererben"}
+          /></LinkStyles>}
+
+        {")"} {" "}
+         with different tech stacks.
       </p>
     </article>
   );

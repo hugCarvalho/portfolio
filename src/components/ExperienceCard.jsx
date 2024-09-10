@@ -30,8 +30,9 @@ const Datum = styled.span`
   /* color: yellow; */
 `
 const JobTitle = styled.span`
-  font-variant-caps: small-caps;
+  /* font-variant-caps: small-caps; */
   font-weight: 700;
+  font-size: 22px;
   color: royalblue;
   color: rgb(3, 62, 110);
 
@@ -75,6 +76,7 @@ export const ExperienceCard = () => {
     <Right>
       <span><JobTitle>Junior Software Developer</JobTitle>
       <JobCompany>, Heritas GmbH, Berlin</JobCompany></span>
+
       {/* <JobDescription>
         Extremely rich and diversified experience in a small agile team (4-7), working on two products with different tech stack, with following accomplishments:
       </JobDescription> */}
