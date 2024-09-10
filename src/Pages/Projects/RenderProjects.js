@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "./RenderProjects.scss";
-import ProjectCard from "./ProjectCard/ProjectCard";
-import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
+import { LanguageContext } from "../../App";
+import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
 import { projectsData } from "./data/projectsData";
-import { LanguageContext } from "../../../App";
 import FilterBy from "./FilterBy/FilterBy";
+import ProjectCard from "./ProjectCard/ProjectCard";
+import "./RenderProjects.scss";
 
 function RenderProjects() {
   const pageIsActive = React.useContext(IsActiveContext);

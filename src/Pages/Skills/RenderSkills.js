@@ -1,5 +1,5 @@
 import React from "react";
-import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
+import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
 import "./RenderSkills.scss";
 import SingleSkill, { RelatedSkills } from "./SkillCards";
 

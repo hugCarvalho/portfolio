@@ -1,5 +1,5 @@
 import React from "react";
-import { ExperienceCard } from "../../ExperienceCard";
+import { ExperienceCard } from "../../components/ExperienceCard";
 import "./About.scss";
 import { IntroExtendedDE } from "./assets/IntroExtended";
 import { IntroMainDE, IntroMainEN } from "./assets/IntroMain";

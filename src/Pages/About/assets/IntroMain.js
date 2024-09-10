@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-import { ExternalLink } from "../../../ExternalLink";
+import { ExternalLink } from "../../../components/ExternalLink";
 
 const LinkStyles = styled.span`
   color: antiquewhite;
@@ -28,17 +28,16 @@ export function IntroMainEN() {
             </Link>
           </LinkStyles>, I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-7),
         and had the chance of working on two applications {" "}
-        {"("}
+        {"- "}
           {<LinkStyles><ExternalLink
             link={"https://erben.erblotse.de"}
             text={"Erben"}
-          /></LinkStyles>}, {" "}
+          /></LinkStyles>}{" and "}
           {<LinkStyles><ExternalLink
             link={"https://vererben.erblotse.de/"}
             text={"Vererben"}
           /></LinkStyles>}
-
-        {")"} {" "}
+        {" -"} {" "}
          with different tech stacks.
       </p>
     </article>

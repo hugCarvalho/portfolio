@@ -1,8 +1,6 @@
 import React from "react";
-import { books } from "./ResourcesListObjects";
-import { coursesCompleted } from "./ResourcesListObjects";
-import { coursesOngoing } from "./ResourcesListObjects";
-import { LanguageContext } from "../../../../App";
+import { LanguageContext } from "../../../App";
+import { books, coursesCompleted, coursesOngoing } from "./ResourcesListObjects";
 
 function ResourcesList() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);

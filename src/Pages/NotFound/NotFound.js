@@ -1,7 +1,7 @@
 import React from "react";
-import "./NotFound.scss";
 import { Link } from "react-router-dom";
-import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
+import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
+import "./NotFound.scss";
 
 function NotFound() {
   const pageIsActive = React.useContext(IsActiveContext);

@@ -1,6 +1,6 @@
 import React from "react";
+import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
 import "./RenderContact.scss";
-import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
 
 function Contact() {
   const pageIsActive = React.useContext(IsActiveContext);

@@ -10,11 +10,11 @@ import "./App.scss";
 import ScrollToTop from "./components/customisable/ScrollToTop";
 import RenderFooter from "./components/Footer/RenderFooter";
 import RenderHeader from "./components/Header/RenderHeader";
-import RenderAbout from "./components/Pages/About/RenderAbout";
-import RenderContact from "./components/Pages/Contact/RenderContact";
-import NotFound from "./components/Pages/NotFound/NotFound";
-import RenderProjects from "./components/Pages/Projects/RenderProjects";
-import RenderSkills from "./components/Pages/Skills/RenderSkills";
+import RenderAbout from "./Pages/About/RenderAbout";
+import RenderContact from "./Pages/Contact/RenderContact";
+import NotFound from "./Pages/NotFound/NotFound";
+import RenderProjects from "./Pages/Projects/RenderProjects";
+import RenderSkills from "./Pages/Skills/RenderSkills";
 
 export const LanguageContext = createContext();
 
