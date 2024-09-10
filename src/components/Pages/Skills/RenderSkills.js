@@ -1,7 +1,7 @@
 import React from "react";
+import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
 import "./RenderSkills.scss";
 import SingleSkill, { RelatedSkills } from "./SkillCards";
-import { IsActiveContext } from "../../Header/NavButtons/RenderNavButtons";
 
 function Skills() {
   const pageIsActive = React.useContext(IsActiveContext);
@@ -13,7 +13,6 @@ function Skills() {
   return (
     <div className="Skills">
       <main>
-        {/* New Skill */}
         <div className="container__skill-card">
           <div className="wire">
             <span className="nail"></span>
@@ -21,7 +20,6 @@ function Skills() {
           <SingleSkill classes="bg-javascript">JavaScript</SingleSkill>
         </div>
 
-        {/* New Skill */}
         <div className="container__skill-card">
           <div className="wire">
             <span className="nail"></span>
@@ -29,13 +27,14 @@ function Skills() {
           <SingleSkill classes="bg-react">React</SingleSkill>
         </div>
 
-        {/* New Skill */}
         <div className="container__skill-card">
           <div className="wire">
             <span className="nail"></span>
           </div>
-          <SingleSkill classes="bg-redux">Redux</SingleSkill>
+          <SingleSkill classes="bg-react">React Query</SingleSkill>
         </div>
+
+
 
         {/* New Skill */}
         <div className="container__skill-card">
@@ -56,6 +55,13 @@ function Skills() {
             skillTwo="Sass"
             classesTwo="bg-sass"
           />
+        </div>
+
+        <div className="container__skill-card">
+          <div className="wire">
+            <span className="nail"></span>
+          </div>
+          <SingleSkill classes="bg-redux">Redux</SingleSkill>
         </div>
 
         {/* New Skill */}

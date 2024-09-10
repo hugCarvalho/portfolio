@@ -15,7 +15,6 @@ function AboutEN() {
       <section>
         <ExperienceCard/>
         <br/>
-        {/* <ExperienceCard2/> */}
       </section>
       {/* <section>
         <IntroExtendedEN />
