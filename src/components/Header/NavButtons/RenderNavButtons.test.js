@@ -1,10 +1,10 @@
-import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
-import { createMemoryHistory } from "history";
-import { Router } from "react-router-dom";
+import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import RenderNavButtons from "./RenderNavButtons";
+import { createMemoryHistory } from "history";
+import React from "react";
+import { Router } from "react-router-dom";
 import App from "../../../App";
+import RenderNavButtons from "./RenderNavButtons";
 
 describe("Navigation Buttons tests", () => {
   test("Buttons render correctly in german as well", () => {
@@ -23,12 +23,12 @@ describe("Navigation Buttons tests", () => {
 
     const projects = screen.getByRole("button", { name: /projects/i });
     const skills = screen.getByRole("button", { name: /skills/i });
-    const about = screen.getByRole("button", { name: /about/i });
+    const about = screen.getByRole("button", { name: /experience/i });
     const contact = screen.getByRole("button", { name: /contact/i });
 
-    expect(projects).toHaveClass("active");
+    expect(projects).not.toHaveClass("active");
     expect(skills).not.toHaveClass("active");
-    expect(about).not.toHaveClass("active");
+    expect(about).toHaveClass("active");
     expect(contact).not.toHaveClass("active");
 
     fireEvent.click(skills);
@@ -50,7 +50,7 @@ describe("Navigation Buttons tests", () => {
     expect(contact).toHaveClass("active");
   });
 
-  test("button links link correctly to the correspondent pages ", () => {
+  test("button links link correctly to the correspondent pages ", async () => {
     const history = createMemoryHistory();
     render(
       <Router history={history}>
@@ -60,14 +60,10 @@ describe("Navigation Buttons tests", () => {
 
     const projects = screen.getByRole("button", { name: /projects/i });
     const skills = screen.getByRole("button", { name: /skills/i });
-    const about = screen.getByRole("button", { name: /about/i });
     const contact = screen.getByRole("button", { name: /contact/i });
 
     userEvent.click(skills);
     expect(screen.getByText(/semantic html/i)).toBeInTheDocument();
-
-    userEvent.click(about);
-    expect(screen.getByText(/basic introduction/i)).toBeInTheDocument();
 
     userEvent.click(contact);
     expect(screen.getByText(/176 782 93 187/i)).toBeInTheDocument();

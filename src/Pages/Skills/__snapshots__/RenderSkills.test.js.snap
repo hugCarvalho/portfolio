@@ -62,10 +62,10 @@ exports[`should match snapshot  1`] = `
           class="skill-box center"
         >
           <div
-            class="logo bg-redux"
+            class="logo bg-typescript"
           />
           <span>
-            Redux
+            Typescript
           </span>
         </div>
       </div>
@@ -73,7 +73,28 @@ exports[`should match snapshot  1`] = `
         class="container__skill-card"
       >
         <div
-          class="box wire"
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <div
+            class="logo bg-react"
+          />
+          <span>
+            React Query
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
         >
           <span
             class="nail"
@@ -87,6 +108,27 @@ exports[`should match snapshot  1`] = `
           />
           <span>
             Semantic HTML
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <div
+            class="logo bg-styled-components"
+          />
+          <span>
+            StyledComponents
           </span>
         </div>
       </div>
@@ -129,7 +171,228 @@ exports[`should match snapshot  1`] = `
         class="container__skill-card"
       >
         <div
-          class="box wire"
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <span>
+            Material UI
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <div
+            class="logo bg-jest"
+          />
+          <span>
+            Jest
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <div
+            class="logo bg-jest"
+          />
+          <span>
+            Cypress
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <div
+            class="logo bg-testing_library"
+          />
+          <span>
+            <small>
+              React Testing Library
+            </small>
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <div
+            class="logo bg-dynamoDB"
+          />
+          <span>
+            DynamoDB
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <div
+            class="logo bg-dynamoDB"
+          />
+          <span>
+            Cognito
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <div
+            class="logo bg-postgreSQL"
+          />
+          <span>
+            PostgreSQL
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <span>
+            Supabase
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <div
+            class="logo bg-redux"
+          />
+          <span>
+            Redux
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <span>
+            Datadog
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
+        >
+          <span
+            class="nail"
+          />
+        </div>
+        <div
+          class="skill-box center"
+        >
+          <span>
+            Prisma
+          </span>
+        </div>
+      </div>
+      <div
+        class="container__skill-card"
+      >
+        <div
+          class="wire"
         >
           <span
             class="nail"
@@ -158,50 +421,6 @@ exports[`should match snapshot  1`] = `
               class="logo bg-github special"
             />
           </div>
-        </div>
-      </div>
-      <div
-        class="container__skill-card"
-      >
-        <div
-          class="box wire"
-        >
-          <span
-            class="nail"
-          />
-        </div>
-        <div
-          class="skill-box center"
-        >
-          <div
-            class="logo bg-jest"
-          />
-          <span>
-            Jest
-          </span>
-        </div>
-      </div>
-      <div
-        class="container__skill-card"
-      >
-        <div
-          class="box wire"
-        >
-          <span
-            class="nail"
-          />
-        </div>
-        <div
-          class="skill-box center"
-        >
-          <div
-            class="logo bg-testing_library"
-          />
-          <span>
-            <small>
-              React Testing Library
-            </small>
-          </span>
         </div>
       </div>
     </main>
