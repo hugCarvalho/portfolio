@@ -1,9 +1,7 @@
 import React from "react";
 import { ExperienceCard } from "../../components/ExperienceCard";
 import "./About.scss";
-import { IntroExtendedDE } from "./assets/IntroExtended";
 import { IntroMainDE, IntroMainEN } from "./assets/IntroMain";
-import ResourcesList from "./assets/ResourcesList";
 
 function AboutEN() {
   return (
@@ -32,12 +30,17 @@ export function AboutDE() {
       <main>
         <IntroMainDE />
       </main>
+      <br/>
       <section>
+        <ExperienceCard/>
+        <br/>
+      </section>
+      {/* <section>
         <IntroExtendedDE />
       </section>
       <aside>
         <ResourcesList />
-      </aside>
+      </aside> */}
     </div>
   );
 }

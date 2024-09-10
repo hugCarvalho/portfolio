@@ -26,7 +26,8 @@ export function IntroMainEN() {
             <Link to="/projects" style={{textDecoration: "none"}}>
               small projects
             </Link>
-          </LinkStyles>, I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-7),
+          </LinkStyles>,
+        I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-7),
         and had the chance of working on two applications {" "}
         {"- "}
           {<LinkStyles><ExternalLink
@@ -43,30 +44,33 @@ export function IntroMainEN() {
     </article>
   );
 }
+
 export function IntroMainDE() {
   return (
     <article lang="de">
       <h2>Allgemeine Vorstellung</h2>
       <p>
-        Hallo, ich bin Hugo, ein autodidaktischer und wissbegierig Webentwickler mit einem
-        Master in Soziologie. Vor anderthalb Jahren begann ich parallel zu meinem Job das
-        Programmieren mit JavaScript zu lernen. Es begann aus Neugier, dauerte aber nicht
-        lange bevor es zu einer Leidenschaft wurde. Vor kurzem habe ich beschlossen,
-        meinen Job zu kündigen, um diese Leidenschaft zu verfolgen und mir vermehrt neues
-        Wissen anzueignen.
+        Im Jahr 2020 entschied ich mich, meine Karriere zu wechseln und meinen Job zu kündigen, um meiner neu entdeckten Leidenschaft für die Programmierung nachzugehen. Nach einem Jahr autodidaktischen Lernens, in dem ich mehrere
+        {" "}
+        <LinkStyles>
+          <Link to="/projects" style={{textDecoration: "none"}}>
+            kleine Projekte
+          </Link>
+        </LinkStyles>
+        {" "}
+         entwickelte, trat ich bei Erblotse (Heritas GmbH) ein, wo ich eine äußerst reichhaltige und vielfältige Erfahrung in einem kleinen agilen Team (4-7 Personen) sammeln konnte. Dabei hatte ich die Gelegenheit,
+         an zwei Apps {"- "}
+          {<LinkStyles><ExternalLink
+            link={"https://erben.erblotse.de"}
+            text={"Erben"}
+          /></LinkStyles>}{" und "}
+          {<LinkStyles><ExternalLink
+            link={"https://vererben.erblotse.de/"}
+            text={"Vererben"}
+          /></LinkStyles>}
+        {" -"} {" "}
+         mit unterschiedlichen Tech-Stacks zu arbeiten.
       </p>
-      <p>
-        Ich bin bestrebt, mir neue Fähigkeiten anzueignen, lerne aktiv (zurzeit{" "}
-        <s>Testing</s> Node.js) und bin mit Begeisterung dabei.
-      </p>
-      <p>
-        Neben meinen Fähigkeiten und meinem Selbstvertrauen, wächst auch der Wunsch wieder
-        in einem Team zu arbeiten um gemeinsame Ziele zu verfolgen, welche einen positiven
-        Einfluss auf die Kunden und das Unternehmen haben. Die Zusammenarbeit im Team
-        würde sich ebenfalls fördernd auf meine Lernkurve auswirken und mich sehr
-        motivieren.
-      </p>
-      <p>Wenn Sie mehr über mich erfahren möchten, lesen Sie einfach weiter...</p>
     </article>
   );
 }

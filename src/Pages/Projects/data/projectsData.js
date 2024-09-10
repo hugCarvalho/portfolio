@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     id: 1,
-    name: "Todo List App",
+    name: "Todo List App (2020)",
     category: ["app"],
     techs: ["React"],
     img: "media/todo_list_small.png",
@@ -41,7 +41,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    name: "Weather App",
+    name: "Weather App (2020)",
     category: ["app"],
     techs: ["React", "API", "Hooks"],
     img: "media/weather_night_small.png",
@@ -94,7 +94,7 @@ export const projectsData = [
 
   {
     id: 3,
-    name: "Fantasy Online Shop",
+    name: "Fantasy Online Shop (2020)",
     category: ["website", "online-shop"],
     techs: ["React", "API", "Hooks", "Redux"],
 
@@ -136,7 +136,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    name: "Portfolio Website",
+    name: "Portfolio Website (2020)",
     category: ["website"],
     techs: ["React", "Hooks", "Tests"],
 
@@ -185,37 +185,41 @@ export const projectsData = [
   },
   {
     id: 5,
-    name: "Word Scrambler Game",
+    name: "Word Scrambler Game (2021)",
     category: ["game"],
     techs: ["React", "Hooks"],
 
     img: "media/word-scrambler-game.png",
     description: {
       en:
-        "Ongoing but functional project. New features are being added based on planned features or on user feedback. Check GitHub project page for full details",
+        "Rich featured game with 3 levels of difficulty. Try your skill by guessing the scrambled word for the chosen category within the alloted time. If you don't use hints, you'll score more points and if you don't know the word you can dynamically look it up.",
       de:
-        "Laufendes, aber funktionierendes Projekt. Neue Funktionen werden basierend auf geplanten Funktionen oder auf Benutzer-Feedback hinzugefügt.",
+        "Reichhaltiges Spiel mit 3 Schwierigkeitsgraden. Stellen Sie Ihr Geschick unter Beweis, indem Sie das verschlüsselte Wort für die gewählte Kategorie innerhalb der vorgegebenen Zeit erraten. Wenn du keine Hinweise verwendest, erhältst du mehr Punkte und wenn du das Wort nicht kennst, kannst du es dynamisch nachschlagen.",
     },
     features: {
       en: [
+        "Customizable options",
         "Local Storage",
         "4 play levels",
         "Limited number of guesses",
         "Countdown",
         "Score if game won",
         "Scrambled word (letters are mixed up)",
+        "2 types of hints",
         "Sliding instructions effect",
         "Sound effects (at game end)",
         "Dynamic lookup of word in wikipedia",
         "High Score tables for each level",
       ],
       de: [
+        "Individualisierbare Optionen",
         "Lokaler Speicher",
         "4 Spielstufen",
         "Begrenzte Anzahl von Vermutungen",
         "Countdown",
         "Punktestand bei gewonnenem Spiel",
         "Verschlüsselte Wörter (Buchstaben werden vertauscht)",
+        "Zwei Arten von Hinweisen",
         "Toneffekte (bei Spielende)",
         "Dynamisches Nachschlagen des Wortes in Wikipedia",
         "Highscore-Tabellen für jedes Level",
@@ -223,19 +227,19 @@ export const projectsData = [
     },
     techInfo: {
       main: "REACT (Hooks)",
-      styled: "SASS (scss)",
+      styled: "SASS (scss) and Styled Components",
       tested: "", //JEST and React Testing Library",
       responsive: false,
-      specsText: { en: "Semantic HTML" },
+      specsText: { en: ["Semantic HTML", " adas"]},
       specs: [
-        // "useState",
+        "Local storage",
+        "Flexbox",
         // "useEffect",
         // "useContext",
         // "useLocation",
-        // "Flexbox",
         // "Unit and integration tests ",
       ],
-      thirdParty: [],
+      thirdParty: ["React Router", "React Tooltip"],
       notes: { en: "", de: "" },
     },
     live: ["https://condescending-raman-a3f123.netlify.app/"],

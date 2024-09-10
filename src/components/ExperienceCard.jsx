@@ -1,7 +1,8 @@
-import styled from 'styled-components'
-import { accomplishments } from '../config/Accomplishments'
-import { skills } from '../config/Skills'
-
+import React from "react";
+import styled from 'styled-components';
+import { LanguageContext } from "../App";
+import { accomplishments, accomplishmentsDe } from '../config/Accomplishments';
+import { skills } from '../config/Skills';
 const Container = styled.div`
   display: flex;
   border-radius: 4px;
@@ -58,12 +59,19 @@ const Company = styled.span`
 `
 
 export const ExperienceCard = () => {
+  const { isLanguageEnglish } = React.useContext(LanguageContext);
+
+  const acc = isLanguageEnglish ? accomplishments : accomplishmentsDe
+
   return <Container>
     <DatumSection>
       <Datum>02.2021-08.2024</Datum>
     </DatumSection>
     <DescriptionSection>
-      <span><JobTitle>Junior Software Developer</JobTitle>
+      <span>
+        <JobTitle>
+          {isLanguageEnglish ? "Junior Software Developer" : "Junior Software Entwickler"}
+        </JobTitle>
       <Company>, Heritas GmbH, Berlin</Company></span>
       {/* <JobDescription>
         Accomplishments:
@@ -72,7 +80,7 @@ export const ExperienceCard = () => {
       {/* Accomplishments */}
       <ul>
       {
-        accomplishments.map((accomplishment, i)=> {
+        acc.map((accomplishment, i)=> {
           return <ListItem key={i}>{accomplishment}</ListItem>
         })
       }
