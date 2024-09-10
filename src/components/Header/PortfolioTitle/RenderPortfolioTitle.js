@@ -15,8 +15,8 @@ function RenderPortfolioTitle() {
 
   return (
     <section className="RenderPortfolioTitle" role="banner">
-      <Link to="/projects">
-        <h1 title="my projects">
+      <Link to="/about">
+        <h1 title="my experience">
           <span
             id="hugo"
             className={`${animateHugo ? "animateHugo" : ""} ${

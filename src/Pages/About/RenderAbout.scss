@@ -1,0 +1,50 @@
+.RenderAbout {
+  background-color: rgba(248, 246, 246, 0.9);
+  background-image: url("./assets/12.png");
+
+  min-height: calc(100vh - 235px);
+  padding: 10px 16% 117px;
+  font-family: serif, "monospace";
+
+  .show-on-smallest-screen-only {
+    display: none;
+  }
+}
+
+@media (max-width: 622px) {
+  .RenderAbout {
+    min-height: calc(100vh - 245px);
+  }
+}
+
+@media (max-width: 576px) {
+  .RenderAbout {
+    // background-color: pink;
+    padding: 30px 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .RenderAbout .show-on-smallest-screen-only {
+    // background-color: lime;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+    ul {
+      display: flex;
+      li {
+        padding-right: 20px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.to-top {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  background-color: green;
+  z-index: 500;
+  // display: showScroll ? "flex" : "none",
+}

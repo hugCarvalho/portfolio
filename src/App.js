@@ -1,20 +1,20 @@
-import React, { useState, createContext } from "react";
-import "./App.scss";
-import RenderHeader from "./components/Header/RenderHeader";
-import RenderFooter from "./components/Footer/RenderFooter";
-import RenderProjects from "./components/Pages/Projects/RenderProjects";
-import RenderSkills from "./components/Pages/Skills/RenderSkills";
-import RenderAbout from "./components/Pages/About/RenderAbout";
-import RenderContact from "./components/Pages/Contact/RenderContact";
-import NotFound from "./components/Pages/NotFound/NotFound";
+import React, { createContext, useState } from "react";
 import {
   // BrowserRouter as Router,
   HashRouter,
-  Switch,
-  Route,
   Redirect,
+  Route,
+  Switch,
 } from "react-router-dom";
+import "./App.scss";
 import ScrollToTop from "./components/customisable/ScrollToTop";
+import RenderFooter from "./components/Footer/RenderFooter";
+import RenderHeader from "./components/Header/RenderHeader";
+import RenderAbout from "./Pages/About/RenderAbout";
+import RenderContact from "./Pages/Contact/RenderContact";
+import NotFound from "./Pages/NotFound/NotFound";
+import RenderProjects from "./Pages/Projects/RenderProjects";
+import RenderSkills from "./Pages/Skills/RenderSkills";
 
 export const LanguageContext = createContext();
 
@@ -30,7 +30,7 @@ function App({ isEnglish = true }) {
 
           <Switch>
             <Route exact path="/">
-              <Redirect to="/projects" />
+              <Redirect to="/about" />
             </Route>
             <Route exact path="/projects" component={RenderProjects} />
             <Route exact path="/skills" component={RenderSkills} />
