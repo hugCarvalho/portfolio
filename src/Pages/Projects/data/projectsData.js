@@ -91,49 +91,6 @@ export const projectsData = [
     live: ["https://awesome-payne-8bf6bd.netlify.app/"],
     code: ["https://github.com/hugCarvalho/weather_api"],
   },
-
-  {
-    id: 3,
-    name: "Fantasy Online Shop (2020)",
-    category: ["website", "online-shop"],
-    techs: ["React", "API", "Hooks", "Redux"],
-
-    img: "media/online_shop_redux.png",
-    description: {
-      en:
-        "Ongoing project, built using React and Redux that simulates an online shop. For more details check the homepage of the project.",
-      de:
-        "Fortlaufendes Projekt, das mit React und Redux erstellt wurde und einen Online-Shop simuliert. Weitere Informationen finden Sie auf der Homepage des Projekts.",
-    },
-    features: {
-      en: [
-        "Data fetch from Breaking Bad API",
-        "Add to cart / remove from cart",
-        "Limited inventory",
-        "Cart total computation",
-        "Register + Login",
-      ],
-      de: [
-        "Datenabruf von Breaking Bad API",
-        "In den Warenkorb legen / aus dem Warenkorb nehmen",
-        "Begrenztes Inventar",
-        "Warenkorb-Gesamtberechnung",
-        "Registrieren + Anmeldung",
-      ],
-    },
-    techInfo: {
-      main: "REACT (Hooks) + REDUX",
-      styled: "SASS (scss)",
-      tested: "", //JEST and React Testing Library
-      responsive: false,
-      specsText: { en: "", de: "" },
-      specs: ["useDispatch", "useSelector", "useEffect", "useState", "useReducer", "API"],
-      thirdParty: ["React-Router", "react-hook-form"],
-      notes: { en: "", de: "" },
-    },
-    live: ["https://stoic-almeida-257f01.netlify.app/"],
-    code: ["https://github.com/hugCarvalho/phantasy-shop_redux"],
-  },
   {
     id: 4,
     name: "Portfolio Website (2020)",

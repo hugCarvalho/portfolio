@@ -19,12 +19,12 @@ function FilterBy({ filterBy, setFilterBy, isLanguageEnglish }) {
         >
           Hooks
         </li>
-        <li
+        {/* <li
           className={filterBy === "Redux" ? "active " : "tech-tab"}
           onClick={() => setFilterBy("Redux")}
         >
           Redux
-        </li>
+        </li> */}
         <li
           className={filterBy === "Tests" ? "active " : "tech-tab"}
           onClick={() => setFilterBy("Tests")}
