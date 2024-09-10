@@ -73,6 +73,24 @@
   .bg-testing_library {
     background: url("./assets/logo_sprites.png") -622px -10px;
   }
+
+  .bg-dynamoDB {
+    background: url("./assets/amazon.png") ;
+  }
+  .bg-typescript {
+    background: url("./assets/typescript.png") ;
+  }
+  .bg-postgreSQL {
+    background: url("./assets/postgresql.png") ;
+  }
+  .bg-styled-components {
+    background: url("./assets/styled-components.png") ;
+  }
+  // .bg-prisma {
+  //   background: url("./assets/prisma.svg") ;
+  // }
+
+
   //to show github icon in dark background
   .special {
     background-color: darken(#ffffff, 5%);

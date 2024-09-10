@@ -13,87 +13,42 @@ function Skills() {
   return (
     <div className="Skills">
       <main>
-        <div className="container__skill-card">
-          <div className="wire">
-            <span className="nail"></span>
-          </div>
-          <SingleSkill classes="bg-javascript">JavaScript</SingleSkill>
-        </div>
+        <SingleSkill classes="bg-javascript" name="JavaScript"/>
+        <SingleSkill classes="bg-react" name="React"></SingleSkill>
+        <SingleSkill classes="bg-typescript" name="Typescript"/>
+        <SingleSkill classes="bg-react" name="React Query"></SingleSkill>
+        <SingleSkill classes="bg-html-5" name="Semantic HTML"></SingleSkill>
+        <SingleSkill classes="bg-styled-components" name="StyledComponents"/>
+        <RelatedSkills
+          skillOne="CSS"
+          classesOne="bg-css3"
+          skillTwo="Sass"
+          classesTwo="bg-sass"
+        />
+        <SingleSkill name="Material UI"/>
+        <SingleSkill classes="bg-jest" name="Jest"/>
+        <SingleSkill classes="bg-jest" name="Cypress"/>
+        <SingleSkill
+          classes="bg-testing_library"
+          name={<small>React Testing Library</small>}
+        />
+        <SingleSkill classes="bg-dynamoDB" name="DynamoDB"/>
+        <SingleSkill classes="bg-dynamoDB" name="Cognito"/>
+        <SingleSkill classes="bg-postgreSQL" name="PostgreSQL"></SingleSkill>
+        <SingleSkill name="Supabase"/>
+        <SingleSkill classes="bg-redux" name="Redux"></SingleSkill>
+        <SingleSkill name="Datadog"/>
+        <SingleSkill name="Prisma"/>
 
-        <div className="container__skill-card">
-          <div className="wire">
-            <span className="nail"></span>
-          </div>
-          <SingleSkill classes="bg-react">React</SingleSkill>
-        </div>
 
-        <div className="container__skill-card">
-          <div className="wire">
-            <span className="nail"></span>
-          </div>
-          <SingleSkill classes="bg-react">React Query</SingleSkill>
-        </div>
-
-
-
-        {/* New Skill */}
-        <div className="container__skill-card">
-          <div className="box wire">
-            <span className="nail"></span>
-          </div>
-          <SingleSkill classes="bg-html-5">Semantic HTML</SingleSkill>
-        </div>
-
-        {/* New Skill */}
-        <div className="container__skill-card">
-          <div className="wire">
-            <span className="nail"></span>
-          </div>
-          <RelatedSkills
-            skillOne="CSS"
-            classesOne="bg-css3"
-            skillTwo="Sass"
-            classesTwo="bg-sass"
-          />
-        </div>
-
-        <div className="container__skill-card">
-          <div className="wire">
-            <span className="nail"></span>
-          </div>
-          <SingleSkill classes="bg-redux">Redux</SingleSkill>
-        </div>
+        <RelatedSkills
+          skillOne="Git"
+          classesOne="bg-git"
+          skillTwo="GitHub"
+          classesTwo="bg-github special"
+        />
 
         {/* New Skill */}
-        <div className="container__skill-card">
-          <div className="box wire">
-            <span className="nail"></span>
-          </div>
-          <RelatedSkills
-            skillOne="Git"
-            classesOne="bg-git"
-            skillTwo="GitHub"
-            classesTwo="bg-github special"
-          />
-        </div>
-
-        {/* New Skill */}
-        <div className="container__skill-card">
-          <div className="box wire">
-            <span className="nail"></span>
-          </div>
-          <SingleSkill classes="bg-jest">Jest</SingleSkill>
-        </div>
-
-        {/* New Skill */}
-        <div className="container__skill-card">
-          <div className="box wire">
-            <span className="nail"></span>
-          </div>
-          <SingleSkill classes="bg-testing_library">
-            <small>React Testing Library</small>
-          </SingleSkill>
-        </div>
       </main>
     </div>
   );
