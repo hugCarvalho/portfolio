@@ -1,29 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1f73b1d7.chunk.css",
-    "main.js": "/portfolio/static/js/main.1c4eb751.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.1c4eb751.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.fd9948fe.chunk.js": "/portfolio/static/js/2.fd9948fe.chunk.js",
-    "static/js/2.fd9948fe.chunk.js.map": "/portfolio/static/js/2.fd9948fe.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.4cda4d5c.css",
+    "main.js": "/portfolio/static/js/main.15477a93.js",
+    "static/media/12.png": "/portfolio/static/media/12.3a1471f2da0e2229237f.png",
+    "static/media/15.png": "/portfolio/static/media/15.311ea03002abadcdcaba.png",
+    "static/media/flagEngland.png": "/portfolio/static/media/flagEngland.1513cddfc0d12f3922d4.png",
+    "static/media/14.png": "/portfolio/static/media/14.79000482fe8acfa2e99c.png",
+    "static/media/flagGermany.png": "/portfolio/static/media/flagGermany.447a73750735bad1fd90.png",
+    "static/media/moi.jpg": "/portfolio/static/media/moi.f406ed13084a28e9a2ae.jpg",
+    "static/media/logo_sprites.png": "/portfolio/static/media/logo_sprites.0953ad9db420ff55a737.png",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.32e4dab5d767deb39cc13f8423991b06.js": "/portfolio/precache-manifest.32e4dab5d767deb39cc13f8423991b06.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.1f73b1d7.chunk.css.map": "/portfolio/static/css/main.1f73b1d7.chunk.css.map",
-    "static/js/2.fd9948fe.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fd9948fe.chunk.js.LICENSE.txt",
-    "static/media/RenderContact.scss": "/portfolio/static/media/12.fe52ed05.png",
-    "static/media/FilterBy.scss": "/portfolio/static/media/14.53c1ec5f.png",
-    "static/media/RenderFooter.scss": "/portfolio/static/media/15.bc95bc68.png",
-    "static/media/flagEngland.png": "/portfolio/static/media/flagEngland.1c4499a7.png",
-    "static/media/flagGermany.png": "/portfolio/static/media/flagGermany.ccde240b.png",
-    "static/media/SkillCards.scss": "/portfolio/static/media/logo_sprites.70be3f8d.png",
-    "static/media/moi.jpg": "/portfolio/static/media/moi.295d2fc3.jpg"
+    "main.4cda4d5c.css.map": "/portfolio/static/css/main.4cda4d5c.css.map",
+    "main.15477a93.js.map": "/portfolio/static/js/main.15477a93.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.fd9948fe.chunk.js",
-    "static/css/main.1f73b1d7.chunk.css",
-    "static/js/main.1c4eb751.chunk.js"
+    "static/css/main.4cda4d5c.css",
+    "static/js/main.15477a93.js"
   ]
 }
