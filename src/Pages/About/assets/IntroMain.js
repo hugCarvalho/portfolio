@@ -15,19 +15,15 @@ export function IntroMainEN() {
   return (
     <article>
       <h2>Experience</h2>
-      {/* <p>
-        Hi, I'm Hugo, a self-taught and highly motivated programmer, who is changing
-        careers after having discovered his passion in programming.
-      </p> */}
       <p>
         In 2020, I decided to change careers and quit my job to pursue my newfound passion for programming. After one year of self-taught learning,
         during which I developed several {" "}
           <LinkStyles>
-            <Link to="/projects" style={{textDecoration: "none"}}>
+            <Link to="/projects">
               small projects
             </Link>
           </LinkStyles>,
-        I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-7),
+        I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-6),
         and had the chance of working on two applications {" "}
         {"- "}
           {<LinkStyles><ExternalLink
@@ -58,7 +54,7 @@ export function IntroMainDE() {
           </Link>
         </LinkStyles>
         {" "}
-         entwickelte, trat ich bei Erblotse (Heritas GmbH) ein, wo ich eine äußerst reichhaltige und vielfältige Erfahrung in einem kleinen agilen Team (4-7 Personen) sammeln konnte. Dabei hatte ich die Gelegenheit,
+         entwickelte, trat ich bei Erblotse (Heritas GmbH) ein, wo ich eine äußerst reichhaltige und vielfältige Erfahrung in einem kleinen agilen Team (4-6 Personen) sammeln konnte. Dabei hatte ich die Gelegenheit,
          an zwei Apps {"- "}
           {<LinkStyles><ExternalLink
             link={"https://erben.erblotse.de"}

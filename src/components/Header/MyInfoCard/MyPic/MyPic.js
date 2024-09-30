@@ -1,9 +1,7 @@
 import React from "react";
-import "./MyPic.scss";
 import { Link } from "react-router-dom";
 import moi from "./media/moi.jpg";
-
-//TODO: resize pic
+import "./MyPic.scss";
 
 function MyPic() {
   const [activate, setActivate] = React.useState(false);

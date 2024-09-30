@@ -19,7 +19,7 @@
     letter-spacing: 1px;
     &:focus,
     &:hover {
-      color: #e8ba07;
+      color: var(--onHover1);
     }
   }
 }

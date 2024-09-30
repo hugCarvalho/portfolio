@@ -14,5 +14,5 @@ const de6 = "Refactoring und Optimierung des Codes für verbesserte Lesbarkeit u
 const de5 = "Aktive Teilnahme an technischen Diskussionen";
 const de7 = "Durchführung von Code-Reviews zur Identifizierung potenzieller Probleme und Verbesserungen";
 
-export const accomplishments = [one, two, three, four, five, six, seven]
+export const accomplishmentsEn = [one, two, three, four, five, six, seven]
 export const accomplishmentsDe = [de1, de2, de3, de4, de5, de6, de7]

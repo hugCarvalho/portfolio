@@ -64,7 +64,7 @@
 
   .active {
     position: relative;
-    background-color: #e8ba07;
+    background-color: var(--onHover1);
     color: rgb(32, 32, 32);
     border: none;
     border: 1px solid #383232de;
