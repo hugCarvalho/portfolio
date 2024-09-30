@@ -84,7 +84,9 @@ export const ExperienceCard = () => {
           {isLanguageEnglish ? "Junior Software Developer" : "Junior Software Entwickler"}
         </JobTitle>
       <Company>, Heritas GmbH, Berlin</Company></span>
+      <p>{isLanguageEnglish ? "Accomplishments:" : "Leistungen:"}</p>
       <ul>
+      {/* Accomplishments */}
       {
         accomplishments.map((accomplishment, i)=> {
           return <ListItem key={i}>{accomplishment}</ListItem>
@@ -99,7 +101,6 @@ export const ExperienceCard = () => {
           })
         }
       </TagsSection>
-      {/* Accomplishments */}
       <p>{isLanguageEnglish ? "Testimonies:" : "Berichte:"}</p>
       <TestimoniesSection>
         <VerticalSliderCard

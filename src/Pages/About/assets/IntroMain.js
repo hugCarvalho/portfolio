@@ -4,10 +4,8 @@ import { styled } from "styled-components";
 import { ExternalLink } from "../../../components/ExternalLink";
 
 const LinkStyles = styled.span`
-  color: antiquewhite;
-  text-decoration: none;
   :hover{
-    color: gray;
+    opacity: .7;
   }
 
 `
@@ -23,14 +21,14 @@ export function IntroMainEN() {
               small projects
             </Link>
           </LinkStyles>,
-        I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-6),
+        I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-6 members),
         and had the chance of working on two applications {" "}
         {"- "}
-          {<LinkStyles><ExternalLink
+          {<LinkStyles style={{textDecoration: "underline"}}><ExternalLink
             link={"https://erben.erblotse.de"}
             text={"Erben"}
           /></LinkStyles>}{" and "}
-          {<LinkStyles><ExternalLink
+          {<LinkStyles style={{textDecoration: "underline"}}><ExternalLink
             link={"https://vererben.erblotse.de/"}
             text={"Vererben"}
           /></LinkStyles>}
@@ -54,7 +52,7 @@ export function IntroMainDE() {
           </Link>
         </LinkStyles>
         {" "}
-         entwickelte, trat ich bei Erblotse (Heritas GmbH) ein, wo ich eine äußerst reichhaltige und vielfältige Erfahrung in einem kleinen agilen Team (4-6 Personen) sammeln konnte. Dabei hatte ich die Gelegenheit,
+         entwickelte, trat ich bei Erblotse (Heritas GmbH) ein, wo ich eine äußerst reichhaltige und vielfältige Erfahrung in einem kleinen agilen Team (4-6 Kollegen) sammeln konnte. Dabei hatte ich die Gelegenheit,
          an zwei Apps {"- "}
           {<LinkStyles><ExternalLink
             link={"https://erben.erblotse.de"}
