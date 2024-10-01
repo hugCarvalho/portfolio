@@ -1,6 +1,6 @@
 import React from "react";
-import "./RenderFooter.scss";
 import { LanguageContext } from "../../App";
+import "./RenderFooter.scss";
 // import englishCV from "../../shared/CV_english.pdf";
 // import germanCV from "../../shared/CV_deutsch.pdf";
 
@@ -39,6 +39,17 @@ function RenderFooter() {
                 title="icons8"
               >
                 Icons8
+              </a>
+            </cite>
+            {" and "}
+            <cite>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://worldvectorlogo.com/"
+                title="worldvectorlogo"
+              >
+                Worldvectorlogo
               </a>
             </cite>
           </li>
