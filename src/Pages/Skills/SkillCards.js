@@ -1,7 +1,7 @@
 import React from "react";
 import "./SkillCards.scss";
 
-function SingleSkill({classes, name}) {
+export function SingleSkill({classes, name}) {
   return (
     <div className="container__skill-card">
       <div className="wire">
@@ -35,4 +35,19 @@ export function RelatedSkills(props) {
   );
 }
 
-export default SingleSkill;
+export const SingleSkillSvg = ({src, name, style}) => {
+  return (
+    <div className="container__skill-card">
+  <div className="wire">
+  <span className="nail"></span>
+  </div>
+    <div className="skill-box center">
+      <div style={{height: "50%", ...style}} >
+        {<img src={src} width={"100%"} height={"100%"} alt={`${name} icon`}/>}
+      </div>
+      {name && <span>{name}</span>}
+  </div>
+  </div>
+
+  )
+}
