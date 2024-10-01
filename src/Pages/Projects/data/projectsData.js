@@ -5,7 +5,7 @@ export const CATEGORIES = {
   webApp: "web app"
 }
 
-export const FILTERS = {
+export const PROJECT_FILTERS = {
   all:  "all",
   game: CATEGORIES.game,
   api: CATEGORIES.api,

@@ -1,16 +1,13 @@
 import React from "react";
-import { FILTERS } from "../data/projectsData";
 import "./FilterBy.scss";
 
-function FilterBar({ filterBy, setFilterBy, isLanguageEnglish }) {
+function FilterBar({ filterBy, setFilterBy, filters, isLanguageEnglish }) {
 
-  const activeFilters = Object.values(FILTERS)
-  console.log("activeFilters", activeFilters)
   return (
     <div className="FilterBy">
       <span className="filter-by__text">Filter:</span>
       <ul>
-        {activeFilters.map(option => {
+        {filters.map(option => {
           return <li
           key={option}
           className={filterBy === option ? "active " : "tech-tab"}

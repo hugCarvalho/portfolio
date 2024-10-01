@@ -45,9 +45,9 @@
   li {
     background-color: #575d5f;
     color: white;
-    width: 95px;
-    padding: 3px;
-    margin-right: -7px;
+    min-width: 90px;
+    padding: 3px 9px;
+    margin-right: -6px;
     text-align: center;
     font-weight: 300;
     font-variant: small-caps;
@@ -63,6 +63,7 @@
   }
 
   .active {
+    min-width: max-content;
     position: relative;
     background-color: var(--onHover1);
     color: rgb(32, 32, 32);
@@ -73,6 +74,7 @@
   }
 
   .tech-tab {
+    min-width: max-content;
     position: relative;
     transform: rotate(5deg);
     transform-origin: 20% 40%;

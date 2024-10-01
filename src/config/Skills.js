@@ -11,13 +11,14 @@ const monitoring = ["Sentry", "Datadog"]
 const others = ["Jira"]
 export const erblotseSkills = [...languages, ...styles, ...testing, ...dbRelated, ...monitoring, ...others]
 
-const SKILL_CATEGORIES = {
+export const SKILL_CATEGORIES = {
+  all: "all",
+  reactEcosystem: "reactEcosystem",
+  backend: "backend",
   styling: "styling",
   testing: "testing",
-  backend: "backend",
   monitoring: "monitoring",
   versioning: "versioning",
-  reactEcosystem: "reactEcosystem"
 }
 
 //DB & DB tools

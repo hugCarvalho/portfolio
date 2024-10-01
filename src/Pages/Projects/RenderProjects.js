@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { LanguageContext } from "../../App";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
-import { projectsData } from "./data/projectsData";
+import { PROJECT_FILTERS, projectsData } from "./data/projectsData";
 import FilterBar from "./FilterBy/FilterBy";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import "./RenderProjects.scss";
@@ -58,13 +58,13 @@ function RenderProjects() {
   return (
     <>
       <FilterBar
+        filters={Object.values(PROJECT_FILTERS)}
         filterBy={filterBy}
         setFilterBy={setFilterBy}
         isLanguageEnglish={isLanguageEnglish}
       />
 
       <main className="RenderProjects">
-
         {filterTechsBy(projectsData, filterBy)
           .map((project, i) => {
             const language = isLanguageEnglish ? "en" : "de";
