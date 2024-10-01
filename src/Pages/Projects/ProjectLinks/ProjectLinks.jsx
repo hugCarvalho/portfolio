@@ -1,0 +1,31 @@
+import React from "react";
+import { Modal } from "../../../components/Modal";
+import "./ProjectLinks.scss";
+
+function ProjectLinks({ project }) {
+  const [showModal, setShowModal] = React.useState(false)
+
+  return (
+    <section className="ProjectLinks">
+      {showModal && <Modal setShowModal={setShowModal} projectGithubUrl={project.code}/>}
+      <div className="live">
+        <a href={`${project.live}`} rel="noopener noreferrer" target="_blank">
+          <i className="fas fa-eye">
+            {" "}
+            <span className="text"> Live</span>
+          </i>
+        </a>
+      </div>
+
+      <div style={{cursor: "pointer"}} onClick={()=> {
+        setShowModal(true)
+      }}>
+        <i className="fa fa-search" style={{color: "lightblue"}}>
+          <span className="text"> Code</span>
+        </i>
+      </div>
+    </section>
+  );
+}
+
+export default ProjectLinks;
