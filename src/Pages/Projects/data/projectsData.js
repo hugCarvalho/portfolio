@@ -1,7 +1,7 @@
 export const CATEGORIES = {
   game: "game",
   website: "website",
-  api: "API",
+  api: "api",
   webApp: "web app"
 }
 
@@ -11,8 +11,8 @@ export const FILTERS = {
   api: CATEGORIES.api,
   website: CATEGORIES.website,
   webApp: CATEGORIES.webApp,
-  hooks: "hooks",
-  classes: "classes",
+  // hooks: "hooks",
+  // classes: "classes",
 }
 
 export const projectsData = [
@@ -44,7 +44,7 @@ export const projectsData = [
       ],
     },
     techInfo: {
-      main: "REACT",
+      main: "REACT (classes)",
       styled: "SASS (scss)",
       tested: "",
       responsive: true,
@@ -52,6 +52,7 @@ export const projectsData = [
       specs: ["forwardRef", "Prop-types", "Flexbox", "Local Storage"],
       thirdParty: ["React-modal", "UUID"],
       notes: { en: "", de: "" },
+      tags: ["React", "JavaScript", "HTML5", "SASS", "Local Storage"]
     },
     live: ["https://stoic-fermi-dcf04f.netlify.app/"],
     code: ["https://github.com/hugCarvalho/todoList"],
@@ -60,7 +61,7 @@ export const projectsData = [
     id: 2,
     name: "Weather App (2020)",
     category: [CATEGORIES.api, CATEGORIES.webApp],
-    techs: ["React", "API", "hooks"],
+    techs: ["React", "API"],
     img: "media/weather_night_small.png",
 
     description: {
@@ -89,10 +90,10 @@ export const projectsData = [
     },
     techInfo: {
       main: "REACT (Hooks)",
-      styled: "SASS (scss)",
+      styled: "SASS (scss) and Styled Components",
       tested: "",
       responsive: true,
-      specsText: { en: "", de: "" },
+      specsText: { en: "Open Weather API", de: "Open Weather API" },
       specs: [
         "useState",
         "useReducer",
@@ -104,6 +105,7 @@ export const projectsData = [
       ],
       thirdParty: ["Tippy.js", "React-spinners", "React-Moment"],
       notes: { en: "", de: "" },
+      tags: ["React", "JavaScript", "HTML5", "SASS", "API", "Local storage"]
     },
     live: ["https://awesome-payne-8bf6bd.netlify.app/"],
     code: ["https://github.com/hugCarvalho/weather_api"],
@@ -140,9 +142,9 @@ export const projectsData = [
     techInfo: {
       main: "REACT (Hooks)",
       styled: "SASS (scss)",
-      tested: "JEST and React Testing Library",
+      tested: "React Testing Library",
       responsive: true,
-      specsText: { en: "Semantic HTML" },
+      specsText: { en: "Semantic HTML", de: "Semantic HTML"},
       specs: [
         "useState",
         "useEffect",
@@ -151,8 +153,9 @@ export const projectsData = [
         "Flexbox",
         "Unit and integration tests ",
       ],
-      thirdParty: ["React-router"],
+      thirdParty: ["React-router", "React-use"],
       notes: { en: "", de: "" },
+      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "React Testing Library", "React Rounter"]
     },
     live: ["https://hugcarvalho.github.io/portfolio"],
     code: ["https://github.com/hugCarvalho/portfolio"],
@@ -202,9 +205,9 @@ export const projectsData = [
     techInfo: {
       main: "REACT (Hooks)",
       styled: "SASS (scss) and Styled Components",
-      tested: "", //JEST and React Testing Library",
+      tested: "Jest and React Testing Library",
       responsive: false,
-      specsText: { en: ["Semantic HTML", " adas"]},
+      specsText: { en: "Semantic HTML", de: "Semantic HTML" },
       specs: [
         "Local storage",
         "Flexbox",
@@ -215,6 +218,7 @@ export const projectsData = [
       ],
       thirdParty: ["React Router", "React Tooltip"],
       notes: { en: "", de: "" },
+      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "Jest", "React Testing Library", "React Rounter"]
     },
     live: ["https://condescending-raman-a3f123.netlify.app/"],
     code: ["https://github.com/hugCarvalho/wordScrambler"],

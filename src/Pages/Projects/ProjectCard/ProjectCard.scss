@@ -3,6 +3,7 @@
   color: #e6e6e6;
   width: 420px;
   height: 100%;
+  height: min-content;
   margin: 0px 20px;
   perspective: 150rem;
 
@@ -118,16 +119,19 @@
       }
     }
   }
+
 }
 
-@media (max-width: 414px) {
+@media (max-width: 449px) {
+
   .ProjectCard {
     font-size: 1.3rem;
     width: 360px;
+
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 390px) {
   .ProjectCard {
     width: 346px;
   }

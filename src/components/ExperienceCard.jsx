@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { LanguageContext } from "../App";
 import { accomplishmentsDe, accomplishmentsEn } from '../config/Accomplishments';
-import { skills } from '../config/Skills';
+import { erblotseSkills } from '../config/Skills';
 import Abidh from '../images/abidh.jpeg';
 import Christian from '../images/christian.jpeg';
 import { PersonTestimony, VerticalSliderCard } from "./VerticalSliderCard";
@@ -68,6 +68,16 @@ const Company = styled.span`
     font-size: 17px;
   }
 `
+//TODO: move to dedicated file
+export const Tags = ({skills}) => {
+  return <TagsSection>
+    {
+      skills.map((skill, i)=> {
+        return <Tag key={i}>{skill}</Tag>
+      })
+    }
+  </TagsSection>
+}
 
 export const ExperienceCard = () => {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
@@ -95,12 +105,8 @@ export const ExperienceCard = () => {
       </ul>
 
       {/* SKILLS */}
-      <TagsSection>
-        {skills.map((skill, i)=> {
-            return <Tag key={i}>{skill}</Tag>
-          })
-        }
-      </TagsSection>
+      <Tags skills={erblotseSkills}/>
+
       <p>{isLanguageEnglish ? "Testimonies:" : "Berichte:"}</p>
       <TestimoniesSection>
         <VerticalSliderCard

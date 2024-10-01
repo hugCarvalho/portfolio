@@ -1,11 +1,11 @@
 import React from "react";
-import "./ProjectCard.scss";
+import { Tags } from "../../../components/ExperienceCard";
 import ProjectLinks from "../ProjectLinks/ProjectLinks";
 import {
-  renderThirdParty,
   renderFeatures,
-  renderProjectSpecifics,
+  renderThirdParty
 } from "../functions/functions";
+import "./ProjectCard.scss";
 
 function ProjectCard({
   backCardHeight,
@@ -75,14 +75,16 @@ function ProjectCard({
             <h2>{language === "en" ? "Technical Info:" : "Technische Info"}</h2>
             <p>{`${project.techInfo.main}`}</p>
             <p>{`${project.techInfo.styled}`}</p>
-            <p>{project.techInfo.tested && `Tested with ${project.techInfo.tested}`}</p>
-
             {project.techInfo.responsive && <p>Responsive</p>}
             {project.techInfo.specsText.en && <p>{project.techInfo.specsText.en}</p>}
+            <p>{project.techInfo.tested && `Tested with ${project.techInfo.tested}`}</p>
+            {/* TAGS */}
+<br/>
+            <Tags skills={project.techInfo.tags}/>
 
             {/* SPECIFICS */}
-            <h3>{language === "en" ? "Project specifics:" : "Projekt Details"}</h3>
-            {renderProjectSpecifics(project)}
+            {/* <h3>{language === "en" ? "Project specifics:" : "Projekt Details"}</h3> */}
+            {/* {renderProjectSpecifics(project)} */}
 
             {/* Third Party used in project */}
             <h3>Third party:</h3>
@@ -100,7 +102,6 @@ function ProjectCard({
 
       {/* LINKS */}
       <ProjectLinks project={project} />
-      {/* </main> */}
     </>
   );
 }

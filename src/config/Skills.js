@@ -5,4 +5,4 @@ const dbRelated = ["React Query", "AWS Cognito", "AWS DynamoDb", "PostgreSQL", "
 const monitoring = ["Sentry", "Datadog"]
 const others = ["Jira"]
 
-export const skills = [...languages, ...styles, ...testing, ...dbRelated, ...monitoring, ...others]
+export const erblotseSkills = [...languages, ...styles, ...testing, ...dbRelated, ...monitoring, ...others]
