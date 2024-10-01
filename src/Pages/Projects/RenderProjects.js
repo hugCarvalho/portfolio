@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { LanguageContext } from "../../App";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
 import { projectsData } from "./data/projectsData";
-import FilterBy from "./FilterBy/FilterBy";
+import FilterBar from "./FilterBy/FilterBy";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import "./RenderProjects.scss";
 
@@ -45,22 +45,26 @@ function RenderProjects() {
   };
 
   const filterTechsBy = (db, option = "all") => {
+    console.log("firstasdasds", option)
+
+
     if (option === "all") {
       return db;
     } else {
-      return db.filter(item => item.techs.includes(option));
+      return db.filter(item => item.techs.includes(option) || item.category.includes(option));
     }
   };
 
   return (
     <>
-      <FilterBy
+      <FilterBar
         filterBy={filterBy}
         setFilterBy={setFilterBy}
         isLanguageEnglish={isLanguageEnglish}
       />
 
       <main className="RenderProjects">
+
         {filterTechsBy(projectsData, filterBy)
           .map((project, i) => {
             const language = isLanguageEnglish ? "en" : "de";

@@ -1,9 +1,26 @@
+export const CATEGORIES = {
+  game: "game",
+  website: "website",
+  api: "API",
+  webApp: "web app"
+}
+
+export const FILTERS = {
+  all:  "all",
+  game: CATEGORIES.game,
+  api: CATEGORIES.api,
+  website: CATEGORIES.website,
+  webApp: CATEGORIES.webApp,
+  hooks: "hooks",
+  classes: "classes",
+}
+
 export const projectsData = [
   {
     id: 1,
     name: "Todo List App (2020)",
-    category: ["app"],
-    techs: ["React"],
+    category: [CATEGORIES.webApp],
+    techs: ["React", "classes"],
     img: "media/todo_list_small.png",
 
     description: {
@@ -42,8 +59,8 @@ export const projectsData = [
   {
     id: 2,
     name: "Weather App (2020)",
-    category: ["app"],
-    techs: ["React", "API", "Hooks"],
+    category: [CATEGORIES.api, CATEGORIES.webApp],
+    techs: ["React", "API", "hooks"],
     img: "media/weather_night_small.png",
 
     description: {
@@ -94,8 +111,8 @@ export const projectsData = [
   {
     id: 4,
     name: "Portfolio Website (2020)",
-    category: ["website"],
-    techs: ["React", "Hooks", "Tests"],
+    category: [CATEGORIES.website],
+    techs: ["React", "hooks", "Tests"],
 
     img: "media/portfolio_4.png",
     description: {
@@ -143,8 +160,8 @@ export const projectsData = [
   {
     id: 5,
     name: "Word Scrambler Game (2021)",
-    category: ["game"],
-    techs: ["React", "Hooks"],
+    category: [CATEGORIES.game],
+    techs: ["React", "hooks"],
 
     img: "media/word-scrambler-game.png",
     description: {

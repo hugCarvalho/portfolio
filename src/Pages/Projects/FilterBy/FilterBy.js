@@ -1,45 +1,29 @@
 import React from "react";
+import { FILTERS } from "../data/projectsData";
 import "./FilterBy.scss";
 
-function FilterBy({ filterBy, setFilterBy, isLanguageEnglish }) {
+
+
+
+function FilterBar({ filterBy, setFilterBy, isLanguageEnglish }) {
+
+  const activeFilters = Object.values(FILTERS)
+  console.log("activeFilters", activeFilters)
   return (
     <div className="FilterBy">
       <span className="filter-by__text">Filter:</span>
       <ul>
-        <li
-          className={filterBy === "all" ? "active " : "tech-tab"}
-          onClick={() => setFilterBy("all")}
+        {activeFilters.map(option => {
+          return <li
+          className={filterBy === option ? "active " : "tech-tab"}
+          onClick={() => setFilterBy(option)}
         >
-          All
+          {option}
         </li>
-
-        <li
-          className={filterBy === "Hooks" ? "active " : "tech-tab"}
-          onClick={() => setFilterBy("Hooks")}
-        >
-          Hooks
-        </li>
-        {/* <li
-          className={filterBy === "Redux" ? "active " : "tech-tab"}
-          onClick={() => setFilterBy("Redux")}
-        >
-          Redux
-        </li> */}
-        <li
-          className={filterBy === "Tests" ? "active " : "tech-tab"}
-          onClick={() => setFilterBy("Tests")}
-        >
-          Tests
-        </li>
-        <li
-          className={filterBy === "API" ? "active " : "tech-tab"}
-          onClick={() => setFilterBy("API")}
-        >
-          API
-        </li>
+        })}
       </ul>
     </div>
   );
 }
 
-export default FilterBy;
+export default FilterBar;
