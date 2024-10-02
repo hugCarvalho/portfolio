@@ -42,18 +42,15 @@ function RenderProjects() {
   const toggleTechInfoFeatures = id => {
     setId(id);
     setFrontSideActive(state => !state);
-  };
+  }
 
   const filterTechsBy = (db, option = "all") => {
-    console.log("firstasdasds", option)
-
-
     if (option === "all") {
-      return db;
+      return db
     } else {
-      return db.filter(item => item.techs.includes(option) || item.category.includes(option));
+      return db.filter(item => item.techs.includes(option) || item.category.includes(option))
     }
-  };
+  }
 
   return (
     <>
