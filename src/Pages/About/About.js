@@ -3,16 +3,16 @@ import { ExperienceCard } from "../../components/ExperienceCard";
 import "./About.scss";
 import { IntroMainDE, IntroMainEN } from "./assets/IntroMain";
 
+const marginBottom = "24px"
+
 function AboutEN() {
   return (
     <div className="wrapper__about">
-      <main>
+      <main style={{marginBottom}}>
         <IntroMainEN />
       </main>
-      <br/>
       <section>
         <ExperienceCard/>
-        <br/>
       </section>
       {/* <section>
         <IntroExtendedEN />
@@ -27,13 +27,11 @@ function AboutEN() {
 export function AboutDE() {
   return (
     <div className="wrapper__about">
-      <main>
+      <main style={{marginBottom}}>
         <IntroMainDE />
       </main>
-      <br/>
       <section>
         <ExperienceCard/>
-        <br/>
       </section>
       {/* <section>
         <IntroExtendedDE />
