@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import moi from "./media/moi.jpg";
 import "./MyPic.scss";
 
@@ -10,13 +10,15 @@ function MyPic() {
     setTimeout(() => setActivate(true), 2300)
   );
 
+  const {pathname} = useLocation()
+
   return (
     <figure className="MyPic">
       <Link to="/about">
         <img src={moi} alt="me" title="about me" />
       </Link>
-      <span className={`left ${activate ? "activate" : ""}`}></span>
-      <span className={`right ${activate ? "activate" : ""}`}></span>
+      <span className={`left ${activate && pathname !== "/projects"? "activate" : ""}`}></span>
+      <span className={`right ${activate && pathname !== "/projects"? "activate" : ""}`}></span>
     </figure>
   );
 }

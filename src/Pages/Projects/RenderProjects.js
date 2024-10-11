@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { LanguageContext } from "../../App";
 import { DatumPlaque } from "../../components/DatumPlaque";
+import moi from "../../components/Header/MyInfoCard/MyPic/media/moi.jpg";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
 import { PROJECT_FILTERS, PROJECTS_DATA_STRUCTURE } from "./data/projectsData";
 import FilterBar from "./FilterBy/FilterBy";
@@ -13,20 +14,61 @@ const ProjectsContainer = styled.section`
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
+  position: relative;
 `
-const ProjectsHeading = styled.p`
-  color: white;
-  padding: 10px 20px;
-  font-size: large;
-  background: gray;
-  margin: 0 20px 20px 20px;
-  border-radius: 12px;
+const TextDialogContainer = styled.div`
+  display: flex;
   width: fit-content;
-`
-const DialogText = styled(ProjectsHeading)`
   align-self: flex-end;
-  margin: 0 0 20px 20px;
-  opacity: .8;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  position: relative;
+
+  .notVisible{
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  .visible {
+    opacity: .8;
+    transition: opacity 2s ease-in-out;
+  }
+`
+const MyPic = styled.figure`
+  position: absolute;
+  width: 67.55px;
+  height: 67.7px;
+  overflow: hidden;
+  border-radius: 50%;
+  top: -36px;
+  left: 168px;
+
+  .notVisible{
+    transition: opacity 2s ease-in-out;
+    visibility: hidden;
+  }
+  .visible {
+    visibility: hidden;
+    transition: opacity 2s ease-in-out;
+  }
+
+  img {
+    position: absolute;
+    height: 6.74rem;
+    border: 2px solid #d8d8da;
+    border-radius: 50%;
+  }
+`
+const DialogText = styled.p`
+  position: relative;
+  max-width: 350px;
+  width: fit-content;
+  margin: 0 0 0 20px;
+  align-self: flex-end;
+  background: gray;
+  border-radius: 12px;
+  color: white;
+  font-size: large;
+  padding: 34px 10px 10px 20px;
 `
 
 function RenderProjects() {
@@ -36,6 +78,7 @@ function RenderProjects() {
   const [frontSideActive, setFrontSideActive] = useState(true);
   const [id, setId] = useState(null);
   const [filterBy, setFilterBy] = useState("all");
+  const [isDomIsLoaded, setDomIsLoaded] = useState(false)
 
   //GETS the height of the biggest card
   useEffect(() => {
@@ -62,6 +105,13 @@ function RenderProjects() {
     document.title = "Hugo's Projects";
   }, [pageIsActive]);
 
+  useEffect(()=> {
+    console.log("second")
+    if(cardHeight !== "auto"){
+       setDomIsLoaded(true)
+    }
+  }, [cardHeight])
+
   const toggleTechInfoFeatures = id => {
     setId(id);
     setFrontSideActive(state => !state);
@@ -85,9 +135,17 @@ function RenderProjects() {
       />
       {/* Projects container  */}
       <main className="RenderProjects">
-        <DialogText>
-          Side projects were self concepted and executed, they are <span style={{fontWeight: 700}}>not</span> code-along projects.
+        <TextDialogContainer>
+        {/* <DialogText className={isDomIsLoaded ? "visible" : undefined}> */}
+        <DialogText className={isDomIsLoaded ? "visible" : "notVisible"}>
+          All projects were designed, engineered and executed by myself, they are
+          <span style={{fontWeight: 700}}>{" "}not{" "}</span>
+          code-along projects.
         </DialogText>
+        <MyPic className={isDomIsLoaded ? "visible" : "notVisible"}>
+          <img src={moi} alt="me" title="about me" />
+        </MyPic>
+        </TextDialogContainer>
 
         {/* DATE PLAQUE */}
         {/* {filterBy === "all" && <>
