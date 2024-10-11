@@ -35,8 +35,10 @@ const Nail4 = styled(Nail)`
 `
 const Engraved = styled.div`
  font-size: 23px;
-  color: gray;
+  /* color: gray;
   color: #989693;
+  color: #bda030; */
+  color: var(--onHover1);
   text-align: center;
   padding: 7px 30px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);

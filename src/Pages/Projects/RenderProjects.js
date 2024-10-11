@@ -40,7 +40,7 @@ const MyPic = styled.figure`
   overflow: hidden;
   border-radius: 50%;
   top: -36px;
-  left: 168px;
+  left: 162px;
 
   .notVisible{
     transition: opacity 2s ease-in-out;
