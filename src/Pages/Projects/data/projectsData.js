@@ -2,11 +2,13 @@ export const CATEGORIES = {
   game: "game",
   website: "website",
   api: "api",
-  webApp: "web app"
+  webApp: "web app",
+  fullstack: "fullstack"
 }
 
 export const PROJECT_FILTERS = {
   all:  "all",
+  fullstack: CATEGORIES.fullstack,
   game: CATEGORIES.game,
   api: CATEGORIES.api,
   website: CATEGORIES.website,
@@ -164,6 +166,69 @@ export const projectsData = [
     id: 5,
     name: "Word Scrambler Game (2021)",
     category: [CATEGORIES.game],
+    techs: ["React", "hooks"],
+
+    img: "media/word-scrambler-game.png",
+    description: {
+      en:
+        "Rich featured game with 3 levels of difficulty. Try your skill by guessing the scrambled word for the chosen category within the alloted time. If you don't use hints, you'll score more points and if you don't know the word you can dynamically look it up.",
+      de:
+        "Reichhaltiges Spiel mit 3 Schwierigkeitsgraden. Stellen Sie Ihr Geschick unter Beweis, indem Sie das verschlüsselte Wort für die gewählte Kategorie innerhalb der vorgegebenen Zeit erraten. Wenn du keine Hinweise verwendest, erhältst du mehr Punkte und wenn du das Wort nicht kennst, kannst du es dynamisch nachschlagen.",
+    },
+    features: {
+      en: [
+        "Customizable options",
+        "Local Storage",
+        "4 play levels",
+        "Limited number of guesses",
+        "Countdown",
+        "Score if game won",
+        "Scrambled word (letters are mixed up)",
+        "2 types of hints",
+        "Sliding instructions effect",
+        "Sound effects (at game end)",
+        "Dynamic lookup of word in wikipedia",
+        "High Score tables for each level",
+      ],
+      de: [
+        "Individualisierbare Optionen",
+        "Lokaler Speicher",
+        "4 Spielstufen",
+        "Begrenzte Anzahl von Vermutungen",
+        "Countdown",
+        "Punktestand bei gewonnenem Spiel",
+        "Verschlüsselte Wörter (Buchstaben werden vertauscht)",
+        "Zwei Arten von Hinweisen",
+        "Toneffekte (bei Spielende)",
+        "Dynamisches Nachschlagen des Wortes in Wikipedia",
+        "Highscore-Tabellen für jedes Level",
+      ],
+    },
+    techInfo: {
+      main: "REACT (Hooks)",
+      styled: "SASS (scss) and Styled Components",
+      tested: "Jest and React Testing Library",
+      responsive: false,
+      specsText: { en: "Semantic HTML", de: "Semantic HTML" },
+      specs: [
+        "Local storage",
+        "Flexbox",
+        // "useEffect",
+        // "useContext",
+        // "useLocation",
+        // "Unit and integration tests ",
+      ],
+      thirdParty: ["React Router", "React Tooltip"],
+      notes: { en: "", de: "" },
+      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "Jest", "React Testing Library", "React Rounter"]
+    },
+    live: ["https://condescending-raman-a3f123.netlify.app/"],
+    code: ["https://github.com/hugCarvalho/wordScrambler"],
+  },
+  {
+    id: 6,
+    name: "Cafes & You (2024)",
+    category: [CATEGORIES.fullstack, CATEGORIES.api, CATEGORIES.webApp],
     techs: ["React", "hooks"],
 
     img: "media/word-scrambler-game.png",
