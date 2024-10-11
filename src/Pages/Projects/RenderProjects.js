@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { LanguageContext } from "../../App";
+import { DatumPlaque } from "../../components/DatumPlaque";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
-import { PROJECT_FILTERS, projectsData } from "./data/projectsData";
+import { PROJECT_FILTERS, PROJECTS_DATA_STRUCTURE } from "./data/projectsData";
 import FilterBar from "./FilterBy/FilterBy";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import "./RenderProjects.scss";
@@ -10,8 +11,8 @@ import "./RenderProjects.scss";
 const ProjectsContainer = styled.section`
   display: flex;
   flex-direction: row;
-  background: "orange";
   width: 100%;
+  flex-wrap: wrap;
 `
 const ProjectsHeading = styled.p`
   color: white;
@@ -26,47 +27,6 @@ const DialogText = styled(ProjectsHeading)`
   align-self: flex-end;
   margin: 0 0 20px 20px;
   opacity: .8;
-`
-const DatumPlaque = styled(ProjectsHeading)`
-  background: linear-gradient(217deg, rgb(132 132 132), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgb(152 152 152 / 93%), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(110 110 110), rgba(0, 0, 255, 0) 82.71%);
-  /* background: linear-gradient(#676464, #827d7d); */
-  padding: 15px;
-  width: fit-content;
-  border-radius: 3px;
-  position: relative;
-`
-const Nail = styled.span`
-  position: absolute;
-  background: gray;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  box-shadow: 2px 2px 5px 0px rgb(14, 13, 13);
-`
-const Nail1 = styled(Nail)`
-  left: 4%;
-  top: 5%;
-`
-const Nail2 = styled(Nail)`
-  right: 4%;
-  top: 5%;
-`
-const Nail3 = styled(Nail)`
-  right: 4%;
-  bottom: 5%;
-`
-const Nail4 = styled(Nail)`
-  left: 4%;
-  bottom: 5%;
-`
-const Engraved = styled.div`
-  font-size: 23px;
-  color: gray;
-  color: #989693;
-  text-align: center;
-  padding: 10px 30px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-  text-shadow: 0px 0px 1px rgb(0 0 0 / 60%), 0px 1px 3px rgba(0, 0, 0, 0.4);
 `
 
 function RenderProjects() {
@@ -123,35 +83,37 @@ function RenderProjects() {
         setFilterBy={setFilterBy}
         isLanguageEnglish={isLanguageEnglish}
       />
-
+      {/* Projects container  */}
       <main className="RenderProjects">
-        {/* <WrapperTextAndContent> */}
         <DialogText>
           Side projects were self concepted and executed, they are <span style={{fontWeight: 700}}>not</span> code-along projects.
         </DialogText>
 
         {/* DATE PLAQUE */}
-        {filterBy === "all" && <DatumPlaque>
-          <div style={{border: "2px solid darkgrey", borderRadius: "12px"}}>
-            <div style={{background: "gray", padding:"0px", textAlign: "center"}}>
-              <Engraved>
-              2024
-              </Engraved>
-            </div>
-          </div>
-          <Nail1/>
-          <Nail2/>
-          <Nail3/>
-          <Nail4/>
-        </DatumPlaque>}
+        {/* {filterBy === "all" && <>
+          <DatumPlaque/>
+          <div >
+                <DatumPlaque/>
+                <ProjectCard
+                  backCardHeight={cardHeight}
+                  setFrontSideActive={setFrontSideActive}
+                  frontSideActive={frontSideActive}
+                  project={PROJECTS_DATA_STRUCTURE[0]}
+                  language={isLanguageEnglish ? "en" : "de"}
+                  toggleTechInfoFeatures={toggleTechInfoFeatures}
+                  id={id}
+                />
+                </div>
+        </>} */}
 
         {/* PROJECTS */}
         <ProjectsContainer>
-        {filterTechsBy(projectsData, filterBy)
+        {filterTechsBy(PROJECTS_DATA_STRUCTURE, filterBy)
           .map((project, i) => {
-            const language = isLanguageEnglish ? "en" : "de";
+            const language = isLanguageEnglish ? "en" : "de"
             return (
               <div key={i}>
+                <DatumPlaque datum={project.datum}/>
                 <ProjectCard
                   backCardHeight={cardHeight}
                   setFrontSideActive={setFrontSideActive}
@@ -166,7 +128,6 @@ function RenderProjects() {
             })
             .reverse()}
             </ProjectsContainer>
-          {/* </WrapperTextAndContent> */}
       </main>
     </>
   );

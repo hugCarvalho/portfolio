@@ -17,10 +17,11 @@ export const PROJECT_FILTERS = {
   // classes: "classes",
 }
 
-export const projectsData = [
+export const PROJECTS_DATA_STRUCTURE = [
   {
     id: 1,
-    name: "Todo List App (2020)",
+    name: "Todo List App",
+    datum: 2020,
     category: [CATEGORIES.webApp],
     techs: ["React", "classes"],
     img: "media/todo_list_small.png",
@@ -61,7 +62,8 @@ export const projectsData = [
   },
   {
     id: 2,
-    name: "Weather App (2020)",
+    name: "Weather App",
+    datum: 2020,
     category: [CATEGORIES.api, CATEGORIES.webApp],
     techs: ["React", "API"],
     img: "media/weather_night_small.png",
@@ -114,7 +116,8 @@ export const projectsData = [
   },
   {
     id: 4,
-    name: "Portfolio Website (2020)",
+    name: "Portfolio Website",
+    datum: 2020,
     category: [CATEGORIES.website],
     techs: ["React", "hooks", "Tests"],
 
@@ -164,7 +167,8 @@ export const projectsData = [
   },
   {
     id: 5,
-    name: "Word Scrambler Game (2021)",
+    name: "Word Scrambler Game",
+    datum: 2021,
     category: [CATEGORIES.game],
     techs: ["React", "hooks"],
 
@@ -227,7 +231,8 @@ export const projectsData = [
   },
   {
     id: 6,
-    name: "Cafes & You (2024)",
+    name: "Cafes & You",
+    datum: 2024,
     category: [CATEGORIES.fullstack, CATEGORIES.api, CATEGORIES.webApp],
     techs: ["React", "hooks"],
 
