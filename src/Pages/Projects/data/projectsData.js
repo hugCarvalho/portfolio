@@ -232,7 +232,7 @@ export const PROJECTS_DATA_STRUCTURE = [
     img: "media/word-scrambler-game.png",
     description: {
       en:
-        "Ongoing full stack project where you can connect with a soulmate and build your own Cafes experience list.",
+        "Ongoing fullstack project where you can connect with a soulmate and build your own Cafes experience list.",
       de:
         "Laufendes aber funktionierendes Fullstack-Projekt, bei dem du dich mit einem 'soulmate' verbinden und deine eigene Cafes-Erfahrungsliste erstellen kannst.",
     },
@@ -259,13 +259,13 @@ export const PROJECTS_DATA_STRUCTURE = [
       styled: "Material UI and Styled Components",
       tested: "",
       responsive: true,
-      specsText: { en: "Supabase, a PostgreSQL database  ", de: "" },
+      specsText: { en: "Supabase, a PostgreSQL database", de: "Supabase, a PostgreSQL database" },
       specs: ["React", "Typescript", "Javascript", "React Query", "PostgreSQL", "Supabase", "Material UI", "Styled Components", "Netlify", "hooks"],
       thirdParty: ["React Router", "React Hook Form", "React Number Format"],
       notes: { en: "", de: "" },
       tags: ["React", "Typescript", "Javascript", "React Query", "PostgreSQL", "Supabase", "Material UI", "Styled Components", "Netlify"],
-      live: ["https://cafesandyou.netlify.app/"],
-      code: [],
     },
+    live: ["https://cafesandyou.netlify.app/"],
+    code: [],
   }
 ];

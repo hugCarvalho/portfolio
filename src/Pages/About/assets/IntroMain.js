@@ -18,7 +18,7 @@ export function IntroMainEN() {
         during which I developed several {" "}
           <LinkStyles>
             <Link to="/projects">
-              small projects
+              projects
             </Link>
           </LinkStyles>,
         I joined Erblotse (Heritas GmbH) where I had an extremely rich and diversified experience in a small agile team (4-6 members),

@@ -1,12 +1,14 @@
 import datadog from "../Pages/Skills/assets/datadog.svg"
 import mui from "../Pages/Skills/assets/material-ui.svg"
+import nodejs from "../Pages/Skills/assets/nodejs.svg"
 import prisma from "../Pages/Skills/assets/prisma-3.svg"
 import sentry from "../Pages/Skills/assets/sentry.svg"
 import supabase from "../Pages/Skills/assets/supabase.svg"
+
 const languages = ["React", "JavaScript", "Typescript", "HTML"]
 const styles = ["CSS", "StyledComponents", "Material UI"]
 const testing = ["Jest", "Cypress", "React Testing Library"]
-const dbRelated = ["React Query", "AWS Cognito", "AWS DynamoDb", "PostgreSQL", "Prisma"]
+const dbRelated = ["React Query", "AWS Cognito", "AWS DynamoDb", "PostgreSQL", "Node.js", "Prisma"]
 const monitoring = ["Sentry", "Datadog"]
 const others = ["Jira"]
 export const erblotseSkills = [...languages, ...styles, ...testing, ...dbRelated, ...monitoring, ...others]
@@ -41,6 +43,7 @@ export const SKILLS_DATA = [
   { name: "Cognito", category: SKILL_CATEGORIES.backend, class: "bg-dynamoDB", type: "single" },
   { name: "PostgreSQL", category: SKILL_CATEGORIES.backend, class: "bg-postgreSQL", type: "single" },
   { name: "Supabase", category: SKILL_CATEGORIES.backend, type: "singleSvg", src: supabase},
+  { name: "Node.js", category: SKILL_CATEGORIES.backend, type: "singleSvg", src: nodejs},
   { name: "Redux", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-redux", type: "single" },
   { name: "Sentry", category: SKILL_CATEGORIES.monitoring, type: "singleSvg", src: sentry },
   { name: "Datadog", category: SKILL_CATEGORIES.monitoring, type: "singleSvg", src: datadog },
