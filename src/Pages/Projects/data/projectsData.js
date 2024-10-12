@@ -229,7 +229,7 @@ export const PROJECTS_DATA_STRUCTURE = [
     category: [CATEGORIES.fullstack, CATEGORIES.api, CATEGORIES.webApp],
     techs: ["React", "hooks"],
 
-    img: "media/word-scrambler-game.png",
+    img: "media/cafes_update_rating.png",
     description: {
       en:
         "Ongoing fullstack project where you can connect with a soulmate and build your own Cafes experience list.",
