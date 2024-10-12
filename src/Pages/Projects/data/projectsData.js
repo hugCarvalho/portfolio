@@ -239,10 +239,10 @@ export const PROJECTS_DATA_STRUCTURE = [
     features: {
       en: [
         "Authentication and authorization",
-        "Go on a solo rido or connect with a soulmate",
+        "Go on a solo ride or connect with a soulmate",
         "Create and edit your Cafes",
         "Rate your Cafe experience or beverage",
-        "Keep track of what your cafe has to offer for you",
+        "Keep track of what your Cafes have to offer",
         "and many more to come..."
       ],
       de: [
