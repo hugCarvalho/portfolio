@@ -9,24 +9,23 @@
   .show-on-smallest-screen-only {
     display: none;
   }
-}
 
-@media (max-width: 622px) {
-  .RenderAbout {
+  @media (max-width: 576px) {
+    padding: 30px 5%;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 30px 3%;
+
+
     min-height: calc(100vh - 245px);
   }
 }
 
-@media (max-width: 576px) {
-  .RenderAbout {
-    // background-color: pink;
-    padding: 30px 5%;
-  }
-}
+
 
 @media (max-width: 375px) {
   .RenderAbout .show-on-smallest-screen-only {
-    // background-color: lime;
     display: inline-block;
     padding-bottom: 10px;
     font-size: 1.8rem;
@@ -44,7 +43,6 @@
   position: fixed;
   bottom: 0;
   height: 100px;
-  background-color: green;
   z-index: 500;
   // display: showScroll ? "flex" : "none",
 }

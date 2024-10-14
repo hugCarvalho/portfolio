@@ -7,33 +7,43 @@ import Abidh from '../images/abidh.jpeg';
 import Christian from '../images/christian.jpeg';
 import { PersonTestimony, VerticalSliderCard } from "./VerticalSliderCard";
 
+const smallerScreenBreakpoint = "968px"
+
 const Container = styled.div`
   display: flex;
   border-radius: 4px;
   border: "1px solid black";
-  @media (max-width: 622px) {
+  @media (max-width: ${smallerScreenBreakpoint}) {
     flex-direction: column;
   }
 `
 const DatumSection = styled.section`
   min-width: fit-content;
 `
+const Datum = styled.span`
+  opacity: 0.9;
+  font-weight: 600;
+  @media (max-width: ${smallerScreenBreakpoint}) {
+    font-size: 21px;
+  }
+`
 const DescriptionSection = styled.section`
   width: 100%;
   padding-left: 25px;
-  @media (max-width: 622px) {
+  @media (max-width: ${smallerScreenBreakpoint}) {
     padding: 0px;
     margin-bottom: 35px;
   }
 
 `
-const Datum = styled.span`
-  opacity: 0.9;
-`
 const JobTitle = styled.span`
   font-weight: 700;
   font-size: 22px;
   color: rgb(3, 62, 110);
+  @media (max-width: 622px) {
+    font-size: 20px;
+  }
+
 `
 const TagsSection = styled.section`
   display: flex;
@@ -51,21 +61,25 @@ const Tag = styled.span`
   font-size: 12px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `
-const ListItem = styled.li``
+const ListItem = styled.li`
+  margin-left: 3px;
+`
 
 const TestimoniesSection = styled.section`
   display: flex;
   gap: 30px;
-  @media (max-width: 622px) {
+  @media (max-width: 780px) {
     margin-bottom: 35px;
     flex-direction: column;
+    align-items: center;
   }
 `
 const Company = styled.span`
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 600;
   opacity: .9;
   @media (max-width: 576px) {
-    font-size: 17px;
+    font-size: 18px;
   }
 `
 //TODO: move to dedicated file
@@ -89,11 +103,14 @@ export const ExperienceCard = () => {
       <Datum>02.2021-08.2024</Datum>
     </DatumSection>
     <DescriptionSection>
-      <span>
+      <div>
         <JobTitle>
           {isLanguageEnglish ? "Junior Software Developer" : "Junior Software Entwickler"}
         </JobTitle>
-      <Company>, Heritas GmbH, Berlin</Company></span>
+        {", "}
+        <Company>Erblotse (Heritas GmbH)</Company>
+        , Berlin
+      </div>
       <p>{isLanguageEnglish ? "Accomplishments:" : "Leistungen:"}</p>
       <ul>
       {/* Accomplishments */}
