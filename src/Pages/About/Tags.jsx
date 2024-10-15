@@ -3,7 +3,7 @@ import styled from "styled-components"
 const TagsSection = styled.section`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 12px;
+  margin-top: 4px;
   margin-bottom: 12px;
 `
 const Tag = styled.span`

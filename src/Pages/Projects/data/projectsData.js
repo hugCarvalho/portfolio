@@ -159,7 +159,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       ],
       thirdParty: ["React-router", "React-use"],
       notes: { en: "", de: "" },
-      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "React Testing Library", "React Rounter"]
+      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "React Testing Library", "React Router"]
     },
     live: ["https://hugcarvalho.github.io/portfolio"],
     code: ["https://github.com/hugCarvalho/portfolio"],
@@ -217,7 +217,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       ],
       thirdParty: ["React Router", "React Tooltip"],
       notes: { en: "", de: "" },
-      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "Jest", "React Testing Library", "React Rounter"]
+      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "Jest", "React Testing Library", "React Router", "Local Storage"]
     },
     live: ["https://condescending-raman-a3f123.netlify.app/"],
     code: ["https://github.com/hugCarvalho/wordScrambler"],

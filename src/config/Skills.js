@@ -23,10 +23,6 @@ export const SKILL_CATEGORIES = {
   versioning: "versioning",
 }
 
-//DB & DB tools
-//Backend
-//React Ecosystem
-
 export const SKILLS_DATA = [
   { name: "JavaScript", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-javascript", type: "single" },
   { name: "React", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-react", type: "single" },
