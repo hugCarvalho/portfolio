@@ -1,5 +1,5 @@
 import React from "react";
-import { Tags } from "../../../components/ExperienceCard";
+import { Tags } from "../../../Pages/About/Tags";
 import ProjectLinks from "../ProjectLinks/ProjectLinks";
 import {
   renderFeatures,

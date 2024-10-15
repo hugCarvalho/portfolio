@@ -1,7 +1,7 @@
 import React from "react";
-import { ExperienceCard } from "../../components/ExperienceCard";
 import "./About.scss";
-import { IntroMainDE, IntroMainEN } from "./assets/IntroMain";
+import { IntroMainDE, IntroMainEN } from "./IntroMain";
+import { RenderExperience } from "./RenderExperience";
 
 const marginBottom = "24px"
 
@@ -12,7 +12,7 @@ function AboutEN() {
         <IntroMainEN />
       </main>
       <section>
-        <ExperienceCard/>
+        <RenderExperience/>
       </section>
       {/* <section>
         <IntroExtendedEN />
@@ -31,7 +31,7 @@ export function AboutDE() {
         <IntroMainDE />
       </main>
       <section>
-        <ExperienceCard/>
+        <RenderExperience/>
       </section>
       {/* <section>
         <IntroExtendedDE />

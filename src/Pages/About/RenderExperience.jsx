@@ -1,11 +1,12 @@
 import React from "react";
 import styled from 'styled-components';
-import { LanguageContext } from "../App";
-import { accomplishmentsDe, accomplishmentsEn } from '../config/Accomplishments';
-import { erblotseSkills } from '../config/Skills';
-import Abidh from '../images/abidh.jpeg';
-import Christian from '../images/christian.jpeg';
-import { PersonTestimony, VerticalSliderCard } from "./VerticalSliderCard";
+import { LanguageContext } from "../../App";
+import { PersonTestimony, VerticalSliderCard } from "../../components/VerticalSliderCard";
+import { accomplishmentsDe, accomplishmentsEn } from '../../config/Accomplishments';
+import { erblotseSkills } from "../../config/Skills";
+import Abidh from '../../images/abidh.jpeg';
+import Christian from '../../images/christian.jpeg';
+import { Tags } from "./Tags";
 
 const smallerScreenBreakpoint = "968px"
 
@@ -45,26 +46,9 @@ const JobTitle = styled.span`
   }
 
 `
-const TagsSection = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 12px;
-  margin-bottom: 12px;
-`
-const Tag = styled.span`
-  background-color: #43617b;
-  padding: 2px 8px;
-  border-radius: 99px;
-  color: #d1d1d1;
-  margin-right: 4px;
-  margin-bottom: 7px;
-  font-size: 12px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-`
 const ListItem = styled.li`
   margin-left: 3px;
 `
-
 const TestimoniesSection = styled.section`
   display: flex;
   gap: 30px;
@@ -82,18 +66,9 @@ const Company = styled.span`
     font-size: 18px;
   }
 `
-//TODO: move to dedicated file
-export const Tags = ({skills}) => {
-  return <TagsSection>
-    {
-      skills.map((skill, i)=> {
-        return <Tag key={i}>{skill}</Tag>
-      })
-    }
-  </TagsSection>
-}
 
-export const ExperienceCard = () => {
+
+export const RenderExperience = () => {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
 
   const accomplishments = isLanguageEnglish ? accomplishmentsEn : accomplishmentsDe

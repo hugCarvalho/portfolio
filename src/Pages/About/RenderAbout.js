@@ -1,11 +1,8 @@
 import React from "react";
-import AboutEN, { AboutDE } from "./About";
-import "./RenderAbout.scss";
-// import CV_EN from "../../../shared/CV_english.pdf";
-// import CV_DE from "../../../shared/CV_deutsch.pdf";
-
 import { LanguageContext } from "../../App";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
+import AboutEN, { AboutDE } from "./About";
+import "./RenderAbout.scss";
 
 function RenderAbout() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
@@ -45,7 +42,6 @@ function RenderAbout() {
               CV
             </a> */}
           </li>
-
           <li>
             <a
               target="_blank"
@@ -57,8 +53,7 @@ function RenderAbout() {
           </li>
         </ul>
       </section>
-      {/*  */}
-
+      {/* About / Experience */}
       {isLanguageEnglish ? <AboutEN /> : <AboutDE />}
     </div>
   );

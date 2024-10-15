@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-import { ExternalLink } from "../../../components/ExternalLink";
+import { ExternalLink } from "../../components/ExternalLink";
 
 const LinkStyles = styled.span`
   text-decoration: underline;
@@ -48,7 +48,7 @@ export function IntroMainEN() {
 export function IntroMainDE() {
   return (
     <article lang="de">
-      <h2>Allgemeine Vorstellung</h2>
+      <h2>Erfahrung</h2>
       <p>
         Im Jahr 2020 entschied ich mich, meine Karriere zu wechseln und meinen Job zu kündigen, um meiner neu entdeckten Leidenschaft für die Programmierung nachzugehen. Nach einem Jahr autodidaktischen Lernens, in dem ich mehrere
         {" "}

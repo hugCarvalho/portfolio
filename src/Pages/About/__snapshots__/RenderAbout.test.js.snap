@@ -50,7 +50,7 @@ exports[`should match snapshot in english  1`] = `
             Hi, I'm Hugo, a self-taught and highly motivated programmer, who is changing careers after having discovered his passion in programming.
           </p>
           <p>
-            Hugo is a fast and methodical learner and brings the latest standards from the technologies learned. Currently he's focusing on 
+            Hugo is a fast and methodical learner and brings the latest standards from the technologies learned. Currently he's focusing on
             <s>
               Testing
             </s>
@@ -72,7 +72,7 @@ exports[`should match snapshot in english  1`] = `
           <ol>
             <li>
               1.
-               
+
               <a
                 href="/#knowledge"
               >
@@ -81,7 +81,7 @@ exports[`should match snapshot in english  1`] = `
             </li>
             <li>
               2.
-               
+
               <a
                 href="/#challenges"
               >
@@ -90,7 +90,7 @@ exports[`should match snapshot in english  1`] = `
             </li>
             <li>
               3.
-               
+
               <a
                 href="/#study"
               >
@@ -99,7 +99,7 @@ exports[`should match snapshot in english  1`] = `
             </li>
             <li>
               4.
-               
+
               <a
                 href="/#hobbies"
               >
@@ -117,12 +117,12 @@ exports[`should match snapshot in english  1`] = `
           </p>
           <p>
             For a more structured approach, I enrolled in numerous online courses on
-             
+
             <cite>
               Udemy.com
             </cite>
             ,
-             
+
             <em>
               making sure I got my knowledge from diversified sources
             </em>
@@ -130,7 +130,7 @@ exports[`should match snapshot in english  1`] = `
           </p>
           <p>
             Presently, I'm enrolled in Kent C. Dodds 21 hours workshop,
-             
+
             <cite>
               Epic React
             </cite>
@@ -138,7 +138,7 @@ exports[`should match snapshot in english  1`] = `
           </p>
           <p>
             At the end, you can find a
-             
+
             <a
               href="/#resources"
             >
@@ -153,7 +153,7 @@ exports[`should match snapshot in english  1`] = `
           </h4>
           <p>
             In addition to developing whole projects like those you have as reference on this website, I also enjoy solving coding challenges on a regular basis, mainly in
-             
+
             <a
               href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
               rel="noopener noreferrer"
@@ -163,38 +163,38 @@ exports[`should match snapshot in english  1`] = `
               <cite>
                 Edabit
               </cite>
-               (currently at level 
+               (currently at level
               17
-              , with 
+              , with
               9155
-               
-              points and 
+
+              points and
               5700
                reputation points)
             </a>
-            , and sporadically in 
+            , and sporadically in
             <cite>
               CheckiO
             </cite>
-             (currently at level 
+             (currently at level
             8
             ) to improve my problem solving skills. This is also helpful in discovering new approaches from more experienced users and to compare code for a better performant solution.
           </p>
           <p>
             Recently,
-             
+
             <a
               href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
               rel="noopener noreferrer"
               target="_blank"
               title="My Edabit userpage"
             >
-               
-              I started creating challenges in 
+
+              I started creating challenges in
               <cite>
                 Edabit
               </cite>
-               
+
             </a>
             . This is helpful to develop my testing skills in unit testing and I get to contribute to the community as well.
           </p>
@@ -232,14 +232,14 @@ exports[`should match snapshot in english  1`] = `
                 <cite>
                   JavaScript, The Good Parts
                 </cite>
-                , 
+                ,
                 Douglas Crockford
               </li>
               <li>
                 <cite>
                   Modern Javascript Tutorial
                 </cite>
-                , 
+                ,
                 Ilya Kantor
               </li>
             </ul>
@@ -251,7 +251,7 @@ exports[`should match snapshot in english  1`] = `
                 <i>
                   JavaScript, Understanding the Weird Parts
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -259,14 +259,14 @@ exports[`should match snapshot in english  1`] = `
                   11,5
                    hours)
                 </span>
-                , 
+                ,
                 Anthony Alicea
               </li>
               <li>
                 <i>
                   The modern JavaScript BootCamp
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -274,14 +274,14 @@ exports[`should match snapshot in english  1`] = `
                   29,5
                    hours)
                 </span>
-                , 
-                Andrew Mead 
+                ,
+                Andrew Mead
               </li>
               <li>
                 <i>
                   Modern JavaScript from the beginning
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -289,14 +289,14 @@ exports[`should match snapshot in english  1`] = `
                   21,5
                    hours)
                 </span>
-                , 
-                Brad Traversy 
+                ,
+                Brad Traversy
               </li>
               <li>
                 <i>
                   JavaScript, The Advanced Concepts
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -304,14 +304,14 @@ exports[`should match snapshot in english  1`] = `
                   25
                    hours)
                 </span>
-                , 
+                ,
                 Andrei Neagoie
               </li>
               <li>
                 <i>
                   Web Design for Web Developers
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -319,14 +319,14 @@ exports[`should match snapshot in english  1`] = `
                   3
                    hours)
                 </span>
-                , 
-                Jonas Schmedtmann 
+                ,
+                Jonas Schmedtmann
               </li>
               <li>
                 <i>
                   Advanced CSS and SASS
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -334,14 +334,14 @@ exports[`should match snapshot in english  1`] = `
                   28
                    hours)
                 </span>
-                , 
+                ,
                 Jonas Schmedtmann
               </li>
               <li>
                 <i>
                   React- The Complete Guide (incl Hooks, ReactRouter, Redux)
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -349,14 +349,14 @@ exports[`should match snapshot in english  1`] = `
                   40,5
                    hours)
                 </span>
-                , 
-                Maximilian Schwarzmüller 
+                ,
+                Maximilian Schwarzmüller
               </li>
               <li>
                 <i>
                   React, NodeJS, Express & MongoDB - The MERN fullstack
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -364,8 +364,8 @@ exports[`should match snapshot in english  1`] = `
                   19
                    hours)
                 </span>
-                , 
-                Maximilian Schwarzmüller 
+                ,
+                Maximilian Schwarzmüller
               </li>
             </ul>
             <p>
@@ -376,7 +376,7 @@ exports[`should match snapshot in english  1`] = `
                 <cite>
                   JavaScript 2020 build 55+ Real Projects
                 </cite>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -384,14 +384,14 @@ exports[`should match snapshot in english  1`] = `
                   50
                    hours)
                 </span>
-                , 
+                ,
                 Laurence Svekis
               </li>
               <li>
                 <cite>
                   CSS: The complete Guide 2020
                 </cite>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -399,14 +399,14 @@ exports[`should match snapshot in english  1`] = `
                   20
                    hours)
                 </span>
-                , 
-                Maximilian Schwarzmüller 
+                ,
+                Maximilian Schwarzmüller
               </li>
               <li>
                 <cite>
                   Epic React
                 </cite>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -414,7 +414,7 @@ exports[`should match snapshot in english  1`] = `
                   21
                    hours)
                 </span>
-                , 
+                ,
                 Kent C. Dodds
               </li>
             </ul>
@@ -472,14 +472,14 @@ exports[`should match snapshot in german  1`] = `
           lang="de"
         >
           <h2>
-            Allgemeine Vorstellung
+            Erfahrung
           </h2>
           <p>
             Hallo, ich bin Hugo, ein autodidaktischer und wissbegierig Webentwickler mit einem Master in Soziologie. Vor anderthalb Jahren begann ich parallel zu meinem Job das Programmieren mit JavaScript zu lernen. Es begann aus Neugier, dauerte aber nicht lange bevor es zu einer Leidenschaft wurde. Vor kurzem habe ich beschlossen, meinen Job zu kündigen, um diese Leidenschaft zu verfolgen und mir vermehrt neues Wissen anzueignen.
           </p>
           <p>
             Ich bin bestrebt, mir neue Fähigkeiten anzueignen, lerne aktiv (zurzeit
-             
+
             <s>
               Testing
             </s>
@@ -503,7 +503,7 @@ exports[`should match snapshot in german  1`] = `
           <ol>
             <li>
               1.
-               
+
               <a
                 href="/#knowledge"
               >
@@ -512,7 +512,7 @@ exports[`should match snapshot in german  1`] = `
             </li>
             <li>
               2.
-               
+
               <a
                 href="/#challenges"
               >
@@ -521,7 +521,7 @@ exports[`should match snapshot in german  1`] = `
             </li>
             <li>
               3.
-               
+
               <a
                 href="/#study"
               >
@@ -530,7 +530,7 @@ exports[`should match snapshot in german  1`] = `
             </li>
             <li>
               4.
-               
+
               <a
                 href="/#hobbies"
               >
@@ -550,25 +550,25 @@ exports[`should match snapshot in german  1`] = `
             Für einen strukturierteren Ansatz habe ich mich bei verschiedenen Online-Kursen von Udemy.com eingeschrieben, um sicherzustellen, dass ich mein Wissen von verschiedenen Experten beziehe.
           </p>
           <p>
-            Zurzeit bin ich in Kent C. Dodds 21-Stunden-Workshop 
+            Zurzeit bin ich in Kent C. Dodds 21-Stunden-Workshop
             <cite>
               Epic React
             </cite>
-             
+
             eingeschrieben.
           </p>
           <p>
             Am Ende der Seite finden Sie eine
-             
+
             <a
               href="/#resources"
             >
-               
+
               Liste der Ressourcen
-               
+
             </a>
-             
-            
+
+
             in diesem Abschnitt erwähnt wurden.
           </p>
           <h4
@@ -578,7 +578,7 @@ exports[`should match snapshot in german  1`] = `
           </h4>
           <p>
             Neben der Entwicklung ganzer Projekte, wie Sie sie auf dieser Website als Referenz haben, macht es mir auch Spaß, regelmäßig Codierungsprobleme zu lösen. Hauptsächlich nutze ich
-             
+
             <a
               href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
               rel="noopener noreferrer"
@@ -586,29 +586,29 @@ exports[`should match snapshot in german  1`] = `
               title="My Edabit userpage"
             >
               <cite>
-                 Edabit 
+                 Edabit
               </cite>
-               (derzeit auf Stufe 
+               (derzeit auf Stufe
               17
-              , mit 
-              
+              , mit
+
               9155
-               Punkte und 
+               Punkte und
               5700
                Reputation Punkte)
             </a>
-             
-            und vereinzelt auch 
+
+            und vereinzelt auch
             <cite>
-               CheckiO 
+               CheckiO
             </cite>
-             (derzeit auf Stufe 
+             (derzeit auf Stufe
             8
             ). Das ist auch eine gute Möglichkeit um neue Ansätze für ein gegebenes Problem zu entdecken und um Codes zu verbessern.
           </p>
           <p>
             Kürzlich habe ich damit begonnen, in
-             
+
             <a
               href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"
               rel="noopener noreferrer"
@@ -616,7 +616,7 @@ exports[`should match snapshot in german  1`] = `
               title="My Edabit userpage"
             >
               Edabit Coding Challenges zu schaffen
-               
+
             </a>
             . Dies ist hilfreich für die Entwicklung meiner Testfähigkeiten auf dem Gebiet der Einheitentests, und ich kann auch zur Gemeinschaft beitragen.
           </p>
@@ -654,14 +654,14 @@ exports[`should match snapshot in german  1`] = `
                 <cite>
                   JavaScript, The Good Parts
                 </cite>
-                , 
+                ,
                 Douglas Crockford
               </li>
               <li>
                 <cite>
                   Modern Javascript Tutorial
                 </cite>
-                , 
+                ,
                 Ilya Kantor
               </li>
             </ul>
@@ -673,7 +673,7 @@ exports[`should match snapshot in german  1`] = `
                 <i>
                   JavaScript, Understanding the Weird Parts
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -681,14 +681,14 @@ exports[`should match snapshot in german  1`] = `
                   11,5
                    hours)
                 </span>
-                , 
+                ,
                 Anthony Alicea
               </li>
               <li>
                 <i>
                   The modern JavaScript BootCamp
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -696,14 +696,14 @@ exports[`should match snapshot in german  1`] = `
                   29,5
                    hours)
                 </span>
-                , 
-                Andrew Mead 
+                ,
+                Andrew Mead
               </li>
               <li>
                 <i>
                   Modern JavaScript from the beginning
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -711,14 +711,14 @@ exports[`should match snapshot in german  1`] = `
                   21,5
                    hours)
                 </span>
-                , 
-                Brad Traversy 
+                ,
+                Brad Traversy
               </li>
               <li>
                 <i>
                   JavaScript, The Advanced Concepts
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -726,14 +726,14 @@ exports[`should match snapshot in german  1`] = `
                   25
                    hours)
                 </span>
-                , 
+                ,
                 Andrei Neagoie
               </li>
               <li>
                 <i>
                   Web Design for Web Developers
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -741,14 +741,14 @@ exports[`should match snapshot in german  1`] = `
                   3
                    hours)
                 </span>
-                , 
-                Jonas Schmedtmann 
+                ,
+                Jonas Schmedtmann
               </li>
               <li>
                 <i>
                   Advanced CSS and SASS
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -756,14 +756,14 @@ exports[`should match snapshot in german  1`] = `
                   28
                    hours)
                 </span>
-                , 
+                ,
                 Jonas Schmedtmann
               </li>
               <li>
                 <i>
                   React- The Complete Guide (incl Hooks, ReactRouter, Redux)
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -771,14 +771,14 @@ exports[`should match snapshot in german  1`] = `
                   40,5
                    hours)
                 </span>
-                , 
-                Maximilian Schwarzmüller 
+                ,
+                Maximilian Schwarzmüller
               </li>
               <li>
                 <i>
                   React, NodeJS, Express & MongoDB - The MERN fullstack
                 </i>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -786,8 +786,8 @@ exports[`should match snapshot in german  1`] = `
                   19
                    hours)
                 </span>
-                , 
-                Maximilian Schwarzmüller 
+                ,
+                Maximilian Schwarzmüller
               </li>
             </ul>
             <p>
@@ -798,7 +798,7 @@ exports[`should match snapshot in german  1`] = `
                 <cite>
                   JavaScript 2020 build 55+ Real Projects
                 </cite>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -806,14 +806,14 @@ exports[`should match snapshot in german  1`] = `
                   50
                    hours)
                 </span>
-                , 
+                ,
                 Laurence Svekis
               </li>
               <li>
                 <cite>
                   CSS: The complete Guide 2020
                 </cite>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -821,14 +821,14 @@ exports[`should match snapshot in german  1`] = `
                   20
                    hours)
                 </span>
-                , 
-                Maximilian Schwarzmüller 
+                ,
+                Maximilian Schwarzmüller
               </li>
               <li>
                 <cite>
                   Epic React
                 </cite>
-                 
+
                 <span
                   class="course-duration"
                 >
@@ -836,7 +836,7 @@ exports[`should match snapshot in german  1`] = `
                   21
                    hours)
                 </span>
-                , 
+                ,
                 Kent C. Dodds
               </li>
             </ul>
