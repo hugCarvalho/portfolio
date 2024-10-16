@@ -263,7 +263,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       specs: ["React", "Typescript", "Javascript", "React Query", "PostgreSQL", "Supabase", "Material UI", "Styled Components", "Netlify", "hooks"],
       thirdParty: ["React Router", "React Hook Form", "React Number Format"],
       notes: { en: "", de: "" },
-      tags: ["React", "Typescript", "Javascript", "React Query", "PostgreSQL", "Supabase", "Material UI", "Styled Components", "Netlify"],
+      tags: ["React", "Typescript", "React Query", "Material UI", "Styled Components", "React Router", "Netlify", "PostgreSQL", "Supabase"],
     },
     live: ["https://cafesandyou.netlify.app/"],
     code: [],
