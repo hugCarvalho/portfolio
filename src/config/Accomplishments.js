@@ -4,7 +4,7 @@ const en3 = "Refactoring and optimizing code for improved readability and mainta
 const en4 = "Diagnostic and fixing issues identified by Sentry."
 const en5 = "Successfully fostered effective communication and collaboration among team members, product manager, and external web designers."
 const en6 = "Active participation in tech discussions."
-const en7 = "Conducting code reviews to identify."
+const en7 = "Conducting code reviews."
 const en8 = "Releasing to Production."
 
 
