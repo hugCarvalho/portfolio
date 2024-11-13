@@ -106,7 +106,6 @@ function RenderProjects() {
   }, [pageIsActive]);
 
   useEffect(()=> {
-    console.log("second")
     if(cardHeight !== "auto"){
        setDomIsLoaded(true)
     }

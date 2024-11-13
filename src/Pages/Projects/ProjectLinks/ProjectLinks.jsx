@@ -5,8 +5,6 @@ import "./ProjectLinks.scss";
 function ProjectLinks({ project }) {
   const [showModal, setShowModal] = React.useState(false)
 
-  console.log('%c ProjectLinks.jsx - line: 8 -->', 'color: white; background-color: #007a', project.code, '<-project')
-
   return (
     <section className="ProjectLinks">
       <div className="live">

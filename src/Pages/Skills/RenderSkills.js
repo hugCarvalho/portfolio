@@ -41,7 +41,6 @@ function Skills() {
               return <SingleSkillSvg key={i} src={skill.src} name={skill.name}/>
             }
             if(skill.type === "dual"){
-              console.log(skill.name)
               return <RelatedSkills
                 key={i}
                 skillOne={skill.name.one}
