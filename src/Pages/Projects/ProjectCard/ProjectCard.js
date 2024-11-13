@@ -1,5 +1,6 @@
 import React from "react";
 import { Tags } from "../../../Pages/About/Tags";
+import { SwiperCard } from "../../../components/SwiperCard";
 import ProjectLinks from "../ProjectLinks/ProjectLinks";
 import {
   renderFeatures,
@@ -37,11 +38,11 @@ function ProjectCard({
           <p className="project-name">{project.name}</p>
 
           {/* IMG */}
-          <figure className="project-screenshot">
-            <a href={project.live} rel="noopener noreferrer" target="_blank">
-              <img src={project.img} alt="app screenshot" />
-            </a>
-          </figure>
+              <figure className="project-screenshot">
+                {project.id === 6 ? <SwiperCard dataArr={project.img}/> : <img src={project.img} alt="app screenshot"/>}
+              </figure>
+            {/* <a href={project.live} rel="noopener noreferrer" target="_blank">
+            </a> */}
 
           {/* DESCRIPTION TEXT FRONT*/}
           <div className="container__text-section">

@@ -9,6 +9,7 @@ import CafeList from '../images/cafes-04.png';
 import CafeMap from '../images/cafes-05.png';
 import CafeAdmin from '../images/cafes-06.png';
 import CafeSettings from '../images/cafes-07.png';
+import "./SwiperCard.scss";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -46,8 +47,5 @@ export const SwiperCard = ({dataArr}) => {
         })
       }
     </Swiper>
-  );
+  )
 }
-
-
-// {/* ... */}

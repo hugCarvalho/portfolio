@@ -167,10 +167,6 @@ function RenderProjects() {
         <ProjectsContainer>
         {filterTechsBy(PROJECTS_DATA_STRUCTURE, filterBy)
           .map((project, i) => {
-            if(i === 4){
-              console.log("first", project)
-
-            }
             const language = isLanguageEnglish ? "en" : "de"
             return (
               <div key={i}>

@@ -50,20 +50,19 @@
         text-align: center;
       }
       .project-screenshot {
-        width: 100%;
+        width: 95%;
         height: 280px;
-
+        margin: auto;
         display: flex;
         justify-content: center;
-
         img {
           width: 100%; //412px
           height: 100%; //280px
           border-radius: 2px;
           opacity: 1;
-          &:hover {
-            opacity: 0.9;
-          }
+          // &:hover {
+          //   opacity: 0.9;
+          // }
         }
       }
       .container__text-section {

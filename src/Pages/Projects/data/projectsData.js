@@ -16,7 +16,6 @@ export const PROJECT_FILTERS = {
   // classes: "classes",
 }
 
-
 export const PROJECTS_DATA_STRUCTURE = [
   {
     id: 1,
@@ -244,6 +243,8 @@ export const PROJECTS_DATA_STRUCTURE = [
         "Create and edit your Cafes",
         "Rate your Cafe experience or beverage",
         "Keep track of what your Cafes have to offer",
+        "Map view",
+        "Customizable",
         "and many more to come..."
       ],
       de: [
@@ -252,6 +253,8 @@ export const PROJECTS_DATA_STRUCTURE = [
         "Erstellen und bearbeiten Sie Ihre Cafés",
         "Bewerten Sie Ihr Cafe-Erlebnis oder Ihr Getränk",
         "Behalte den Überblick darüber, was dein Café für dich zu bieten hat",
+        "Map view",
+        "Customizable",
         "und viele weitere werden folgen...",
       ],
     },
