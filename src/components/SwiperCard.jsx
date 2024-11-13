@@ -9,6 +9,13 @@ import CafeList from '../images/cafes-04.png';
 import CafeMap from '../images/cafes-05.png';
 import CafeAdmin from '../images/cafes-06.png';
 import CafeSettings from '../images/cafes-07.png';
+import GameInstructions from '../images/Screenshot-1.png';
+import GameWon from '../images/Screenshot-2.png';
+import GameLost from '../images/Screenshot-3.png';
+import GameHighscores from '../images/Screenshot-4.png';
+import GameOptions from '../images/Screenshot-5.png';
+
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -24,7 +31,12 @@ const pics = {
   cafeList: CafeList,
   cafeMap: CafeMap,
   cafeAdmin: CafeAdmin,
-  cafeSettings: CafeSettings
+  cafeSettings: CafeSettings,
+  gameWon: GameWon,
+  gameLost: GameLost,
+  gameInstructions: GameInstructions,
+  gameHighscores: GameHighscores,
+  gameOptions: GameOptions,
 }
 
 export const SwiperCard = ({dataArr}) => {

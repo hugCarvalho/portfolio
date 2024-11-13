@@ -171,7 +171,7 @@ export const PROJECTS_DATA_STRUCTURE = [
     category: [CATEGORIES.game],
     techs: ["React", "hooks"],
 
-    img: "media/word-scrambler-game.png",
+    img: [["gameInstructions", "app screenshot"], ["gameWon", "app screenshot"], ["gameLost", "game lost screenshot"], ["gameOptions", "app options screenshot"], ["gameHighscores", "app highscores screenshot"]],
     description: {
       en:
         "Rich featured game with 3 levels of difficulty. Try your skill by guessing the scrambled word for the chosen category within the alloted time. If you don't know the word you can dynamically look it up.",
