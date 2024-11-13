@@ -14,6 +14,7 @@ import CafeSettings from '../images/cafes-07.png';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import './swiper.scss';
 // import 'swiper/css/scrollbar';
 
 const pics = {

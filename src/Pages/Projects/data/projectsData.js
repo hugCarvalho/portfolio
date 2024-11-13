@@ -224,7 +224,7 @@ export const PROJECTS_DATA_STRUCTURE = [
   },
   {
     id: 6,
-    name: "Cafes & You",
+    name: "Cafes & You ⭐️",
     datum: 2024,
     category: [CATEGORIES.fullstack, CATEGORIES.api, CATEGORIES.webApp],
     techs: ["React", "hooks"],
