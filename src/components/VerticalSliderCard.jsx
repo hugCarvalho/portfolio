@@ -88,16 +88,15 @@ const ImageContainer = styled.div`
   text-align: center;
 `
 const IMG = styled.img`
-  background-image: url('./Abidh.jpeg');
   /* top: 100;
   bottom: 10;
   right: 0; */
   /* position: absolute; */
   /* object-fit: contain; */
   width: 86px;
-height: 86px;
-border-radius: 100px;
-/* clip-path: circle(20% at 50% 50%); */
+  height: 86px;
+  border-radius: 100px;
+  /* clip-path: circle(20% at 50% 50%); */
 
   /* background-position: bottom; */
   /* background-size: 0%; */

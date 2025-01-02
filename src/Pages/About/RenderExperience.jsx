@@ -4,6 +4,7 @@ import { LanguageContext } from "../../App";
 import { PersonTestimony, VerticalSliderCard } from "../../components/VerticalSliderCard";
 import { accomplishmentsDe, accomplishmentsEn } from '../../config/Accomplishments';
 import { erblotseSkills } from "../../config/Skills";
+import Birte from '../../images/Birte-Gall.jpeg';
 import Abidh from '../../images/abidh.jpeg';
 import Christian from '../../images/christian.jpeg';
 import { PROJECTS_DATA_STRUCTURE } from "../Projects/data/projectsData";
@@ -105,6 +106,17 @@ export const RenderExperienceEntries = () => {
 
       <p>{isLanguageEnglish ? "Testimonies:" : "Berichte:"}</p>
       <TestimoniesSection>
+        <VerticalSliderCard
+          src={Birte}
+          altText={"Birte Gall"}
+          name={"Birte Gall"}
+          jobTitle={"Co-Founder Erblotse"}
+          testimony={
+            <PersonTestimony text="Hugo is easy to work with, diligent in his work and fun to be around. When asked to contribute to new projects he is always open to wrap his head around it and willing to work his way through new challenges arising. Hugo helped bring a platform to live, without any precedent we could follow.
+              I am impressed by his discipline in constantly teaching himself new things. He is a valuable team member in a tech team."
+            />
+          }
+        />
         <VerticalSliderCard
           src={Christian}
           altText={"Christian Fischer"}
