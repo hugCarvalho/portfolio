@@ -1,9 +1,12 @@
 import React from "react";
 import styled from 'styled-components';
 import { LanguageContext } from "../../App";
+import useIsDesktop from "../../components/Hooks";
+import { SwiperCard } from "../../components/SwiperCard";
 import { PersonTestimony, VerticalSliderCard } from "../../components/VerticalSliderCard";
 import { accomplishmentsDe, accomplishmentsEn } from '../../config/Accomplishments';
 import { erblotseSkills } from "../../config/Skills";
+import { TESTIMONIES } from "../../config/testimonies";
 import Birte from '../../images/Birte-Gall.jpeg';
 import Abidh from '../../images/abidh.jpeg';
 import Christian from '../../images/christian.jpeg';
@@ -72,9 +75,9 @@ const ProjectsDatum = styled.span`
   font-size: smaller;
 `
 
-
 export const RenderExperienceEntries = () => {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
+  const isDesktop = useIsDesktop()
 
   const accomplishments = isLanguageEnglish ? accomplishmentsEn : accomplishmentsDe
 
@@ -106,7 +109,7 @@ export const RenderExperienceEntries = () => {
 
       <p>{isLanguageEnglish ? "Testimonies:" : "Berichte:"}</p>
       <TestimoniesSection>
-        <VerticalSliderCard
+        {isDesktop ? <><VerticalSliderCard
           src={Birte}
           altText={"Birte Gall"}
           name={"Birte Gall"}
@@ -128,11 +131,17 @@ export const RenderExperienceEntries = () => {
         />
         <VerticalSliderCard
           src={Abidh}
-          altText={"Abid K Muhammed"}
-          name={"Abid K Muhammed"}
+          altText={"Abidh K Muhammed"}
+          name={"Abidh K Muhammed"}
           jobTitle={"Software Engineer at Erblotse"}
           testimony={<PersonTestimony text="I had the pleasure of working with Hugo at Erblotse, where he excelled as a front-end developer and was particularly proficient in React. He consistently demonstrated a strong attention to detail and a commitment to delivering high-quality work. Hugo’s friendly and approachable nature, combined with his willingness to support and collaborate when needed, made him an excellent team player."/>}
         />
+      </> : null
+      }
+      {!isDesktop && <section style={{width: "340px"}}>
+          <SwiperCard dataArr={TESTIMONIES}/>
+        </section>
+      }
       </TestimoniesSection>
     </DescriptionSection>
 

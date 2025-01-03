@@ -1,3 +1,19 @@
 .swiper-pagination-bullet {
   background-color: #e8ba08;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 10px;
+  height: 10px;
+
+  &::before{
+    font-size: 30px;
+  }
+  &::after{
+    font-size: 30px;
+  }
+  @media (max-width: 768px) {
+    transform: translateY(-450%); /* Center vertically */
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 // Import Swiper React components
+import { useLocation } from "react-router-dom";
 import { A11y, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CafeStart from '../images/cafes-01.png';
@@ -14,8 +15,7 @@ import GameWon from '../images/Screenshot-2.png';
 import GameLost from '../images/Screenshot-3.png';
 import GameHighscores from '../images/Screenshot-4.png';
 import GameOptions from '../images/Screenshot-5.png';
-
-
+import { PersonTestimony, VerticalSliderCard } from './VerticalSliderCard';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -40,6 +40,8 @@ const pics = {
 }
 
 export const SwiperCard = ({dataArr}) => {
+  const {pathname} = useLocation()
+
   return (
     <Swiper
       modules={[Pagination, A11y, Navigation]}
@@ -51,10 +53,27 @@ export const SwiperCard = ({dataArr}) => {
       pagination={{ clickable: true }}
       >
       {
-        dataArr.map((img, i) => {
+        pathname === "/projects" && dataArr.map((img, i) => {
           const [id, altText] = img
-          return <SwiperSlide>
+
+          return <SwiperSlide key={i}>
             <img src={pics[id]} style={{height: "252px"}} alt={altText}/>
+          </SwiperSlide>
+        })
+      }
+      {
+        pathname === "/about" && dataArr.map((data, i) => {
+          const {name, img, altText, jobTitle, testimony} = data
+
+          return <SwiperSlide key={i}>
+            <VerticalSliderCard
+              name={name}
+              src={img}
+              altText={altText}
+              jobTitle={jobTitle}
+              testimony={<PersonTestimony text={testimony}/>
+              }
+          />
           </SwiperSlide>
         })
       }

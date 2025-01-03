@@ -7,12 +7,7 @@ const sharedWidth = "340px" //mobile 340px
 
 const MainCard = styled.div`
    background-color: #fcfcfc;
-   background-color: #00223a;
-   background-color: #012741;
-   background-color: #012741b3;
-  background-color: #092436cb;
-  background-color: #001f34cc;
-
+   background-color: #001f34cc;
 
    min-width: ${sharedWidth};
    width: ${sharedWidth};
@@ -22,13 +17,14 @@ const MainCard = styled.div`
    overflow: hidden;
    position: relative;
    padding-top:10px;
+   padding-bottom:20px;
 `
 const CardTitle = styled.div`
-line-height: 16px;
-padding: 4px;
- /* background-color: orange; */
-text-align: center;
-font-size: 15px;
+  line-height: 16px;
+  padding: 4px;
+  /* background-color: orange; */
+  text-align: center;
+  font-size: 15px;
 `
 
 const SecondaryCard = styled.div`
@@ -69,7 +65,6 @@ const PersonTitle = styled.p`
 `
 const Testimony = styled.section`
   /* font-family: ; */
-  /* background-color: lime; */
   font-family: 'Times New Roman', Times, serif;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: italic;
@@ -138,6 +133,3 @@ export const VerticalSliderCard = ({src, alt, name, jobTitle, testimony}) => {
     </MainCard>
   )
 }
-
-//#00223a
-
