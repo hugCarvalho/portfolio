@@ -217,7 +217,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       ],
       thirdParty: ["React Router", "React Tooltip"],
       notes: { en: "", de: "" },
-      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "Jest", "React Testing Library", "React Router", "Local Storage"]
+      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "Jest", "React Testing Library", "Local Storage"]
     },
     live: ["https://condescending-raman-a3f123.netlify.app/"],
     code: ["https://github.com/hugCarvalho/wordScrambler"],
@@ -267,7 +267,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       specs: ["React", "Typescript", "Javascript", "React Query", "PostgreSQL", "Supabase", "Material UI", "Styled Components", "Netlify", "Cypress"],
       thirdParty: ["React Query", "React Router", "React Hook Form", "React Number Format", "Leaflet"],
       notes: { en: "Nominatim API", de: "" },
-      tags: ["React", "Typescript", "React Query", "Material UI", "Styled Components", "React Router", "Netlify", "PostgreSQL", "Supabase", "APIs", "Cypress"],
+      tags: ["React", "Typescript", "React Query", "Material UI", "Styled Components", "React Router", "Netlify", "PostgreSQL", "Supabase", "API", "Cypress"],
     },
     live: ["https://cafesandyou.netlify.app/"],
     code: [],

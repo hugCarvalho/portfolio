@@ -8,9 +8,6 @@ import {
 } from "../functions/functions";
 import "./ProjectCard.scss";
 
-
-
-
 function ProjectCard({
   backCardHeight,
   setFrontSideActive,
@@ -65,10 +62,13 @@ function ProjectCard({
             </section>
 
             {/* FEATURES FRONT*/}
-            <section className="features">
+            <section className="features" style={{paddingBottom: "10px"}}>
               <h4>{language === "en" ? "Features:" : "Eigenschaften"}</h4>
               <ul>{renderFeatures(project, language)}</ul>
             </section>
+
+            {/* SKILLS TAGS   */}
+            <Tags skills={project.techInfo.tags}/>
 
             {/* BUTTON FLIP CARD */}
             <div className="btn__flip-card">
