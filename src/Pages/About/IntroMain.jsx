@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import { ExternalLink } from "../../components/ExternalLink";
+import LinkAway from "../../images/external_link.webp";
 
 const LinkStyles = styled.span`
   text-decoration: underline;
@@ -30,6 +31,7 @@ export function IntroMainEN() {
               link={"https://erben.erblotse.de"}
               text={"Erben"}
             />
+          <img src={LinkAway} alt="link to Erben project" style={{width: "20px", height: "20px"}}/>
           </LinkStyles>}
           {" and "}
           {<LinkStyles>
@@ -38,6 +40,7 @@ export function IntroMainEN() {
               text={"Vererben"}
             />
           </LinkStyles>}
+          <img src={LinkAway} alt="link to Vererben project" style={{width: "20px", height: "20px"}}/>
         {" -"} {" "}
          with different tech stacks.
       </p>

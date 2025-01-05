@@ -6,6 +6,7 @@ import { SwiperCard } from "../../components/SwiperCard";
 import { PersonTestimony, VerticalSliderCard } from "../../components/VerticalSliderCard";
 import { accomplishmentsDe, accomplishmentsEn } from '../../config/Accomplishments';
 import { erblotseSkills } from "../../config/Skills";
+import { BREAKPOINTS } from "../../config/breakpoints.js";
 import { TESTIMONIES } from "../../config/testimonies";
 import Birte from '../../images/Birte-Gall.jpeg';
 import Abidh from '../../images/abidh.jpeg';
@@ -13,14 +14,15 @@ import Christian from '../../images/christian.jpeg';
 import { PROJECTS_DATA_STRUCTURE } from "../Projects/data/projectsData";
 import { Tags } from "./Tags";
 
-const smallerScreenBreakpoint = "968px"
+
+const breakpointDesktop = BREAKPOINTS.desktop
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 4px;
   border: "1px solid black";
-  @media (max-width: ${smallerScreenBreakpoint}) {
+  @media (max-width: ${breakpointDesktop}) {
     flex-direction: column;
   }
 `
@@ -30,7 +32,7 @@ const DatumSection = styled.section`
 const Datum = styled.span`
   opacity: 0.9;
   font-weight: 600;
-  @media (max-width: ${smallerScreenBreakpoint}) {
+  @media (max-width: ${breakpointDesktop}) {
     font-size: 21px;
   }
 `
@@ -38,7 +40,7 @@ const DescriptionSection = styled.section`
   width: 100%;
   padding-left: 25px;
   margin-bottom: 35px;
-  @media (max-width: ${smallerScreenBreakpoint}) {
+  @media (max-width: ${breakpointDesktop}) {
     padding: 0px;
   }
 `
@@ -53,12 +55,15 @@ const JobTitle = styled.span`
 const ListItem = styled.li`
   margin-left: 3px;
 `
+
+
 const TestimoniesSection = styled.section`
   display: flex;
   gap: 30px;
   padding-top: 6px;
   margin-bottom: 35px;
-  @media (max-width: 780px) {
+
+  @media (max-width: ${breakpointDesktop}) {
     flex-direction: column;
     align-items: center;
   }

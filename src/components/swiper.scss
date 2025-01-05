@@ -13,7 +13,7 @@
   &::after{
     font-size: 30px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 860px) {//value in breakpoints.js
     transform: translateY(-450%); /* Center vertically */
   }
 }

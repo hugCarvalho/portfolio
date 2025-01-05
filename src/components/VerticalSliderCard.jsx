@@ -14,6 +14,7 @@ const MainCard = styled.div`
    border-radius: 18px;
    /* height: ${sharedHeight}; */
    height: fit-content;
+   min-height: 382px;
    overflow: hidden;
    position: relative;
    padding-top:10px;
@@ -56,7 +57,6 @@ const PersonName = styled.p`
   /* background-color: lightblue; */
   font-size: 18px;
   color: #209dd8;
-
 `
 const PersonTitle = styled.p`
   /* background-color: blanchedalmond; */
