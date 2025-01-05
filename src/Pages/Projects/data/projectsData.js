@@ -232,9 +232,9 @@ export const PROJECTS_DATA_STRUCTURE = [
     img: [["cafeStart", "app screenshot"], ["cafeStart2", "app screenshot"], ["cafeSignup", "app screenshot"], ["cafeList", "app screenshot"],  ["cafeMap", "app screenshot"], ["cafeAdmin", "app screenshot"], ["cafeSettings", "app screenshot"]],
     description: {
       en:
-        "Ongoing fullstack project where you can connect with a soulmate and build your own Cafes experience list.",
+        "Ongoing fullstack project where you can connect with a soulmate and build your own Cafes experience. <TESTUSER>",
       de:
-        "Laufendes aber funktionierendes Fullstack-Projekt, bei dem du dich mit einem 'soulmate' verbinden und deine eigene Cafes-Erfahrungsliste erstellen kannst.",
+        "Laufendes aber funktionierendes Fullstack-Projekt, bei dem du dich mit einem 'soulmate' verbinden und deine eigene Cafes-Erfahrungsliste erstellen kannst. <TESTUSER>",
     },
     features: {
       en: [

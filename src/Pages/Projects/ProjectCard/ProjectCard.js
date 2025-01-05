@@ -8,6 +8,9 @@ import {
 } from "../functions/functions";
 import "./ProjectCard.scss";
 
+
+
+
 function ProjectCard({
   backCardHeight,
   setFrontSideActive,
@@ -17,6 +20,17 @@ function ProjectCard({
   toggleTechInfoFeatures,
   id,
 }) {
+
+  const renderDescriptionText = () => {
+    if (project.description[language].includes("<TESTUSER>")){
+      if(language === "de") {
+        return <span>Laufendes aber funktionierendes <b>Fullstack-Projekt</b>, bei dem du dich mit einem 'soulmate' verbinden und deine eigene Cafes-Erfahrungsliste erstellen kannst. <b>Zu testen</b>, entweder registriere dich oder melde dich mit einem<b>Testbenutzer:</b> an.<br/> Email: <b>test@user.com</b> -  Password: <b>1234567</b></span>
+      }
+      return <span>Ongoing <b>fullstack project</b> where you can connect with a soulmate and build your own Cafes experience. To <b>test it</b>, either register or log in using a <b>test user:</b> <br/> Email: <b>test@user.com</b> -  Password: <b>1234567</b></span>
+    }
+    return project.description[language]
+  }
+
   return (
     <>
       <div
@@ -46,7 +60,9 @@ function ProjectCard({
 
           {/* DESCRIPTION TEXT FRONT*/}
           <div className="container__text-section">
-            <section className="description"> {project.description[language]}</section>
+            <section className="description">
+              {renderDescriptionText()}
+            </section>
 
             {/* FEATURES FRONT*/}
             <section className="features">
