@@ -1,5 +1,6 @@
 import datadog from "../Pages/Skills/assets/datadog.svg"
 import mui from "../Pages/Skills/assets/material-ui.svg"
+import mongodb from "../Pages/Skills/assets/mongodb.svg"
 import nodejs from "../Pages/Skills/assets/nodejs.svg"
 import prisma from "../Pages/Skills/assets/prisma-3.svg"
 import sentry from "../Pages/Skills/assets/sentry.svg"
@@ -40,6 +41,7 @@ export const SKILLS_DATA = [
   { name: "PostgreSQL", category: SKILL_CATEGORIES.backend, class: "bg-postgreSQL", type: "single" },
   { name: "Supabase", category: SKILL_CATEGORIES.backend, type: "singleSvg", src: supabase},
   { name: "Node.js", category: SKILL_CATEGORIES.backend, type: "singleSvg", src: nodejs},
+  { name: "MongoDB", category: SKILL_CATEGORIES.backend, type: "singleSvg", src: mongodb},
   { name: "Redux", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-redux", type: "single" },
   { name: "Sentry", category: SKILL_CATEGORIES.monitoring, type: "singleSvg", src: sentry },
   { name: "Datadog", category: SKILL_CATEGORIES.monitoring, type: "singleSvg", src: datadog },
