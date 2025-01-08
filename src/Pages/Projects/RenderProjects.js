@@ -90,6 +90,7 @@ function RenderProjects() {
         'Content-Type': 'application/json'
       },
     })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
 
@@ -148,7 +149,6 @@ function RenderProjects() {
       {/* Projects container  */}
       <main className="RenderProjects">
         <TextDialogContainer>
-        {/* <DialogText className={isDomIsLoaded ? "visible" : undefined}> */}
         <DialogText className={isDomIsLoaded ? "visible" : "notVisible"}>
           All projects were designed, engineered and executed by myself, they are
           <span style={{fontWeight: 700}}>{" "}not{" "}</span>
@@ -158,23 +158,6 @@ function RenderProjects() {
           <img src={moi} alt="me" title="about me" />
         </MyPic>
         </TextDialogContainer>
-
-        {/* DATE PLAQUE */}
-        {/* {filterBy === "all" && <>
-          <DatumPlaque/>
-          <div >
-                <DatumPlaque/>
-                <ProjectCard
-                  backCardHeight={cardHeight}
-                  setFrontSideActive={setFrontSideActive}
-                  frontSideActive={frontSideActive}
-                  project={PROJECTS_DATA_STRUCTURE[0]}
-                  language={isLanguageEnglish ? "en" : "de"}
-                  toggleTechInfoFeatures={toggleTechInfoFeatures}
-                  id={id}
-                />
-                </div>
-        </>} */}
 
         {/* PROJECTS */}
         <ProjectsContainer>
@@ -196,8 +179,8 @@ function RenderProjects() {
                 </div>
               );
             })
-            .reverse()}
-            </ProjectsContainer>
+          .reverse()}
+        </ProjectsContainer>
       </main>
     </>
   );
