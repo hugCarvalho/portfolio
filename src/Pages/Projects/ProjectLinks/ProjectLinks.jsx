@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal } from "../../../components/Modal";
+import { server } from "../../../config/server.js";
 import "./ProjectLinks.scss";
-import {server} from "../../../config/server.js"
 
 function ProjectLinks({ project}) {
   const [showModal, setShowModal] = React.useState(false)
@@ -24,7 +24,7 @@ function ProjectLinks({ project}) {
         >
           <i className="fas fa-eye">
             {" "}
-            <span className="text"> Live</span>
+            <span className="text">Live</span>
           </i>
         </a>
       </div>}
@@ -32,8 +32,7 @@ function ProjectLinks({ project}) {
       {showModal && <Modal setShowModal={setShowModal} projectGithubUrl={project.code}/>}
       {project.code.length > 0 &&
         <div style={{cursor: "pointer"}} onClick={()=> {
-          setShowModal(false)
-          console.log(project.id + "Code")
+          setShowModal(true)
           fetch(`${server}/projects`, {
             method: "POST",
             headers: {
