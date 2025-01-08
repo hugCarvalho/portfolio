@@ -15,12 +15,16 @@ function Skills() {
   const isDesktop = useIsDesktop()
 
   React.useEffect(()=> {
-    fetch(`${server}${pathname}`, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    })
+   try {
+     fetch(`${server}${pathname}`, {
+       method: "POST",
+       headers: {
+         'Content-Type': 'application/json'
+       },
+     })
+   } catch (error) {
+
+   }
   }, [])
 
   React.useEffect(() => {

@@ -17,7 +17,7 @@ function ProjectLinks({ project}) {
               method: "POST",
               headers: {
                 'Content-Type': 'application/json',
-                'custom': project.id
+                'Custom': project.id
               },
             })
           }}
@@ -37,7 +37,7 @@ function ProjectLinks({ project}) {
             method: "POST",
             headers: {
               'Content-Type': 'application/json',
-              'custom': project.id + "Code"
+              'Custom': project.id + "Code"
             },
           })
         }}>
