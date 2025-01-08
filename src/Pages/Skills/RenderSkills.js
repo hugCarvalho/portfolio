@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
 import useIsDesktop from "../../components/Hooks";
+import { server } from "../../config/server";
 import { SKILL_CATEGORIES, SKILLS_DATA } from "../../config/Skills";
 import FilterBar from "../Projects/FilterBy/FilterBy";
 import "./RenderSkills.scss";
@@ -12,6 +13,15 @@ function Skills() {
   const [filterBy, setFilterBy] = useState("all")
   const {pathname} = useLocation()
   const isDesktop = useIsDesktop()
+
+  React.useEffect(()=> {
+    fetch(`${server}${pathname}`, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+  }, [])
 
   React.useEffect(() => {
     document.title = "Skills";

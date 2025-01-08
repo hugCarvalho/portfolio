@@ -163,22 +163,22 @@ export const RenderExperienceEntries = () => {
       {/* PROJECTS */}
       {isLanguageEnglish ? <ul>
         <ListItem><i>Scrambled Word Game <ProjectsDatum>(2021)</ProjectsDatum></i> - a game with highscore, hints, sound effects, settings and time pressure. And also the possibility of learning new words through dynamic lookup. Test your knowledge. If you dare.</ListItem>
-        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === 5).techInfo.tags}/>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "wordScrambler").techInfo.tags}/>
         <ListItem><i>Portfolio <ProjectsDatum>(2020)</ProjectsDatum></i> - originally created this portfolio. </ListItem>
-        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === 4).techInfo.tags}/>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "portfolio").techInfo.tags}/>
         <ListItem><i>Weatherjetzt <ProjectsDatum>(2020)</ProjectsDatum></i> - a weather app, tailored for the best user experience of its most passionate and, most likely, only user.</ListItem>
-        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === 2).techInfo.tags}/>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "weatherApp").techInfo.tags}/>
         <ListItem><i>Todo list <ProjectsDatum>(2020)</ProjectsDatum></i> - a classical. My very first project, where it all started...</ListItem>
-        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === 1).techInfo.tags}/>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "todoList").techInfo.tags}/>
       </ul> : <ul>
         <ListItem><i>Scrambled Word Game <ProjectsDatum>(2021)</ProjectsDatum></i> - Sammlung von Kenntnissen und Konzeption, Entwurf, Umsetzung und Einführung mehrerer Projekte zur Erprobung und Festigung der erworbenen Kenntnisse (auf der Projektseite verfügbar).</ListItem>
-        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === 5).techInfo.tags}/>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "wordScrambler").techInfo.tags}/>
         <ListItem><i>Portfolio <ProjectsDatum>(2020)</ProjectsDatum></i> - Ursprünglich wurde dieses Portfolio erstellt. In der Zwischenzeit wurde es erweitert.</ListItem>
-        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === 4).techInfo.tags}/>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "portfolio").techInfo.tags}/>
         <ListItem><i>Weatherjetzt <ProjectsDatum>(2020)</ProjectsDatum></i> - Wetter-App, zugeschnitten auf die beste Benutzererfahrung seiner leidenschaftlichsten und, wahrscheinlich, einzigen Benutzer.</ListItem>
-        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === 2).techInfo.tags}/>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "weatherApp").techInfo.tags}/>
         <ListItem><i>Todo list <ProjectsDatum>(2020)</ProjectsDatum></i> - ein Klassiker. Mein allererstes Projekt, mit dem alles begann...</ListItem>
-        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === 1).techInfo.tags}/>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "todoList").techInfo.tags}/>
       </ul> }
     </DescriptionSection>
 
@@ -195,11 +195,11 @@ export const RenderExperienceEntries = () => {
       {/* PROJECTS */}
       {isLanguageEnglish ? <ul>
           <ListItem><i>Cafes & You <ProjectsDatum>(2024)</ProjectsDatum></i> - ongoing, yet functional, fullstack project where you embark on a solo or dual trip, making your own list of Cafes and registering your experiences. Inspired by my girlfriend.</ListItem>
-          <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === 6).techInfo.tags}/>
+          <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "cafes").techInfo.tags}/>
         </ul>:
         <ul>
           <ListItem><i>Cafes & You <ProjectsDatum>(2024)</ProjectsDatum></i> - ein laufendes, aber funktionales Fullstack-Projekt, bei dem man sich auf eine Solo- oder Doppelreise begibt, seine eigene Liste von Cafés erstellt und seine Erfahrungen registriert. Inspiriert von meiner Freundin.</ListItem>
-          <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === 6).techInfo.tags}/>
+          <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "cafes").techInfo.tags}/>
         </ul>
       }
     </DescriptionSection>

@@ -1,12 +1,26 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { LanguageContext } from "../../App";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
+import { server } from "../../config/server";
 import AboutEN, { AboutDE } from "./About";
 import "./RenderAbout.scss";
 
 function RenderAbout() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
   const pageIsActive = React.useContext(IsActiveContext);
+
+  const {pathname} = useLocation()
+
+  React.useEffect(()=> {
+    fetch(`${server}${pathname}`, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+  }, [])
+
 
   React.useEffect(() => {
     document.title = "About";

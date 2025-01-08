@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { LanguageContext } from "../../App";
 import { DatumPlaque } from "../../components/DatumPlaque";
 import moi from "../../components/Header/MyInfoCard/MyPic/media/moi.jpg";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
+import { server } from "../../config/server";
 import { PROJECT_FILTERS, PROJECTS_DATA_STRUCTURE } from "./data/projectsData";
 import FilterBar from "./FilterBy/FilterBy";
 import ProjectCard from "./ProjectCard/ProjectCard";
@@ -79,6 +81,17 @@ function RenderProjects() {
   const [id, setId] = useState(null);
   const [filterBy, setFilterBy] = useState("all");
   const [isDomIsLoaded, setDomIsLoaded] = useState(false)
+  const {pathname} = useLocation()
+
+  React.useEffect(()=> {
+    fetch(`${server}${pathname}`, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+  }, [])
+
 
   //GETS the height of the biggest card
   useEffect(() => {

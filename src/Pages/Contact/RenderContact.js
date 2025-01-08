@@ -1,9 +1,19 @@
 import React from "react";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
+import { server } from "../../config/server";
 import "./RenderContact.scss";
 
 function Contact() {
   const pageIsActive = React.useContext(IsActiveContext);
+
+  React.useEffect(()=> {
+    fetch(`${server}/contact`, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+  })
+  }, [])
 
   React.useEffect(() => {
     document.title = "Contact";

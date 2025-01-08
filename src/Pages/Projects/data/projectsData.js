@@ -18,7 +18,7 @@ export const PROJECT_FILTERS = {
 
 export const PROJECTS_DATA_STRUCTURE = [
   {
-    id: 1,
+    id: "todoList",
     name: "Todo List App",
     datum: 2020,
     category: [CATEGORIES.webApp],
@@ -60,7 +60,7 @@ export const PROJECTS_DATA_STRUCTURE = [
     code: ["https://github.com/hugCarvalho/todoList"],
   },
   {
-    id: 2,
+    id: "weatherApp",
     name: "Weather App",
     datum: 2020,
     category: [CATEGORIES.api, CATEGORIES.webApp],
@@ -114,7 +114,7 @@ export const PROJECTS_DATA_STRUCTURE = [
     code: ["https://github.com/hugCarvalho/weather_api"],
   },
   {
-    id: 4,
+    id: "portfolio",
     name: "Portfolio Website",
     datum: 2020,
     category: [CATEGORIES.website],
@@ -161,11 +161,11 @@ export const PROJECTS_DATA_STRUCTURE = [
       notes: { en: "", de: "" },
       tags: ["React", "JavaScript", "Semantic HTML", "SASS", "React Testing Library", "React Router"]
     },
-    live: ["https://hugcarvalho.github.io/portfolio"],
+    live: [],
     code: ["https://github.com/hugCarvalho/portfolio"],
   },
   {
-    id: 5,
+    id: "wordScrambler",
     name: "Word Scrambler Game",
     datum: 2021,
     category: [CATEGORIES.game],
@@ -223,7 +223,7 @@ export const PROJECTS_DATA_STRUCTURE = [
     code: ["https://github.com/hugCarvalho/wordScrambler"],
   },
   {
-    id: 6,
+    id: "cafes",
     name: "Cafes & You ⭐️",
     datum: 2024,
     category: [CATEGORIES.fullstack, CATEGORIES.api, CATEGORIES.webApp],
