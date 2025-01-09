@@ -1,6 +1,6 @@
-import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { createMemoryHistory } from "history";
+import React from "react";
 import { Router } from "react-router-dom";
 import App from "../../../../App";
 import MyInfoCardLinks from "./MyInfoCardLinks";
@@ -34,9 +34,6 @@ describe("MyInfoCardLinks", () => {
 
     const githubLink = screen.getAllByRole("link", { name: /github/i });
     githubLink.forEach(link => expect(link.href).toBe("https://github.com/hugCarvalho"));
-
-    // const cvLink = screen.getAllByRole("link", { name: /cv/i });
-    // cvLink.forEach(link => expect(link.href).toContain("CV_english"));
   });
 
   test("German: links are present and link to correspondent resources", () => {
@@ -67,8 +64,5 @@ describe("MyInfoCardLinks", () => {
 
     const githubLink = screen.getAllByRole("link", { name: /github/i });
     githubLink.forEach(link => expect(link.href).toBe("https://github.com/hugCarvalho"));
-
-    // const cvLink = screen.getAllByRole("link", { name: /cv/i });
-    // cvLink.forEach(link => expect(link.href).toContain("CV_deutsch"));
   });
 });
