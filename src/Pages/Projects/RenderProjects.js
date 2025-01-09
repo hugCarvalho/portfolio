@@ -90,7 +90,7 @@ function RenderProjects() {
         'Content-Type': 'application/json'
       },
     })
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
 
