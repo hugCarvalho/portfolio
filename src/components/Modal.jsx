@@ -15,7 +15,6 @@ const ModalContainer = styled.div`
   align-items: center;
   z-index: 999;
 `;
-
 const ModalContent = styled.div`
   background-color: #ffffff;
   padding: 20px;
@@ -24,7 +23,6 @@ const ModalContent = styled.div`
   text-align: center;
   max-width: 85%;
 `;
-
 const Button = styled.button`
   padding: 10px 20px;
   border: none;
@@ -38,7 +36,6 @@ const Button = styled.button`
     background-color: #0069d9;
   }
 `;
-//#007bff;
 
 export const Modal = ({ setShowModal, projectGithubUrl, isOpen, onClose, onYes, children }) => {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
