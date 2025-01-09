@@ -23,17 +23,12 @@ const MainCard = styled.div`
 const CardTitle = styled.div`
   line-height: 16px;
   padding: 4px;
-  /* background-color: orange; */
   text-align: center;
   font-size: 15px;
 `
 
 const SecondaryCard = styled.div`
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* background-color: #00223a;
-  background-color: #012741;
-  background-color: #012741b3;
-  background-color: #01274173; */
   background-color:transparent;
   color: whitesmoke;
   width: ${sharedWidth};
@@ -43,10 +38,7 @@ const SecondaryCard = styled.div`
   /* height: ${sharedHeight}; */
   /* position: absolute; */
   /* top: ${({ $isFullHeigth }) => ($isFullHeigth? '0' : '38%')};//42% */
-  /* transition: all .3s ease-out;
-  z-index: 100; */
   `
-
 const PersonInfo = styled.section`
   /* background-color: pink; */
   text-align: center;
@@ -54,18 +46,14 @@ const PersonInfo = styled.section`
   line-height: 18px;
 `
 const PersonName = styled.p`
-  /* background-color: lightblue; */
   font-size: 18px;
   color: #209dd8;
 `
 const PersonTitle = styled.p`
-  /* background-color: blanchedalmond; */
   font-size: 14px;
   color: gray;
 `
 const Testimony = styled.section`
-  /* font-family: ; */
-  font-family: 'Times New Roman', Times, serif;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: italic;
   padding-top: 22px;
@@ -74,27 +62,15 @@ const Testimony = styled.section`
   font-size: 13px;
   line-height: 20px;
   color: #cedae1;
-  /* white-space: nowrap; */
 `
 const ImageContainer = styled.div`
-  /* background-color: brown; */
-  /* object-fit: cover; */
-  /* object-position: top; */
   text-align: center;
 `
 const IMG = styled.img`
-  /* top: 100;
-  bottom: 10;
-  right: 0; */
-  /* position: absolute; */
-  /* object-fit: contain; */
   width: 86px;
   height: 86px;
   border-radius: 100px;
   /* clip-path: circle(20% at 50% 50%); */
-
-  /* background-position: bottom; */
-  /* background-size: 0%; */
 `
 
 const LinkedIn = styled.span`
