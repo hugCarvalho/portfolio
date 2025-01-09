@@ -14,7 +14,6 @@ import Christian from '../../images/christian.jpeg';
 import { PROJECTS_DATA_STRUCTURE } from "../Projects/data/projectsData";
 import { Tags } from "./Tags";
 
-
 const breakpointDesktop = BREAKPOINTS.desktop
 
 const Container = styled.div`
@@ -55,8 +54,6 @@ const JobTitle = styled.span`
 const ListItem = styled.li`
   margin-left: 3px;
 `
-
-
 const TestimoniesSection = styled.section`
   display: flex;
   gap: 30px;
