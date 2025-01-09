@@ -7,7 +7,6 @@ $curtain-border: #8f8f8f;
   transform: translateY(180px)
 }
 .MyPic {
-  // background-color: lightsalmon;
   position: relative;
   width: 67.55px;
   height: 67.7px;
@@ -21,7 +20,6 @@ $curtain-border: #8f8f8f;
     box-shadow: 2px 2px 4px rgb(31, 30, 30);
   }
   img {
-    // background-color: lightcoral;
     position: absolute;
     opacity: 1;
     top: 0;
@@ -68,26 +66,3 @@ $curtain-border: #8f8f8f;
     }
   }
 }
-
-// .translate {
-//   // background-color: lightsalmon;
-//   position: relative;
-//   width: 67.55px;
-//   height: 67.7px;
-//   overflow: hidden;
-//   border-radius: 50%;
-//   transition: all 0.8s ease-out;
-//   overflow: visible;
-//   transform: translateY(180px);
-
-//   img {
-//     // background-color: lightcoral;
-//     position: absolute;
-//     opacity: 1;
-//     top: 0;
-//     height: 6.74rem;
-//     border: 2px solid #d8d8da;
-//     border-radius: 50%;
-//     transition: transform 0.3s ease-out;
-//   }
-// }

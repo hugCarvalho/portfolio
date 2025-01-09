@@ -20,7 +20,6 @@ describe("MyInfoCardLinks", () => {
     // present in English
     const cardLinks = document.querySelector(".MyInfoCardLinks > ul");
     expect(cardLinks).toHaveTextContent("Edabit");
-    //expect(cardLinks).toHaveTextContent("CV");
     expect(cardLinks).toHaveTextContent("LinkedIn");
     expect(cardLinks).toHaveTextContent("GitHub");
 
@@ -50,7 +49,6 @@ describe("MyInfoCardLinks", () => {
     // present in German
     const cardLinks = document.querySelector(".MyInfoCardLinks > ul");
     expect(cardLinks).toHaveTextContent("Edabit");
-    // expect(cardLinks).toHaveTextContent("CV");
     expect(cardLinks).toHaveTextContent("LinkedIn");
     expect(cardLinks).toHaveTextContent("GitHub");
 
@@ -58,7 +56,6 @@ describe("MyInfoCardLinks", () => {
     const contactLink = screen.getAllByRole("link", { name: /kontakt/i });
     contactLink.forEach(link => {
       fireEvent.click(link);
-      // expect(link.href).toContain("kontakt");
       expect(screen.getByRole("button", { name: /kontakt/i })).toHaveClass("active");
     });
 
