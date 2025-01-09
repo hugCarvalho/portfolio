@@ -19,6 +19,7 @@ function RenderAbout() {
         'Content-Type': 'application/json'
       },
     })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
 
@@ -29,7 +30,7 @@ function RenderAbout() {
   return (
     <div className="RenderAbout">
       {/* Only displayed on smaller mobile viewport */}
-      <section className=" show-on-smallest-screen-only">
+      <section className="show-on-smallest-screen-only">
         <ul>
           <li>
             <a
@@ -48,13 +49,6 @@ function RenderAbout() {
             >
               LinkedIn
             </a>
-            {/* <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={isLanguageEnglish ? CV_EN : CV_DE}
-            >
-              CV
-            </a> */}
           </li>
           <li>
             <a
