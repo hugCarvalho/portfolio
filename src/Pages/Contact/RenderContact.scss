@@ -3,7 +3,6 @@
   background-color: rgba(248, 246, 246, 0.9);
 
   background-image: url("./assets/12.png");
-  //background-image: url("../Skills/assets/10.png");
 
   min-height: calc(
     100vh - 234px
@@ -35,7 +34,6 @@
 
 @media (max-width: 622px) {
   .Contact {
-    // min-height: calc(100vh - 245px);
     padding: 40px 3%;
     font-size: 2rem;
   }
