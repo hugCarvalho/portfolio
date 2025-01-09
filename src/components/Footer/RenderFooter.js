@@ -1,8 +1,6 @@
 import React from "react";
 import { LanguageContext } from "../../App";
 import "./RenderFooter.scss";
-// import englishCV from "../../shared/CV_english.pdf";
-// import germanCV from "../../shared/CV_deutsch.pdf";
 
 function RenderFooter() {
   const { isLanguageEnglish } = React.useContext(LanguageContext);
@@ -104,17 +102,6 @@ function RenderFooter() {
             >
               Edabit
             </a>
-
-            {/* {isLanguageEnglish && (
-              <a target="_blank" rel="noopener noreferrer" href={englishCV}>
-                {"CV"}
-              </a>
-            )}
-            {!isLanguageEnglish && (
-              <a target="_blank" rel="noopener noreferrer" href={germanCV}>
-                {"CV"}
-              </a>
-            )} */}
           </li>
           <li>
             <a
