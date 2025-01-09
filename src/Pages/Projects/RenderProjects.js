@@ -13,10 +13,10 @@ import "./RenderProjects.scss";
 
 const ProjectsContainer = styled.section`
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  flex-wrap: wrap;
   position: relative;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 `
 const TextDialogContainer = styled.div`
   display: flex;
