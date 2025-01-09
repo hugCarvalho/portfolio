@@ -1,7 +1,7 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
-import App from "../../../../App";
 import "@testing-library/jest-dom";
+import { render, screen } from "@testing-library/react";
+import React from "react";
+import App from "../../../../App";
 import LanguagesSpoken from "./LanguagesSpoken";
 
 test("should render in english ", () => {
@@ -9,7 +9,6 @@ test("should render in english ", () => {
   render(<LanguagesSpoken />, { wrapper: Wrapper });
 
   screen.getByText(/speaks:/i);
-  // screen.getByRole("figure", { name: /english/i });
   expect(screen.getByRole("figure", { name: /german/i })).toHaveClass("fflag-DE");
   expect(screen.getByRole("figure", { name: /portuguese/i })).toHaveClass("fflag-PT");
   expect(screen.getByRole("figure", { name: /spanish/i })).toHaveClass("fflag-ES");
