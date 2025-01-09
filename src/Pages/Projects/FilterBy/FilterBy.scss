@@ -1,6 +1,4 @@
 .FilterBy {
-  //background-color: #383838;
-  // background-color: #1b1b1b;
   background-color: #070707;
   background-image: url("../assets/14.png");
 
@@ -9,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // transition: translate ease 5s;
 
   .filter-by__text {
     color: whitesmoke;
@@ -19,7 +16,6 @@
   }
 
   ul {
-    //background-color: lightgreen;
     display: flex;
     justify-content: center;
     :nth-child(1) {
