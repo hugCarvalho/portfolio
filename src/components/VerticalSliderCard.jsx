@@ -2,17 +2,13 @@ import styled from 'styled-components';
 import { COLORS } from '../config/colors';
 import { ExternalLink } from './ExternalLink';
 
-const sharedHeight = "380px"
 const sharedWidth = "340px" //mobile 340px
 
 const MainCard = styled.div`
-   background-color: #fcfcfc;
    background-color: #001f34cc;
-
    min-width: ${sharedWidth};
    width: ${sharedWidth};
    border-radius: 18px;
-   /* height: ${sharedHeight}; */
    height: fit-content;
    min-height: 382px;
    overflow: hidden;
@@ -26,7 +22,6 @@ const CardTitle = styled.div`
   text-align: center;
   font-size: 15px;
 `
-
 const SecondaryCard = styled.div`
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color:transparent;
@@ -35,12 +30,9 @@ const SecondaryCard = styled.div`
   padding: 0px 18px 14px;
   border-radius: 18px;
   height: fit-content;
-  /* height: ${sharedHeight}; */
-  /* position: absolute; */
   /* top: ${({ $isFullHeigth }) => ($isFullHeigth? '0' : '38%')};//42% */
   `
 const PersonInfo = styled.section`
-  /* background-color: pink; */
   text-align: center;
   line-height: normal;
   line-height: 18px;
@@ -72,7 +64,6 @@ const IMG = styled.img`
   border-radius: 100px;
   /* clip-path: circle(20% at 50% 50%); */
 `
-
 const LinkedIn = styled.span`
   font-size: smaller;
   &:hover {
