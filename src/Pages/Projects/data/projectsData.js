@@ -84,20 +84,21 @@ export const PROJECTS_DATA_STRUCTURE = [
     },
     features: {
       en: [
-        "Search for a city to display the weather",
-        "Save up to 3 cities for fast access in local storage",
-        "Set up a city to load at startup",
         "3 days Weather forecast, every 3 hours options ",
+        "Save up to 4 cities for fast access in local storage",
+        "Set up a city to load at startup",
         "Displays actual and real feel temperature in Celsius or Fahrenheit",
         "Displays wind speed in kilometers or miles",
         "Displays wind direction (cardinal points + arrow pointer)",
+        "Set your own alarms (rain, wind and temperature)"
       ],
       de: [
-        "Gewünschte Stadt in das Suchfeld eingeben, um für diese das Wetter anzuzeigen",
         "Bis zu 3 Städte speichern für den schnellen Zugriff (lokalen Speicher)",
+        "Speichern bis zu 4 Städte für schnellen Zugriff im lokalen Speicher",
         "Zeigt die tatsächliche und reale Gefühlstemperatur in Celsius oder Fahrenheit an",
         "Zeigt die Windgeschwindigkeit an",
         "Zeigt die Windrichtung",
+        "Stellen Sie Ihre eigenen Alarme ein (Regen, Wind und Temperatur)"
       ],
     },
     techInfo: {
@@ -270,7 +271,6 @@ export const PROJECTS_DATA_STRUCTURE = [
         "Keep track of what your Cafes have to offer",
         "Map view",
         "Customizable",
-        "and many more to come..."
       ],
       de: [
         "Authentifizierung und Genehmigung",
@@ -280,7 +280,6 @@ export const PROJECTS_DATA_STRUCTURE = [
         "Behalte den Überblick darüber, was dein Café für dich zu bieten hat",
         "Map view",
         "Customizable",
-        "und viele weitere werden folgen...",
       ],
     },
     techInfo: {
