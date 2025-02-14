@@ -150,9 +150,13 @@ function RenderProjects() {
       <main className="RenderProjects">
         <TextDialogContainer>
         <DialogText className={isDomIsLoaded ? "visible" : "notVisible"}>
-          All projects were designed, engineered and executed by myself, they are
-          <span style={{fontWeight: 700}}>{" "}not{" "}</span>
-          code-along projects.
+          {isLanguageEnglish ?  <>All projects were designed, engineered and executed by myself, they are
+            <span style={{fontWeight: 700}}>{" "}not{" "}</span>
+            code-along projects. </>:<>
+            Alle Projekte wurden von mir selbst entworfen, konstruiert und ausgeführt, es handelt sich
+            <span style={{fontWeight: 700}}>{" "}nicht{" "}</span>
+            um Code-along-Projekte.</>
+          }
         </DialogText>
         <MyPic className={isDomIsLoaded ? "visible" : "notVisible"}>
           <img src={moi} alt="me" title="about me" />
