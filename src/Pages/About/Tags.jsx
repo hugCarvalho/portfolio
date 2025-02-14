@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { SKILL_CATEGORIES } from "../../config/Skills"
 
 const TagsSection = styled.section`
   display: flex;
@@ -6,9 +7,17 @@ const TagsSection = styled.section`
   margin-top: 4px;
   margin-bottom: 12px;
 `
+const getColor = (cat) => {
+  if (SKILL_CATEGORIES.all === cat) return "#4b8516"
+  if (SKILL_CATEGORIES.backend === cat) return "#a97430"
+  if (SKILL_CATEGORIES.testing === cat) return "#0f6bbb"
+  if (SKILL_CATEGORIES.styling === cat) return "#723c3c"
+  return "#43617b"
+}
+
 const Tag = styled.span`
   letter-spacing: 1px;
-  background-color: #43617b;
+  background-color: ${({cat})=> getColor(cat)};
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 99px;
@@ -24,7 +33,9 @@ export const Tags = ({skills}) => {
     <TagsSection>
       {
         skills.map((skill, i)=> {
-          return <Tag key={i}>{skill}</Tag>
+          const [name, group] = skill
+          console.log("SKIL", skill)
+          return <Tag cat={group} key={i}>{name}</Tag>
         })
       }
     </TagsSection>

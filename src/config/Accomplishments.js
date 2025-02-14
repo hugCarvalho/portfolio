@@ -7,7 +7,6 @@ const en6 = "Active participation in tech discussions."
 const en7 = "Conducting code reviews."
 const en8 = "Releasing to Production."
 
-
 const de1 = "Implementierung kritischer und nicht kritischer Funktionen."
 const de2 = "Erfolgreiche Förderung effektiver Kommunikation und Zusammenarbeit zwischen Teammitgliedern, Produktmanager und externen Webdesignern."
 const de3 = "Implementierung und Wartung umfassender Testsuiten."
