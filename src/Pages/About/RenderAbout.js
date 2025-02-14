@@ -46,7 +46,7 @@ function RenderAbout() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/hugo-carvalho-8355b31b7/"
+              href="https://www.linkedin.com/in/hugo-c-8355b31b7/"
             >
               LinkedIn
             </a>
