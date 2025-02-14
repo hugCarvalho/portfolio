@@ -1,12 +1,23 @@
 import React from "react";
+import { server } from "../../../../config/server";
 import "./MyInfoCardLinks.scss";
 
+export const sendBackend = (path) => {
+  fetch(`${server}${path}`, {
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json'
+    },
+  })
+}
+
 function MyInfoCardLinks() {
+
   return (
     <>
       <div className="MyInfoCardLinks">
         <ul>
-          <li>
+          <li onClick={()=>sendBackend("/github")} onContextMenu={()=>sendBackend("/github")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -15,7 +26,7 @@ function MyInfoCardLinks() {
               GitHub
             </a>
           </li>
-          <li>
+          <li onClick={()=>sendBackend("/edabit")} onContextMenu={()=>sendBackend("/edabit")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -25,7 +36,7 @@ function MyInfoCardLinks() {
             </a>
           </li>
 
-          <li>
+          <li onClick={()=>sendBackend("/linkedIn")} onContextMenu={()=>sendBackend("/linkedIn")}>
             <a
               target="_blank"
               rel="noopener noreferrer"

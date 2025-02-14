@@ -1,5 +1,6 @@
 import React from "react";
 import { LanguageContext } from "../../App";
+import { sendBackend } from "../../components/Header/MyInfoCard/MyInfoCardLinks/MyInfoCardLinks";
 import "./RenderFooter.scss";
 
 function RenderFooter() {
@@ -84,7 +85,7 @@ function RenderFooter() {
         <h4>Links</h4>
         <hr></hr>
         <ul>
-          <li>
+          <li onClick={()=>sendBackend("/github")} onContextMenu={()=>sendBackend("/github")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -94,7 +95,7 @@ function RenderFooter() {
             </a>
           </li>
 
-          <li>
+          <li onClick={()=>sendBackend("/edabit")} onContextMenu={()=>sendBackend("/edabit")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -103,7 +104,7 @@ function RenderFooter() {
               Edabit
             </a>
           </li>
-          <li>
+          <li onClick={()=>sendBackend("/linkedIn")} onContextMenu={()=>sendBackend("/linkedIn")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
