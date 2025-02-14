@@ -63,7 +63,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       specs: ["forwardRef", "Prop-types", "Flexbox", "Local Storage"],
       thirdParty: ["React-modal", "UUID"],
       notes: { en: "", de: "" },
-      tags: [react, js, localStorage, semanticHTML, styledComponents, sass]
+      tags: [react, js, localStorage, semanticHTML,sass]
     },
     live: ["https://stoic-fermi-dcf04f.netlify.app/"],
     code: ["https://github.com/hugCarvalho/todoList"],
@@ -166,7 +166,7 @@ export const PROJECTS_DATA_STRUCTURE = [
         "Flexbox",
         "Unit and integration tests ",
       ],
-      thirdParty: ["React-router", "React-use"],
+      thirdParty: ["React-router", "React-use", "Swiper"],
       notes: { en: "", de: "" },
       tags: [
         ["React", SKILL_CATEGORIES.reactEcosystem],
@@ -232,14 +232,14 @@ export const PROJECTS_DATA_STRUCTURE = [
         // "useLocation",
         // "Unit and integration tests ",
       ],
-      thirdParty: ["React Router", "React Tooltip"],
+      thirdParty: ["React Router", "React Tooltip", "React Number Format"],
       notes: { en: "", de: "" },
       tags: [
         ["React", SKILL_CATEGORIES.reactEcosystem],
         ["JavaScript", SKILL_CATEGORIES.reactEcosystem],
         ["Local Storage", CATEGORIES.reactEcosystem],
         ["Semantic HTML",SKILL_CATEGORIES.styling],
-        ["SASS",SKILL_CATEGORIES.styling],
+        styledComponents,
         ["Jest", SKILL_CATEGORIES.testing],
         ["React Testing Library", SKILL_CATEGORIES.testing]
       ]
