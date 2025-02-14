@@ -32,7 +32,7 @@ const Datum = styled.span`
   opacity: 0.9;
   font-weight: 600;
   @media (max-width: ${breakpointDesktop}) {
-    font-size: 21px;
+    font-size: 19px;
   }
 `
 const DescriptionSection = styled.section`
@@ -48,7 +48,7 @@ const JobTitle = styled.span`
   font-size: 22px;
   color: rgb(3, 62, 110);
   @media (max-width: 622px) {
-    font-size: 20px;
+    font-size: 19px;
   }
 `
 const ListItem = styled.li`
@@ -67,10 +67,12 @@ const TestimoniesSection = styled.section`
 `
 const Company = styled.span`
   font-size: 22px;
-  font-weight: 600;
+  /* font-weight: 600; */
   opacity: .9;
+  color: maroon;
+  color: black;
   @media (max-width: 576px) {
-    font-size: 18px;
+    font-size: 19px;
   }
 `
 const ProjectsDatum = styled.span`
@@ -84,18 +86,22 @@ export const RenderExperienceEntries = () => {
   const accomplishments = isLanguageEnglish ? accomplishmentsEn : accomplishmentsDe
 
   return <Container>
+    <div>
+      <Company><b>Erblotse (Heritas GmbH)</b>, Berlin</Company>
+
+    </div>
     <DatumSection>
-      <Datum>02.2021-08.2024</Datum>
+      <Datum>06.2023-08.2024:</Datum>
+        <JobTitle>
+          {isLanguageEnglish ? " Software Developer" : " Software Entwickler"}
+        </JobTitle>
+        <br/>
+      <Datum>02.2021-05.2023:</Datum>
+        <JobTitle>
+          {isLanguageEnglish ? " Junior Software Developer" : " Junior Software Entwickler"}
+        </JobTitle>
     </DatumSection>
     <DescriptionSection>
-      <div>
-        <JobTitle>
-          {isLanguageEnglish ? "Junior Software Developer" : "Junior Software Entwickler"}
-        </JobTitle>
-        {", "}
-        <Company>Erblotse (Heritas GmbH)</Company>
-        , Berlin
-      </div>
       <p>{isLanguageEnglish ? "Accomplishments:" : "Leistungen:"}</p>
       <ul>
       {/* Accomplishments */}
