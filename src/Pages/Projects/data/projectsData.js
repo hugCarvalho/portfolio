@@ -1,3 +1,5 @@
+import { SKILL_CATEGORIES } from "../../../config/Skills";
+
 export const CATEGORIES = {
   game: "game",
   website: "website",
@@ -15,6 +17,13 @@ export const PROJECT_FILTERS = {
   // hooks: "hooks",
   // classes: "classes",
 }
+//TODO import from skills instead
+const react = ["React", SKILL_CATEGORIES.reactEcosystem]
+const js =["JavaScript", SKILL_CATEGORIES.reactEcosystem]
+const semanticHTML = ["Semantic HTML",SKILL_CATEGORIES.styling]
+const sass = ["SASS",SKILL_CATEGORIES.styling]
+const localStorage = ["Local Storage", SKILL_CATEGORIES.reactEcosystem]
+const styledComponents = ["Styled Components",SKILL_CATEGORIES.styling]
 
 export const PROJECTS_DATA_STRUCTURE = [
   {
@@ -54,7 +63,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       specs: ["forwardRef", "Prop-types", "Flexbox", "Local Storage"],
       thirdParty: ["React-modal", "UUID"],
       notes: { en: "", de: "" },
-      tags: ["React", "JavaScript", "HTML5", "SASS", "Local Storage"]
+      tags: [react, js, localStorage, semanticHTML, styledComponents, sass]
     },
     live: ["https://stoic-fermi-dcf04f.netlify.app/"],
     code: ["https://github.com/hugCarvalho/todoList"],
@@ -108,7 +117,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       ],
       thirdParty: ["Tippy.js", "React-spinners", "React-Moment"],
       notes: { en: "", de: "" },
-      tags: ["React", "JavaScript", "HTML5", "SASS", "API", "Local storage"]
+      tags: [react, js, localStorage, semanticHTML, sass, ["Open Weather API", SKILL_CATEGORIES.all]]
     },
     live: ["https://awesome-payne-8bf6bd.netlify.app/"],
     code: ["https://github.com/hugCarvalho/weather_api"],
@@ -159,7 +168,15 @@ export const PROJECTS_DATA_STRUCTURE = [
       ],
       thirdParty: ["React-router", "React-use"],
       notes: { en: "", de: "" },
-      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "React Testing Library", "React Router"]
+      tags: [
+        ["React", SKILL_CATEGORIES.reactEcosystem],
+        ["JavaScript", SKILL_CATEGORIES.reactEcosystem],
+        ["React Router", SKILL_CATEGORIES.reactEcosystem],
+        ["Local Storage", SKILL_CATEGORIES.reactEcosystem],
+        ["Semantic HTML",SKILL_CATEGORIES.styling],
+        ["SASS",SKILL_CATEGORIES.styling],
+        ["React Testing Library", SKILL_CATEGORIES.testing],
+      ]
     },
     live: [],
     code: ["https://github.com/hugCarvalho/portfolio"],
@@ -217,7 +234,15 @@ export const PROJECTS_DATA_STRUCTURE = [
       ],
       thirdParty: ["React Router", "React Tooltip"],
       notes: { en: "", de: "" },
-      tags: ["React", "JavaScript", "Semantic HTML", "SASS", "Jest", "React Testing Library", "Local Storage"]
+      tags: [
+        ["React", SKILL_CATEGORIES.reactEcosystem],
+        ["JavaScript", SKILL_CATEGORIES.reactEcosystem],
+        ["Local Storage", CATEGORIES.reactEcosystem],
+        ["Semantic HTML",SKILL_CATEGORIES.styling],
+        ["SASS",SKILL_CATEGORIES.styling],
+        ["Jest", SKILL_CATEGORIES.testing],
+        ["React Testing Library", SKILL_CATEGORIES.testing]
+      ]
     },
     live: ["https://condescending-raman-a3f123.netlify.app/"],
     code: ["https://github.com/hugCarvalho/wordScrambler"],
@@ -267,7 +292,18 @@ export const PROJECTS_DATA_STRUCTURE = [
       specs: ["React", "Typescript", "Javascript", "React Query", "PostgreSQL", "Supabase", "Material UI", "Styled Components", "Netlify", "Cypress"],
       thirdParty: ["React Query", "React Router", "React Hook Form", "React Number Format", "Leaflet"],
       notes: { en: "Nominatim API", de: "" },
-      tags: ["React", "Typescript", "React Query", "Material UI", "Styled Components", "React Router", "Netlify", "PostgreSQL", "Supabase", "API", "Cypress"],
+      tags: [
+        ["React",SKILL_CATEGORIES.reactEcosystem],
+        ["Typescript",SKILL_CATEGORIES.reactEcosystem],
+        ["React Router",SKILL_CATEGORIES.reactEcosystem],
+        ["React Query", SKILL_CATEGORIES.backend],
+        ["Supabase",SKILL_CATEGORIES.backend ],
+        ["PostgreSQL",SKILL_CATEGORIES.backend],
+        ["Netlify",SKILL_CATEGORIES.backend],
+        ["Material UI", SKILL_CATEGORIES.styling],
+        ["Cypress",SKILL_CATEGORIES.testing],
+        ["Leaflet",SKILL_CATEGORIES.all],
+        ["Nominatim API", SKILL_CATEGORIES.all]]
     },
     live: ["https://cafesandyou.netlify.app/"],
     code: [],

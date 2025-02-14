@@ -6,14 +6,6 @@ import prisma from "../Pages/Skills/assets/prisma-3.svg"
 import sentry from "../Pages/Skills/assets/sentry.svg"
 import supabase from "../Pages/Skills/assets/supabase.svg"
 
-const languages = ["React", "JavaScript", "Typescript", "HTML"]
-const styles = ["CSS", "StyledComponents", "Material UI"]
-const testing = ["Jest", "Cypress", "React Testing Library"]
-const dbRelated = ["React Query", "AWS Cognito", "AWS DynamoDb", "PostgreSQL", "Node.js", "Prisma"]
-const monitoring = ["Sentry", "Datadog"]
-const others = ["Jira"]
-export const erblotseSkills = [...languages, ...styles, ...testing, ...dbRelated, ...monitoring, ...others]
-
 export const SKILL_CATEGORIES = {
   all: "all",
   reactEcosystem: "reactEcosystem",
@@ -23,6 +15,36 @@ export const SKILL_CATEGORIES = {
   monitoring: "monitoring",
   versioning: "versioning",
 }
+
+const reactRouter = ["React Router",  SKILL_CATEGORIES.reactEcosystem]
+// const react = ["React", SKILL_CATEGORIES.reactEcosystem]
+const js =["JavaScript", SKILL_CATEGORIES.reactEcosystem]
+const ts =["TypeScript", SKILL_CATEGORIES.reactEcosystem]
+// const semanticHTML = ["Semantic HTML",SKILL_CATEGORIES.styling]
+// const sass = ["SASS",SKILL_CATEGORIES.styling]
+const jest =  ["Jest", SKILL_CATEGORIES.testing]
+const testingLibrary = ["React Testing Library", SKILL_CATEGORIES.testing]
+// const localStorage = ["Local Storage", SKILL_CATEGORIES.reactEcosystem]
+const styledComponents = ["Styled Components", SKILL_CATEGORIES.styling]
+const materialUI = ["Material UI", SKILL_CATEGORIES.styling]
+const cypress = ["Cypress", SKILL_CATEGORIES.testing]
+const reactQuery = ["React Query", SKILL_CATEGORIES.backend]
+const awsCognito = ["AWS Cognito",SKILL_CATEGORIES.backend]
+const awsDynamo =  [ "AWS DynamoDb", SKILL_CATEGORIES.backend]
+const postgreSQL = ["PostgreSQL", SKILL_CATEGORIES.backend]
+const node = ["Node.js", SKILL_CATEGORIES.backend]
+const prism = [ "Prisma", SKILL_CATEGORIES.backend]
+const sentr = ["Sentry", SKILL_CATEGORIES.monitoring]
+const dDog = ["Datadog", SKILL_CATEGORIES.monitoring]
+
+const languages = [reactRouter, js, ts, ]
+const dbRelated = [reactQuery,awsCognito, awsDynamo, postgreSQL, node, prism]
+const testing = [cypress, jest, testingLibrary]
+const styles = [styledComponents, materialUI]
+const monitoring = [sentr,  dDog]
+const others = [["Jira", SKILL_CATEGORIES.monitoring]]
+export const erblotseSkills = [...languages, ...dbRelated, ...styles, ...testing, ...monitoring, ...others]
+
 
 export const SKILLS_DATA = [
   { name: "JavaScript", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-javascript", type: "single" },

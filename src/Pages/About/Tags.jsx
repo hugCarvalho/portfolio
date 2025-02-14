@@ -12,6 +12,7 @@ const getColor = (cat) => {
   if (SKILL_CATEGORIES.backend === cat) return "#a97430"
   if (SKILL_CATEGORIES.testing === cat) return "#0f6bbb"
   if (SKILL_CATEGORIES.styling === cat) return "#723c3c"
+  if (SKILL_CATEGORIES.monitoring === cat) return "#682a61"
   return "#43617b"
 }
 
