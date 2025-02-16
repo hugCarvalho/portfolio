@@ -17,7 +17,7 @@ export const SKILL_CATEGORIES = {
 }
 
 const reactRouter = ["React Router",  SKILL_CATEGORIES.reactEcosystem]
-// const react = ["React", SKILL_CATEGORIES.reactEcosystem]
+const react = ["React", SKILL_CATEGORIES.reactEcosystem]
 const js =["JavaScript", SKILL_CATEGORIES.reactEcosystem]
 const ts =["TypeScript", SKILL_CATEGORIES.reactEcosystem]
 // const semanticHTML = ["Semantic HTML",SKILL_CATEGORIES.styling]
@@ -37,7 +37,7 @@ const prism = [ "Prisma", SKILL_CATEGORIES.backend]
 const sentr = ["Sentry", SKILL_CATEGORIES.monitoring]
 const dDog = ["Datadog", SKILL_CATEGORIES.monitoring]
 
-const languages = [reactRouter, js, ts, ]
+const languages = [react, js, ts, ]
 const dbRelated = [reactQuery,awsCognito, awsDynamo, postgreSQL, node, prism]
 const testing = [cypress, jest, testingLibrary]
 const styles = [styledComponents, materialUI]
