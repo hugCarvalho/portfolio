@@ -16,7 +16,7 @@ export const SKILL_CATEGORIES = {
   versioning: "versioning",
 }
 
-const reactRouter = ["React Router",  SKILL_CATEGORIES.reactEcosystem]
+// const reactRouter = ["React Router",  SKILL_CATEGORIES.reactEcosystem]
 const react = ["React", SKILL_CATEGORIES.reactEcosystem]
 const js =["JavaScript", SKILL_CATEGORIES.reactEcosystem]
 const ts =["TypeScript", SKILL_CATEGORIES.reactEcosystem]
