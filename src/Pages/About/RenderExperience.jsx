@@ -7,7 +7,7 @@ import { PersonTestimony, VerticalSliderCard } from "../../components/VerticalSl
 import { accomplishmentsDe, accomplishmentsEn } from '../../config/Accomplishments';
 import { erblotseSkills } from "../../config/Skills";
 import { BREAKPOINTS } from "../../config/breakpoints.js";
-import { TESTIMONIES } from "../../config/testimonies";
+import { JesperTestimoy, TESTIMONIES } from "../../config/testimonies";
 import Birte from '../../images/Birte-Gall.jpeg';
 import Abidh from '../../images/abidh.jpeg';
 import Christian from '../../images/christian.jpeg';
@@ -59,6 +59,8 @@ const TestimoniesSection = styled.section`
   gap: 30px;
   padding-top: 6px;
   margin-bottom: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
 
   @media (max-width: ${breakpointDesktop}) {
     flex-direction: column;
@@ -127,6 +129,13 @@ export const RenderExperienceEntries = () => {
               I am impressed by his discipline in constantly teaching himself new things. He is a valuable team member in a tech team."
             />
           }
+        />
+        <VerticalSliderCard
+          src={null}
+          altText={"Jesper Richter-Reichhelm"}
+          name={"Jesper Richter-Reichhelm"}
+          jobTitle={"CTO and Co-Founder Erblotse"}
+          testimony={<PersonTestimony text={JesperTestimoy}/>}
         />
         <VerticalSliderCard
           src={Christian}
@@ -209,3 +218,6 @@ export const RenderExperienceEntries = () => {
     <DescriptionSection></DescriptionSection>
   </Container>
 }
+
+
+

@@ -2,6 +2,8 @@ import Abidh from "../images/abidh.jpeg"
 import Birte from "../images/Birte-Gall.jpeg"
 import Christian from "../images/christian.jpeg"
 
+export const JesperTestimoy = "Through a significant amount of pair programming and his own diligent efforts, Hugo demonstrated exceptional growth.         He absorbed knowledge quickly and applied it effectively, progressing to a mid-level developer role in roughly 1.5 years, a testament to his rapid development and learning agility.  Hugo's work ethic is outstanding, and his meticulous attention to detail consistently ensured high-quality contributions. Beyond his technical skills, his positive attitude and collaborative spirit were infectious, making him a fantastic addition to our team and significantly contributing to our positive team dynamics. He was a pleasure to work with, and I highly recommend him."
+
 export const TESTIMONIES = [
   {
     name:"Birte Gall",
@@ -9,6 +11,13 @@ export const TESTIMONIES = [
     altText:"Birte Gall",
     jobTitle:"Co-Founder Erblotse",
     testimony: "Hugo is easy to work with, diligent in his work and fun to be around. When asked to contribute to new projects he is always open to wrap his head around it and willing to work his way through new challenges arising. Hugo helped bring a platform to live, without any precedent we could follow. I am impressed by his discipline in constantly teaching himself new things. He is a valuable team member in a tech team."
+  },
+  {
+    name:"Jesper Reichter-Reichhelm",
+    img: null,
+    altText:"Jesper Richter-Reichhelm",
+    jobTitle:"CTO and Co-Founder Erblotse",
+    testimony:JesperTestimoy
   },
   {
     name:"Christian Fischer",

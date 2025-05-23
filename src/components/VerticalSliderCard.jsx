@@ -83,9 +83,9 @@ export const VerticalSliderCard = ({src, alt, name, jobTitle, testimony}) => {
   return (
     <MainCard>
       <CardTitle></CardTitle>
-      <ImageContainer>
+      {src && <ImageContainer>
         <IMG src={src} alt={alt} />
-      </ImageContainer>
+      </ImageContainer>}
       <SecondaryCard $isFullHeigth={false}>
         <PersonInfo>
           <PersonName>
