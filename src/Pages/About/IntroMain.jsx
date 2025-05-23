@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import { ExternalLink } from "../../components/ExternalLink";
@@ -23,7 +22,7 @@ export function IntroMainEN() {
               projects
             </Link>
           </LinkStyles>,
-        I joined <b>Erblotse (Heritas GmbH)</b> for almost <b>4 years</b>, where I had an extremely rich and diversified experience in a small agile team (4-6 direct colleagues),
+        I joined <b>Erblotse (Heritas GmbH)</b> for more than 4 years, where I had an extremely rich and diversified experience in a small agile team (4-6 direct colleagues),
         and had the chance of working on two applications {" "}
         {"- "}
           {<LinkStyles>
@@ -61,7 +60,7 @@ export function IntroMainDE() {
           </Link>
         </LinkStyles>
         {" "}
-         entwickelte, bin ich für <b>fast 4 Jahre</b> bei Erblotse (Heritas GmbH) eingestiegen, wo ich eine äußerst reichhaltige und vielfältige Erfahrung in einem kleinen agilen Team (4-6 Kollegen) sammeln konnte. Dabei hatte ich die Gelegenheit,
+         entwickelte, bin ich für mehr als 4 Jahre bei Erblotse (Heritas GmbH) eingestiegen, wo ich eine äußerst reichhaltige und vielfältige Erfahrung in einem kleinen agilen Team (4-6 Kollegen) sammeln konnte. Dabei hatte ich die Gelegenheit,
          an zwei Apps {"- "}
           {<LinkStyles><ExternalLink
             link={"https://erben.erblotse.de"}

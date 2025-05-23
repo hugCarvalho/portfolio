@@ -35,11 +35,11 @@ function Skills() {
   const skillsData = filterBy === "all" ? SKILLS_DATA : SKILLS_DATA.filter(skill => {
     return filterBy === skill.category
   })
-  const hideFilter = pathname === "/skills" && !isDesktop
+  // const hideFilter = pathname === "/skills" && !isDesktop
 
   return (
     <>
-      {!hideFilter && <FilterBar filterBy={filterBy} setFilterBy={setFilterBy} filters={Object.values(SKILL_CATEGORIES)}/>}
+      {<FilterBar filterBy={filterBy} setFilterBy={setFilterBy} filters={Object.values(SKILL_CATEGORIES)}/>}
       <div className="Skills">
         <main>
           {skillsData.map((skill, i) => {
