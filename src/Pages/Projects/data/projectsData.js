@@ -1,4 +1,4 @@
-import { SKILL_CATEGORIES } from "../../../config/Skills";
+import { portfolioV2, SKILL_CATEGORIES } from "../../../config/Skills";
 
 export const CATEGORIES = {
   game: "game",
@@ -14,8 +14,6 @@ export const PROJECT_FILTERS = {
   api: CATEGORIES.api,
   website: CATEGORIES.website,
   webApp: CATEGORIES.webApp,
-  // hooks: "hooks",
-  // classes: "classes",
 }
 //TODO import from skills instead
 const react = ["React", SKILL_CATEGORIES.reactEcosystem]
@@ -248,7 +246,47 @@ export const PROJECTS_DATA_STRUCTURE = [
     live: ["https://condescending-raman-a3f123.netlify.app/"],
     code: ["https://github.com/hugCarvalho/wordScrambler"],
   },
+
   {
+    id: "portfolio2",
+    name: "Portfolio v.2",
+    datum: 2025,
+    category: [CATEGORIES.website, CATEGORIES.api],
+    techs: ["Next.js"],
+
+    img: [],
+    description: {
+      en:
+        "My second portfolio, a more modern look with 3d animations. Built with Next.js and Tailwind CSS.",
+      de:
+        "Mein zweites Portfolio, ein modernerer Look mit 3D-Animationen. Entwickelt mit Next.js und Tailwind CSS",
+    },
+    features: {
+      en: [
+        "3D animations with Three.js",
+        "Animations effects using Framer Motion",
+        "Contact form with EmailJS",
+      ],
+      de: [
+        "3D-Animationen mit Three.js",
+        "Animationseffekte mit Framer Motion",
+        "Kontaktformular mit EmailJS"
+      ],
+    },
+    techInfo: {
+      main: "Next.js",
+      styled: "Styled with Tailwind CSS",
+      tested: "",
+      responsive: true,
+      specsText: { en: "Three.js and Framer Motion", de: "Three.js and Framer Motion"},
+      specs: [],
+      thirdParty: ["Three.js", "Framer Motion", "Lucide Icons", "EmailJs API", "Skill Icons API"],
+      notes: { en: "EmailJS and Skill Icons APIs", de: "EmailJS und Skill Icons APIs" },
+      tags: portfolioV2
+    },
+    live: ["https://hugocarvalho.netlify.app/"],
+    code: ["https://github.com/hugCarvalho/portfolio-2"],
+  },{
     id: "cafes",
     name: "Cafes & You ⭐️",
     datum: 2024,
@@ -306,5 +344,5 @@ export const PROJECTS_DATA_STRUCTURE = [
     },
     live: ["https://cafesandyou.netlify.app/"],
     code: [],
-  }
+  },
 ];
