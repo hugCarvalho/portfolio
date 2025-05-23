@@ -42,14 +42,21 @@ const dDog = ["Datadog", SKILL_CATEGORIES.monitoring]
 const nextJs = ["Next.js", SKILL_CATEGORIES.reactEcosystem]
 const tailwindCss = ["Tailwind CSS", SKILL_CATEGORIES.styling]
 const chakraUi = ["Chakra UI", SKILL_CATEGORIES.styling]
+const threeJs = ["Three.js", SKILL_CATEGORIES.styling]
+const framerMotion = ["Framer Motion", SKILL_CATEGORIES.styling]
+const emailJs = ["EmailJS", SKILL_CATEGORIES.all]
 
+// skill groups
 const languages = [react, js, ts, nextJs]
 const dbRelated = [reactQuery,awsCognito, awsDynamo, postgreSQL, node, prism]
 const testing = [cypress, jest, testingLibrary]
 const styles = [styledComponents, materialUI, tailwindCss, chakraUi]
 const monitoring = [sentr,  dDog]
 const others = [["Jira", SKILL_CATEGORIES.monitoring]]
+
+// skills in projects
 export const erblotseSkills = [...languages, ...dbRelated, ...styles, ...testing, ...monitoring, ...others]
+export const portfolioV2 = [react, nextJs, tailwindCss, threeJs, framerMotion, emailJs]
 
 export const SKILLS_DATA = [
   { name: "JavaScript", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-javascript", type: "single" },
