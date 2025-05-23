@@ -53,7 +53,6 @@ function RenderAbout() {
           </li>
           <li onClick={()=>sendBackend("/edabit")} onContextMenu={()=>sendBackend("/edabit")}>
             <a
-              onClick={()=> console.log("first")}
               target="_blank"
               rel="noopener noreferrer"
               href="https://edabit.com/user/8Z3dkvWBqtrMEE48N"

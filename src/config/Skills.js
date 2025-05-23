@@ -37,7 +37,7 @@ const prism = [ "Prisma", SKILL_CATEGORIES.backend]
 const sentr = ["Sentry", SKILL_CATEGORIES.monitoring]
 const dDog = ["Datadog", SKILL_CATEGORIES.monitoring]
 
-const languages = [react, js, ts, ]
+const languages = [react, js, ts]
 const dbRelated = [reactQuery,awsCognito, awsDynamo, postgreSQL, node, prism]
 const testing = [cypress, jest, testingLibrary]
 const styles = [styledComponents, materialUI]
