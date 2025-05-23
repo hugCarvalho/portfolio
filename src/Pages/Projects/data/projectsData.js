@@ -254,7 +254,7 @@ export const PROJECTS_DATA_STRUCTURE = [
     category: [CATEGORIES.website, CATEGORIES.api],
     techs: ["Next.js"],
 
-    img: [],
+    img: [["portfolio2Home", "app screenshot"], ["portfolio2About", "app screenshot"], ["portfolio2Projects", "app screenshot"], ["portfolio2Contact", "app screenshot"]],
     description: {
       en:
         "My second portfolio, a more modern look with 3d animations. Built with Next.js and Tailwind CSS.",

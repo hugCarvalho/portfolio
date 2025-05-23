@@ -1,4 +1,3 @@
-import React from "react";
 import { Tags } from "../../../Pages/About/Tags";
 import { SwiperCard } from "../../../components/SwiperCard";
 import ProjectLinks from "../ProjectLinks/ProjectLinks";
@@ -50,7 +49,7 @@ function ProjectCard({
 
           {/* IMG */}
               <figure className="project-screenshot">
-                {project.id === "cafes" || project.id === "wordScrambler" ? <SwiperCard dataArr={project.img}/> : <img src={project.img} alt="app screenshot"/>}
+                {project.id === "cafes" || project.id === "wordScrambler" || project.id === "portfolio2" ? <SwiperCard dataArr={project.img}/> : <img src={project.img} alt="app screenshot"/>}
               </figure>
             {/* <a href={project.live} rel="noopener noreferrer" target="_blank">
             </a> */}
