@@ -1,4 +1,3 @@
-import React from 'react';
 // Import Swiper React components
 import { useLocation } from "react-router-dom";
 import { A11y, Navigation, Pagination } from 'swiper/modules';
@@ -10,6 +9,10 @@ import CafeList from '../images/cafes-04.png';
 import CafeMap from '../images/cafes-05.png';
 import CafeAdmin from '../images/cafes-06.png';
 import CafeSettings from '../images/cafes-07.png';
+import portfolio2About from '../images/portfolio2-about.png';
+import portfolio2Contact from '../images/portfolio2-contact.png';
+import Portfolio2Home from '../images/portfolio2-home.png';
+import portfolio2Projects from '../images/portfolio2-projects.png';
 import GameInstructions from '../images/Screenshot-1.png';
 import GameWon from '../images/Screenshot-2.png';
 import GameLost from '../images/Screenshot-3.png';
@@ -37,6 +40,10 @@ const pics = {
   gameInstructions: GameInstructions,
   gameHighscores: GameHighscores,
   gameOptions: GameOptions,
+  portfolio2Home: Portfolio2Home,
+  portfolio2About: portfolio2About,
+  portfolio2Projects: portfolio2Projects,
+  portfolio2Contact: portfolio2Contact,
 }
 
 export const SwiperCard = ({dataArr}) => {

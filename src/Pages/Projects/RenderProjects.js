@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { LanguageContext } from "../../App";
 import { DatumPlaque } from "../../components/DatumPlaque";
-import moi from "../../components/Header/MyInfoCard/MyPic/media/moi.jpg";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
 import { server } from "../../config/server";
 import { PROJECT_FILTERS, PROJECTS_DATA_STRUCTURE } from "./data/projectsData";
@@ -80,7 +79,6 @@ function RenderProjects() {
   const [frontSideActive, setFrontSideActive] = useState(true);
   const [id, setId] = useState(null);
   const [filterBy, setFilterBy] = useState("all");
-  const [isDomIsLoaded, setDomIsLoaded] = useState(false)
   const {pathname} = useLocation()
 
   React.useEffect(()=> {
@@ -119,12 +117,6 @@ function RenderProjects() {
     document.title = "Hugo's Projects";
   }, [pageIsActive]);
 
-  useEffect(()=> {
-    if(cardHeight !== "auto"){
-       setDomIsLoaded(true)
-    }
-  }, [cardHeight])
-
   const toggleTechInfoFeatures = id => {
     setId(id);
     setFrontSideActive(state => !state);
@@ -148,7 +140,7 @@ function RenderProjects() {
       />
       {/* Projects container  */}
       <main className="RenderProjects">
-        <TextDialogContainer>
+        {/* <TextDialogContainer>
         <DialogText className={isDomIsLoaded ? "visible" : "notVisible"}>
           {isLanguageEnglish ?  <>All projects were designed, engineered and executed by myself, they are
             <span style={{fontWeight: 700}}>{" "}not{" "}</span>
@@ -161,7 +153,7 @@ function RenderProjects() {
         <MyPic className={isDomIsLoaded ? "visible" : "notVisible"}>
           <img src={moi} alt="me" title="about me" />
         </MyPic>
-        </TextDialogContainer>
+        </TextDialogContainer> */}
 
         {/* PROJECTS */}
         <ProjectsContainer>

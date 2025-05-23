@@ -257,9 +257,9 @@ export const PROJECTS_DATA_STRUCTURE = [
     img: [["portfolio2Home", "app screenshot"], ["portfolio2About", "app screenshot"], ["portfolio2Projects", "app screenshot"], ["portfolio2Contact", "app screenshot"]],
     description: {
       en:
-        "My second portfolio, a more modern look with 3d animations. Built with Next.js and Tailwind CSS.",
+        "My second portfolio. Contrasting to the retro look of this portfolio, a more modern look with 3d animations. Built with Next.js and Tailwind CSS.",
       de:
-        "Mein zweites Portfolio, ein modernerer Look mit 3D-Animationen. Entwickelt mit Next.js und Tailwind CSS",
+        "Mein zweites Portfolio. Im Gegensatz zum Retro-Look dieses Portfolios ein modernerer Stil mit 3D-Animationen. Entwickelt mit Next.js und Tailwind CSS.",
     },
     features: {
       en: [
@@ -309,6 +309,7 @@ export const PROJECTS_DATA_STRUCTURE = [
         "Keep track of what your Cafes have to offer",
         "Map view",
         "Customizable",
+        "Code available upon request",
       ],
       de: [
         "Authentifizierung und Genehmigung",
@@ -316,8 +317,9 @@ export const PROJECTS_DATA_STRUCTURE = [
         "Erstellen und bearbeiten Sie Ihre Cafés",
         "Bewerten Sie Ihr Cafe-Erlebnis oder Ihr Getränk",
         "Behalte den Überblick darüber, was dein Café für dich zu bieten hat",
-        "Map view",
-        "Customizable",
+        "Kartenansicht",
+        "Individualisierbare",
+        "Code verfügbar nach Anfrage",
       ],
     },
     techInfo: {
