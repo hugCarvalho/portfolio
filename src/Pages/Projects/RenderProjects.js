@@ -17,60 +17,60 @@ const ProjectsContainer = styled.section`
   flex-direction: row;
   flex-wrap: wrap;
 `
-const TextDialogContainer = styled.div`
-  display: flex;
-  width: fit-content;
-  align-self: flex-end;
-  margin-right: 5%;
-  margin-bottom: 30px;
-  position: relative;
+// const TextDialogContainer = styled.div`
+//   display: flex;
+//   width: fit-content;
+//   align-self: flex-end;
+//   margin-right: 5%;
+//   margin-bottom: 30px;
+//   position: relative;
 
-  .notVisible{
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-  }
-  .visible {
-    opacity: .8;
-    transition: opacity 2s ease-in-out;
-  }
-`
-const MyPic = styled.figure`
-  position: absolute;
-  width: 67.55px;
-  height: 67.7px;
-  overflow: hidden;
-  border-radius: 50%;
-  top: -36px;
-  left: 162px;
+//   .notVisible{
+//     opacity: 0;
+//     transition: opacity 2s ease-in-out;
+//   }
+//   .visible {
+//     opacity: .8;
+//     transition: opacity 2s ease-in-out;
+//   }
+// `
+// const MyPic = styled.figure`
+//   position: absolute;
+//   width: 67.55px;
+//   height: 67.7px;
+//   overflow: hidden;
+//   border-radius: 50%;
+//   top: -36px;
+//   left: 162px;
 
-  .notVisible{
-    transition: opacity 2s ease-in-out;
-    visibility: hidden;
-  }
-  .visible {
-    visibility: hidden;
-    transition: opacity 2s ease-in-out;
-  }
+//   .notVisible{
+//     transition: opacity 2s ease-in-out;
+//     visibility: hidden;
+//   }
+//   .visible {
+//     visibility: hidden;
+//     transition: opacity 2s ease-in-out;
+//   }
 
-  img {
-    position: absolute;
-    height: 6.74rem;
-    border: 2px solid #d8d8da;
-    border-radius: 50%;
-  }
-`
-const DialogText = styled.p`
-  position: relative;
-  max-width: 350px;
-  width: fit-content;
-  margin: 0 0 0 20px;
-  align-self: flex-end;
-  background: gray;
-  border-radius: 12px;
-  color: white;
-  font-size: large;
-  padding: 34px 10px 10px 20px;
-`
+//   img {
+//     position: absolute;
+//     height: 6.74rem;
+//     border: 2px solid #d8d8da;
+//     border-radius: 50%;
+//   }
+// `
+// const DialogText = styled.p`
+//   position: relative;
+//   max-width: 350px;
+//   width: fit-content;
+//   margin: 0 0 0 20px;
+//   align-self: flex-end;
+//   background: gray;
+//   border-radius: 12px;
+//   color: white;
+//   font-size: large;
+//   padding: 34px 10px 10px 20px;
+// `
 
 function RenderProjects() {
   const pageIsActive = React.useContext(IsActiveContext);
