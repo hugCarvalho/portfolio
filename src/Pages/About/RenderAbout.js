@@ -1,9 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { LanguageContext } from "../../App";
-import { sendBackend } from "../../components/Header/MyInfoCard/MyInfoCardLinks/MyInfoCardLinks";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
-import { server } from "../../config/server";
+import { UTILS } from "../../utils/utils";
 import AboutEN, { AboutDE } from "./About";
 import "./RenderAbout.scss";
 
@@ -14,15 +13,9 @@ function RenderAbout() {
   const {pathname} = useLocation()
 
   React.useEffect(()=> {
-    fetch(`${server}${pathname}`, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    })
+    UTILS.sendRequest(pathname)
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
 
   React.useEffect(() => {
     document.title = "About";
@@ -33,7 +26,7 @@ function RenderAbout() {
       {/* Only displayed on smaller mobile viewport */}
       <section className="show-on-smallest-screen-only">
         <ul>
-          <li onClick={()=>sendBackend("/github")} onContextMenu={()=>sendBackend("/github")}>
+          <li onClick={()=>UTILS.sendRequest("/github")} onContextMenu={()=>UTILS.sendRequest("/github")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -42,7 +35,7 @@ function RenderAbout() {
               GitHub
             </a>
           </li>
-          <li onClick={()=>sendBackend("/linkedIn")} onContextMenu={()=>sendBackend("/linkedIn")}>
+          <li onClick={()=>UTILS.sendRequest("/linkedIn")} onContextMenu={()=>UTILS.sendRequest("/linkedIn")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -51,7 +44,7 @@ function RenderAbout() {
               LinkedIn
             </a>
           </li>
-          <li onClick={()=>sendBackend("/edabit")} onContextMenu={()=>sendBackend("/edabit")}>
+          <li onClick={()=>UTILS.sendRequest("/edabit")} onContextMenu={()=>UTILS.sendRequest("/edabit")}>
             <a
               target="_blank"
               rel="noopener noreferrer"

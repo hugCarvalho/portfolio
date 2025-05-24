@@ -35,7 +35,6 @@ export const Tags = ({skills}) => {
       {
         skills.map((skill, i)=> {
           const [name, group] = skill
-          console.log("SKIL", skill)
           return <Tag cat={group} key={i}>{name}</Tag>
         })
       }

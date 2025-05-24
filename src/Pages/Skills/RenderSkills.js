@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
 import useIsDesktop from "../../components/Hooks";
-import { server } from "../../config/server";
 import { SKILL_CATEGORIES, SKILLS_DATA } from "../../config/Skills";
+import { UTILS } from "../../utils/utils";
 import FilterBar from "../Projects/FilterBy/FilterBy";
 import "./RenderSkills.scss";
 import { RelatedSkills, SingleSkill, SingleSkillSvg } from "./SkillCards";
@@ -15,16 +15,7 @@ function Skills() {
   const isDesktop = useIsDesktop()
 
   React.useEffect(()=> {
-   try {
-     fetch(`${server}${pathname}`, {
-       method: "POST",
-       headers: {
-         'Content-Type': 'application/json'
-       },
-     })
-   } catch (error) {
-
-   }
+   UTILS.sendRequest(pathname)
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 

@@ -5,6 +5,7 @@ import { LanguageContext } from "../../App";
 import { DatumPlaque } from "../../components/DatumPlaque";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
 import { server } from "../../config/server";
+import { UTILS } from "../../utils/utils";
 import { PROJECT_FILTERS, PROJECTS_DATA_STRUCTURE } from "./data/projectsData";
 import FilterBar from "./FilterBy/FilterBy";
 import ProjectCard from "./ProjectCard/ProjectCard";
@@ -17,80 +18,19 @@ const ProjectsContainer = styled.section`
   flex-direction: row;
   flex-wrap: wrap;
 `
-// const TextDialogContainer = styled.div`
-//   display: flex;
-//   width: fit-content;
-//   align-self: flex-end;
-//   margin-right: 5%;
-//   margin-bottom: 30px;
-//   position: relative;
-
-//   .notVisible{
-//     opacity: 0;
-//     transition: opacity 2s ease-in-out;
-//   }
-//   .visible {
-//     opacity: .8;
-//     transition: opacity 2s ease-in-out;
-//   }
-// `
-// const MyPic = styled.figure`
-//   position: absolute;
-//   width: 67.55px;
-//   height: 67.7px;
-//   overflow: hidden;
-//   border-radius: 50%;
-//   top: -36px;
-//   left: 162px;
-
-//   .notVisible{
-//     transition: opacity 2s ease-in-out;
-//     visibility: hidden;
-//   }
-//   .visible {
-//     visibility: hidden;
-//     transition: opacity 2s ease-in-out;
-//   }
-
-//   img {
-//     position: absolute;
-//     height: 6.74rem;
-//     border: 2px solid #d8d8da;
-//     border-radius: 50%;
-//   }
-// `
-// const DialogText = styled.p`
-//   position: relative;
-//   max-width: 350px;
-//   width: fit-content;
-//   margin: 0 0 0 20px;
-//   align-self: flex-end;
-//   background: gray;
-//   border-radius: 12px;
-//   color: white;
-//   font-size: large;
-//   padding: 34px 10px 10px 20px;
-// `
-
 function RenderProjects() {
   const pageIsActive = React.useContext(IsActiveContext);
   const { isLanguageEnglish } = React.useContext(LanguageContext);
-  const [cardHeight, setCardHeight] = useState("auto");
   const [frontSideActive, setFrontSideActive] = useState(true);
-  const [id, setId] = useState(null);
+  const [cardHeight, setCardHeight] = useState("auto");
   const [filterBy, setFilterBy] = useState("all");
+  const [id, setId] = useState(null);
   const {pathname} = useLocation()
 
   React.useEffect(()=> {
-    fetch(`${server}${pathname}`, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    })
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    UTILS.sendRequest(server, pathname)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
 
   //GETS the height of the biggest card
   useEffect(() => {
@@ -140,21 +80,6 @@ function RenderProjects() {
       />
       {/* Projects container  */}
       <main className="RenderProjects">
-        {/* <TextDialogContainer>
-        <DialogText className={isDomIsLoaded ? "visible" : "notVisible"}>
-          {isLanguageEnglish ?  <>All projects were designed, engineered and executed by myself, they are
-            <span style={{fontWeight: 700}}>{" "}not{" "}</span>
-            code-along projects. </>:<>
-            Alle Projekte wurden von mir selbst entworfen, konstruiert und ausgeführt, es handelt sich
-            <span style={{fontWeight: 700}}>{" "}nicht{" "}</span>
-            um Code-along-Projekte.</>
-          }
-        </DialogText>
-        <MyPic className={isDomIsLoaded ? "visible" : "notVisible"}>
-          <img src={moi} alt="me" title="about me" />
-        </MyPic>
-        </TextDialogContainer> */}
-
         {/* PROJECTS */}
         <ProjectsContainer>
         {filterTechsBy(PROJECTS_DATA_STRUCTURE, filterBy)

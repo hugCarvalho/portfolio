@@ -1,6 +1,6 @@
 import React from "react";
 import { LanguageContext } from "../../App";
-import { sendBackend } from "../../components/Header/MyInfoCard/MyInfoCardLinks/MyInfoCardLinks";
+import { UTILS } from "../../utils/utils";
 import "./RenderFooter.scss";
 
 function RenderFooter() {
@@ -85,7 +85,7 @@ function RenderFooter() {
         <h4>Links</h4>
         <hr></hr>
         <ul>
-          <li onClick={()=>sendBackend("/github")} onContextMenu={()=>sendBackend("/github")}>
+          <li onClick={()=>UTILS.sendRequest("/github")} onContextMenu={()=>UTILS.sendRequest("/github")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -95,7 +95,7 @@ function RenderFooter() {
             </a>
           </li>
 
-          <li onClick={()=>sendBackend("/edabit")} onContextMenu={()=>sendBackend("/edabit")}>
+          <li onClick={()=>UTILS.sendRequest("/edabit")} onContextMenu={()=>UTILS.sendRequest("/edabit")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -104,7 +104,7 @@ function RenderFooter() {
               Edabit
             </a>
           </li>
-          <li onClick={()=>sendBackend("/linkedIn")} onContextMenu={()=>sendBackend("/linkedIn")}>
+          <li onClick={()=>UTILS.sendRequest("/linkedIn")} onContextMenu={()=>UTILS.sendRequest("/linkedIn")}>
             <a
               target="_blank"
               rel="noopener noreferrer"

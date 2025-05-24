@@ -1,15 +1,5 @@
-import React from "react";
-import { server } from "../../../../config/server";
+import { UTILS } from "../../../../utils/utils";
 import "./MyInfoCardLinks.scss";
-
-export const sendBackend = (path) => {
-  fetch(`${server}${path}`, {
-    method: "POST",
-    headers: {
-      'Content-Type': 'application/json'
-    },
-  })
-}
 
 function MyInfoCardLinks() {
 
@@ -17,7 +7,10 @@ function MyInfoCardLinks() {
     <>
       <div className="MyInfoCardLinks">
         <ul>
-          <li onClick={()=>sendBackend("/github")} onContextMenu={()=>sendBackend("/github")}>
+          <li
+            onClick={()=>UTILS.sendRequest("/github")}
+            onContextMenu={()=>UTILS.sendRequest("/github")}
+          >
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -26,7 +19,7 @@ function MyInfoCardLinks() {
               GitHub
             </a>
           </li>
-          <li onClick={()=>sendBackend("/edabit")} onContextMenu={()=>sendBackend("/edabit")}>
+          <li onClick={()=>UTILS.sendRequest("/edabit")} onContextMenu={()=>UTILS.sendRequest("/edabit")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -36,7 +29,7 @@ function MyInfoCardLinks() {
             </a>
           </li>
 
-          <li onClick={()=>sendBackend("/linkedIn")} onContextMenu={()=>sendBackend("/linkedIn")}>
+          <li onClick={()=>UTILS.sendRequest("/linkedIn")} onContextMenu={()=>UTILS.sendRequest("/linkedIn")}>
             <a
               target="_blank"
               rel="noopener noreferrer"
