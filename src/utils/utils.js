@@ -7,6 +7,7 @@ export const UTILS = {
       fetch(`${server}${pathname}`,
         {
           method: "POST",
+          noCache: true,
         }
       )
     }

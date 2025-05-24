@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { LanguageContext } from "../../App";
 import { DatumPlaque } from "../../components/DatumPlaque";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
-import { server } from "../../config/server";
 import { UTILS } from "../../utils/utils";
 import { PROJECT_FILTERS, PROJECTS_DATA_STRUCTURE } from "./data/projectsData";
 import FilterBar from "./FilterBy/FilterBy";
@@ -28,7 +27,7 @@ function RenderProjects() {
   const {pathname} = useLocation()
 
   React.useEffect(()=> {
-    UTILS.sendRequest(server, pathname)
+    UTILS.sendRequest(pathname)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
