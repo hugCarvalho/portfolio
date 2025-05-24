@@ -5,6 +5,7 @@ import "./ProjectLinks.scss";
 
 function ProjectLinks({ project}) {
   const [showModal, setShowModal] = React.useState(false)
+  const showOldCodeWarning = project.id !== "portfolio2"
 
   return (
     <section className="ProjectLinks">
@@ -32,7 +33,8 @@ function ProjectLinks({ project}) {
       {showModal && <Modal setShowModal={setShowModal} projectGithubUrl={project.code}/>}
       {project.code.length > 0 &&
         <div style={{cursor: "pointer"}} onClick={()=> {
-          setShowModal(true)
+          console.log(project)
+          showOldCodeWarning && setShowModal(true)
           fetch(`${server}/projects`, {
             method: "POST",
             headers: {
@@ -41,9 +43,15 @@ function ProjectLinks({ project}) {
             },
           })
         }}>
-          <i className="fa fa-search" style={{color: "lightblue"}}>
+        {showOldCodeWarning ? <i className="fa fa-search" style={{color: "lightblue"}}>
             <span className="text"> Code</span>
-          </i>
+          </i> :
+          <a style={{color: "lightblue"}} href={`${project.code}`} rel="noopener noreferrer" target="_blank">
+            <i className="fa fa-search">
+              <span className="text"> Code</span>
+            </i>
+        </a>
+        }
         </div>
       }
     </section>
