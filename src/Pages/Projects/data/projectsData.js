@@ -353,6 +353,7 @@ export const PROJECTS_DATA_STRUCTURE = [
         "Keep track of what your Cafes have to offer",
         "Map view",
         "Customizable",
+        "Can be installed on Mobile",
         "Code available upon request",
       ],
       de: [
@@ -363,6 +364,7 @@ export const PROJECTS_DATA_STRUCTURE = [
         "Behalte den Überblick darüber, was dein Café für dich zu bieten hat",
         "Kartenansicht",
         "Individualisierbare",
+        "Can be installed on Mobile",
         "Code verfügbar nach Anfrage",
       ],
     },

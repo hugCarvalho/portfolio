@@ -162,27 +162,40 @@ export const RenderExperienceEntries = () => {
       </TestimoniesSection>
     </DescriptionSection>
 
-    <DatumSection>
-      <Datum>03.2020-02.2021</Datum>
-    </DatumSection>
+    <h3>Experience through personal projects:</h3>
     <DescriptionSection>
       <p>
-        {isLanguageEnglish ?
-        "Knowledge gathering and conception, design, implementation and deployment of several projects to test and cement acquired knowledge (available in the projects page):" :
-        "Sammlung von Kenntnissen und Konzeption, Entwurf, Umsetzung und Einführung mehrerer Projekte zur Erprobung und Festigung der erworbenen Kenntnisse (auf der Projektseite verfügbar)"
+        {isLanguageEnglish ? <>
+          Concept, design, implementation and deployment of several private projects (<b>available in the projects page</b>):
+        </>
+        :<>
+          Konzeption, Design, Implementierung und Bereitstellung mehrerer privater Projekte (<b>auf der Projektseite verfügbar</b>):
+        </>
         }
       </p>
       {/* PROJECTS */}
+      {/* TODO: map projects to data structure and dynamic projects id */}
       {isLanguageEnglish ? <ul>
+        <ListItem><b><i>Karaoke List App <ProjectsDatum>(2025)</ProjectsDatum></i></b> - <u>Fullstack</u> project.</ListItem>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "karaoke-app").techInfo.tags}/>
+        <ListItem><b><i>Portfolio V.2 <ProjectsDatum>(2025)</ProjectsDatum></i></b> - My second version portfolio, a more modern approach with 3D animations.</ListItem>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "portfolio2").techInfo.tags}/>
+        <ListItem><b><i>Cafes & You <ProjectsDatum>(2024)</ProjectsDatum></i></b> - <u>Fullstack</u> project where you embark on a solo or dual trip, making your own list of Cafes and registering your experiences. Inspired by my girlfriend.</ListItem>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "cafes").techInfo.tags}/>
         <ListItem><i>Scrambled Word Game <ProjectsDatum>(2021)</ProjectsDatum></i> - a game with highscore, hints, sound effects, settings and time pressure. And also the possibility of learning new words through dynamic lookup. Test your knowledge. If you dare.</ListItem>
         <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "wordScrambler").techInfo.tags}/>
-        <ListItem><i>Portfolio <ProjectsDatum>(2020)</ProjectsDatum></i> - originally created this portfolio. </ListItem>
+        <ListItem><i>Portfolio <ProjectsDatum>(2020)</ProjectsDatum></i> - originally created this portfolio with a retro look. </ListItem>
         <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "portfolio").techInfo.tags}/>
         <ListItem><i>Weatherjetzt <ProjectsDatum>(2020)</ProjectsDatum></i> - a weather app, tailored for the best user experience of its most passionate and, most likely, only user.</ListItem>
         <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "weatherApp").techInfo.tags}/>
         <ListItem><i>Todo list <ProjectsDatum>(2020)</ProjectsDatum></i> - a classical. My very first project, where it all started...</ListItem>
         <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "todoList").techInfo.tags}/>
       </ul> : <ul>
+        <ListItem><i>Karaoke List App<ProjectsDatum>(2024)</ProjectsDatum></i> - Fullstack-Projekt.</ListItem>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "cafes").techInfo.tags}/>
+        <ListItem><i>Cafes & You <ProjectsDatum>(2024)</ProjectsDatum></i> - Funktionales Fullstack-Projekt, bei dem man sich auf eine Solo- oder Doppelreise begibt, seine eigene Liste von Cafés erstellt und seine Erfahrungen registriert. Inspiriert von meiner Freundin.</ListItem>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "cafes").techInfo.tags}/>
+
         <ListItem><i>Scrambled Word Game <ProjectsDatum>(2021)</ProjectsDatum></i> - Sammlung von Kenntnissen und Konzeption, Entwurf, Umsetzung und Einführung mehrerer Projekte zur Erprobung und Festigung der erworbenen Kenntnisse (auf der Projektseite verfügbar).</ListItem>
         <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "wordScrambler").techInfo.tags}/>
         <ListItem><i>Portfolio <ProjectsDatum>(2020)</ProjectsDatum></i> - Ursprünglich wurde dieses Portfolio erstellt. In der Zwischenzeit wurde es erweitert.</ListItem>
@@ -193,29 +206,6 @@ export const RenderExperienceEntries = () => {
         <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "todoList").techInfo.tags}/>
       </ul> }
     </DescriptionSection>
-
-    <DatumSection>
-      <Datum>09.2024-present</Datum>
-    </DatumSection>
-    <DescriptionSection>
-      <p>
-        {isLanguageEnglish ?
-        "Breaking the rules of chronology, one final entry to mention my current fullstack project:" :
-         "Um die Regeln der Chronologie zu brechen, ein letzter Eintrag, um mein aktuelles Fullstack-Projekt zu erwähnen:"
-        }
-      </p>
-      {/* PROJECTS */}
-      {isLanguageEnglish ? <ul>
-          <ListItem><i>Cafes & You <ProjectsDatum>(2024)</ProjectsDatum></i> - ongoing, yet functional, fullstack project where you embark on a solo or dual trip, making your own list of Cafes and registering your experiences. Inspired by my girlfriend.</ListItem>
-          <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "cafes").techInfo.tags}/>
-        </ul>:
-        <ul>
-          <ListItem><i>Cafes & You <ProjectsDatum>(2024)</ProjectsDatum></i> - ein laufendes, aber funktionales Fullstack-Projekt, bei dem man sich auf eine Solo- oder Doppelreise begibt, seine eigene Liste von Cafés erstellt und seine Erfahrungen registriert. Inspiriert von meiner Freundin.</ListItem>
-          <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "cafes").techInfo.tags}/>
-        </ul>
-      }
-    </DescriptionSection>
-    <DescriptionSection></DescriptionSection>
   </Container>
 }
 
