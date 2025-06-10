@@ -25,6 +25,7 @@ const react = ["React", SKILL_CATEGORIES.reactEcosystem]
 const reactRouter = ["React Router",  SKILL_CATEGORIES.reactEcosystem]
 const js =["JavaScript", SKILL_CATEGORIES.reactEcosystem]
 const ts =["TypeScript", SKILL_CATEGORIES.reactEcosystem]
+const zod = ["Zod", SKILL_CATEGORIES.reactEcosystem]
 // const localStorage = ["Local Storage", SKILL_CATEGORIES.reactEcosystem]
 // STYLES
 // const semanticHTML = ["Semantic HTML",SKILL_CATEGORIES.styling]
@@ -67,7 +68,7 @@ const others = [["Jira", SKILL_CATEGORIES.monitoring]]
 // skills in projects
 export const erblotseSkills = [...languages, ...dbRelated, ...styles, ...testing, ...monitoring, ...others]
 export const portfolioV2 = [nextJs, js, tailwindCss, threeJs, framerMotion, emailJs]
-export const karaokeApp = [react, ts, reactRouter, nodejs, mongoDb, chakraUi, jest, testingLibrary, openAI, MusicBrainz,  ]
+export const karaokeApp = [react, ts, reactRouter, zod, nodejs, mongoDb, chakraUi, jest, testingLibrary, openAI, MusicBrainz,  ]
 
 export const SKILLS_DATA = [
   { name: "JavaScript", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-javascript", type: "single" },

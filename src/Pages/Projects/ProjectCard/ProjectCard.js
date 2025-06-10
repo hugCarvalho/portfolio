@@ -27,6 +27,8 @@ function ProjectCard({
     return project.description[language]
   }
 
+  const showSwiper = ["cafes", "portfolio2", "wordScrambler", "karaoke-app"].includes(project.id)
+
   return (
     <>
       <div
@@ -49,7 +51,8 @@ function ProjectCard({
 
           {/* IMG */}
               <figure className="project-screenshot">
-                {project.id === "cafes" || project.id === "wordScrambler" || project.id === "portfolio2" ? <SwiperCard dataArr={project.img}/> : <img src={project.img} alt="app screenshot"/>}
+                {showSwiper ?
+                  <SwiperCard dataArr={project.img}/> : <img src={project.img} alt="app screenshot"/>}
               </figure>
             {/* <a href={project.live} rel="noopener noreferrer" target="_blank">
             </a> */}

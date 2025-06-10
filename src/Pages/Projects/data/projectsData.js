@@ -284,12 +284,12 @@ export const PROJECTS_DATA_STRUCTURE = [
   },
   {
     id: "karaoke-app",
-    name: "Karaoke List App",
+    name: "⭐️ Karaoke List App",
     datum: 2025,
     category: [CATEGORIES.website, CATEGORIES.api],
     techs: ["Next.js"],
 
-    img: [["portfolio2Home", "app screenshot"], ["portfolio2About", "app screenshot"], ["portfolio2Projects", "app screenshot"], ["portfolio2Contact", "app screenshot"]],
+    img: [["karaokeStart", "app screenshot"], ["karaokeList", "app screenshot"], ["karaokeHistory", "app screenshot"]] ,
     description: {
       en:
         "If you ever went to a karaoke place and realised you cannot find or decide upon which songs to sing, this app is for you... Never be blank again!",

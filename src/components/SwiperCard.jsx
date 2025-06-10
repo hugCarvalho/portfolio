@@ -9,6 +9,9 @@ import CafeList from '../images/cafes-04.png';
 import CafeMap from '../images/cafes-05.png';
 import CafeAdmin from '../images/cafes-06.png';
 import CafeSettings from '../images/cafes-07.png';
+import Karaoke from '../images/karaoke-01.png';
+import Karaoke2 from '../images/karaoke-02.png';
+import Karaoke3 from '../images/karaoke-03.png';
 import portfolio2About from '../images/portfolio2-about.png';
 import portfolio2Contact from '../images/portfolio2-contact.png';
 import Portfolio2Home from '../images/portfolio2-home.png';
@@ -28,6 +31,9 @@ import './swiper.scss';
 // import 'swiper/css/scrollbar';
 
 const pics = {
+  karaokeStart: Karaoke,
+  karaokeList: Karaoke2,
+  karaokeHistory: Karaoke3,
   cafeStart: CafeStart,
   cafeStart2: CafeStart2,
   cafeSignup: CafeSignup,
