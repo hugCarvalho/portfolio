@@ -283,7 +283,7 @@ export const PROJECTS_DATA_STRUCTURE = [
     code: ["https://github.com/hugCarvalho/portfolio-2"],
   },
   {
-    id: "karaoke-app",
+    id: "karaoke",
     name: "⭐️ Karaoke List App",
     datum: 2025,
     category: [CATEGORIES.website, CATEGORIES.api],

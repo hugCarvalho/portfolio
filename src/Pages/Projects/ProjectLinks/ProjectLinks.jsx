@@ -5,7 +5,7 @@ import "./ProjectLinks.scss";
 
 function ProjectLinks({ project}) {
   const [showModal, setShowModal] = React.useState(false)
-  const showOldCodeWarning = project.id !== "portfolio2" && project.id !== "karaoke-app"
+  const showOldCodeWarning = project.id !== "portfolio2" && project.id !== "karaoke"
 
   return (
     <section className="ProjectLinks">

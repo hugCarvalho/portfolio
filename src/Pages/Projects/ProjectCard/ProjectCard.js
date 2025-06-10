@@ -2,8 +2,8 @@ import { Tags } from "../../../Pages/About/Tags";
 import { SwiperCard } from "../../../components/SwiperCard";
 import ProjectLinks from "../ProjectLinks/ProjectLinks";
 import {
-  renderFeatures,
-  renderThirdParty
+    renderFeatures,
+    renderThirdParty
 } from "../functions/functions";
 import "./ProjectCard.scss";
 
@@ -27,7 +27,7 @@ function ProjectCard({
     return project.description[language]
   }
 
-  const showSwiper = ["cafes", "portfolio2", "wordScrambler", "karaoke-app"].includes(project.id)
+  const showSwiper = ["cafes", "portfolio2", "wordScrambler", "karaoke"].includes(project.id)
 
   return (
     <>

@@ -177,7 +177,7 @@ export const RenderExperienceEntries = () => {
       {/* TODO: map projects to data structure and dynamic projects id */}
       {isLanguageEnglish ? <ul>
         <ListItem><b><i>Karaoke List App <ProjectsDatum>(2025)</ProjectsDatum></i></b> - <u>Fullstack</u> project.</ListItem>
-        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "karaoke-app").techInfo.tags}/>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "karaoke").techInfo.tags}/>
         <ListItem><b><i>Portfolio V.2 <ProjectsDatum>(2025)</ProjectsDatum></i></b> - My second version portfolio, a more modern approach with 3D animations.</ListItem>
         <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "portfolio2").techInfo.tags}/>
         <ListItem><b><i>Cafes & You <ProjectsDatum>(2024)</ProjectsDatum></i></b> - <u>Fullstack</u> project where you embark on a solo or dual trip, making your own list of Cafes and registering your experiences. Inspired by my girlfriend.</ListItem>
@@ -192,7 +192,7 @@ export const RenderExperienceEntries = () => {
         <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "todoList").techInfo.tags}/>
       </ul> : <ul>
         <ListItem><i>Karaoke List App<ProjectsDatum>(2024)</ProjectsDatum></i> - Fullstack-Projekt.</ListItem>
-        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "cafes").techInfo.tags}/>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "karaoke").techInfo.tags}/>
         <ListItem><i>Cafes & You <ProjectsDatum>(2024)</ProjectsDatum></i> - Funktionales Fullstack-Projekt, bei dem man sich auf eine Solo- oder Doppelreise begibt, seine eigene Liste von Cafés erstellt und seine Erfahrungen registriert. Inspiriert von meiner Freundin.</ListItem>
         <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "cafes").techInfo.tags}/>
 
