@@ -56,7 +56,7 @@ const others = [["Jira", SKILL_CATEGORIES.monitoring]]
 
 // skills in projects
 export const erblotseSkills = [...languages, ...dbRelated, ...styles, ...testing, ...monitoring, ...others]
-export const portfolioV2 = [react, js, nextJs, tailwindCss, threeJs, framerMotion, emailJs]
+export const portfolioV2 = [nextJs, js, tailwindCss, threeJs, framerMotion, emailJs]
 
 export const SKILLS_DATA = [
   { name: "JavaScript", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-javascript", type: "single" },

@@ -135,16 +135,12 @@ export const PROJECTS_DATA_STRUCTURE = [
     },
     features: {
       en: [
-        "Card content data dynamically generated, as to simulate possible real life cases, i.e, getting data from an array of objects",
-        "Dynamic calculation of card heights based on biggest",
         "CSS animations and transitions",
         "Filter projects",
         "Scroll to top",
         "Available in English and German",
       ],
       de: [
-        "Die Karteninhaltsdaten werden dynamisch generiert, um einen Datenabruf zu simulieren",
-        "Dynamische Berechnung der Kartenhöhen basierend auf der größten",
         "CSS animations und transitions",
         "Filter Projekte",
         "To-top scrollen",
@@ -288,7 +284,7 @@ export const PROJECTS_DATA_STRUCTURE = [
     code: ["https://github.com/hugCarvalho/portfolio-2"],
   },{
     id: "cafes",
-    name: "Cafes & You ⭐️",
+    name: "⭐️ Cafes & You",
     datum: 2024,
     category: [CATEGORIES.fullstack, CATEGORIES.api, CATEGORIES.webApp],
     techs: ["React", "hooks"],
