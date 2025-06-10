@@ -1,4 +1,4 @@
-import { portfolioV2, SKILL_CATEGORIES } from "../../../config/Skills";
+import { karaokeApp, portfolioV2, SKILL_CATEGORIES } from "../../../config/Skills";
 
 export const CATEGORIES = {
   game: "game",
@@ -242,7 +242,6 @@ export const PROJECTS_DATA_STRUCTURE = [
     live: ["https://condescending-raman-a3f123.netlify.app/"],
     code: ["https://github.com/hugCarvalho/wordScrambler"],
   },
-
   {
     id: "portfolio2",
     name: "Portfolio v.2",
@@ -282,7 +281,56 @@ export const PROJECTS_DATA_STRUCTURE = [
     },
     live: ["https://hugocarvalho.netlify.app/"],
     code: ["https://github.com/hugCarvalho/portfolio-2"],
-  },{
+  },
+  {
+    id: "karaoke-app",
+    name: "Karaoke List App",
+    datum: 2025,
+    category: [CATEGORIES.website, CATEGORIES.api],
+    techs: ["Next.js"],
+
+    img: [["portfolio2Home", "app screenshot"], ["portfolio2About", "app screenshot"], ["portfolio2Projects", "app screenshot"], ["portfolio2Contact", "app screenshot"]],
+    description: {
+      en:
+        "If you ever went to a karaoke place and realised you cannot find or decide upon which songs to sing, this app is for you... Never be blank again!",
+      de:
+        "Wenn du jemals in einem Karaoke-Lokal warst und gemerkt hast, dass du nicht weißt, welche Lieder du singen sollst, ist diese App genau das Richtige für dich... Nie wieder leer ausgehen! ",
+    },
+    features: {
+      en: [
+        "Authentication and verification",
+        "Create lists (all, sang, favs, duet, blacklist, next event)",
+        "Sort, filter, add, move or remove songs",
+        "AI-powered results for Select options 🪄",
+        "AI-powered suggestions on unknown artist or song 🪄",
+        "Events history",
+        "Statistics"
+      ],
+      de: [
+        "Authentifizierung und Verifizierung",
+        "Listen erstellen (alle, gesungen, Favoriten, Duett, Blacklist, nächstes Event)",
+        "Songs sortieren, filtern, hinzufügen, verschieben oder entfernen",
+        "KI-gestützte Ergebnisse für Auswahloptionen 🪄",
+        "KI-gestützte Vorschläge für unbekannte Künstler oder Songs 🪄",
+        "Event-Verlauf",
+        "Statistiken"
+      ],
+    },
+    techInfo: {
+      main: "Built with React",
+      styled: "Styled with Chakra UI",
+      tested: "",
+      responsive: true,
+      specsText: { en: "AI powered", de: ""},
+      specs: [],
+      thirdParty: ["React Query", "Axios", "Zod", "Open AI API", "MusicBrainz API", "React Hook Form", "Resend", "bcrypt", "cors", "helmet", "jsonwebtoken", "mongoose", "xss-clean", "cookie-parser"],
+      notes: { en: "", de: "" },
+      tags: karaokeApp
+    },
+    live: ["https://karaoke-list-app.onrender.com/"],
+    code: ["https://github.com/hugCarvalho/karaoke-list-app"],
+  }
+  ,{
     id: "cafes",
     name: "⭐️ Cafes & You",
     datum: 2024,
