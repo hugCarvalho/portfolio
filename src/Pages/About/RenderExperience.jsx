@@ -93,15 +93,11 @@ export const RenderExperienceEntries = () => {
 
     </div>
     <DatumSection>
-      <Datum>06.2022-04.2025:</Datum>
+      <Datum>02.2021-04.2025:</Datum>
         <JobTitle>
           {isLanguageEnglish ? " Software Developer" : " Software Entwickler"}
         </JobTitle>
         <br/>
-      <Datum>02.2021-05.2022:</Datum>
-        <JobTitle>
-          {isLanguageEnglish ? " Junior Software Developer" : " Junior Software Entwickler"}
-        </JobTitle>
     </DatumSection>
     <DescriptionSection>
       <p>{isLanguageEnglish ? "Accomplishments:" : "Leistungen:"}</p>
