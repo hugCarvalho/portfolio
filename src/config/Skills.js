@@ -23,21 +23,20 @@ export const SKILL_CATEGORIES = {
 // REACT ECOSYSTEM
 export const react = ["React", SKILL_CATEGORIES.reactEcosystem]
 const reactRouter = ["React Router",  SKILL_CATEGORIES.reactEcosystem]
+const nextJs = ["Next.js", SKILL_CATEGORIES.reactEcosystem]
 const js =["JavaScript", SKILL_CATEGORIES.reactEcosystem]
 const ts =["TypeScript", SKILL_CATEGORIES.reactEcosystem]
 const zod = ["Zod", SKILL_CATEGORIES.reactEcosystem]
 const semanticHTML = ["Semantic HTML",SKILL_CATEGORIES.styling]
-const sass = ["SASS",SKILL_CATEGORIES.styling]
 const localStorage = ["Local Storage", SKILL_CATEGORIES.reactEcosystem]
-
-// const localStorage = ["Local Storage", SKILL_CATEGORIES.reactEcosystem]
 // STYLES
-// const semanticHTML = ["Semantic HTML",SKILL_CATEGORIES.styling]
 const materialUI = ["Material UI", SKILL_CATEGORIES.styling]
 const styledComponents = ["Styled Components", SKILL_CATEGORIES.styling]
-// const sass = ["SASS",SKILL_CATEGORIES.styling]
+const sass = ["SASS",SKILL_CATEGORIES.styling]
 const tailwindCss = ["Tailwind CSS", SKILL_CATEGORIES.styling]
 const chakraUi = ["Chakra UI", SKILL_CATEGORIES.styling]
+const threeJs = ["Three.js", SKILL_CATEGORIES.styling]
+const framerMotion = ["Framer Motion", SKILL_CATEGORIES.styling]
 // TESTS
 const cypress = ["Cypress", SKILL_CATEGORIES.testing]
 const jest =  ["Jest", SKILL_CATEGORIES.testing]
@@ -48,14 +47,12 @@ const mongoDb =  [ "MongoDb", SKILL_CATEGORIES.backend]
 const awsCognito = ["AWS Cognito",SKILL_CATEGORIES.backend]
 const awsDynamo =  [ "AWS DynamoDb", SKILL_CATEGORIES.backend]
 const postgreSQL = ["PostgreSQL", SKILL_CATEGORIES.backend]
-
 const reactQuery = ["React Query", SKILL_CATEGORIES.backend]
 const prism = [ "Prisma", SKILL_CATEGORIES.backend]
+//Monitoring
 const sentr = ["Sentry", SKILL_CATEGORIES.monitoring]
 const dDog = ["Datadog", SKILL_CATEGORIES.monitoring]
-const nextJs = ["Next.js", SKILL_CATEGORIES.reactEcosystem]
-const threeJs = ["Three.js", SKILL_CATEGORIES.styling]
-const framerMotion = ["Framer Motion", SKILL_CATEGORIES.styling]
+//API
 const emailJs = ["EmailJS", SKILL_CATEGORIES.all]
 const openAI = ["openAI API", SKILL_CATEGORIES.all]
 const MusicBrainz = ["MusicBrainz API", SKILL_CATEGORIES.all]
@@ -76,6 +73,7 @@ export const karaokeApp = [react, ts, reactRouter, zod, nodejs, mongoDb, chakraU
 export const todoApp = [react, js, localStorage, semanticHTML,sass]
 export const weatherApp = [react, js, localStorage, semanticHTML, sass, openWeatherApi]
 export const portfolioV1 = [react, js, reactRouter, localStorage, semanticHTML, sass, testingLibrary]
+export const wordScrambler = [react, js, localStorage, semanticHTML, testingLibrary, jest]
 
 export const SKILLS_DATA = [
   { name: "JavaScript", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-javascript", type: "single" },

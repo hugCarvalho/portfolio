@@ -1,5 +1,4 @@
-import { karaokeApp, portfolioV1, portfolioV2, SKILL_CATEGORIES, todoApp, weatherApp } from "../../../config/Skills";
-
+import { karaokeApp, portfolioV1, portfolioV2, SKILL_CATEGORIES, todoApp, weatherApp, wordScrambler } from "../../../config/Skills";
 
 export const CATEGORIES = {
   game: "game",
@@ -16,8 +15,6 @@ export const PROJECT_FILTERS = {
   website: CATEGORIES.website,
   webApp: CATEGORIES.webApp,
 }
-
-const styledComponents = ["Styled Components",SKILL_CATEGORIES.styling]
 
 export const PROJECTS_DATA_STRUCTURE = [
   {
@@ -217,15 +214,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       ],
       thirdParty: ["React Router", "React Tooltip", "React Number Format"],
       notes: { en: "", de: "" },
-      tags: [
-        ["React", SKILL_CATEGORIES.reactEcosystem],
-        ["JavaScript", SKILL_CATEGORIES.reactEcosystem],
-        ["Local Storage", CATEGORIES.reactEcosystem],
-        ["Semantic HTML",SKILL_CATEGORIES.styling],
-        styledComponents,
-        ["Jest", SKILL_CATEGORIES.testing],
-        ["React Testing Library", SKILL_CATEGORIES.testing]
-      ]
+      tags: wordScrambler
     },
     live: ["https://condescending-raman-a3f123.netlify.app/"],
     code: ["https://github.com/hugCarvalho/wordScrambler"],
