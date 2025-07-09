@@ -75,6 +75,7 @@ export const portfolioV2 = [nextJs, js, tailwindCss, threeJs, framerMotion, emai
 export const karaokeApp = [react, ts, reactRouter, zod, nodejs, mongoDb, chakraUi, jest, testingLibrary, openAI, MusicBrainz,  ]
 export const todoApp = [react, js, localStorage, semanticHTML,sass]
 export const weatherApp = [react, js, localStorage, semanticHTML, sass, openWeatherApi]
+export const portfolioV1 = [react, js, reactRouter, localStorage, semanticHTML, sass, testingLibrary]
 
 export const SKILLS_DATA = [
   { name: "JavaScript", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-javascript", type: "single" },

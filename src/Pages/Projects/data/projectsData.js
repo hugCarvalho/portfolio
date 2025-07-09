@@ -1,4 +1,4 @@
-import { karaokeApp, portfolioV2, SKILL_CATEGORIES, todoApp, weatherApp } from "../../../config/Skills";
+import { karaokeApp, portfolioV1, portfolioV2, SKILL_CATEGORIES, todoApp, weatherApp } from "../../../config/Skills";
 
 
 export const CATEGORIES = {
@@ -16,11 +16,7 @@ export const PROJECT_FILTERS = {
   website: CATEGORIES.website,
   webApp: CATEGORIES.webApp,
 }
-//TODO import from skills instead
-const js =["JavaScript", SKILL_CATEGORIES.reactEcosystem]
-const semanticHTML = ["Semantic HTML",SKILL_CATEGORIES.styling]
-const sass = ["SASS",SKILL_CATEGORIES.styling]
-const localStorage = ["Local Storage", SKILL_CATEGORIES.reactEcosystem]
+
 const styledComponents = ["Styled Components",SKILL_CATEGORIES.styling]
 
 export const PROJECTS_DATA_STRUCTURE = [
@@ -163,15 +159,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       ],
       thirdParty: ["React-router", "React-use", "Swiper"],
       notes: { en: "", de: "" },
-      tags: [
-        ["React", SKILL_CATEGORIES.reactEcosystem],
-        ["JavaScript", SKILL_CATEGORIES.reactEcosystem],
-        ["React Router", SKILL_CATEGORIES.reactEcosystem],
-        ["Local Storage", SKILL_CATEGORIES.reactEcosystem],
-        ["Semantic HTML",SKILL_CATEGORIES.styling],
-        ["SASS",SKILL_CATEGORIES.styling],
-        ["React Testing Library", SKILL_CATEGORIES.testing],
-      ]
+      tags: portfolioV1
     },
     live: [],
     code: ["https://github.com/hugCarvalho/portfolio"],
