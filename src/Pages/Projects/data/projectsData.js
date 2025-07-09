@@ -1,4 +1,5 @@
-import { karaokeApp, portfolioV2, SKILL_CATEGORIES } from "../../../config/Skills";
+import { karaokeApp, portfolioV2, SKILL_CATEGORIES, todoApp } from "../../../config/Skills";
+
 
 export const CATEGORIES = {
   game: "game",
@@ -16,7 +17,7 @@ export const PROJECT_FILTERS = {
   webApp: CATEGORIES.webApp,
 }
 //TODO import from skills instead
-const react = ["React", SKILL_CATEGORIES.reactEcosystem]
+export const react = ["React", SKILL_CATEGORIES.reactEcosystem]
 const js =["JavaScript", SKILL_CATEGORIES.reactEcosystem]
 const semanticHTML = ["Semantic HTML",SKILL_CATEGORIES.styling]
 const sass = ["SASS",SKILL_CATEGORIES.styling]
@@ -61,7 +62,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       specs: ["forwardRef", "Prop-types", "Flexbox", "Local Storage"],
       thirdParty: ["React-modal", "UUID"],
       notes: { en: "", de: "" },
-      tags: [react, js, localStorage, semanticHTML,sass]
+      tags: todoApp
     },
     live: ["https://stoic-fermi-dcf04f.netlify.app/"],
     code: ["https://github.com/hugCarvalho/todoList"],
