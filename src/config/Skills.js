@@ -59,7 +59,7 @@ const framerMotion = ["Framer Motion", SKILL_CATEGORIES.styling]
 const emailJs = ["EmailJS", SKILL_CATEGORIES.all]
 const openAI = ["openAI API", SKILL_CATEGORIES.all]
 const MusicBrainz = ["MusicBrainz API", SKILL_CATEGORIES.all]
-
+const openWeatherApi = ["Open Weather API", SKILL_CATEGORIES.all]
 
 // skill groups ERBLOTSE
 const languages = [react, js, ts, nextJs]
@@ -74,6 +74,7 @@ export const erblotseSkills = [...languages, ...dbRelated, ...styles, ...testing
 export const portfolioV2 = [nextJs, js, tailwindCss, threeJs, framerMotion, emailJs]
 export const karaokeApp = [react, ts, reactRouter, zod, nodejs, mongoDb, chakraUi, jest, testingLibrary, openAI, MusicBrainz,  ]
 export const todoApp = [react, js, localStorage, semanticHTML,sass]
+export const weatherApp = [react, js, localStorage, semanticHTML, sass, openWeatherApi]
 
 export const SKILLS_DATA = [
   { name: "JavaScript", category: SKILL_CATEGORIES.reactEcosystem, class: "bg-javascript", type: "single" },

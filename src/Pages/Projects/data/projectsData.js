@@ -1,4 +1,4 @@
-import { karaokeApp, portfolioV2, SKILL_CATEGORIES, todoApp } from "../../../config/Skills";
+import { karaokeApp, portfolioV2, SKILL_CATEGORIES, todoApp, weatherApp } from "../../../config/Skills";
 
 
 export const CATEGORIES = {
@@ -17,7 +17,6 @@ export const PROJECT_FILTERS = {
   webApp: CATEGORIES.webApp,
 }
 //TODO import from skills instead
-export const react = ["React", SKILL_CATEGORIES.reactEcosystem]
 const js =["JavaScript", SKILL_CATEGORIES.reactEcosystem]
 const semanticHTML = ["Semantic HTML",SKILL_CATEGORIES.styling]
 const sass = ["SASS",SKILL_CATEGORIES.styling]
@@ -117,7 +116,7 @@ export const PROJECTS_DATA_STRUCTURE = [
       ],
       thirdParty: ["Tippy.js", "React-spinners", "React-Moment"],
       notes: { en: "", de: "" },
-      tags: [react, js, localStorage, semanticHTML, sass, ["Open Weather API", SKILL_CATEGORIES.all]]
+      tags: weatherApp
     },
     live: ["https://awesome-payne-8bf6bd.netlify.app/"],
     code: ["https://github.com/hugCarvalho/weather_api"],
