@@ -207,10 +207,6 @@ export const PROJECTS_DATA_STRUCTURE = [
       specs: [
         "Local storage",
         "Flexbox",
-        // "useEffect",
-        // "useContext",
-        // "useLocation",
-        // "Unit and integration tests ",
       ],
       thirdParty: ["React Router", "React Tooltip", "React Number Format"],
       notes: { en: "", de: "" },
