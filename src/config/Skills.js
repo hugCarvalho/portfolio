@@ -59,10 +59,10 @@ const MusicBrainz = ["MusicBrainz API", SKILL_CATEGORIES.all]
 const openWeatherApi = ["Open Weather API", SKILL_CATEGORIES.all]
 
 // skill groups ERBLOTSE
-const languages = [react, js, ts, nextJs]
+const languages = [react, js, ts]
 const dbRelated = [reactQuery,awsCognito, awsDynamo, postgreSQL, nodejs, prism]
 const testing = [cypress, jest, testingLibrary]
-const styles = [styledComponents, materialUI, tailwindCss, chakraUi]
+const styles = [styledComponents, materialUI]
 const monitoring = [sentr,  dDog]
 const others = [["Jira", SKILL_CATEGORIES.monitoring]]
 
