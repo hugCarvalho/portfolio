@@ -259,7 +259,7 @@ export const PROJECTS_DATA_STRUCTURE = [
     id: "karaoke",
     name: "⭐️ Karaoke List App",
     datum: 2025,
-    category: [CATEGORIES.webApp, CATEGORIES.api],
+    category: [CATEGORIES.fullstack, CATEGORIES.webApp, CATEGORIES.api],
     techs: ["Next.js"],
 
     img: [["karaokeStart", "app screenshot"], ["karaokeList", "app screenshot"], ["karaokeHistory", "app screenshot"]] ,
