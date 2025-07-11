@@ -1,12 +1,9 @@
 .Skills {
-  // background-color: #3c6274;
-  //background-color: #b3b6b8;
   background-color: #859196;
   background-image: url("./assets/19.png");
   min-height: calc(100vh - 235px); //footer + padding
   display: flex;
   padding: 70px 12% 67px;
-  //padding: 87px 12% 60px;
 
   main {
     width: 100%;
@@ -52,9 +49,3 @@
     padding-right: 1%;
   }
 }
-
-// @media (max-width: 622px) {
-//   .Skills {
-//     min-height: calc(100vh - 245px);
-//   }
-// }

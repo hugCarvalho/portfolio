@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { IsActiveContext } from "../../components/Header/NavButtons/RenderNavButtons";
-import useIsDesktop from "../../components/Hooks";
 import { SKILL_CATEGORIES, SKILLS_DATA } from "../../config/Skills";
 import { UTILS } from "../../utils/utils";
 import FilterBar from "../Projects/FilterBy/FilterBy";
@@ -12,7 +11,6 @@ function Skills() {
   const pageIsActive = React.useContext(IsActiveContext);
   const [filterBy, setFilterBy] = useState("all")
   const {pathname} = useLocation()
-  const isDesktop = useIsDesktop()
 
   React.useEffect(()=> {
    UTILS.sendRequest(pathname)

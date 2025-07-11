@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 const DatumPlaqueContainer = styled.div`
   background: linear-gradient(217deg, rgb(132 132 132), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgb(152 152 152 / 93%), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(110 110 110), rgba(0, 0, 255, 0) 82.71%);
-  /* background: linear-gradient(#676464, #827d7d); */
   padding: 15px;
   width: fit-content;
   border-radius: 3px;
@@ -35,9 +34,6 @@ const Nail4 = styled(Nail)`
 `
 const Engraved = styled.div`
  font-size: 23px;
-  /* color: gray;
-  color: #989693;
-  color: #bda030; */
   color: var(--onHover1);
   text-align: center;
   padding: 7px 30px;
