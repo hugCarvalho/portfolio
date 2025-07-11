@@ -2,8 +2,8 @@ import { Tags } from "../../../Pages/About/Tags";
 import { SwiperCard } from "../../../components/SwiperCard";
 import ProjectLinks from "../ProjectLinks/ProjectLinks";
 import {
-    renderFeatures,
-    renderThirdParty
+  renderFeatures,
+  renderThirdParty
 } from "../functions/functions";
 import "./ProjectCard.scss";
 
@@ -54,8 +54,6 @@ function ProjectCard({
                 {showSwiper ?
                   <SwiperCard dataArr={project.img}/> : <img src={project.img} alt="app screenshot"/>}
               </figure>
-            {/* <a href={project.live} rel="noopener noreferrer" target="_blank">
-            </a> */}
 
           {/* DESCRIPTION TEXT FRONT*/}
           <div className="container__text-section">
@@ -98,12 +96,8 @@ function ProjectCard({
             {project.techInfo.specsText.en && <p>{project.techInfo.specsText.en}</p>}
             <p>{project.techInfo.tested && `Tested with ${project.techInfo.tested}`}</p>
             {/* TAGS */}
-<br/>
+          <br/>
             <Tags skills={project.techInfo.tags}/>
-
-            {/* SPECIFICS */}
-            {/* <h3>{language === "en" ? "Project specifics:" : "Projekt Details"}</h3> */}
-            {/* {renderProjectSpecifics(project)} */}
 
             {/* Third Party used in project */}
             <h3>Third party:</h3>
