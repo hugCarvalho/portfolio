@@ -23,7 +23,7 @@
   },
   "homepage": "https://hugCarvalho.github.io/portfolio",
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "coverage": "react-scripts test --env=jsdom --watchAll=false --coverage",

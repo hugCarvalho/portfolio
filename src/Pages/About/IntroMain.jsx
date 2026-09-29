@@ -22,7 +22,7 @@ export function IntroMainEN() {
               projects
             </Link>
           </LinkStyles>,
-        I joined <b>Erblotse (Heritas GmbH)</b> for more than 4 years, where I had an extremely rich and diversified experience in a small agile team (4-6 direct colleagues),
+        I joined <b>Erblotse (Heritas GmbH)</b> for about 4 years, where I had an extremely rich and diversified experience in a small agile team (4-6 direct colleagues),
         and had the chance of working on two applications {" "}
         {"- "}
           {<LinkStyles>

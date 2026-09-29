@@ -93,7 +93,7 @@ export const RenderExperienceEntries = () => {
 
     </div>
     <DatumSection>
-      <Datum>02.2021-04.2025:</Datum>
+      <Datum>02.2021 - 08.2024:</Datum>
         <JobTitle>
           {isLanguageEnglish ? " Software Developer" : " Software Entwickler"}
         </JobTitle>
@@ -172,6 +172,10 @@ export const RenderExperienceEntries = () => {
       {/* PROJECTS */}
       {/* TODO: map projects to data structure and dynamic projects id */}
       {isLanguageEnglish ? <ul>
+        <ListItem><b><i>Travel Log App <ProjectsDatum>(2026)</ProjectsDatum></i></b> - <u>Fullstack</u> project.</ListItem>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "travelLog").techInfo.tags}/>
+        <ListItem><b><i>Board Game Geek App <ProjectsDatum>(2025)</ProjectsDatum></i></b> </ListItem>
+        <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "bgg").techInfo.tags}/>
         <ListItem><b><i>Karaoke List App <ProjectsDatum>(2025)</ProjectsDatum></i></b> - <u>Fullstack</u> project.</ListItem>
         <Tags skills={PROJECTS_DATA_STRUCTURE.find(project => project.id === "karaoke").techInfo.tags}/>
         <ListItem><b><i>Portfolio V.2 <ProjectsDatum>(2025)</ProjectsDatum></i></b> - My second version portfolio, a more modern approach with 3D animations.</ListItem>

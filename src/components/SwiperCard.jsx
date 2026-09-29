@@ -2,6 +2,10 @@
 import { useLocation } from "react-router-dom";
 import { A11y, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Bgg2 from '../images/bgg_02.png';
+import Bgg3 from '../images/bgg_03.png';
+import Bgg4 from '../images/bgg_04.png';
+import Bgg5 from '../images/bgg_05.png';
 import CafeStart from '../images/cafes-01.png';
 import CafeStart2 from '../images/cafes-02.png';
 import CafeSignup from '../images/cafes-03.png';
@@ -21,6 +25,14 @@ import GameWon from '../images/Screenshot-2.png';
 import GameLost from '../images/Screenshot-3.png';
 import GameHighscores from '../images/Screenshot-4.png';
 import GameOptions from '../images/Screenshot-5.png';
+import Travel1 from '../images/travel_01.png';
+import Travel2 from '../images/travel_02.png';
+import Travel4 from '../images/travel_04.png';
+import Travel5 from '../images/travel_05.png';
+import Travel6 from '../images/travel_06.png';
+import Travel7 from '../images/travel_07.png';
+import Travel8 from '../images/travel_08.png';
+
 import { PersonTestimony, VerticalSliderCard } from './VerticalSliderCard';
 
 // Import Swiper styles
@@ -50,6 +62,17 @@ const pics = {
   portfolio2About: portfolio2About,
   portfolio2Projects: portfolio2Projects,
   portfolio2Contact: portfolio2Contact,
+  bgg2: Bgg2,
+  bgg3: Bgg3,
+  bgg4: Bgg4,
+  bgg5: Bgg5,
+  travel1: Travel1,
+  travel2: Travel2,
+  travel4: Travel4,
+  travel5: Travel5,
+  travel6: Travel6,
+  travel7: Travel7,
+  travel8: Travel8,
 }
 
 export const SwiperCard = ({dataArr}) => {

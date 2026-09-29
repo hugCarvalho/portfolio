@@ -255,6 +255,55 @@ export const PROJECTS_DATA_STRUCTURE = [
     live: ["https://hugocarvalho.netlify.app/"],
     code: ["https://github.com/hugCarvalho/portfolio-2"],
   },
+  {//BGG APP
+    id: "bgg", //⚠️ if needs to be added in ProjectCard
+    name: "Board Game Geek Stats",
+    datum: 2025,
+    category: [CATEGORIES.api, CATEGORIES.webApp],
+    techs: ["React", "hooks"],
+
+    img: [["bgg3", "app screenshot"], ["bgg4", "app screenshot"], ["bgg5", "app screenshot"], ["bgg2", "app screenshot"] ],
+    description: {
+      en:
+        "Display a user statistics from Board Game Geek (as long the user entered that data in BGG). Included stats per game: Head-2-Head, total records, history log.",
+      de:
+        "Zeige eine Benutzerstatistik von Board Game Geek an. Enthaltene Statistiken pro Spiel: Kopf-an-Kopf-Vergleiche, Gesamtbilanz, Verlaufsprotokoll.",
+    },
+    features: {
+      en: [
+        "Global Statistics",
+        "Head2Head",
+        "Total records",
+        "History log",
+      ],
+      de: [
+        "Globale Statistiken",
+        "Head2Head",
+        "Einträge gesamt",
+        "Verlauf",
+      ],
+    },
+    techInfo: {
+      main: "REACT (Hooks)",
+      styled: "Styled with Mantine",
+      tested: "",
+      responsive: false,
+      specsText: { en: "Supabase, a PostgreSQL database", de: "Supabase, a PostgreSQL database" },
+      specs: ["React", "Typescript", "Javascript", "React Query", "PostgreSQL", "Supabase", "Material UI", "Styled Components", "Netlify", "Cypress"],
+      thirdParty: ["React Query", "React Router", "React Hook Form", "React Number Format", "Leaflet"],
+      notes: { en: "Nominatim API", de: "" },
+      tags: [
+        ["React",SKILL_CATEGORIES.reactEcosystem],
+        ["Typescript",SKILL_CATEGORIES.reactEcosystem],
+        ["React Router",SKILL_CATEGORIES.reactEcosystem],
+        ["React Query", SKILL_CATEGORIES.backend],
+        ["Board game Geek API", SKILL_CATEGORIES.all],
+        ["Netlify",SKILL_CATEGORIES.backend],
+        ["Mantine", SKILL_CATEGORIES.styling],
+]},
+    live: ["https://boardgame-statistics.netlify.app/"],
+    code: [],
+  },
   {
     id: "karaoke",
     name: "⭐️ Karaoke List App",
@@ -302,9 +351,9 @@ export const PROJECTS_DATA_STRUCTURE = [
     },
     live: ["https://karaoke-list-app.onrender.com/"],
     code: ["https://github.com/hugCarvalho/karaoke-list-app"],
-  }
-  ,{
-    id: "cafes",
+  },
+  {//CAFES APP
+    id: "cafes", //⚠️ if needs to be added in ProjectCard
     name: "⭐️ Cafes & You",
     datum: 2024,
     category: [CATEGORIES.fullstack, CATEGORIES.api, CATEGORIES.webApp],
@@ -364,6 +413,57 @@ export const PROJECTS_DATA_STRUCTURE = [
         ["Nominatim API", SKILL_CATEGORIES.all]]
     },
     live: ["https://cafesandyou.netlify.app/"],
+    code: [],
+  },
+  {//Travel Log APP
+    id: "travelLog", //⚠️ if needs to be added in ProjectCard
+    name: "⭐️ Travel Log",
+    datum: 2026,
+    category: [CATEGORIES.fullstack, CATEGORIES.api, CATEGORIES.webApp],
+    techs: ["React", "hooks"],
+
+    img: [["travel1", "app screenshot"], ["travel2", "app screenshot"], ["travel4", "app screenshot"], ["travel5", "app screenshot"], ["travel6", "app screenshot"], ["travel7", "app screenshot"], ["travel8", "app screenshot"] ],
+    description: {
+      en:
+        "Fullstack project where you plan and/or record your travels using a timeline, either alone or with friends.",
+      de:
+        "Fullstack project where you plan and/or record your travels using a timeline, either alone or with friends.",
+    },
+    features: {
+      en: [
+        "Add Destinations, segments, locations and highlights, varied data.",
+        "Add Friends",
+        "Share your travels with friends as viewer or editor",
+        "Checklists",
+      ],
+      de: [
+        "Add Destinations, segments, locations and highlights, varied data.",
+        "Add Friends",
+        "Share your travels with friends as viewer or editor",
+        "Checklists",
+      ],
+
+    },
+    techInfo: {
+      main: "REACT (Hooks)",
+      styled: "Styled with Mantine",
+      tested: "",
+      responsive: false,
+      specsText: { en: "Supabase, a PostgreSQL database", de: "Supabase, a PostgreSQL database" },
+      specs: ["React", "Typescript", "Javascript", "React Query", "PostgreSQL", "Supabase", "Mantine", "Netlify"],
+      thirdParty: ["React Query", "React Router", "React Hook Form"],
+      notes: { en: "", de: "" },
+      tags: [
+        ["React",SKILL_CATEGORIES.reactEcosystem],
+        ["Typescript",SKILL_CATEGORIES.reactEcosystem],
+        ["React Router",SKILL_CATEGORIES.reactEcosystem],
+        ["React Query", SKILL_CATEGORIES.backend],
+        ["Supabase",SKILL_CATEGORIES.backend ],
+        ["PostgreSQL",SKILL_CATEGORIES.backend],
+        ["Netlify",SKILL_CATEGORIES.backend],
+        ["Mantine", SKILL_CATEGORIES.styling],
+]},
+    live: ["https://boardgame-statistics.netlify.app/"],
     code: [],
   },
 ];

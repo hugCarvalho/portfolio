@@ -27,7 +27,7 @@ function ProjectCard({
     return project.description[language]
   }
 
-  const showSwiper = ["cafes", "portfolio2", "wordScrambler", "karaoke"].includes(project.id)
+  const showSwiper = ["travelLog", "bgg", "cafes", "portfolio2", "wordScrambler", "karaoke"].includes(project.id)
 
   return (
     <>
